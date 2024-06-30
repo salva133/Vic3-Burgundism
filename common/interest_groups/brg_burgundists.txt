@@ -12,8 +12,7 @@
 	}
 
 	enable = {
-		# year > 1905
-		always = yes
+		year > 1905
 	}
 
 	# Deprecated; use on_enable effect to assign traits instead
