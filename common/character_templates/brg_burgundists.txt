@@ -1,15 +1,21 @@
-﻿gebhard_himmler_character_template = {
-	first_name = Gebhard
-	last_name = Himmler
+﻿paul_de_lagarde_character_template = {
+	first_name = Paul
+	last_name = de_Lagarde
 	historical = yes
-	culture = cu:south_german
-	religion = rel:catholic
+	culture = cu:north_german
+	religion = rel:protestant
 	interest_group = ig_brg_burgundists
 	agitator = yes
 	female = no
-	birth_date = 1865.5.17
+	birth_date = 1827.11.2
 	ideology = ideology_brg_burgundist_leader
 	traits = {
+		charismatic
+		innovative
+		ambitious
+	}
+}
+
 	}
 }
 
