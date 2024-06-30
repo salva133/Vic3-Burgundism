@@ -54,7 +54,7 @@ heinrich_himmler_character_template = {
 	}
 }
 
-glauer_character_template = {
+glauer_character_template = { #  Changed his name after converting to Islam to Rudolf von Sebottendorf
 	first_name = Adam 
 	last_name = Glauer
 	historical = yes
