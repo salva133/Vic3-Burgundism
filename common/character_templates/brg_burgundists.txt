@@ -16,6 +16,21 @@
 	}
 }
 
+houston_chamberlain_character_template = {
+	first_name = Houston_Stewart
+	last_name = Chamberlain
+	historical = yes
+	culture = cu:british
+	religion = rel:protestant
+	interest_group = ig_brg_burgundists
+	agitator = yes
+	female = no
+	birth_date = 1855.9.9
+	ideology = ideology_brg_burgundist_leader
+	traits = {
+		charismatic
+		innovative
+		ambitious
 	}
 }
 
