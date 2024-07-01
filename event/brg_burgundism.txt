@@ -6,6 +6,7 @@ burgund.1 = {
 	title = burgund.1.t
 	desc = burgund.1.d
 	flavor = burgund.1.f
+	is_triggered_only = yes
 
 	duration = 1
 
