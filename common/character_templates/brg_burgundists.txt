@@ -35,18 +35,18 @@ houston_chamberlain_character_template = {
 }
 
 heinrich_himmler_character_template = {
-	first_name = Heinrich
-	last_name = Himmler
-	historical = yes
-	culture = cu:south_german
-	religion = rel:catholic
-	interest_group = ig_brg_burgundists
-	female = no
-	birth_date = 1900.10.7
-	ideology = ideology_brg_burgundist_leader
-	traits = {
-	}
+    first_name = Heinrich
+    last_name = Himmler
+    historical = yes
+    culture = cu:south_german
+    religion = rel:atheist  # Assuming you want him as an atheist
+    interest_group = ig_brg_burgundists
     is_agitator = yes
+    female = no
+    birth_date = 1900.10.7
+    ideology = ideology_brg_burgundist_leader
+    traits = {
+    }
 }
 
 glauer_character_template = { #  Changed his name after converting to Islam to Rudolf von Sebottendorf
