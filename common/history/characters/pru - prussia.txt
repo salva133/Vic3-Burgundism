@@ -1,8 +1,5 @@
 ﻿CHARACTERS = {
 	c:PRU ?= {
-		create_character = {
-			template = paul_de_lagarde_character_template
-		}
 
 		create_character = {
 			template = pru_wilhelm_III_hohenzollern_template			
