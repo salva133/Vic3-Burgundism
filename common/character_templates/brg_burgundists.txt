@@ -45,11 +45,6 @@ heinrich_himmler_character_template = {
 	birth_date = 1900.10.7
 	ideology = ideology_brg_burgundist_leader
 	traits = {
-		cruel
-		arrogant
-		bigoted
-		psychological_affliction
-		war_criminal
 	}
     is_agitator = yes
 }
