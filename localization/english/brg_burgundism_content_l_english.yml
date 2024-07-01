@@ -4,3 +4,7 @@
   burgund.1.f: "THERE IS NO HOPE UNDER THE BLACK SUN"
   burgund.1.a: "Yes, let us begin..."
   burgund.1.b: "I made up my mind..."
+
+	himmler_event.1.t: "Heinrich Himmler Rises"
+  himmler_event.1.d: "Heinrich Himmler, a prominent figure, emerges as a new influential character in your country."
+  himmler_event.1.f: "A new era begins with Himmler's rise to power."
