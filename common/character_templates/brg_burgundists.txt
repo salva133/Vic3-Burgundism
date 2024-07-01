@@ -1,6 +1,6 @@
 ﻿paul_de_lagarde_character_template = {
-	first_name = Paul
-	last_name = de_Lagarde
+	first_name = "paul_de_lagarde_first_name"
+	last_name = "paul_de_lagarde_last_name"
 	historical = yes
 	culture = cu:north_german
 	religion = rel:protestant
@@ -17,8 +17,8 @@
 }
 
 houston_chamberlain_character_template = {
-	first_name = Houston_Stewart
-	last_name = Chamberlain
+	first_name = "houston_chamberlain_first_name"
+	last_name = "houston_chamberlain_last_name"
 	historical = yes
 	culture = cu:british
 	religion = rel:protestant
@@ -35,23 +35,29 @@ houston_chamberlain_character_template = {
 }
 
 heinrich_himmler_character_template = {
-    first_name = Heinrich
-    last_name = Himmler
+    first_name = "heinrich_himmler_first_name"
+	last_name = "heinrich_himmler_last_name"
     historical = yes
     culture = cu:south_german
-    religion = rel:atheist  # Assuming you want him as an atheist
+    religion = rel:atheist
     interest_group = ig_brg_burgundists
     is_agitator = yes
     female = no
     birth_date = 1900.10.7
+	dna = dna_heinrich_himmler
     ideology = ideology_brg_burgundist_leader
     traits = {
+		bigoted
+		ambitious
+		imperious
+		wrathful
+		cruel
     }
 }
 
-glauer_character_template = { #  Changed his name after converting to Islam to Rudolf von Sebottendorf
-	first_name = Adam 
-	last_name = Glauer
+rudolf_sebottendorf_character_template = { #  Changed his name from Adam Glauer to Rudolf von Sebottendorf after converting to Islam
+	first_name = "rudolf_sebottendorf_first_name" 
+	last_name = "rudolf_sebottendorf_last_name"
 	historical = yes
 	culture = cu:north_german
 	religion = rel:protestant
