@@ -18,8 +18,8 @@ himmler_event.1 = {
 		game_date >= 1919
 		NOT = { has_variable = heinrich_himmler_var }
 		OR = {
-			has_primary_culture = north_german
-			has_primary_culture = south_german
+			country_has_primary_culture = north_german
+			country_has_primary_culture = south_german
 		}
 	}
 
