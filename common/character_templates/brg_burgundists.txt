@@ -41,7 +41,6 @@ heinrich_himmler_character_template = {
 	culture = cu:south_german
 	religion = rel:catholic
 	interest_group = ig_brg_burgundists
-	agitator = yes
 	female = no
 	birth_date = 1900.10.7
 	ideology = ideology_brg_burgundist_leader
@@ -52,6 +51,7 @@ heinrich_himmler_character_template = {
 		psychological_affliction
 		war_criminal
 	}
+    is_agitator = yes
 }
 
 glauer_character_template = { #  Changed his name after converting to Islam to Rudolf von Sebottendorf
