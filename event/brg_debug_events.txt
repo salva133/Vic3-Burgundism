@@ -18,8 +18,6 @@ burgund.1 = {
 
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-	trigger = {}
-
 	option = {
 		name = burgund.1.a
 		ai_chance = {

@@ -4,3 +4,11 @@
   burgund.1.f: "THERE IS NO HOPE UNDER THE BLACK SUN"
   burgund.1.a: "Yes, let us begin..."
   burgund.1.b: "I made up my mind..."
+
+	himmler_event.1.t: "Heinrich Himmler Rises"
+  himmler_event.1.d: "Heinrich Himmler, a prominent figure, emerges as a new influential character in your country."
+  himmler_event.1.f: "A new era begins with Himmler's rise to power."
+
+  death_of_paul_de_lagarde.1.t: "The Death of Paul de Lagarde"
+	death_of_paul_de_lagarde.1.d: "The respected German biblical scholar and orientalist Paul de Lagarde died on 22 December 1891. Lagarde was known for his extensive work on Syriac, Aramaic, Arabic and Coptic texts. In addition to his scholarly contributions, he was also an important voice of German nationalism and the Völkisch movement. His writings significantly influenced the politics and culture of the German nation."
+	death_of_paul_de_lagarde.1.f: "''Freedom and democracy go together like fire and water. He is not free who can do what he wants, but who can become what he should. Free is he who is able to follow his predetermined principle of life.''\n\n- Paul de Lagarde"

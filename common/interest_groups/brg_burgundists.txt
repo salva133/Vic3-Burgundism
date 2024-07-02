@@ -12,7 +12,8 @@
 	}
 
 	enable = {
-		year > 1905
+		year > 1918
+		has_technology_researched = political_agitation
 	}
 
 	# Deprecated; use on_enable effect to assign traits instead
@@ -22,7 +23,18 @@
 		ig_trait_materiel_waste
 	}
 
-	on_enable = {}
+	on_enable = {
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:allemanic
+				}
+				set_interest_group_name = ig_brg_sebottendorf_society
+			}
+		}
+	}
 
 	on_disable = {}
 	
