@@ -1,0 +1,32 @@
+namespace = himmler
+
+himmler_event.1 = {
+	type = country_event
+	placement = root
+	title = himmler_event.1.t
+	desc = himmler_event.1.d
+	flavor = himmler_event.1.f
+
+	duration = 1
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		ig:ig_brg_burgundists = {
+			is_marginal = no
+		}
+		game_date >= 1919
+		NOT = { has_variable = heinrich_himmler_var }
+		OR = {
+			country_has_primary_culture = north_german
+			country_has_primary_culture = south_german
+		}
+	}
+
+	immediate = {
+		set_variable = heinrich_himmler_var
+		create_character  = {
+			template = heinrich_himmler_character_template
+		}
+	}
+}
