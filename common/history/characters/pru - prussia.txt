@@ -22,10 +22,6 @@
 		}
 
 		create_character = {
-			template = houston_chamberlain_character_template
-		}
-
-		create_character = {
 			first_name = Gustav
 			last_name = von_Rauch
 			historical = yes
