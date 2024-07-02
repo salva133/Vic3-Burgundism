@@ -24,7 +24,6 @@ himmler_event.1 = {
 	}
 
 	immediate = {
-		
 		create_character  = {
 			template = heinrich_himmler_character_template
 			on_created = {
