@@ -24,9 +24,12 @@ himmler_event.1 = {
 	}
 
 	immediate = {
-		set_variable = heinrich_himmler_var
+		
 		create_character  = {
 			template = heinrich_himmler_character_template
+			on_created = {
+				set_variable = heinrich_himmler_var
+			}
 		}
 	}
 }
