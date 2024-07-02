@@ -11,8 +11,7 @@ gov_brg_burgundian_system = {
 			has_law = law_type:law_technocracy
 		}
 		has_law = law_type:law_outlawed_dissent
-		has_law = law_type:law_brg_spartanism
-		coa_fascist_trigger = yes
+		coa_burgundist_trigger = yes
 	}
 
 	on_government_type_change = {
