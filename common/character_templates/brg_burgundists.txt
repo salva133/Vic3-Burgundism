@@ -22,7 +22,6 @@ houston_chamberlain_character_template = {
 	historical = yes
 	culture = cu:british
 	religion = rel:protestant
-	interest_group = ig_brg_burgundists
 	is_agitator = yes
 	female = no
 	birth_date = 1855.9.9
