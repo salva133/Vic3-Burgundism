@@ -1,0 +1,14 @@
+HES = {
+	dynamic_country_name = {
+		name = dyn_c_brg_hesse
+		adjective = HES_ADJ
+
+		priority = 10000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_brg_burgundian_system
+			}
+		}
+	}
+}
