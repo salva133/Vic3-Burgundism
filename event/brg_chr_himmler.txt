@@ -1,4 +1,4 @@
-namespace = himmler
+namespace = brg_characters
 
 himmler_event.1 = {
 	type = country_event
