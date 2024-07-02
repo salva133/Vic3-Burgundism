@@ -1,0 +1,24 @@
+namespace = misc
+
+death_of_paul_de_lagarde.1 = {
+	type = country_event
+	placement = root
+	title = death_of_paul_de_lagarde.1.t
+	desc = death_of_paul_de_lagarde.1.d
+	flavor = death_of_paul_de_lagarde.1.f
+
+	duration = 1
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1891.12.22
+	}
+
+	immediate = {
+		random_character_scope = {
+			limit = { has_variable = lagarde_alive }
+			kill_character = yes
+		}
+	}
+}
