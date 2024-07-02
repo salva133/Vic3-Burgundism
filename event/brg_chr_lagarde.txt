@@ -16,7 +16,7 @@ death_of_paul_de_lagarde.1 = {
 	}
 
 	immediate = {
-		if = {
+		random_character_scope = {
 			limit = { has_variable = lagarde_alive }
 			kill_character = yes
 		}
