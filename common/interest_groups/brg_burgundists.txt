@@ -31,8 +31,8 @@
 					country_has_primary_culture = cu:south_german
 					country_has_primary_culture = cu:allemanic
 				}
+				set_interest_group_name = ig_brg_sebottendorf_society
 			}
-			set_interest_group_name = ig_brg_sebottendorf_society
 		}
 	}
 
