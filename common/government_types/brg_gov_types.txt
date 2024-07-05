@@ -5,19 +5,9 @@ gov_brg_burgundian_system = {
 	female_ruler = "RULER_TITLE_BRG_FUEHRER"
 
 	possible = {
-		OR = {
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_single_party_state
-			has_law = law_type:law_technocracy
-		}
-		has_law = law_type:law_outlawed_dissent
-		coa_burgundist_trigger = yes
+		coa_burgundian_system_trigger = yes
 	}
 
-	on_government_type_change = {
-		change_to_dictatorial = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_dictatorial = yes
-	}
+	on_government_type_change = { change_to_dictatorial = yes }
+	on_post_government_type_change = { post_change_to_dictatorial = yes }
 }
