@@ -155,6 +155,7 @@ ideology_brg_burgundist_specifics = {
 		law_brg_spartanism = strongly_approve
 	}
 	lawgroup_free_speech = {
+		law_mym_managed_free_speech = strongly_approve
 		law_outlawed_dissent = strongly_approve
 		law_censorship = neutral
 		law_right_of_assembly = strongly_disapprove
