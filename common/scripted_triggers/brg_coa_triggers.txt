@@ -1,8 +1,23 @@
 coa_burgundist_trigger = {
-	coa_dictatorship_trigger = yes
-	ruler ?= {
-		OR = {
-			has_ideology = ideology:ideology_brg_burgundist_leader
-		}
+	coa_republic_trigger = yes
+	OR = {
+		coa_autocracy_trigger = yes
+		has_law = law_type:law_technocracy
     }
+	ruler ?= {
+		has_ideology = ideology:ideology_brg_burgundist_leader
+    }
+}
+
+coa_no_free_speech = {
+	NOR = {
+		has_law = law_type:law_censorship
+		has_law = law_type:law_right_of_assembly
+		has_law = law_type:law_protected_speech
+	}
+}
+
+coa_burgundian_system_trigger = {
+	coa_burgundist_trigger = yes
+	coa_no_free_speech = yes
 }
