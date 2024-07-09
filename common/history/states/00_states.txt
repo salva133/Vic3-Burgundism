@@ -1,0 +1,9 @@
+s:STATE_BURGUNDY = {
+	create_state = {
+		country = c:FRA
+		owned_provinces = { "x09BB96" "x10DF00" "x380D42" "x6D7896" "x7000E0" "x708060" "x79B85C" "x8329EC" "x8C3297" "x999D4B" "xC69235" "xF08060" }
+	}
+	
+	add_homeland = cu:french
+	add_homeland = cu:burgundian
+}
