@@ -5,7 +5,7 @@ BGY = {
 
 	tier = kingdom
 
-	cultures = { north_german south_german }
+	cultures = { burgundian }
 
 	capital = STATE_BURGUNDY
 }

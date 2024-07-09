@@ -1,6 +1,6 @@
 burgundian = {
 	color= rgb{ 48 21 44 }
-	religion = spartanism
+	religion = spartanist
 	traits = { german_speaking european_heritage }
 
 	male_common_first_names = {
