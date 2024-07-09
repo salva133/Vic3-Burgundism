@@ -1,0 +1,29 @@
+spartanist = {
+	
+	texture = "gfx/interface/icons/religion_icons/spartanist.dds"
+	color = rgb{ 25 25 25 }
+
+	traits = {
+		burgundian
+	}
+
+	taboos = {
+		porcelain
+		meat
+		fruit
+		liquor
+		wine
+		tea
+		coffee
+		sugar
+		tobacco
+		opium
+		automobiles
+		telephones
+		radios
+		luxury_clothes
+		luxury_furniture
+		fine_art
+	}
+
+}
