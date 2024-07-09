@@ -12,3 +12,18 @@ HES = {
 		}
 	}
 }
+
+BGY = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_ordensstaat_burgund
+		adjective = BGY_ADJ
+
+		priority = 10000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_government_type = gov_bgy_burgundian_system
+			}
+		}
+	}
+}
