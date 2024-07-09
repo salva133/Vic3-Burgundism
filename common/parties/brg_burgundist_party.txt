@@ -51,25 +51,15 @@ burgundist_party = {
 		}
 	}
 
-	icon = {
-		default = "/gfx/interface/icons/ig_icons/burgundists.dds"
-	}
-	unlocking_technologies = {
-		political_agitation
-	}
+	icon = { default = "/gfx/interface/icons/ig_icons/burgundists.dds" }
+
+	unlocking_technologies = { political_agitation }
+
 	available_for_interest_group = {
-		owner = {
-			country_has_voting_franchise = yes
-		}
+		owner = { country_has_voting_franchise = yes }
 		OR = {
-	     	NOT = {
-	         	owner = {
-	         		has_variable = only_valid_party
-	         	}
-	        }
-	        owner.var:only_valid_party = {
-	        	is_party_type = burgundist_party
-	        }
+	     	NOT = { owner = { has_variable = only_valid_party } }
+	        owner.var:only_valid_party = { is_party_type = burgundist_party }
 	    }
 	}
 	
@@ -284,6 +274,7 @@ burgundist_party = {
 						OR = {
 							has_ideology = ideology:ideology_fascist
 							has_ideology = ideology:ideology_jingoist_leader
+							has_ideology = ideology:ideology_brg_burgundist_leader
 						}
 					}
 				}
@@ -380,7 +371,10 @@ burgundist_party = {
 					any_interest_group = {
 						has_party = yes
 						party = {
-							is_party_type = fascist_party
+							OR = {
+								is_party_type = fascist_party
+								is_party_type = burgundist_party
+							}
 						}
 						is_powerful = yes
 						leader = {
@@ -406,7 +400,10 @@ burgundist_party = {
 					any_interest_group = {
 						has_party = yes
 						party = {
-							is_party_type = fascist_party
+							OR = {
+								is_party_type = fascist_party
+								is_party_type = burgundist_party
+							}
 						}
 						is_powerful = yes
 						leader = {
@@ -432,7 +429,10 @@ burgundist_party = {
 					any_interest_group = {
 						has_party = yes
 						party = {
-							is_party_type = fascist_party
+							OR = {
+								is_party_type = fascist_party
+								is_party_type = burgundist_party
+							}
 						}
 						is_powerful = yes
 						leader = {
@@ -453,7 +453,10 @@ burgundist_party = {
 	         	}
 	         	NOT = {
 			        owner.var:only_valid_party = {
-			        	is_party_type = fascist_party
+			        	OR = {
+							is_party_type = fascist_party
+							is_party_type = burgundist_party
+						}
 			        }
 			    }
 			}
@@ -468,8 +471,8 @@ burgundist_party = {
 				}
 			}
 			add = {
-				value = 20
-				desc = "caudillo_support"
+				value = -20
+				desc = "caudillo_adverse"
 			}
 		}
 		if = {
@@ -478,7 +481,10 @@ burgundist_party = {
 	         		has_variable = only_valid_party
 	         	}
 				 owner.var:only_valid_party = {
-					 is_party_type = fascist_party
+					OR = {
+						is_party_type = fascist_party
+						is_party_type = burgundist_party
+					}
 				 }
 	         	owner.ruler = {
 					this.interest_group = prev
@@ -495,7 +501,10 @@ burgundist_party = {
 	         		has_variable = only_valid_party
 	         	}
 	         	 owner.var:only_valid_party = {
-		        	is_party_type = fascist_party
+		        	OR = {
+						is_party_type = fascist_party
+						is_party_type = burgundist_party
+					}
 		        }
 			}
 			add = {
