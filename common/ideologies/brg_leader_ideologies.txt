@@ -4,6 +4,22 @@ ideology_brg_burgundist_leader = {
 
 	character_ideology = yes
 
+	possible = {
+		NOT = { has_game_rule = no_burgundism }
+		if = {
+			limit = { has_game_rule = 1836_burgundism }
+			game_date > 1836
+		}
+		if = {
+			limit = { has_game_rule = 1880_burgundism }
+			game_date > 1880
+		}
+		if = {
+			limit = { has_game_rule = 1919_burgundism }
+			game_date > 1919
+		}
+	}
+
 	lawgroup_labor_rights = {
 		law_no_workers_rights = approve
 		law_regulatory_bodies = strongly_disapprove
