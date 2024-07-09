@@ -6,4 +6,5 @@
   setting_1836_burgundism_desc: "Burgundism will be available from the get-go and will appear as soon as you researched Political Agitation."
   setting_1880_burgundism: "Burgundism after 1880"
   setting_1880_burgundism_desc: "Burgundism will be available after 1880 and will appear as soon as you researched Political Agitation." # Good for a mid- to late-game approach and historically appropriate for the rise of the Völkisch and right-wing esoteric movements in Europe at the end of the 19th century
-  setting_1919_burgundism: "Burgundism after 1919"
+  setting_1919_burgundism: "Burgundism after 1919 (default)"
+  setting_1919_burgundism_desc: "Burgundism will be available after 1919 and will appear as soon as you researched Political Agitation." # The historically most accurate approach, for Burgundism is NatSoc on steroids and NatSoc can not exist before the first fascist party, which was founded by Benito Mussolini in 1919 under the name 'Fasci Italiani di Combattimento'
