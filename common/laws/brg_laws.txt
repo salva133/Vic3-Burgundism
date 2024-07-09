@@ -8,6 +8,13 @@
 		political_agitation
 	}
 
+	unlocking_laws = {
+		law_autocracy
+		law_oligarchy
+		law_single_party_state
+		law_technocracy
+	}
+
 	institution = institution_workplace_safety
 	institution_modifier = {
 		building_minimum_wage_mult = -0.15
@@ -49,6 +56,13 @@ law_brg_kleptocracy = {
 	disallowing_laws = {
 		law_traditionalism
 	}	
+
+	unlocking_laws = {
+		law_autocracy
+		law_oligarchy
+		law_single_party_state
+		law_technocracy
+	}
 	
 	unlocking_technologies = {
 		socialism
