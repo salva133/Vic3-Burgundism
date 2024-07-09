@@ -3,4 +3,5 @@
   BGY_ADJ: "Burgundian"
 
   # Dynamic Country Names
-  dyn_c_brg_hesse: "Ordensstaat Hessen"
+  dyn_c_bgy_ordenstaat_hessen: "Ordensstaat Hessen"
+  dyn_c_bgy_ordensstaat_burgund: "Ordensstaat Burgund"

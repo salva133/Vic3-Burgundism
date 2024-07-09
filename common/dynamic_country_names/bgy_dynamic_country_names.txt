@@ -1,6 +1,6 @@
 HES = {
 	dynamic_country_name = {
-		name = dyn_c_brg_hesse
+		name = dyn_c_bgy_ordenstaat_hessen
 		adjective = HES_ADJ
 
 		priority = 10000
