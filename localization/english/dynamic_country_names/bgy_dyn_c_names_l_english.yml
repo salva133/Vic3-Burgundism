@@ -1,2 +1,6 @@
 ﻿l_english:
+  BGY: "Burgundy"
+  BGY_ADJ: "Burgundian"
+
+  # Dynamic Country Names
   dyn_c_brg_hesse: "Ordensstaat Hessen"
