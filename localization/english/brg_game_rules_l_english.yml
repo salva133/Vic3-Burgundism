@@ -1,0 +1,9 @@
+﻿l_english:
+  rule_burgundism: "Burgundist IG"
+  setting_no_burgundism: "No Burgundism"
+  setting_no_burgundism_desc: "Burgundism will not be active.\nYou can use this to solely enjoy the assimilation decree without bothering with the politics of Burgundism. But it will limit the immersion."
+  setting_1836_burgundism: "Burgundism after 1836"
+  setting_1836_burgundism_desc: "Burgundism will be available from the get-go and will appear as soon as you researched Political Agitation."
+  setting_1880_burgundism: "Burgundism after 1880"
+  setting_1880_burgundism_desc: "Burgundism will be available after 1880 and will appear as soon as you researched Political Agitation." # Good for a mid- to late-game approach and historically appropriate for the rise of the Völkisch and right-wing esoteric movements in Europe at the end of the 19th century
+  setting_1919_burgundism: "Burgundism after 1919"
