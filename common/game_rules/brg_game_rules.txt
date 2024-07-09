@@ -1,5 +1,5 @@
 burgundism = {
-	default = setting_1919_burgundism
+	default = 1919_burgundism
 
 	1919_burgundism = {}
 	1880_burgundism = {}
