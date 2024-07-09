@@ -1,0 +1,18 @@
+BGY = {
+	states = {
+		STATE_FRENCH_LOW_COUNTRIES STATE_WALLONIA STATE_FLANDERS STATE_PICARDY STATE_CHAMPAGNE STATE_LORRAINE STATE_FRANCHE_COMTE STATE_BURGUNDY STATE_RHONE
+	}
+
+	required_states_fraction = 1
+
+	ai_will_do = { always = no }
+
+	possible = {
+		is_ai = no
+		NOT = { exists = c:BGY }
+		scope:actor = {
+			exists = c:GER
+			c:GER = this
+		}
+	}
+}
