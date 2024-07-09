@@ -7,7 +7,7 @@ HES = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				has_government_type = gov_brg_burgundian_system
+				has_government_type = gov_bgy_burgundian_system
 			}
 		}
 	}

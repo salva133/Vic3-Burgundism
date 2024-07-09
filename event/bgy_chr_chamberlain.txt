@@ -1,4 +1,4 @@
-namespace = brg_characters
+namespace = bgy_characters
 
 chamberlain_event.1 = {
 	type = country_event

@@ -5,7 +5,7 @@ coa_burgundist_trigger = {
 		has_law = law_type:law_technocracy
     }
 	ruler ?= {
-		has_ideology = ideology:ideology_brg_burgundist_leader
+		has_ideology = ideology:ideology_bgy_burgundist_leader
     }
 }
 

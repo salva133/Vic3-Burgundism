@@ -4,11 +4,11 @@
 	historical = yes
 	culture = cu:north_german
 	religion = rel:protestant
-	interest_group = ig_brg_burgundists
+	interest_group = ig_bgy_burgundists
 	is_leader = yes
 	female = no
 	birth_date = 1827.11.2
-	ideology = ideology_brg_burgundist_leader
+	ideology = ideology_bgy_burgundist_leader
 	traits = {
 		charismatic
 		innovative
@@ -39,12 +39,12 @@ heinrich_himmler_character_template = {
     historical = yes
     culture = cu:south_german
     religion = rel:atheist
-    interest_group = ig_brg_burgundists
+    interest_group = ig_bgy_burgundists
     is_agitator = yes
     female = no
     birth_date = 1900.10.7
 	dna = dna_heinrich_himmler
-    ideology = ideology_brg_burgundist_leader
+    ideology = ideology_bgy_burgundist_leader
     traits = {
 		bigoted
 		ambitious
@@ -60,11 +60,11 @@ rudolf_sebottendorf_character_template = { #  Changed his name from Adam Glauer 
 	historical = yes
 	culture = cu:north_german
 	religion = rel:protestant
-	interest_group = ig_brg_burgundists
+	interest_group = ig_bgy_burgundists
 	is_agitator = yes
 	female = no
 	birth_date = 1875.11.9
-	ideology = ideology_brg_burgundist_leader
+	ideology = ideology_bgy_burgundist_leader
 	traits = {
 		charismatic
 		innovative

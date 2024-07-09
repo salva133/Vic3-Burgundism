@@ -1,8 +1,8 @@
-gov_brg_burgundian_system = {
+gov_bgy_burgundian_system = {
 	transfer_of_power = dictatorial
 
-	male_ruler = "RULER_TITLE_BRG_FUEHRER"
-	female_ruler = "RULER_TITLE_BRG_FUEHRER"
+	male_ruler = "RULER_TITLE_BGY_FUEHRER"
+	female_ruler = "RULER_TITLE_BGY_FUEHRER"
 
 	possible = {
 		coa_burgundian_system_trigger = yes

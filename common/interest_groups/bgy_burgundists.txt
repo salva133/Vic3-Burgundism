@@ -1,14 +1,14 @@
-﻿ig_brg_burgundists = {
+﻿ig_bgy_burgundists = {
 	color = hsv{ 0.75 0.78 0.31 }
 	texture = "gfx/interface/icons/ig_icons/burgundists.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
 	index = 0
 
 	ideologies = {
-		ideology_brg_burgundist_power_structure
-		ideology_brg_burgundist_economy
-		ideology_brg_burgundist_social_structure
-		ideology_brg_burgundist_specifics
+		ideology_bgy_burgundist_power_structure
+		ideology_bgy_burgundist_economy
+		ideology_bgy_burgundist_social_structure
+		ideology_bgy_burgundist_specifics
 	}
 
 	enable = {
@@ -32,7 +32,7 @@
 					country_has_primary_culture = cu:allemanic
 				}
 			}
-			set_interest_group_name = ig_brg_sebottendorf_society
+			set_interest_group_name = ig_bgy_sebottendorf_society
 		}
 	}
 
@@ -43,7 +43,7 @@
 			limit = {
 				is_leader = yes
 			}
-			set_ideology = ideology:ideology_brg_burgundist_leader
+			set_ideology = ideology:ideology_bgy_burgundist_leader
 		}
 	}
 	
@@ -304,7 +304,7 @@
 		# Agitators will never be part of a marginalized IG
 		if = {
 			limit = {
-				owner.ig:ig_brg_burgundists = {
+				owner.ig:ig_bgy_burgundists = {
 					is_marginal = yes
 				}
 			}

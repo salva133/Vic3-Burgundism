@@ -1,4 +1,4 @@
-namespace = brg_characters
+namespace = bgy_characters
 
 himmler_event.1 = {
 	type = country_event
@@ -12,7 +12,7 @@ himmler_event.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
-		ig:ig_brg_burgundists = {
+		ig:ig_bgy_burgundists = {
 			is_marginal = no
 		}
 		game_date > 1919

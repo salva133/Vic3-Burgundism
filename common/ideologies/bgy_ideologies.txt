@@ -1,4 +1,4 @@
-﻿ideology_brg_burgundist_power_structure = {
+﻿ideology_bgy_burgundist_power_structure = {
 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
@@ -51,7 +51,7 @@
 		law_guaranteed_liberties = strongly_disapprove
 	}
 }
-ideology_brg_burgundist_economy = {
+ideology_bgy_burgundist_economy = {
 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
@@ -83,7 +83,7 @@ ideology_brg_burgundist_economy = {
 		law_per_capita_based_taxation = neutral
 		law_proportional_taxation = approve
 		law_graduated_taxation = neutral
-		law_brg_kleptocracy = strongly_approve
+		law_bgy_kleptocracy = strongly_approve
 	}
     lawgroup_slavery = {
 		law_slavery_banned = strongly_disapprove
@@ -105,7 +105,7 @@ ideology_brg_burgundist_economy = {
 		law_elected_police = strongly_disapprove
 	}
 }
-ideology_brg_burgundist_social_structure = {
+ideology_bgy_burgundist_social_structure = {
 icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
@@ -144,7 +144,7 @@ icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 		law_public_schools = strongly_disapprove
 	}
 }
-ideology_brg_burgundist_specifics = {
+ideology_bgy_burgundist_specifics = {
 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
@@ -152,7 +152,7 @@ ideology_brg_burgundist_specifics = {
 		law_no_workers_rights = approve
 		law_regulatory_bodies = strongly_disapprove
 		law_worker_protections = strongly_approve
-		law_brg_spartanism = strongly_approve
+		law_bgy_spartanism = strongly_approve
 	}
 	lawgroup_free_speech = {
 		law_mym_managed_free_speech = strongly_approve

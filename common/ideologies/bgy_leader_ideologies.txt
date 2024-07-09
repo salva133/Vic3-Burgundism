@@ -1,4 +1,4 @@
-ideology_brg_burgundist_leader = {
+ideology_bgy_burgundist_leader = {
 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
@@ -24,7 +24,7 @@ ideology_brg_burgundist_leader = {
 		law_no_workers_rights = approve
 		law_regulatory_bodies = strongly_disapprove
 		law_worker_protections = strongly_disapprove
-		law_brg_spartanism = strongly_approve
+		law_bgy_spartanism = strongly_approve
 	}
 	lawgroup_free_speech = {
 		law_mym_managed_free_speech = strongly_approve
