@@ -1,0 +1,13 @@
+BGY = { # Burgundy
+	flag_definition = {
+		coa = BGY
+		subject_canton = BGY
+	}
+	flag_definition = {
+		coa = BGY_democratic
+		subject_canton = BGY_democratic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
