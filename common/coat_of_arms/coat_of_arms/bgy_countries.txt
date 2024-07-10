@@ -26,11 +26,15 @@ BGY_dictatorship = {
 	colored_emblem = {
 		texture = "ce_frame_circle_outline.dds"
 		color1 = "purple"
+
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
 	}
 
 	colored_emblem = {
 		texture = "ce_kolovrat.dds"
 		color1 = "purple"
+
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
 	}
 }
 
