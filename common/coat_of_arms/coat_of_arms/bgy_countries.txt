@@ -34,4 +34,14 @@ BGY_dictatorship = {
 	}
 }
 
+BGY_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_saltire_fimbriated_02.dds"
+		color1 = "purple"
+		color2 = "yellow"
+		color3 = "yellow"
+	}
 }
