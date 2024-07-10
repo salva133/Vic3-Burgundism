@@ -11,3 +11,20 @@ BGY = { # Burgundy
 			coa_def_republic_flag_trigger = yes
 		}
 	}
+	flag_definition = {
+		coa = BGY_dictatorship
+		subject_canton = BGY_dictatorship
+		priority = 15
+		trigger = { 
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BGY_communist
+		subject_canton = BGY_communist
+		priority = 2000
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}
