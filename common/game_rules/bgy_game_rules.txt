@@ -3,6 +3,7 @@ burgundism = {
 
 	1919_burgundism = {}
 	1880_burgundism = {}
+	1848_burgundism = {}
 	1836_burgundism = {}
 	no_burgundism = {}
 
