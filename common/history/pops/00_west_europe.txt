@@ -532,6 +532,11 @@ POPS = {
 				culture = ashkenazi
 				size = 889
 			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
+			}
 		}
 	}
 	s:STATE_FRENCH_LOW_COUNTRIES = {
@@ -558,6 +563,11 @@ POPS = {
 				culture = ashkenazi
 				size = 645
 			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
+			}
 		}
 	}
 	s:STATE_PICARDY = {
@@ -574,6 +584,11 @@ POPS = {
 			create_pop = {
 				culture = ashkenazi
 				size = 146
+			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
 			}
 		}
 	}
@@ -604,6 +619,11 @@ POPS = {
 			create_pop = {
 				culture = ashkenazi
 				size = 39519
+			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
 			}
 		}
 	}
@@ -749,6 +769,11 @@ POPS = {
 				culture = ashkenazi
 				size = 868
 			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
+			}
 		}
 	}
 	s:STATE_FRANCHE_COMTE = {
@@ -770,6 +795,11 @@ POPS = {
 				culture = ashkenazi
 				size = 1550
 			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
+			}
 		}
 	}
 	s:STATE_LORRAINE = {
@@ -786,6 +816,11 @@ POPS = {
 			create_pop = {
 				culture = ashkenazi
 				size = 7240
+			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
 			}
 		}
 	}
@@ -932,6 +967,11 @@ POPS = {
 				culture = ashkenazi
 				size = 210
 			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
+			}
 		}
 		# Hainaut, Liège, Luxembourg, and Namur
 		region_state:BEL = { # 
@@ -960,6 +1000,11 @@ POPS = {
 			create_pop = {
 				culture = ashkenazi
 				size = 205
+			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
 			}
 		}
 	}
@@ -991,6 +1036,11 @@ POPS = {
 			create_pop = {
 				culture = ashkenazi
 				size = 1131
+			}
+			create_pop = {
+				culture = burgundian
+				religion = spartanist
+				size = 1000
 			}
 		}
 	}
