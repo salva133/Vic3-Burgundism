@@ -2,7 +2,6 @@ burgundist_party = {
 	color = hsv{ 0.75 0.78 0.31 }
 	name = {
 		first_valid = {
-
 			### Template for Party name Definition ### 
 			# triggered_desc = {
 			# 	desc = <party name var from loc file>
@@ -18,6 +17,7 @@ burgundist_party = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:burgundian
 					}
 				}
 			}
