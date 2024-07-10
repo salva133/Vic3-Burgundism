@@ -1,0 +1,13 @@
+BGY = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "purple"
+	color3 = "white"
+}
+
+BGY_Ordensstaat = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "purple"
+	color3 = "white"
+}
