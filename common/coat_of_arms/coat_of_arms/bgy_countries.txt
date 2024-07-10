@@ -19,9 +19,19 @@ BGY_democratic = {
 	}
 }
 
-BGY_Ordensstaat = {
+BGY_dictatorship = {
 	pattern = "pattern_solid.tga"
 	color1 = "black"
-	color2 = "purple"
-	color3 = "white"
+
+	colored_emblem = {
+		texture = "ce_frame_circle_outline.dds"
+		color1 = "purple"
+	}
+
+	colored_emblem = {
+		texture = "ce_kolovrat.dds"
+		color1 = "purple"
+	}
+}
+
 }
