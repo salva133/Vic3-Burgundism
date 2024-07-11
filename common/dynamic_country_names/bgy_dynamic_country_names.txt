@@ -48,7 +48,7 @@ BGY = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				coa_burgundian_system_trigger = yes
+				coa_dictatorship_trigger = yes
 			}
 		}
 	}
