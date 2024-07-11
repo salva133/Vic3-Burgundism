@@ -12,8 +12,24 @@
 	}
 
 	enable = {
-		year > 1918
+		NOT = { has_game_rule = no_burgundism }
 		has_technology_researched = political_agitation
+		if = {
+			limit = { has_game_rule = 1919_burgundism }
+			game_date > 1919.1.1
+		}
+		if = {
+			limit = { has_game_rule = 1880_burgundism }
+			game_date > 1880.1.1
+		}
+		if = {
+			limit = { has_game_rule = 1848_burgundism }
+			game_date > 1848.1.1
+		}
+		if = {
+			limit = { has_game_rule = 1836_burgundism }
+			game_date > 1836.1.1
+		}
 	}
 
 	# Deprecated; use on_enable effect to assign traits instead
