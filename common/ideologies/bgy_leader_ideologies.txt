@@ -5,23 +5,8 @@ ideology_bgy_burgundist_leader = {
 	character_ideology = yes
 
 	possible = {
-		NOT = { has_game_rule = no_burgundism }
-		if = {
-			limit = { has_game_rule = 1919_burgundism }
-			game_date > 1919
-		}
-		if = {
-			limit = { has_game_rule = 1880_burgundism }
-			game_date > 1880
-		}
-		if = {
-			limit = { has_game_rule = 1836_burgundism }
-			game_date > 1848
-		}
-		if = {
-			limit = { has_game_rule = 1836_burgundism }
-			game_date > 1836
-		}
+		game_date > 1848.1.1
+		has_technology_unlocked = political_agitation
 	}
 
 	lawgroup_labor_rights = {
