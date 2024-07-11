@@ -7,13 +7,39 @@ HES = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				has_government_type = gov_bgy_burgundian_system
+				coa_burgundian_system_trigger = yes
 			}
 		}
 	}
 }
 
 BGY = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy
+		adjective = BGY_ADJ
+
+		priority = 100
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				coa_monarchy_trigger = yes
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_democratic
+		adjective = BGY_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				coa_republic_trigger = yes
+				country_has_voting_franchise = yes
+			}
+		}
+	}
 	dynamic_country_name = {
 		name = dyn_c_bgy_ordensstaat_burgund
 		adjective = BGY_ADJ
@@ -22,8 +48,21 @@ BGY = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				has_government_type = gov_bgy_burgundian_system
+				coa_burgundian_system_trigger = yes
 			}
 		}
 	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_communist
+		adjective = BGY_ADJ
+
+		priority = 1000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				coa_communist_trigger = yes
+			}
+		}
+	}
+
 }
