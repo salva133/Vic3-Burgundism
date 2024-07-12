@@ -48,6 +48,16 @@ decree_genocide_suppression = {
 	
 	ai_weight = {
 		value = 0
+	
+		if = {
+			limit = {
+				exists = ruler
+				ruler = {
+					has_ideology = ideology:ideology_bgy_burgundist_leader
+				}
+			}
+			value = 1000
+		}
 	}
 
 }
