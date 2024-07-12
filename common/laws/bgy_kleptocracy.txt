@@ -22,31 +22,36 @@
 	tax_modifier_very_low = {
 		tax_consumption_add = 0.5
 		tax_income_add = 0.5
-		tax_dividends_add = 0.0
+		tax_land_add = 0.20
+		tax_per_capita_add = 0.10
 	}	
 	
 	tax_modifier_low = {
 		tax_consumption_add = 0.6
 		tax_income_add = 0.6
-		tax_dividends_add = 0.3
+		tax_land_add = 0.30
+		tax_per_capita_add = 0.20
 	}
 	
 	tax_modifier_medium = {
 		tax_consumption_add = 0.7
 		tax_income_add = 0.7
-		tax_dividends_add = 0.5
+		tax_land_add = 0.40
+		tax_per_capita_add = 0.30
 	}	
 	
 	tax_modifier_high = {
 		tax_consumption_add = 0.85
 		tax_income_add = 0.85
-		tax_dividends_add = 0.6
+		tax_land_add = 0.50
+		tax_per_capita_add = 0.40
 	}
 	
 	tax_modifier_very_high = {
 		tax_consumption_add = 0.95
 		tax_income_add = 0.95
-		tax_dividends_add = 0.69
+		tax_land_add = 0.60
+		tax_per_capita_add = 0.50
 	}
 
 	possible_political_movements = {
