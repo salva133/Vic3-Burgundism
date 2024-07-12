@@ -35,13 +35,19 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_schutzstaffel
+				desc = party_thule_soc
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:burgundian
 					}
+				}
+			}
+			triggered_desc = {
+				desc = party_schutzstaffel
+				trigger = {
+					country_has_primary_culture = cu:burgundian
+					country_has_state_religion = rel:spartanist
 				}
 			}
 			triggered_desc = {
