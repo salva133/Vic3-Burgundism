@@ -544,7 +544,6 @@ burgundist_party = {
 	         	}
 				 owner.var:only_valid_party = {
 					OR = {
-						is_party_type = fascist_party
 						is_party_type = burgundist_party
 					}
 				 }
@@ -564,7 +563,6 @@ burgundist_party = {
 	         	}
 	         	 owner.var:only_valid_party = {
 		        	OR = {
-						is_party_type = fascist_party
 						is_party_type = burgundist_party
 					}
 		        }
