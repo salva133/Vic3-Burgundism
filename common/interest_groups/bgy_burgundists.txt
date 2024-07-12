@@ -46,6 +46,15 @@
 			}
 			set_interest_group_name = ig_bgy_ku_klux_klan
 		}
+		if = {
+			limit = {
+				OR = {
+					country_has_state_religion = rel:sunni
+					country_has_state_religion = rel:shia
+				}
+			}
+			set_interest_group_name = ig_bgy_fundamentalists
+		}
 	}
 
 	on_disable = {}
