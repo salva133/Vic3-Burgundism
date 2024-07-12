@@ -12,7 +12,16 @@ burgundist_party = {
 			# }
 			### End of Template ###
 			triggered_desc = {
-				desc = party_schutzstaffel_ger
+				desc = party_kkk
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:yankee
+						country_has_primary_culture = cu:dixie
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_schutzstaffel
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:north_german
@@ -22,14 +31,14 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_ordenspartei_swi
+				desc = party_ordenspartei
 				trigger = {
 					exists = c:SWI
 					THIS = c:SWI
 				}
 			}
 			triggered_desc = {
-				desc = party_pnsb_fra
+				desc = party_pnsb
 				trigger = {
 					exists = c:FRA
 					THIS = c:FRA
