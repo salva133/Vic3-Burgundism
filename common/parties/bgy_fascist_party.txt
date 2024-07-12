@@ -3,13 +3,6 @@
 	name = {
 		first_valid = {
 			triggered_desc = {
-				desc = party_nazis
-				trigger = {
-					exists = c:BGY
-					THIS = c:BGY
-				}
-			}
-			triggered_desc = {
 				desc = party_fatherland_front
 				trigger = {
 					exists = c:AUS
@@ -155,6 +148,7 @@
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:burgundian
 					}
 				}
 			}
