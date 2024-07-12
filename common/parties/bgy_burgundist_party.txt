@@ -12,21 +12,54 @@ burgundist_party = {
 			# }
 			### End of Template ###
 			triggered_desc = {
+				desc = party_islamic
+				trigger = {
+					OR = {
+						country_has_state_religion = rel:sunni
+						country_has_state_religion = rel:shia
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_panslawizm
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:polish
+						country_has_primary_culture = cu:czech
+						country_has_primary_culture = cu:slovak
+						country_has_primary_culture = cu:sorb
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_slavyanofily
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:russian
+						country_has_primary_culture = cu:byelorussian
+						country_has_primary_culture = cu:ukrainian
+					}
+				}
+			}
+			triggered_desc = {
 				desc = party_gaelic_league
 				trigger = {
-					exists = c:IRL
-					THIS = c:IRL
+					country_has_primary_culture = cu:irish
 				}
 			}
 			triggered_desc = {
 				desc = party_celtic_rebirth
 				trigger = {
-					exists = c:GBR
-					THIS = c:GBR
+					OR = {
+						country_has_primary_culture = cu:british
+						country_has_primary_culture = cu:scottish
+						country_has_primary_culture = cu:welsh
+						country_has_primary_culture = cu:breton
+					}
 				}
 			}
 			triggered_desc = {
-				desc = party_kkk
+				desc = party_aryan
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:yankee
