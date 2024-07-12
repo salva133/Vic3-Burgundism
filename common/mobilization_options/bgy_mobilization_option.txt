@@ -2,42 +2,42 @@ mobilization_option_nuke = {
 	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
 
 	possible = {
-		# market ?= {
-		# 	mg:oil ?= {
-		# 		market_goods_sell_orders > 1000
-		# 	}
-		# }
+		market ?= {
+			mg:oil ?= {
+				market_goods_sell_orders > 3000
+			}
+		}
 	}
 	
 	on_activate_while_mobilized = {
-		# custom_tooltip = {
-		# 	text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
-		# 	add_organization = {
-		# 		value = organization
-		# 		multiply = -0.9
-		# 	}
-		# }
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.9
+			}
+		}
 	}
 	
 	on_deactivate = {
-		# custom_tooltip = {
-		# 	text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
-		# 	add_organization = {
-		# 		value = organization
-		# 		multiply = -0.5
-		# 	}
-		# }
+		custom_tooltip = {
+			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+			add_organization = {
+				value = organization
+				multiply = -0.5
+			}
+		}
 	}
 	
 	unlocking_technologies = {
-		# flamethrowers
+		flamethrowers
 	}
 	upkeep_modifier = {
-		# goods_input_oil_add = 1
+		goods_input_oil_add = 10
 	}
 	unit_modifier = {
-		# unit_kill_rate_add = 1
-		unit_devastation_mult = 99.99
+		unit_kill_rate_add = 9999999.99
+		unit_devastation_mult = 9999999.99
 	}
 	ai_weight = {
 		value = 0
