@@ -12,6 +12,13 @@ burgundist_party = {
 			# }
 			### End of Template ###
 			triggered_desc = {
+				desc = party_celtic_rebirth
+				trigger = {
+					exists = c:GBR
+					THIS = c:GBR
+				}
+			}
+			triggered_desc = {
 				desc = party_kkk
 				trigger = {
 					OR = {
