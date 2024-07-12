@@ -12,6 +12,13 @@ burgundist_party = {
 			# }
 			### End of Template ###
 			triggered_desc = {
+				desc = party_gaelic_league
+				trigger = {
+					exists = c:IRL
+					THIS = c:IRL
+				}
+			}
+			triggered_desc = {
 				desc = party_celtic_rebirth
 				trigger = {
 					exists = c:GBR
