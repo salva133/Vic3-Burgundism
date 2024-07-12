@@ -12,7 +12,7 @@
 	}
 
 	enable = {
-		game_date > 1848.1.1
+		game_date > 1880.1.1
 		has_technology_unlocked = political_agitation
 	}
 
@@ -24,6 +24,9 @@
 	}
 
 	on_enable = {
+		set_ig_trait = ig_trait:ig_trait_materiel_waste
+		set_ig_trait = ig_trait:ig_trait_veteran_consultation
+		set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 		if = {
 			limit = {
 				OR = {
@@ -33,6 +36,15 @@
 				}
 			}
 			set_interest_group_name = ig_bgy_sebottendorf_society
+		}
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:yankee
+					country_has_primary_culture = cu:dixie
+				}
+			}
+			set_interest_group_name = ig_bgy_ku_klux_klan
 		}
 	}
 
