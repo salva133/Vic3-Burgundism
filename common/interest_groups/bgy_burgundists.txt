@@ -8,7 +8,6 @@
 		ideology_bgy_burgundist_power_structure
 		ideology_bgy_burgundist_economy
 		ideology_bgy_burgundist_social_structure
-		ideology_bgy_burgundist_specifics
 	}
 
 	enable = {
