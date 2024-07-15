@@ -29,15 +29,4 @@ ideology_bgy_burgundist_leader = {
 		law_cultural_exclusion = strongly_disapprove
 		law_multicultural = strongly_disapprove
 	}
-	lawgroup_distribution_of_power = {
-		law_autocracy = strongly_approve
-		law_technocracy = approve
-		law_oligarchy = neutral
-		law_landed_voting = strongly_disapprove
-		law_wealth_voting = strongly_disapprove
-		law_census_voting = strongly_disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_anarchy = strongly_disapprove
-		law_military_junta = neutral
-	}
 }
