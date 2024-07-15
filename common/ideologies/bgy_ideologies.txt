@@ -20,6 +20,7 @@
 		law_autocracy = approve
 		law_technocracy = approve
 		law_oligarchy = neutral
+		law_timocracy = disapprove
 		law_landed_voting = strongly_disapprove
 		law_wealth_voting = strongly_disapprove
 		law_census_voting = strongly_disapprove
@@ -142,23 +143,5 @@ icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 		law_religious_schools = strongly_disapprove
 		law_private_schools = disapprove
 		law_public_schools = strongly_disapprove
-	}
-}
-ideology_bgy_burgundist_specifics = {
-	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
-	priority = 1000
-
-	lawgroup_labor_rights = {
-		law_no_workers_rights = approve
-		law_regulatory_bodies = strongly_disapprove
-		law_worker_protections = strongly_approve
-		law_bgy_spartanism = strongly_approve
-	}
-	lawgroup_free_speech = {
-		law_mym_managed_free_speech = strongly_approve
-		law_outlawed_dissent = strongly_approve
-		law_censorship = neutral
-		law_right_of_assembly = strongly_disapprove
-		law_protected_speech = strongly_disapprove
 	}
 }
