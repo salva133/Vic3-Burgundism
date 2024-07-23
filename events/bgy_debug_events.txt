@@ -8,7 +8,7 @@ burgund.1 = {
 	flavor = burgund.1.f
 	is_triggered_only = yes
 
-	duration = 1
+	duration = 3
 
 	event_image = {
 		video = "europenorthamerica_springtime_of_nations"
@@ -34,9 +34,7 @@ burgund.1 = {
 			limit = { country_has_state_religion = rel:spartanist }
 			activate_law = law_type:law_state_religion
 		}
-		else = {
-			activate_law = law_type:law_state_atheism
-		}
+		else = { activate_law = law_type:law_state_atheism	}
 		activate_law = law_type:law_secret_police
 		activate_law = law_type:law_command_economy
 		activate_law = law_type:law_isolationism
