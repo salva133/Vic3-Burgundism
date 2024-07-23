@@ -54,5 +54,8 @@ burgund.1 = {
 	option = {
 		default_option = yes
 		name = burgund.1.b
+		ai_chance = {
+			base = 100
+		}
 	}
 }
