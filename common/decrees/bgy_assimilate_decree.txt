@@ -14,6 +14,7 @@ decree_genocide_suppression = {
 	unlocking_technologies = {
 		standing_army
 		centralization
+		political_agitation
 	}
 
 	valid = {
