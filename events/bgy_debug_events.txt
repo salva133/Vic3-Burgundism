@@ -50,7 +50,9 @@ burgund.1 = {
 			set_ideology = ideology:ideology_bgy_burgundist_leader
 		}
 	}
+
 	option = {
+		default_option = yes
 		name = burgund.1.b
 	}
 }
