@@ -11,7 +11,7 @@
 	}
 
 	enable = {
-		game_date > 1880.1.1
+		game_date > 1919.1.1
 		has_technology_unlocked = political_agitation
 	}
 
