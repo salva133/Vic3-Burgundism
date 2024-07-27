@@ -12,15 +12,6 @@ burgundist_party = {
 			# }
 			### End of Template ###
 			triggered_desc = {
-				desc = party_islamic
-				trigger = {
-					OR = {
-						country_has_state_religion = rel:sunni
-						country_has_state_religion = rel:shia
-					}
-				}
-			}
-			triggered_desc = {
 				desc = party_panslawizm
 				trigger = {
 					OR = {
