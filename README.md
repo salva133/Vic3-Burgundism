@@ -1,7 +1,7 @@
 # Burgundism Mod for Victoria 3
 ## Overview
 
-The Burgundism Mod introduces a new ideological faction and corresponding governmental structures, laws, and characters into Victoria 3. This mod provides an alternative historical path featuring the Burgundist ideology, characterized by its unique blend of autocracy, technocracy, and militarism.
+The Burgundism Mod introduces a new ideological faction and corresponding governmental structures, laws, and characters into Victoria 3. This mod provides an additional path featuring the Burgundist ideology, characterized by its unique blend of autocracy, technocracy, and militarism.
 ## Features
 ### New Ideologies and Government Types
 - Burgundist Power Structure: Approves of presidential republics and single-party states, while opposing monarchy and theocracy​
@@ -12,7 +12,8 @@ The Burgundism Mod introduces a new ideological faction and corresponding govern
 
 ### Laws
 - Spartanism: Reduces worker protections and birth rates while increasing adult working ratios. Requires political agitation technology to unlock​
-- Outlawed Dissent: Allows strict state management of dissent and free speech​
+- Kleptocracy: Raise insanely high taxes on your citizens and make them bleed.
+- Total War Army Model: If it comes to the worst, everyone who can even hold a rifle must be... persuaded to do so.
 
 ### Characters
 - Gebhard Himmler: A historical character with South German culture and Catholic religion​
@@ -31,4 +32,4 @@ The Burgundism Mod introduces a new ideological faction and corresponding govern
 
 ## Compatibility
 
-    This mod is compatible with Victoria 3 version [Your Game Version].
+    This mod is compatible with Victoria 3 version 1.7.6.
