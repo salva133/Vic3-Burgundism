@@ -38,6 +38,8 @@
 		law_national_militia = disapprove
 		law_mass_conscription = strongly_approve
 		law_professional_army = neutral
+		law_full_disarmament = strongly_disapprove
+		law_bgy_total_war = approve
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_approve
