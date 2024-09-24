@@ -4,9 +4,7 @@
 	
 	progressiveness = 0
 	
-	unlocking_technologies = {
-		political_agitation
-	}
+	unlocking_technologies = { political_agitation }
 
 	unlocking_laws = {
 		law_autocracy
