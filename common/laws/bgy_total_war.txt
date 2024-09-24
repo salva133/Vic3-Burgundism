@@ -5,6 +5,13 @@ law_bgy_total_war = {
 	progressiveness = 0
 	
 	unlocking_technologies = { enlistment_offices mass_propaganda }
+
+	unlocking_laws = {
+		law_autocracy
+		law_oligarchy
+		law_single_party_state
+		law_technocracy
+	}
 	
 	modifier = {
 		unit_morale_loss_mult = 0.10
