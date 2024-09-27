@@ -14,7 +14,7 @@ burgundist_party = {
 
 			# Eastern Europe
 			triggered_desc = {
-				desc = party_panslawizm
+				desc = party_bgy_slavics
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:polish
@@ -25,7 +25,7 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_slavyanofily
+				desc = party_bgy_russians
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:russian
@@ -35,7 +35,7 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_savez_yug
+				desc = party_bgy_yugos
 				trigger = {
 					exists = c:YUG
 					THIS = c:YUG
@@ -43,13 +43,13 @@ burgundist_party = {
 			}
 			# British and Celtic region
 			triggered_desc = {
-				desc = party_gaelic_league
+				desc = party_bgy_irish
 				trigger = {
 					country_has_primary_culture = cu:irish
 				}
 			}
 			triggered_desc = {
-				desc = party_celtic_rebirth
+				desc = party_bgy_brits
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:british
@@ -61,19 +61,19 @@ burgundist_party = {
 			}
 			# North America
 			triggered_desc = {
-				desc = party_societe
+				desc = party_bgy_fra-canadians
 				trigger = {
 					country_has_primary_culture = cu:anglo_canadian
 				}
 			}
 			triggered_desc = {
-				desc = party_loyalists
+				desc = party_bgy_ang-canadians
 				trigger = {
 					country_has_primary_culture = cu:franco_canadian
 				}
 			}
 			triggered_desc = {
-				desc = party_aryan
+				desc = party_bgy_americans
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:yankee
@@ -83,7 +83,7 @@ burgundist_party = {
 			}
 			# German Sphere
 			triggered_desc = {
-				desc = party_thule_soc
+				desc = party_bgy_germans
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:north_german
@@ -93,7 +93,7 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_schutzstaffel
+				desc = party_bgy_burgundians
 				trigger = {
 					country_has_primary_culture = cu:burgundian
 					country_has_state_religion = rel:spartanist

@@ -2,19 +2,19 @@
 
 # Burgundist Parties
 ## Eastern Europe
-  party_panslawizm: "Panslawizm"
-  party_slavyanofily: "Slavyanofily"
-  party_savez_yug: "Savez za obnovu Jugoslavije"
+  party_bgy_slavics: "Panslawizm"
+  party_bgy_russians: "Slavyanofily"
+  party_bgy_yugos: "Savez za obnovu Jugoslavije"
 ## British and Celtic region
-  party_gaelic_league: "Gaelic League"
-  party_celtic_rebirth: "Celtic Rebirth"
+  party_bgy_irish: "Gaelic League"
+  party_bgy_brits: "Celtic Rebirth"
 ## North America
-  party_aryan: "Aryan Union"
-  party_societe: "Société de Frontenac"
-  party_loyalists: "Loyalist Union"
+  party_bgy_americans: "Aryan Union"
+  party_bgy_fra-canadians: "Société de Frontenac"
+  party_bgy_ang-canadians: "Loyalist Union"
 ## German Sphere
-  party_thule_soc: "Thule Society"
-  party_schutzstaffel: "Schutzstaffel des Reichsführer-SS"
+  party_bgy_germans: "Thule Society"
+  party_bgy_burgundians: "Schutzstaffel des Reichsführer-SS"
   party_bgy_SWI: "Ordenspartei Schwyz"
 ## France
   party_bgy_FRA: "Parti National-Socialiste Bourguignon"
