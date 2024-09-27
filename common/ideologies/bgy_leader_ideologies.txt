@@ -5,8 +5,7 @@ ideology_bgy_burgundist_leader = {
 	character_ideology = yes
 
 	possible = {
-		game_date > 1848.1.1
-		has_technology_unlocked = political_agitation
+		has_technology_unlocked = totalism
 	}
 
 	lawgroup_labor_rights = {
