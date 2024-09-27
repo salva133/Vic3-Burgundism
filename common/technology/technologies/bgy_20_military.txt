@@ -1,35 +1,30 @@
-flamethrowers = {
-	# Increases kill rate (lowers opponent survival rate)
-	era = era_5
-	texture = "gfx/interface/icons/invention_icons/flamethrowers.dds"
-	category = military
-	
-	unlocking_technologies = {	
-		trench_works
-		automatic_machine_guns
-	}
-	modifier = {
-		unit_kill_rate_add = 0.05
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
-
 thinking_of_ending_things = {
-	era = era_5
+	era = era_6
 	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
 	category = military
 
 	unlocking_technologies = {	
 		flamethrowers
+		mobile_armor
+		chemical_warfare
 	}
 
 	modifier = {
 		unit_kill_rate_add = 0.05
 	}
 	
+	ai_weight = {
+		value = 0
+	}
+}
+
+total_war = {
+	era = era_5
+	texture = "gfx/interface/icons/law_icons/total_war.dds"
+	category = military
+
+	unlocking_technologies = { war_propaganda }
+
 	ai_weight = {
 		value = 0
 	}

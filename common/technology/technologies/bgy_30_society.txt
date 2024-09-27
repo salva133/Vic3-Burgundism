@@ -1,5 +1,5 @@
 ﻿totalism = {
-	era = era_5
+	era = era_6
 	texture = "gfx/interface/icons/ig_icons/burgundists.dds"
 	category = society
 
@@ -9,6 +9,7 @@
 
 	unlocking_technologies = {
 		mass_propaganda
+		mass_surveillance
 	}
 
 	ai_weight = {

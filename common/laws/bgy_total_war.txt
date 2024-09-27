@@ -4,7 +4,7 @@ law_bgy_total_war = {
 	
 	progressiveness = 0
 	
-	unlocking_technologies = { enlistment_offices mass_propaganda }
+	unlocking_technologies = { total_war }
 
 	unlocking_laws = {
 		law_autocracy
