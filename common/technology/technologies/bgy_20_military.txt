@@ -7,7 +7,6 @@ flamethrowers = {
 	unlocking_technologies = {	
 		trench_works
 		automatic_machine_guns
-		thinking_of_ending_things
 	}
 	modifier = {
 		unit_kill_rate_add = 0.05
@@ -23,6 +22,10 @@ thinking_of_ending_things = {
 	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
 	category = military
 
+	unlocking_technologies = {	
+		flamethrowers
+	}
+
 	modifier = {
 		unit_kill_rate_add = 0.05
 	}
@@ -31,4 +34,3 @@ thinking_of_ending_things = {
 		value = 0
 	}
 }
-

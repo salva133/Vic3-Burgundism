@@ -11,8 +11,13 @@
 	}
 
 	enable = {
-		game_date > 1919.1.1
-		has_technology_unlocked = political_agitation
+		OR = {
+			has_technology_unlocked = totalism
+			AND = {
+				game_date > 1919.1.1
+				has_technology_unlocked = political_agitation
+			}
+		}
 	}
 
 	# Deprecated; use on_enable effect to assign traits instead
