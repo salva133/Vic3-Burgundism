@@ -34,10 +34,12 @@ mobilization_option_nuke = {
 	upkeep_modifier = {
 		goods_input_oil_add = 10
 	}
+
 	unit_modifier = {
 		unit_kill_rate_add = 9999999.99
 		unit_devastation_mult = 9999999.99
 	}
+
 	ai_weight = {
 		value = 0
 	}
