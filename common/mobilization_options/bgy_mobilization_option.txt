@@ -4,7 +4,7 @@ mobilization_option_nuke = {
 	possible = {
 		market ?= {
 			mg:oil ?= {
-				market_goods_sell_orders > 3000
+				market_goods_sell_orders > 500
 			}
 		}
 	}
