@@ -59,7 +59,19 @@ burgundist_party = {
 					}
 				}
 			}
-			# USA
+			# North America
+			triggered_desc = {
+				desc = party_societe
+				trigger = {
+					country_has_primary_culture = cu:anglo_canadian
+				}
+			}
+			triggered_desc = {
+				desc = party_loyalists
+				trigger = {
+					country_has_primary_culture = cu:franco_canadian
+				}
+			}
 			triggered_desc = {
 				desc = party_aryan
 				trigger = {
