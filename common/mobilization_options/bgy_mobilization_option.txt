@@ -29,9 +29,8 @@ mobilization_option_nuke = {
 		}
 	}
 	
-	unlocking_technologies = {
-		flamethrowers
-	}
+	unlocking_technologies = { thinking_of_ending_things }
+	
 	upkeep_modifier = {
 		goods_input_oil_add = 10
 	}
