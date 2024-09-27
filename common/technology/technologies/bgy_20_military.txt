@@ -9,3 +9,26 @@ flamethrowers = {
 		automatic_machine_guns
 		thinking_of_ending_things
 	}
+	modifier = {
+		unit_kill_rate_add = 0.05
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+thinking_of_ending_things = {
+	era = era_5
+	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
+	category = military
+
+	modifier = {
+		unit_kill_rate_add = 0.05
+	}
+	
+	ai_weight = {
+		value = 0
+	}
+}
+
