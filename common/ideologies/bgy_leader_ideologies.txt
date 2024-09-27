@@ -10,21 +10,21 @@ ideology_bgy_burgundist_leader = {
 	}
 
 	lawgroup_labor_rights = {
-		law_no_workers_rights = approve
-		law_regulatory_bodies = strongly_disapprove
-		law_worker_protections = strongly_disapprove
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = disapprove
+		law_worker_protections = disapprove
 		law_bgy_spartanism = strongly_approve
 	}
 	lawgroup_free_speech = {
 		law_mym_managed_free_speech = strongly_approve
-		law_outlawed_dissent = strongly_approve
+		law_outlawed_dissent = approve
 		law_censorship = neutral
 		law_right_of_assembly = strongly_disapprove
 		law_protected_speech = strongly_disapprove
 	}
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_approve
-		law_national_supremacy = strongly_disapprove
+		law_national_supremacy = neutral
 		law_racial_segregation = strongly_disapprove
 		law_cultural_exclusion = strongly_disapprove
 		law_multicultural = strongly_disapprove
