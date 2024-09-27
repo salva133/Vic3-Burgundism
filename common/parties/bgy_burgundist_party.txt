@@ -41,7 +41,7 @@ burgundist_party = {
 					THIS = c:YUG
 				}
 			}
-			# The British and Celtic region
+			# British and Celtic region
 			triggered_desc = {
 				desc = party_gaelic_league
 				trigger = {
@@ -88,7 +88,7 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_ordenspartei
+				desc = party_bgy_SWI
 				trigger = {
 					exists = c:SWI
 					THIS = c:SWI
@@ -96,13 +96,13 @@ burgundist_party = {
 			}
 			# France
 			triggered_desc = {
-				desc = party_pnsb
+				desc = party_bgy_FRA
 				trigger = {
 					exists = c:FRA
 					THIS = c:FRA
 				}
 			}
-
+			# Latin America
 			triggered_desc = {
 				desc = party_bgy_MEX
 				trigger = {
