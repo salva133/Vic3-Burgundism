@@ -15,7 +15,7 @@
 
 	institution = institution_workplace_safety
 	institution_modifier = {
-		building_minimum_wage_mult = -0.99
+		building_minimum_wage_mult = -0.20
 	}
 	
 	on_enact = {
