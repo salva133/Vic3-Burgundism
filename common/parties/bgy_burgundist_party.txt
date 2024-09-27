@@ -11,6 +11,8 @@ burgundist_party = {
 			# 	}
 			# }
 			### End of Template ###
+
+			# Eastern Europe
 			triggered_desc = {
 				desc = party_panslawizm
 				trigger = {
@@ -33,6 +35,14 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
+				desc = party_savez_yug
+				trigger = {
+					exists = c:YUG
+					THIS = c:YUG
+				}
+			}
+			# The British and Celtic region
+			triggered_desc = {
 				desc = party_gaelic_league
 				trigger = {
 					country_has_primary_culture = cu:irish
@@ -49,6 +59,7 @@ burgundist_party = {
 					}
 				}
 			}
+			# USA
 			triggered_desc = {
 				desc = party_aryan
 				trigger = {
@@ -58,12 +69,14 @@ burgundist_party = {
 					}
 				}
 			}
+			# German Sphere
 			triggered_desc = {
 				desc = party_thule_soc
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:burgundian
 					}
 				}
 			}
@@ -81,6 +94,7 @@ burgundist_party = {
 					THIS = c:SWI
 				}
 			}
+			# France
 			triggered_desc = {
 				desc = party_pnsb
 				trigger = {
@@ -88,11 +102,75 @@ burgundist_party = {
 					THIS = c:FRA
 				}
 			}
+
 			triggered_desc = {
-				desc = party_savez_yug
+				desc = party_bgy_MEX
 				trigger = {
-					exists = c:YUG
-					THIS = c:YUG
+					exists = c:MEX
+					THIS = c:MEX
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_CLM
+				trigger = {
+					exists = c:CLM
+					THIS = c:CLM
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_ARG
+				trigger = {
+					exists = c:ARG
+					THIS = c:ARG
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_PEU
+				trigger = {
+					exists = c:PEU
+					THIS = c:PEU
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_CHL
+				trigger = {
+					exists = c:CHL
+					THIS = c:CHL
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_VNZ
+				trigger = {
+					exists = c:VNZ
+					THIS = c:VNZ
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_BRZ
+				trigger = {
+					exists = c:BRZ
+					THIS = c:BRZ
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_GUA
+				trigger = {
+					exists = c:GUA
+					THIS = c:GUA
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_PRG
+				trigger = {
+					exists = c:PRG
+					THIS = c:PRG
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_URU
+				trigger = {
+					exists = c:URU
+					THIS = c:URU
 				}
 			}
 			triggered_desc = {
