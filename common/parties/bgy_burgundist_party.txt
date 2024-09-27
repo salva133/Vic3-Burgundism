@@ -11,8 +11,10 @@ burgundist_party = {
 			# 	}
 			# }
 			### End of Template ###
+
+			# Eastern Europe
 			triggered_desc = {
-				desc = party_panslawizm
+				desc = party_bgy_slavics
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:polish
@@ -23,7 +25,7 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_slavyanofily
+				desc = party_bgy_russians
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:russian
@@ -33,13 +35,21 @@ burgundist_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_gaelic_league
+				desc = party_bgy_yugos
+				trigger = {
+					exists = c:YUG
+					THIS = c:YUG
+				}
+			}
+			# British and Celtic region
+			triggered_desc = {
+				desc = party_bgy_irish
 				trigger = {
 					country_has_primary_culture = cu:irish
 				}
 			}
 			triggered_desc = {
-				desc = party_celtic_rebirth
+				desc = party_bgy_brits
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:british
@@ -49,8 +59,21 @@ burgundist_party = {
 					}
 				}
 			}
+			# North America
 			triggered_desc = {
-				desc = party_aryan
+				desc = party_bgy_fra-canadians
+				trigger = {
+					country_has_primary_culture = cu:anglo_canadian
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_ang-canadians
+				trigger = {
+					country_has_primary_culture = cu:franco_canadian
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_americans
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:yankee
@@ -58,41 +81,108 @@ burgundist_party = {
 					}
 				}
 			}
+			# German Sphere
 			triggered_desc = {
-				desc = party_thule_soc
+				desc = party_bgy_germans
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
+						country_has_primary_culture = cu:burgundian
 					}
 				}
 			}
 			triggered_desc = {
-				desc = party_schutzstaffel
+				desc = party_bgy_burgundians
 				trigger = {
 					country_has_primary_culture = cu:burgundian
 					country_has_state_religion = rel:spartanist
 				}
 			}
 			triggered_desc = {
-				desc = party_ordenspartei
+				desc = party_bgy_SWI
 				trigger = {
 					exists = c:SWI
 					THIS = c:SWI
 				}
 			}
+			# France
 			triggered_desc = {
-				desc = party_pnsb
+				desc = party_bgy_FRA
 				trigger = {
 					exists = c:FRA
 					THIS = c:FRA
 				}
 			}
+			# Latin America
 			triggered_desc = {
-				desc = party_savez_yug
+				desc = party_bgy_MEX
 				trigger = {
-					exists = c:YUG
-					THIS = c:YUG
+					exists = c:MEX
+					THIS = c:MEX
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_CLM
+				trigger = {
+					exists = c:CLM
+					THIS = c:CLM
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_ARG
+				trigger = {
+					exists = c:ARG
+					THIS = c:ARG
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_PEU
+				trigger = {
+					exists = c:PEU
+					THIS = c:PEU
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_CHL
+				trigger = {
+					exists = c:CHL
+					THIS = c:CHL
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_VNZ
+				trigger = {
+					exists = c:VNZ
+					THIS = c:VNZ
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_BRZ
+				trigger = {
+					exists = c:BRZ
+					THIS = c:BRZ
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_GUA
+				trigger = {
+					exists = c:GUA
+					THIS = c:GUA
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_PRG
+				trigger = {
+					exists = c:PRG
+					THIS = c:PRG
+				}
+			}
+			triggered_desc = {
+				desc = party_bgy_URU
+				trigger = {
+					exists = c:URU
+					THIS = c:URU
 				}
 			}
 			triggered_desc = {

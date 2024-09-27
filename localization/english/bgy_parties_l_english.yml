@@ -1,18 +1,36 @@
 ﻿l_english:
 
 # Burgundist Parties
+## Eastern Europe
+  party_bgy_slavics: "Panslawizm"
+  party_bgy_russians: "Slavyanofily"
+  party_bgy_yugos: "Savez za obnovu Jugoslavije"
+## British and Celtic region
+  party_bgy_irish: "Gaelic League"
+  party_bgy_brits: "Celtic Rebirth"
+## North America
+  party_bgy_americans: "Aryan Union"
+  party_bgy_fra-canadians: "Société de Frontenac"
+  party_bgy_ang-canadians: "Loyalist Union"
+## German Sphere
+  party_bgy_germans: "Thule Society"
+  party_bgy_burgundians: "Schutzstaffel des Reichsführer-SS"
+  party_bgy_SWI: "Ordenspartei Schwyz"
+## France
+  party_bgy_FRA: "Parti National-Socialiste Bourguignon"
+## Latin America
+  party_bgy_MEX: "Liga de Iturbide"
+  party_bgy_CLM: "Sociedad de Bolívar"
+  party_bgy_ARG: "Partido Restaurador de Rosas"
+  party_bgy_PEU: "Orden de Gamarra"
+  party_bgy_CHL: "Frente Nacional de Portales"
+  party_bgy_VNZ: "Partido de Páez"
+  party_bgy_BRZ: "Liga Imperial de Pedro I"
+  party_bgy_GUA: "Frente Nacional de Carrera"
+  party_bgy_PRG: "Unión Nacional de Francia"
+  party_bgy_URU: "Partido de Lavalleja"
+## Default
   party_burgundist: "Burgundist Party"
-  party_ordenspartei: "Ordenspartei Schwyz"
-  party_pnsb: "Parti National-Socialiste Bourguignon"
-  party_schutzstaffel: "Schutzstaffel des Reichsführer-SS"
-  party_savez_yug: "Savez za obnovu Jugoslavije"
-  party_aryan: "Aryan Union"
-  party_celtic_rebirth: "Celtic Rebirth"
-  party_gaelic_league: "Gaelic League"
-  party_thule_soc: "Thule Society"
-  party_slavyanofily: "Slavyanofily"
-  party_panslawizm: "Panslawizm"
-  party_islamic: "Islamic Brotherhood"
 
 
 # Party weight descriptions
