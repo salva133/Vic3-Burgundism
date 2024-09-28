@@ -1,48 +1,48 @@
-mobilization_option_nuke = {
-	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
+# mobilization_option_nuke = {
+# 	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
 
-	possible = {
-		market ?= {
-			mg:oil ?= {
-				market_goods_sell_orders > 500
-			}
-		}
-	}
+# 	possible = {
+# 		market ?= {
+# 			mg:oil ?= {
+# 				market_goods_sell_orders > 500
+# 			}
+# 		}
+# 	}
 	
-	on_activate_while_mobilized = {
-		custom_tooltip = {
-			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
-			add_organization = {
-				value = organization
-				multiply = -0.9
-			}
-		}
-	}
+# 	on_activate_while_mobilized = {
+# 		custom_tooltip = {
+# 			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+# 			add_organization = {
+# 				value = organization
+# 				multiply = -0.9
+# 			}
+# 		}
+# 	}
 	
-	on_deactivate = {
-		custom_tooltip = {
-			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
-			add_organization = {
-				value = organization
-				multiply = -0.5
-			}
-		}
-	}
+# 	on_deactivate = {
+# 		custom_tooltip = {
+# 			text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+# 			add_organization = {
+# 				value = organization
+# 				multiply = -0.5
+# 			}
+# 		}
+# 	}
 	
-	unlocking_technologies = { thinking_of_ending_things }
+# 	unlocking_technologies = { thinking_of_ending_things }
 
-	upkeep_modifier = {
-		goods_input_oil_add = 10
-	}
+# 	upkeep_modifier = {
+# 		goods_input_oil_add = 10
+# 	}
 
-	unit_modifier = {
-		unit_kill_rate_add = 999.99
-		unit_devastation_mult = 999.99
-	}
+# 	unit_modifier = {
+# 		unit_kill_rate_add = 999.99
+# 		unit_devastation_mult = 999.99
+# 	}
 
-	ai_weight = {
-		value = 0
-	}
+# 	ai_weight = {
+# 		value = 0
+# 	}
 
-    group = special_weapons
-}
+#     group = special_weapons
+# }
