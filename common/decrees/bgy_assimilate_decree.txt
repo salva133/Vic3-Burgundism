@@ -25,9 +25,10 @@ decree_genocide_suppression = {
 
 	modifier = {
 		state_turmoil_effects_mult = 1
-        state_radicals_from_discrimination_mult = 10
-        state_mortality_mult = 10
-        state_accepted_birth_rate_mult = 20
+		# state_non_accepted_mortality_mult = 10
+    state_radicals_from_discrimination_mult = 10
+    state_mortality_mult = 10
+    state_accepted_birth_rate_mult = 20
 	}
 
 	cost = 100
@@ -76,7 +77,7 @@ decree_assimilate_values = {
 	modifier = {
 		state_assimilation_mult = 10
 		state_conversion_mult = 10
-		# state_non_accepted_mortality_mult = 50
+		# state_non_accepted_mortality_mult = 2
 	    state_accepted_birth_rate_mult = 2
 	    state_birth_rate_mult = -1
         state_mortality_mult = 1
