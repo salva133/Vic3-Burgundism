@@ -43,6 +43,7 @@ decree_genocide_suppression = {
         country_secession_progress_mult = 0.5
         state_mortality_mult = 100
         state_accepted_birth_rate_mult = 88.88
+		# state_non_accepted_mortality_mult = 10
 	}
 
 	cost = 100
@@ -91,7 +92,7 @@ decree_assimilate_values = {
 	modifier = {
 		state_assimilation_mult = 10
 		state_conversion_mult = 10
-		# state_non_accepted_mortality_mult = 50
+		# state_non_accepted_mortality_mult = 2
 	    state_accepted_birth_rate_mult = 2
 	    state_birth_rate_mult = -1
         state_mortality_mult = 1
