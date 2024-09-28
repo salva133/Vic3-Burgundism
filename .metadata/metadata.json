@@ -1,12 +1,12 @@
 {
   "name" : "Burgundism",
-	"id" : "",
+	"id" : "3339182301",
   "version" : "1.1.2",
   "supported_game_version" : "1.7.*",
   "short_description" : "",
   "tags" : [],
   "relationships" : [],
   "game_custom_data" : {
-    "multiplayer_synchronized" : true
+    "multiplayer_synchronized" : false
   }
 }

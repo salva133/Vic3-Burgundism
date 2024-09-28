@@ -23,13 +23,3 @@ The Burgundism Mod introduces a new ideological faction and corresponding govern
 ### Interest Groups and Parties
 - Burgundist Party: Available in multiple countries with specific conditions and effects. It serves as the primary political vehicle for the Burgundist ideology​
 - Burgundist Interest Group: Represents various social strata, including officers, soldiers, and middle-class professionals, and is activated post-1905​
-
-## Installation
-
-    Download the mod files.
-    Extract the files into the mod directory of your Victoria 3 installation.
-    Activate the mod in the Victoria 3 launcher.
-
-## Compatibility
-
-    This mod is compatible with Victoria 3 version 1.7.6.
