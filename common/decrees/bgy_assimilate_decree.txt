@@ -1,53 +1,53 @@
-# decree_genocide_suppression = {
+decree_genocide_suppression = {
 
-# 	texture = "gfx/interface/icons/decree/geno_wojak.dds"		
+	texture = "gfx/interface/icons/decree/geno_wojak.dds"		
 
-# 	valid = {
-# 		owner = {
-# 			has_technology_researched = totalism
-# 			OR = {
-# 				has_law = law_type:law_national_guard
-# 				has_law = law_type:law_secret_police
-# 			}
-# 			OR = {
-# 				has_law = law_type:law_ethnostate
-# 				has_law = law_type:law_national_supremacy
-# 			} 
-# 			any_scope_pop = {
-# 				pop_is_discriminated = yes
-# 				OR = {
-# 					culture_accepted = no
-# 					religion_accepted = no
-# 				}
-# 			}
-# 		}
-# 	}
+	valid = {
+		owner = {
+			has_technology_researched = totalism
+			OR = {
+				has_law = law_type:law_national_guard
+				has_law = law_type:law_secret_police
+			}
+			OR = {
+				has_law = law_type:law_ethnostate
+				has_law = law_type:law_national_supremacy
+			} 
+			any_scope_pop = {
+				pop_is_discriminated = yes
+				OR = {
+					culture_accepted = no
+					religion_accepted = no
+				}
+			}
+		}
+	}
 
-# 	modifier = {
-# 		state_turmoil_effects_mult = 1
-# 		# state_non_accepted_mortality_mult = 10
-#     state_radicals_from_discrimination_mult = 10
-#     state_mortality_mult = 10
-#     state_accepted_birth_rate_mult = 20
-# 	}
+	modifier = {
+		state_turmoil_effects_mult = 1
+		# state_non_accepted_mortality_mult = 10
+		state_radicals_from_discrimination_mult = 10
+		state_mortality_mult = 10
+		state_accepted_birth_rate_mult = 20
+	}
 
-# 	cost = 100
+	cost = 100
 	
-# 	ai_weight = {
-# 		value = 0
-	
-# 		if = {
-# 			limit = {
-# 				exists = ruler
-# 				ruler = {
-# 					has_ideology = ideology:ideology_bgy_burgundist_leader
-# 				}
-# 			}
-# 			value = 1000
-# 		}
-# 	}
+	ai_weight = {
+		value = 0
 
-# }
+		# if = {
+		# 	limit = {
+		# 		exists = ruler
+		# 		ruler = {
+		# 			has_ideology = ideology:ideology_bgy_burgundist_leader
+		# 		}
+		# 	}
+		# 	value = 1000
+		# }
+
+	}
+}
 
 decree_assimilate_values = {
 
