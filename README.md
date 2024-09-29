@@ -19,6 +19,9 @@ The Burgundism Mod introduces the well-known ideological faction and correspondi
 - Kleptocracy: If people don't want luxury, they don't need more money.
 - Total War Army Model: If it comes to the worst, everyone who can even hold a rifle must be... persuaded to do so.
 
+[h3] Decrees [/h3]
+- two rather known decrees, rebalanced
+
 [h3] Interest Groups and Parties [/h3]
 - Burgundist Party: Available for multiple countries with flavored names.
 - Burgundist Interest Group: Represents various social strata, including officers, soldiers, and middle-class professionals. It serves as the primary political vehicle for the Burgundist ideology​ and will become available as soon as 
@@ -35,7 +38,6 @@ The Burgundism Mod introduces the well-known ideological faction and correspondi
 [h2] Planned Features and Changes: [/h2]
 - unique characters (are implemented in-code but not actually working)
 - decree balancing
-- new decree (but I won't tell, STRENG GEHEIM!)
 - institution balancing
 - special weapons
 
