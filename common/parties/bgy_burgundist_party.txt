@@ -196,7 +196,7 @@ burgundist_party = {
 
 	icon = { default = "gfx/interface/icons/political_parties/party_burgundist.dds" }
 
-	unlocking_technologies = { political_agitation }
+	unlocking_technologies = { totalism }
 
 	available_for_interest_group = {
 		owner = { country_has_voting_franchise = yes }
