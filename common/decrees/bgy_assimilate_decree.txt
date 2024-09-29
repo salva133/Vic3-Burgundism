@@ -77,10 +77,15 @@ decree_assimilate_values = {
 	modifier = {
 		state_assimilation_mult = 10
 		state_conversion_mult = 10
+		if = {
+			limit = {
+				is_accepted_culture = no
+			}
+			state_mortality_mult = 1
+		}
 		# state_non_accepted_mortality_mult = 2
 	    state_accepted_birth_rate_mult = 2
 	    state_birth_rate_mult = -1
-        state_mortality_mult = 1
 	}
 
 	cost = 100
