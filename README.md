@@ -20,7 +20,7 @@ The Burgundism Mod introduces the well-known ideological faction and correspondi
 - Total War Army Model: If it comes to the worst, everyone who can even hold a rifle must be... persuaded to do so.
 
 [h3] Decrees [/h3]
-- two rather known decrees, rebalanced
+- two rather known decrees, rebalanced (kudos to https://steamcommunity.com/id/colonelnegative)
 
 [h3] Interest Groups and Parties [/h3]
 - Burgundist Party: Available for multiple countries with flavored names.
