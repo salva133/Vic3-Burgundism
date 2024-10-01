@@ -48,4 +48,4 @@ Can have issues with mods that adapt:
 - techs
 
 
-[url=https://github.com/salva133/Vic3-Burgundism][img]https://logos-world.net/wp-content/uploads/2020/11/GitHub-Emblem.png[/img][/url]
+[url=https://github.com/salva133/Vic3-Burgundism]GitHub[/url]
