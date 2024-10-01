@@ -21,6 +21,9 @@ decree_genocide_suppression = {
 				}
 			}
 		}
+		NOT = {
+			has_decree = decree_assimilate_values
+		}
 	}
 
 	modifier = {
@@ -72,6 +75,9 @@ decree_assimilate_values = {
 				culture_accepted = no
 				religion_accepted = no
 			}
+		}
+		NOT = {
+			has_decree = decree_genocide_suppression
 		}
 	}
 
