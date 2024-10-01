@@ -40,15 +40,14 @@ decree_genocide_suppression = {
 	ai_weight = {
 		value = 0
 
-		# if = {
-		# 	limit = {
-		# 		exists = ruler
-		# 		ruler = {
-		# 			has_ideology = ideology:ideology_bgy_burgundist_leader
-		# 		}
-		# 	}
-		# 	value = 1000
-		# }
+		if = {
+			limit = {
+				scope:country = {
+					has_strategy = ai_strategy_burgundism
+				}
+			}
+			add = 200
+		}
 
 	}
 }
@@ -112,7 +111,7 @@ decree_assimilate_values = {
 				}
 			}
 			add = 200
-		}		
+		}
 		if = {
 			limit = {
 				state_population < 100000
