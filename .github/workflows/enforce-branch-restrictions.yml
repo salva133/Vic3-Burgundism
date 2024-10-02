@@ -1,4 +1,4 @@
-﻿name: Enforce PR Branch Rules
+name: Enforce PR Branch Rules
 
 on:
   pull_request:
