@@ -1,0 +1,25 @@
+name: Enforce PR Branch Rules
+
+on:
+  pull_request:
+    branches:
+      - release      # Prüft PRs, die in den "release"-Branch gehen
+      - releasing    # Prüft PRs, die in den "releasing"-Branch gehen
+
+jobs:
+  check_release_branch:
+    runs-on: ubuntu-latest
+    if: github.base_ref == 'release'  # Triggert diesen Job nur für PRs auf den "release"-Branch
+    steps:
+      - name: Check if PR is from 'releasing'
+        if: github.head_ref != 'releasing'  # Prüft, ob der Quell-Branch nicht "releasing" ist
+        run: |
+          echo "Pull requests to 'release' are only allowed from 'releasing'."
+          exit 1
+
+  allow_to_releasing:
+    runs-on: ubuntu-latest
+    if: github.base_ref == 'releasing'  # Triggert diesen Job nur für PRs auf den "releasing"-Branch
+    steps:
+      - name: Allow PR to 'releasing'
+        run: echo "Pull request to 'releasing' allowed."  # Zulässt, dass in "releasing" gemerged wird
