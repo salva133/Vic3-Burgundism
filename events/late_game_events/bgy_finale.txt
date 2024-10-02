@@ -1,36 +1,36 @@
-namespace = bgy_events
+# namespace = bgy_events
 
-finale.1 = {
-	type = state_event
-	placement = root
-	title = finale.1.t
-	desc = finale.1.d
-	flavor = finale.1.f
+# finale.1 = {
+# 	type = state_event
+# 	placement = root
+# 	title = finale.1.t
+# 	desc = finale.1.d
+# 	flavor = finale.1.f
 
-	duration = 1
+# 	duration = 1
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	trigger = {
+# 	trigger = {
 		
-	}
+# 	}
 
-	immediate = {
+# 	immediate = {
 
-	}
+# 	}
 
-	option = {
-		name = finale.1.a 
-		default_option = yes
+# 	option = {
+# 		name = finale.1.a 
+# 		default_option = yes
 
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
-	}
-}
+# 		every_state = {
+# 			limit = { NOT = { owner = c:BGY } }
+# 			state_region = {
+# 				add_devastation = 90
+# 			}
+# 			kill_population_percent_in_state = {
+# 				percent = 0.95
+# 			}
+# 		}
+# 	}
+# }
