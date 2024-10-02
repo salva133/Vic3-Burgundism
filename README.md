@@ -21,6 +21,7 @@ The Burgundism Mod introduces the well-known ideological faction and correspondi
 
 [h3] Decrees [/h3]
 - two rather known decrees, rebalanced (kudos to https://steamcommunity.com/id/colonelnegative)
+- two rather known decrees, rebalanced (kudos to https://steamcommunity.com/id/colonelnegative)
 
 [h3] Interest Groups and Parties [/h3]
 - Burgundist Party: Available for multiple countries with flavored names.
@@ -36,9 +37,7 @@ The Burgundism Mod introduces the well-known ideological faction and correspondi
 - introducing some tech, more to gatekeep the burgundian stuff not to get launched into the world too fast. The world may not be prepared for the glory of the black sun that early.
 
 [h2] Planned Features and Changes: [/h2]
-- unique characters (are implemented in-code but not actually working)
-- decree balancing
-- institution balancing
+- unique characters (are implemented in-code but not fully working)
 - special weapons
 
 [h2] Compatibility [/h2]
