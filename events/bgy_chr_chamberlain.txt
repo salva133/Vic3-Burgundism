@@ -1,57 +1,57 @@
-namespace = bgy_characters
+# namespace = bgy_characters
 
-chamberlain_event.1 = {
-	type = country_event
-	placement = root
-	title = chamberlain_event.1.t
-	desc = chamberlain_event.1.d
-	flavor = chamberlain_event.1.f
+# chamberlain_event.1 = {
+# 	type = country_event
+# 	placement = root
+# 	title = chamberlain_event.1.t
+# 	desc = chamberlain_event.1.d
+# 	flavor = chamberlain_event.1.f
 
-	duration = 1
+# 	duration = 1
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	trigger = {
-		game_date > 1888
-		NOT = { has_variable = houston_chamberlain_var }
-		exists = c:GER
-	}
+# 	trigger = {
+# 		game_date > 1888
+# 		NOT = { has_variable = houston_chamberlain_var }
+# 		exists = c:GER
+# 	}
 
-	immediate = {
-		random_country_scope = {
-			limit = { scope:country = { c:GER ?= this } }
-			create_character  = {
-				template = houston_chamberlain_character_template
-				on_created = {
-					set_variable = houston_chamberlain_var
-				}
-			}
-		}
-	}
-}
+# 	immediate = {
+# 		random_country_scope = {
+# 			limit = { scope:country = { c:GER ?= this } }
+# 			create_character  = {
+# 				template = houston_chamberlain_character_template
+# 				on_created = {
+# 					set_variable = houston_chamberlain_var
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-chamberlain_event.2 = {
-	type = country_event
-	placement = root
-	title = chamberlain_event.1.t
-	desc = chamberlain_event.1.d
-	flavor = chamberlain_event.1.f
+# chamberlain_event.2 = {
+# 	type = country_event
+# 	placement = root
+# 	title = chamberlain_event.1.t
+# 	desc = chamberlain_event.1.d
+# 	flavor = chamberlain_event.1.f
 
-	duration = 1
+# 	duration = 1
 
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	trigger = {
-		game_date > 1927.1.9
-		random_character_scope = {
-			has_variable = houston_chamberlain_var
-		}
-	}
+# 	trigger = {
+# 		game_date > 1927.1.9
+# 		random_character_scope = {
+# 			has_variable = houston_chamberlain_var
+# 		}
+# 	}
 
-	immediate = {
-		random_character_scope = {
-			limit = { has_variable = houston_chamberlain_var }
-			kill_character = yes
-		}
-	}
-}
+# 	immediate = {
+# 		random_character_scope = {
+# 			limit = { has_variable = houston_chamberlain_var }
+# 			kill_character = yes
+# 		}
+# 	}
+# }
