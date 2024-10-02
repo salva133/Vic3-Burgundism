@@ -1,0 +1,16 @@
+﻿name: Enforce PR Branch
+
+on:
+  pull_request:
+    branches:
+      - release  # Der Branch, in den du PRs einschränken möchtest
+
+jobs:
+  check_source_branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if PR is from the allowed branch
+        if: github.base_ref != 'releasing' # Der erlaubte Quell-Branch
+        run: |
+          echo "Pull requests are only allowed from 'releasing'."
+          exit 1
