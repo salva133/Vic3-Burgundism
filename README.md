@@ -21,6 +21,7 @@ The Burgundism Mod introduces the well-known ideological faction and correspondi
 
 [h3] Decrees [/h3]
 - two rather known decrees, rebalanced (kudos to https://steamcommunity.com/id/colonelnegative)
+- two rather known decrees, rebalanced (kudos to https://steamcommunity.com/id/colonelnegative)
 
 [h3] Interest Groups and Parties [/h3]
 - Burgundist Party: Available for multiple countries with flavored names.
