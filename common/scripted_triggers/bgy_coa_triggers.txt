@@ -1,9 +1,15 @@
+coa_no_elections_trigger = {
+	OR = {
+		has_law = law_autocracy
+		has_law = law_oligarchy
+		has_law = law_technocracy
+		has_law = law_single_party_state
+	}
+}
+
 coa_burgundist_trigger = {
 	coa_republic_trigger = yes
-	OR = {
-		coa_autocracy_trigger = yes
-		has_law = law_type:law_technocracy
-    }
+	coa_no_elections_trigger = yes
 	ruler ?= {
 		has_ideology = ideology:ideology_bgy_burgundist_leader
     }
@@ -11,7 +17,6 @@ coa_burgundist_trigger = {
 
 coa_no_free_speech = {
 	NOR = {
-		has_law = law_type:law_censorship
 		has_law = law_type:law_right_of_assembly
 		has_law = law_type:law_protected_speech
 	}
