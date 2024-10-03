@@ -103,7 +103,7 @@ ideology_bgy_burgundist_economy = {
 	}
 }
 ideology_bgy_burgundist_social_structure = {
-icon = "gfx/interface/icons/ig_icons/burgundists.dds"
+	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
 	lawgroup_migration = {

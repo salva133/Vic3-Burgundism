@@ -8,6 +8,7 @@
 		ideology_bgy_burgundist_power_structure
 		ideology_bgy_burgundist_economy
 		ideology_bgy_burgundist_social_structure
+		# ideology_nonexistent
 	}
 
 	# enable = {
@@ -21,21 +22,14 @@
 	# }
 
 	enable = {
-		game_date > 1885.1.1
-		}
-	}
-
-	# Deprecated; use on_enable effect to assign traits instead
-	traits = {
-		ig_trait_patriotic_fervor
-		ig_trait_veteran_consultation
-		ig_trait_materiel_waste
+		always = yes
+		# game_date > 1880.1.1
 	}
 
 	on_enable = {
-		set_ig_trait = ig_trait:ig_trait_materiel_waste
-		set_ig_trait = ig_trait:ig_trait_veteran_consultation
-		set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+		# set_ig_trait = ig_trait:ig_trait_materiel_waste
+		# set_ig_trait = ig_trait:ig_trait_veteran_consultation
+		# set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 		if = {
 			limit = {
 				OR = {
@@ -44,25 +38,31 @@
 					country_has_primary_culture = cu:allemanic
 				}
 			}
-			set_interest_group_name = ig_bgy_sebottendorf_society
+			ig_bgy_burgundists = {
+				set_interest_group_name = ig_bgy_voelkische_bewegung
+			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				OR = {
 					country_has_primary_culture = cu:yankee
 					country_has_primary_culture = cu:dixie
 				}
 			}
-			set_interest_group_name = ig_bgy_ku_klux_klan
+			ig_bgy_burgundists = {
+				set_interest_group_name = ig_bgy_ku_klux_klan
+			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				OR = {
 					country_has_state_religion = rel:sunni
 					country_has_state_religion = rel:shia
 				}
 			}
-			set_interest_group_name = ig_bgy_fundamentalists
+			ig_bgy_burgundists = {
+				set_interest_group_name = ig_bgy_fundamentalists
+			}
 		}
 	}
 
@@ -79,51 +79,35 @@
 	
 	pop_potential = {
 		custom_tooltip = {
-			text = would_be_accepted_under_national_supremacy_tt
-			this.culture = {
-				AND = {
-					shares_heritage_trait_with_any_primary_culture = prev.owner
-					shares_non_heritage_trait_with_any_primary_culture = prev.owner
+			text = BGY_VALID_POP_FOR_IG
+			owner = {
+				NAND = {
+					is_country_type = decentralized
+					ig:ig_bgy_burgundists = {
+						NOT = { has_ideology = ideology:ideology_nonexistent }
+					}
 				}
 			}
 		}
-		NOR = {
-			is_pop_type = aristocrats
-			is_pop_type = capitalists
-			is_pop_type = academics
-			is_pop_type = laborers
+		custom_tooltip = {
+			text = bgy_has_researched_totalism_tt
+			owner = { has_technology_researched = totalism }
 		}
-		OR = {
-			is_pop_type = officers
-			is_pop_type = soldiers
-			is_pop_type = farmers
-			is_pop_type = shopkeepers
-			is_pop_type = clerks
-			is_pop_type = machinists
-			pop_employment_building_group = bg_manufacturing
-			pop_employment_building_group = bg_service
-			pop_employment_building_group = bg_urban_facilities
-			pop_employment_building_group = bg_government
-			pop_employment_building_group = bg_logging
-			pop_employment_building_group = bg_mining
-			pop_employment_building_group = bg_fishing
-			pop_employment_building_group = bg_whaling
-			pop_employment_building_group = bg_oil_extraction
-			AND = {
-				custom_tooltip = {
-					text = owner_has_homesteading_tt
-					owner = {
-						OR = {
-							has_law = law_type:law_homesteading
-							has_law = law_type:law_commercialized_agriculture
-						}
-					}
-				}
-				OR = {
-					pop_employment_building_group = bg_agriculture
-					pop_employment_building_group = bg_ranching
-					pop_employment_building_group = bg_plantations
-				}
+		custom_tooltip = {
+			text = bgy_is_middle_strata_tt
+			NOR = {
+				is_pop_type = aristocrats
+				is_pop_type = capitalists
+				is_pop_type = academics
+				is_pop_type = laborers
+			}
+			OR = {
+				is_pop_type = officers
+				is_pop_type = soldiers
+				is_pop_type = shopkeepers
+				is_pop_type = clerks
+				is_pop_type = machinists
+				is_pop_type = engineers
 				strata = middle
 			}
 		}
