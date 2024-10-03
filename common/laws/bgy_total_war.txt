@@ -19,6 +19,7 @@ law_bgy_total_war = {
 		building_training_rate_mult = 0.5
 		state_building_barracks_max_level_add = 200
 		state_building_conscription_center_max_level_add = 1000
+		country_diplomatic_play_maneuvers_add = 5000
 	}
 
 	can_impose = {
