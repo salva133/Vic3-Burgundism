@@ -12,13 +12,40 @@ burgundism.1 = {
 
 	trigger	= {
 		has_technology_researched = totalism
+	}
+
+	option = {
+		name = burgundism.1.a
+
+		ig:ig_bgy_burgundists = {
+			remove_ideology = ideology:ideology_nonexistent
+			add_ideology = ideology:ideology_bgy_burgundist_power_structure
+			add_ideology = ideology:ideology_bgy_burgundist_economy
+			add_ideology = ideology:ideology_bgy_burgundist_social_structure
+		}
+	}
+
+}
+
+burgundism.2 = {
+	type = country_event
+	placement = root
+
+	title = burgundism.2.t
+	desc = burgundism.2.d
+	flavor = burgundism.2.f
+
+	duration = 3
+
+	trigger	= {
+		has_technology_researched = totalism
 		ig:ig_bgy_burgundists = { is_in_government = yes }
 		has_law = law_type:law_ethnostate
 		any_scope_state = {
 			loyalist_fraction = { value >= 0.51 }
 			is_incorporated = yes
 			NOT = {
-				has_decree = decree_genocide_suppression
+				has_decree = decree_true_lag_reduction
 			}
 			any_scope_pop = {
 				pop_is_discriminated = yes
@@ -31,7 +58,7 @@ burgundism.1 = {
 	}
 
 	option = {
-		name = burgundism.1.a
+		name = burgundism.2.a
 
 		add_modifier = {
 			name = burgundistic_progroms
