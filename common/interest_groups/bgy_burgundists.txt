@@ -10,13 +10,18 @@
 		ideology_bgy_burgundist_social_structure
 	}
 
+	# enable = {
+	# 	OR = {
+	# 		has_technology_unlocked = totalism
+	# 		AND = {
+	# 			game_date > 1919.1.1
+	# 			has_technology_unlocked = political_agitation
+	# 		}
+	# 	}
+	# }
+
 	enable = {
-		OR = {
-			has_technology_unlocked = totalism
-			AND = {
-				game_date > 1919.1.1
-				has_technology_unlocked = political_agitation
-			}
+		game_date > 1885.1.1
 		}
 	}
 
