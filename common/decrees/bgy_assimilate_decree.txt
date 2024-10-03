@@ -1,4 +1,4 @@
-decree_genocide_suppression = {
+decree_true_lag_reduction = {
 
 	texture = "gfx/interface/icons/decree/geno_wojak.dds"		
 
@@ -22,7 +22,7 @@ decree_genocide_suppression = {
 			}
 		}
 		NOT = {
-			has_decree = decree_assimilate_values
+			has_decree = decree_lag_reduction
 		}
 	}
 
@@ -52,7 +52,7 @@ decree_genocide_suppression = {
 	}
 }
 
-decree_assimilate_values = {
+decree_lag_reduction = {
 
 	texture = "gfx/interface/icons/decree/decree_violent_suppression.dds"
 
@@ -76,7 +76,7 @@ decree_assimilate_values = {
 			}
 		}
 		NOT = {
-			has_decree = decree_genocide_suppression
+			has_decree = decree_true_lag_reduction
 		}
 	}
 
@@ -166,6 +166,9 @@ decree_homelandoverall_values = {
 				has_law = law_type:law_national_guard
 				has_law = law_type:law_secret_police
 			}
+		}
+		NOT = {
+			has_decree = decree_true_lag_reduction
 		}
 	}
 
