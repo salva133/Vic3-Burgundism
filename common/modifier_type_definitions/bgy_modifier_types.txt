@@ -1,8 +1,0 @@
-country_diplomatic_play_maneuvers_mult={
-	decimals=1
-	color=good
-	percent=yes
-	game_data={
-		ai_value=0
-	}
-}
