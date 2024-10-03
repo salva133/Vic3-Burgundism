@@ -18,10 +18,10 @@ burgundism.1 = {
 		name = burgundism.1.a
 
 		ig:ig_bgy_burgundists = {
-			remove_ideology = ideology:ideology_nonexistent
-			add_ideology = ideology:ideology_bgy_burgundist_power_structure
-			add_ideology = ideology:ideology_bgy_burgundist_economy
-			add_ideology = ideology:ideology_bgy_burgundist_social_structure
+			remove_ideology = ideology_nonexistent
+			add_ideology = ideology_bgy_burgundist_power_structure
+			add_ideology = ideology_bgy_burgundist_economy
+			add_ideology = ideology_bgy_burgundist_social_structure
 		}
 	}
 
