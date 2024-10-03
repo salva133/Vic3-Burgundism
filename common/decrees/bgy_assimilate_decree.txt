@@ -1,4 +1,4 @@
-decree_genocide_suppression = {
+decree_true_lag_reduction = {
 
 	texture = "gfx/interface/icons/decree/geno_wojak.dds"		
 
@@ -21,8 +21,9 @@ decree_genocide_suppression = {
 				}
 			}
 		}
-		NOT = {
-			has_decree = decree_assimilate_values
+		NOR = {
+			has_decree = decree_lag_reduction
+			has_decree = decree_homelandoverall_values
 		}
 	}
 
@@ -52,13 +53,9 @@ decree_genocide_suppression = {
 	}
 }
 
-decree_assimilate_values = {
+decree_lag_reduction = {
 
 	texture = "gfx/interface/icons/decree/decree_violent_suppression.dds"
-
-	unlocking_technologies = {
-		centralization
-	}
 
 	valid = {
 		owner = { 
@@ -75,8 +72,9 @@ decree_assimilate_values = {
 				religion_accepted = no
 			}
 		}
-		NOT = {
-			has_decree = decree_genocide_suppression
+		NOR = {
+			has_decree = decree_true_lag_reduction
+			has_decree = decree_homelandoverall_values
 		}
 	}
 
@@ -155,10 +153,6 @@ decree_homelandoverall_values = {
 
 	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
 
-	unlocking_technologies = {
-		centralization
-	}
-
 	valid = {
 		owner = { 
 			NOT = { has_law = law_type:law_multicultural }
@@ -166,6 +160,10 @@ decree_homelandoverall_values = {
 				has_law = law_type:law_national_guard
 				has_law = law_type:law_secret_police
 			}
+		}
+		NOR = {
+			has_decree = decree_lag_reduction
+			has_decree = decree_true_lag_reduction
 		}
 	}
 
