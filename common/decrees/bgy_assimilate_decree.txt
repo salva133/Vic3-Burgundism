@@ -21,8 +21,9 @@ decree_true_lag_reduction = {
 				}
 			}
 		}
-		NOT = {
+		NOR = {
 			has_decree = decree_lag_reduction
+			has_decree = decree_homelandoverall_values
 		}
 	}
 
@@ -75,8 +76,9 @@ decree_lag_reduction = {
 				religion_accepted = no
 			}
 		}
-		NOT = {
+		NOR = {
 			has_decree = decree_true_lag_reduction
+			has_decree = decree_homelandoverall_values
 		}
 	}
 
@@ -167,7 +169,8 @@ decree_homelandoverall_values = {
 				has_law = law_type:law_secret_police
 			}
 		}
-		NOT = {
+		NOR = {
+			has_decree = decree_lag_reduction
 			has_decree = decree_true_lag_reduction
 		}
 	}
