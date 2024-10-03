@@ -5,7 +5,10 @@
 	index = 0
 
 	ideologies = {
-		ideology_nonexistent
+		ideology_bgy_burgundist_power_structure
+		ideology_bgy_burgundist_economy
+		ideology_bgy_burgundist_social_structure
+		# ideology_nonexistent
 	}
 
 	# enable = {
@@ -20,12 +23,13 @@
 
 	enable = {
 		always = yes
+		# game_date > 1880.1.1
 	}
 
 	on_enable = {
-		set_ig_trait = ig_trait:ig_trait_materiel_waste
-		set_ig_trait = ig_trait:ig_trait_veteran_consultation
-		set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+		# set_ig_trait = ig_trait:ig_trait_materiel_waste
+		# set_ig_trait = ig_trait:ig_trait_veteran_consultation
+		# set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 		if = {
 			limit = {
 				OR = {
@@ -35,10 +39,10 @@
 				}
 			}
 			ig_bgy_burgundists = {
-				set_interest_group_name = ig_bgy_sebottendorf_society
+				set_interest_group_name = ig_bgy_voelkische_bewegung
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				OR = {
 					country_has_primary_culture = cu:yankee
@@ -49,7 +53,7 @@
 				set_interest_group_name = ig_bgy_ku_klux_klan
 			}
 		}
-		if = {
+		else_if = {
 			limit = {
 				OR = {
 					country_has_state_religion = rel:sunni
