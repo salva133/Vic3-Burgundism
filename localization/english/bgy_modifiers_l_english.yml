@@ -1,3 +1,0 @@
-﻿l_english:
-  country_diplomatic_play_maneuvers_mult: "[Concept('concept_maneuver', '$concept_maneuvers$')] per Diplomatic Play"
-  country_diplomatic_play_maneuvers_mult_desc: "A multiplicator to the number of [Concept('concept_maneuver', '$concept_maneuvers$')] the country can take in a diplomatic play."
