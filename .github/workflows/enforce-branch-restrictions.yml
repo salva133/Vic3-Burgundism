@@ -3,18 +3,18 @@ name: Enforce PR Branch Rules
 on:
   pull_request:
     branches:
-      - release      # Prüft PRs, die in den "release"-Branch gehen
+      - released      # Prüft PRs, die in den "released"-Branch gehen
       - releasing    # Prüft PRs, die in den "releasing"-Branch gehen
 
 jobs:
-  check_release_branch:
+  check_released_branch:
     runs-on: ubuntu-latest
-    if: github.base_ref == 'release'  # Triggert diesen Job nur für PRs auf den "release"-Branch
+    if: github.base_ref == 'released'  # Triggert diesen Job nur für PRs auf den "released"-Branch
     steps:
       - name: Check if PR is from 'releasing'
         if: github.head_ref != 'releasing'  # Prüft, ob der Quell-Branch nicht "releasing" ist
         run: |
-          echo "Pull requests to 'release' are only allowed from 'releasing'."
+          echo "Pull requests to 'released' are only allowed from 'releasing'."
           exit 1
 
   allow_to_releasing:
