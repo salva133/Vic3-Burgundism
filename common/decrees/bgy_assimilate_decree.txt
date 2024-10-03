@@ -57,10 +57,6 @@ decree_lag_reduction = {
 
 	texture = "gfx/interface/icons/decree/decree_violent_suppression.dds"
 
-	unlocking_technologies = {
-		centralization
-	}
-
 	valid = {
 		owner = { 
 			NOT = { has_law = law_type:law_multicultural }
@@ -156,10 +152,6 @@ decree_lag_reduction = {
 decree_homelandoverall_values = {
 
 	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
-
-	unlocking_technologies = {
-		centralization
-	}
 
 	valid = {
 		owner = { 
