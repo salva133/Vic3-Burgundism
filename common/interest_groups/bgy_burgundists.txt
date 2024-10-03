@@ -22,8 +22,8 @@
 	# }
 
 	enable = {
-		always = yes
-		# game_date > 1880.1.1
+		game_date > 1880.1.1
+		}
 	}
 
 	on_enable = {
