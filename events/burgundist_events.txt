@@ -42,7 +42,7 @@ burgundism.2 = {
 		ig:ig_bgy_burgundists = { is_in_government = yes }
 		has_law = law_type:law_ethnostate
 		any_scope_state = {
-			loyalist_fraction = { value >= 0.51 }
+			loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
 			is_incorporated = yes
 			NOT = {
 				has_decree = decree_true_lag_reduction
