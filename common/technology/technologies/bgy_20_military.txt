@@ -25,6 +25,10 @@ total_war = {
 
 	unlocking_technologies = { war_propaganda }
 
+	modifier = {
+		country_diplomatic_play_maneuvers_add = 10000
+	}
+
 	ai_weight = {
 		value = 0
 	}
