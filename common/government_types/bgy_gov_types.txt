@@ -11,3 +11,35 @@ gov_bgy_burgundian_system = {
 	on_government_type_change = { change_to_dictatorial = yes }
 	on_post_government_type_change = { post_change_to_dictatorial = yes }
 }
+
+gov_bgy_kleptocracy_rep = {
+	transfer_of_power = dictatorial
+
+	male_ruler = "RULER_TITLE_BGY_FUEHRER"
+	female_ruler = "RULER_TITLE_BGY_FUEHRER"
+
+	possible = {
+		coa_republic_trigger = yes
+		coa_no_elections_trigger = yes
+		has_law = law_type:kleptocracy
+	}
+
+	on_government_type_change = { change_to_dictatorial = yes }
+	on_post_government_type_change = { post_change_to_dictatorial = yes }
+}
+
+gov_bgy_kleptocracy_mon = {
+	transfer_of_power = hereditary
+
+	male_ruler = "RULER_TITLE_BGY_FUEHRER"
+	female_ruler = "RULER_TITLE_BGY_FUEHRER"
+
+	possible = {
+		coa_no_elections_trigger = yes
+		has_law = law_type:kleptocracy
+	}
+
+	on_government_type_change = { change_to_dictatorial = yes }
+	on_post_government_type_change = { post_change_to_dictatorial = yes }
+}
+
