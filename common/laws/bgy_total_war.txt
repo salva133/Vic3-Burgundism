@@ -35,7 +35,7 @@
 	}
 	
 	possible_political_movements = {
-		law_total_war
+		law_bgy_total_war
 	}
 
 	pop_support = {

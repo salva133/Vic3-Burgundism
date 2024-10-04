@@ -34,10 +34,10 @@
 				OR = {
 					country_has_primary_culture = cu:north_german
 					country_has_primary_culture = cu:south_german
-					country_has_primary_culture = cu:allemanic
+					country_has_primary_culture = cu:alemannic
 				}
 			}
-			ig_bgy_burgundists = {
+			ig:ig_bgy_burgundists = {
 				set_interest_group_name = ig_bgy_voelkische_bewegung
 			}
 		}
@@ -48,7 +48,7 @@
 					country_has_primary_culture = cu:dixie
 				}
 			}
-			ig_bgy_burgundists = {
+			ig:ig_bgy_burgundists = {
 				set_interest_group_name = ig_bgy_ku_klux_klan
 			}
 		}
@@ -59,7 +59,7 @@
 					country_has_state_religion = rel:shia
 				}
 			}
-			ig_bgy_burgundists = {
+			ig:ig_bgy_burgundists = {
 				set_interest_group_name = ig_bgy_fundamentalists
 			}
 		}
@@ -68,12 +68,7 @@
 	on_disable = {}
 	
 	on_character_ig_membership = {
-		if = {
-			limit = {
-				is_leader = yes
-			}
-			set_ideology = ideology:ideology_bgy_burgundist_leader
-		}
+		set_ideology = ideology:ideology_bgy_burgundist_leader
 	}
 	
 	pop_potential = {

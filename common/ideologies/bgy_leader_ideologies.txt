@@ -4,10 +4,6 @@
 
 	character_ideology = yes
 
-	possible = {
-		has_technology_unlocked = totalism
-	}
-
 	lawgroup_labor_rights = {
 		law_no_workers_rights = neutral
 		law_regulatory_bodies = disapprove

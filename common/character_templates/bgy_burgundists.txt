@@ -5,7 +5,6 @@
 	culture = cu:north_german
 	religion = rel:protestant
 	interest_group = ig_bgy_burgundists
-	is_leader = yes
 	female = no
 	birth_date = 1827.11.2
 	ideology = ideology_bgy_burgundist_leader
