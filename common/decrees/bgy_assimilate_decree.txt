@@ -1,4 +1,4 @@
-decree_true_lag_reduction = {
+﻿decree_true_lag_reduction = {
 
 	texture = "gfx/interface/icons/decree/geno_wojak.dds"		
 

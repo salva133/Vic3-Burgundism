@@ -1,4 +1,4 @@
-gov_bgy_burgundian_system = {
+﻿gov_bgy_burgundian_system = {
 	transfer_of_power = dictatorial
 
 	male_ruler = "RULER_TITLE_BGY_FUEHRER"
@@ -42,4 +42,3 @@ gov_bgy_kleptocracy_mon = {
 	on_government_type_change = { change_to_dictatorial = yes }
 	on_post_government_type_change = { post_change_to_dictatorial = yes }
 }
-

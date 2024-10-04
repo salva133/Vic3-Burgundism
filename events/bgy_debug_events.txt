@@ -1,4 +1,4 @@
-# namespace = debug_burgund
+﻿# namespace = debug_burgund
 
 # burgund.1 = {
 # 	type = country_event
