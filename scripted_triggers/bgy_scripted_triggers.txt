@@ -1,4 +1,4 @@
-has_burgundist_government = {
+﻿has_burgundist_government = {
 	ig_bgy_burgundists = {
 		is_in_government = yes
 	}

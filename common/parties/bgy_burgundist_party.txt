@@ -1,4 +1,4 @@
-burgundist_party = {
+﻿burgundist_party = {
 	color = hsv{ 0.75 0.78 0.31 }
 	name = {
 		first_valid = {

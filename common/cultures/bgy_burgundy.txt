@@ -1,4 +1,4 @@
-burgundian = {
+﻿burgundian = {
 	color= rgb{ 48 21 44 }
 	religion = spartanist
 	traits = { german_speaking european_heritage }

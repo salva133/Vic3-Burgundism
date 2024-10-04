@@ -1,4 +1,4 @@
-NEconomy = {
+﻿NEconomy = {
 	MIN_CONSTRUCTION_EFFICIENCY = 0.05					# Construction efficiency cannot go below this amount
 
 	# The number of times the initializewealth function is run during setup

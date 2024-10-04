@@ -1,4 +1,4 @@
-# namespace = burgundism
+﻿# namespace = burgundism
 
 # burgundism.1 = {
 # 	type = country_event
