@@ -68,12 +68,7 @@
 	on_disable = {}
 	
 	on_character_ig_membership = {
-		if = {
-			limit = {
-				is_leader = yes
-			}
-			set_ideology = ideology:ideology_bgy_burgundist_leader
-		}
+		set_ideology = ideology:ideology_bgy_burgundist_leader
 	}
 	
 	pop_potential = {
