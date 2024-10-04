@@ -1,4 +1,4 @@
-BGY = {
+﻿BGY = {
 	states = {
 		STATE_FRENCH_LOW_COUNTRIES
 		STATE_WALLONIA

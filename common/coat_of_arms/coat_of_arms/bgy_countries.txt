@@ -1,4 +1,4 @@
-BGY = {
+﻿BGY = {
 	pattern = "pattern_solid.tga"
 	color1 = "black"
 
@@ -34,7 +34,7 @@ BGY_dictatorship = {
 		texture = "ce_kolovrat.dds"
 		color1 = "purple"
 
-		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+		instance = { scale = { 0.75 0.7 } position = { 0.5 0.5 } }
 	}
 }
 

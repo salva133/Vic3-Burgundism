@@ -1,4 +1,4 @@
-ideology_bgy_burgundist_leader = {
+﻿ideology_bgy_burgundist_leader = {
 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	priority = 1000
 
