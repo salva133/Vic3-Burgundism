@@ -105,6 +105,7 @@ decree_lag_reduction = {
 	valid = {
 		owner = { 
 			NOT = { has_law = law_type:law_multicultural }
+			has_technology_researched = political_agitation
 			OR = {
 				has_law = law_type:law_national_guard
 				has_law = law_type:law_secret_police
@@ -200,6 +201,7 @@ decree_homelandoverall_values = {
 
 	valid = {
 		owner = { 
+			has_technology_researched = nationalism
 			NOT = { has_law = law_type:law_multicultural }
 			OR = {
 				has_law = law_type:law_national_guard
