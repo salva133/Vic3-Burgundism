@@ -50,7 +50,7 @@
 
 	possible_political_movements = {
 		law_proportional_taxation
-	}	
+	}
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
