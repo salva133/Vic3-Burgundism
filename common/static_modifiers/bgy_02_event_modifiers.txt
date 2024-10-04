@@ -1,4 +1,4 @@
-burgundistic_progroms = {
+﻿burgundistic_progroms = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 
 	state_assimilation_mult = 5

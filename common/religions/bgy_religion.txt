@@ -1,4 +1,4 @@
-spartanist = {
+﻿spartanist = {
 	
 	texture = "gfx/interface/icons/religion_icons/spartanist.dds"
 	color = rgb{ 25 25 25 }

@@ -1,4 +1,4 @@
-mobilization_option_nuke = {
+﻿mobilization_option_nuke = {
 	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
 
 	possible = {

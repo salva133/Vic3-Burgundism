@@ -1,4 +1,4 @@
-# namespace = bgy_events
+﻿# namespace = bgy_events
 
 # finale.1 = {
 # 	type = state_event

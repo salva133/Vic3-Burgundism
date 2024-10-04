@@ -1,4 +1,4 @@
-BGY = {
+﻿BGY = {
 	color = { 28 0 25 }
 	country_type = unrecognized
 	tier = principality

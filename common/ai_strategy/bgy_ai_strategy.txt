@@ -1,4 +1,4 @@
-
+﻿
 ai_strategy_burgundism = {
 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	

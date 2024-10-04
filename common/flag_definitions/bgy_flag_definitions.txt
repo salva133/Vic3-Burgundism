@@ -1,4 +1,4 @@
-BGY = { # Burgundy
+﻿BGY = { # Burgundy
 	flag_definition = {
 		coa = BGY
 		subject_canton = BGY

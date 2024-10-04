@@ -1,4 +1,4 @@
-coa_no_elections_trigger = {
+﻿coa_no_elections_trigger = {
 	OR = {
 		has_law = law_type:law_autocracy
 		has_law = law_type:law_oligarchy
