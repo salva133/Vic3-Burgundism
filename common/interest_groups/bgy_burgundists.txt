@@ -37,7 +37,7 @@
 					country_has_primary_culture = cu:alemannic
 				}
 			}
-			ig_bgy_burgundists = {
+			ig:ig_bgy_burgundists = {
 				set_interest_group_name = ig_bgy_voelkische_bewegung
 			}
 		}
@@ -48,7 +48,7 @@
 					country_has_primary_culture = cu:dixie
 				}
 			}
-			ig_bgy_burgundists = {
+			ig:ig_bgy_burgundists = {
 				set_interest_group_name = ig_bgy_ku_klux_klan
 			}
 		}
@@ -59,7 +59,7 @@
 					country_has_state_religion = rel:shia
 				}
 			}
-			ig_bgy_burgundists = {
+			ig:ig_bgy_burgundists = {
 				set_interest_group_name = ig_bgy_fundamentalists
 			}
 		}
