@@ -7,22 +7,22 @@
   burgund.1.b: "I made up my mind..."
 
 # Himmler
-	himmler_event.1.t: "Heinrich Himmler Rises"
-  himmler_event.1.d: "Heinrich Himmler, a prominent figure, emerges as a new influential character in your country."
-  himmler_event.1.f: "A new era begins with Himmler's rise to power."
-  himmler_event.1.a: "WIP"
+	himmler_events.1.t: "Heinrich Himmler Rises"
+  himmler_events.1.d: "Heinrich Himmler, a prominent figure, emerges as a new influential character in your country."
+  himmler_events.1.f: "A new era begins with Himmler's rise to power."
+  himmler_events.1.a: "WIP"
 
 # De Lagarde
-  de_lagarde_event.1.t: "The Death of Paul de Lagarde"
-	de_lagarde_event.1.d: "The respected German biblical scholar and orientalist Paul de Lagarde died on 22 December 1891. Lagarde was known for his extensive work on Syriac, Aramaic, Arabic and Coptic texts. In addition to his scholarly contributions, he was also an important voice of German nationalism and the Völkisch movement. His writings significantly influenced the politics and culture of the German nation."
-	de_lagarde_event.1.f: "''Freedom and democracy go together like fire and water. He is not free who can do what he wants, but who can become what he should. Free is he who is able to follow his predetermined principle of life.''\n\n- Paul de Lagarde"
-  de_lagarde_event.1.a: ""
+  de_lagarde_events.1.t: "The Death of Paul de Lagarde"
+	de_lagarde_events.1.d: "The respected German biblical scholar and orientalist Paul de Lagarde died on 22 December 1891. Lagarde was known for his extensive work on Syriac, Aramaic, Arabic and Coptic texts. In addition to his scholarly contributions, he was also an important voice of German nationalism and the Völkisch movement. His writings significantly influenced the politics and culture of the German nation."
+	de_lagarde_events.1.f: "''Freedom and democracy go together like fire and water. He is not free who can do what he wants, but who can become what he should. Free is he who is able to follow his predetermined principle of life.''\n\n- Paul de Lagarde"
+  de_lagarde_events.1.a: ""
 
 # Chamberlain
-  chamberlain_event.1.d: "WIP"
-  chamberlain_event.1.f: "WIP"
-  chamberlain_event.1.t: "WIP"
-  chamberlain_event.2.a: "WIP"
+  chamberlain_events.1.d: "WIP"
+  chamberlain_events.1.f: "WIP"
+  chamberlain_events.1.t: "WIP"
+  chamberlain_events.2.a: "WIP"
 
 # Burgundism
   burgundism.1.t: "The EMERGENCE of the Burgundists"

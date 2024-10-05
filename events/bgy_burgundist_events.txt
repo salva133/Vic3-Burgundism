@@ -27,18 +27,11 @@
 
 # 	option = {
 # 		name = burgundism_events.1.a
-
-# 		ig:ig_burgundists = {
-# 			remove_ideology = ideology_nonexistent
-# 			add_ideology = ideology_bgy_burgundist_power_structure
-# 			add_ideology = ideology_bgy_burgundist_economy
-# 			add_ideology = ideology_bgy_burgundist_social_structure
-# 		}
 # 	}
 
 # }
 
-# burg_events.2 = { #fascist leader gains popularity
+# burgundism_events.2 = { #fascist leader gains popularity
 # 	type = country_event
 # 	placement = root
 

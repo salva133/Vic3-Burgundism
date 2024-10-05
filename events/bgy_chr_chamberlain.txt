@@ -1,11 +1,11 @@
-﻿namespace = bgy_characters
+﻿namespace = chamberlain_events
 
-chamberlain_event.1 = {
+chamberlain_events.1 = {
 	type = country_event
 	placement = root
-	title = chamberlain_event.1.t
-	desc = chamberlain_event.1.d
-	flavor = chamberlain_event.1.f
+	title = chamberlain_events.1.t
+	desc = chamberlain_events.1.d
+	flavor = chamberlain_events.1.f
 
 	duration = 3
 
@@ -29,18 +29,17 @@ event_image = {
 	}
 
 	option = {
-		name = chamberlain_event.1.a
+		name = chamberlain_events.1.a
 		default_option = yes
 	}
 }
 
-
-chamberlain_event.2 = {
+chamberlain_events.2 = {
 	type = country_event
 	placement = root
-	title = chamberlain_event.1.t
-	desc = chamberlain_event.1.d
-	flavor = chamberlain_event.1.f
+	title = chamberlain_events.1.t
+	desc = chamberlain_events.1.d
+	flavor = chamberlain_events.1.f
 
 	duration = 3
 
@@ -65,7 +64,7 @@ chamberlain_event.2 = {
 	}
 
 	option = {
-		name = chamberlain_event.2.a
+		name = chamberlain_events.2.a
 		default_option = yes
 	}
 }

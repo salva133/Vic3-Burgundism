@@ -1,7 +1,4 @@
 ﻿l_english:
-  ideology_nonexistent: "Uninitialized"
-  ideology_nonexistent_desc: "#lore This interest group or leader is not yet initialized. If an uninitialized interest group has non-zero clout, please report it as a bug to the developer! #!"
-
   ideology_bgy_burgundist_power_structure: "Burgundian Power Structure"
   ideology_bgy_burgundist_power_structure_desc: "Men must be honest, decent, loyal, and comradely to members of our own blood and nobody else. What happens to an ordinary foreigner does not interest me in the least."
   ideology_bgy_burgundist_economy: "Burgundian Economics"

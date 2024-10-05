@@ -1,3 +1,0 @@
-﻿ideology_nonexistent = {
-	icon = "gfx/interface/icons/ideology_icons/placeholder.dds"
-}

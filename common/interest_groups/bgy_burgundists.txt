@@ -8,22 +8,13 @@
 		ideology_bgy_burgundist_power_structure
 		ideology_bgy_burgundist_economy
 		ideology_bgy_burgundist_social_structure
-		# ideology_nonexistent
 	}
 
-	# enable = {
-	# 	OR = {
-	# 		has_technology_unlocked = totalism
-	# 		AND = {
-	# 			game_date > 1919.1.1
-	# 			has_technology_unlocked = political_agitation
-	# 		}
-	# 	}
-	# }
-
 	enable = {
-		game_date > 1880.1.1
-		# always = yes
+		OR = {
+			has_technology_researched = totalism
+			game_date > 1919.11.3
+		}
 	}
 
 	on_enable = {
@@ -75,13 +66,7 @@
 	pop_potential = {
 		custom_tooltip = {
 			text = BGY_VALID_POP_FOR_IG
-			owner = {
-				NAND = {
-					is_country_type = decentralized
-					ig:ig_burgundists = {
-						NOT = { has_ideology = ideology:ideology_nonexistent }
-					}
-				}
+			owner = { NOT = { is_country_type = decentralized }
 			}
 		}
 		custom_tooltip = {
