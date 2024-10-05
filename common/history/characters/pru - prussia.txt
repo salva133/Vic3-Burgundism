@@ -4,16 +4,7 @@
 		create_character = {
 			template = paul_de_lagarde_character_template
 			on_created = {
-				if = {
-					limit = { NOT = { scope:actor = { has_variable = lagarde_alive } } }
-					set_variable = lagarde_alive
-					random_scope_character = {
-						if = {
-							limit = { has_variable = lagarde_alive }
-							save_scope_as = lagarde_scope
-						}
-					}
-				}
+				set_variable = { name = is_lagarde }
 			}
 		}
 		
