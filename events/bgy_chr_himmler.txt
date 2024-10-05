@@ -1,11 +1,11 @@
-﻿namespace = bgy_characters
+﻿namespace = himmler_events
 
-himmler_event.1 = {
+himmler_events.1 = {
 	type = country_event
 	placement = root
-	title = himmler_event.1.t
-	desc = himmler_event.1.d
-	flavor = himmler_event.1.f
+	title = himmler_events.1.t
+	desc = himmler_events.1.d
+	flavor = himmler_events.1.f
 
 	duration = 3
 
@@ -35,7 +35,7 @@ himmler_event.1 = {
 	}
 
 	option = {
-		name = himmler_event.1.a
+		name = himmler_events.1.a
 		default_option = yes
 	}
 }
