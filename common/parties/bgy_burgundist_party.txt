@@ -218,7 +218,7 @@
 				leader = {
 					OR = {
 						has_ideology = ideology:ideology_bgy_burgundist_leader
-						is_interest_group_type = ig_bgy_burgundists
+						is_interest_group_type = ig_burgundists
 					}
 				}
 			}
