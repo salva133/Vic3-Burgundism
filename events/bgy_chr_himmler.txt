@@ -1,34 +1,41 @@
-﻿# namespace = bgy_characters
+﻿namespace = bgy_characters
 
-# himmler_event.1 = {
-# 	type = country_event
-# 	placement = root
-# 	title = himmler_event.1.t
-# 	desc = himmler_event.1.d
-# 	flavor = himmler_event.1.f
+himmler_event.1 = {
+	type = country_event
+	placement = root
+	title = himmler_event.1.t
+	desc = himmler_event.1.d
+	flavor = himmler_event.1.f
 
-# 	duration = 1
+	duration = 3
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
 
-# 	trigger = {
-# 		ig:ig_burgundists = {
-# 			is_marginal = no
-# 		}
-# 		game_date > 1919
-# 		NOT = { has_variable = heinrich_himmler_var }
-# 		OR = {
-# 			country_has_primary_culture = north_german
-# 			country_has_primary_culture = south_german
-# 		}
-# 	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-# 	immediate = {
-# 		create_character  = {
-# 			template = heinrich_himmler_character_template
-# 			on_created = {
-# 				set_variable = heinrich_himmler_var
-# 			}
-# 		}
-# 	}
-# }
+	trigger = {
+		ig:ig_burgundists = {
+			is_marginal = no
+		}
+		game_date > 1919.11.3
+		NOT = { has_variable = is_himmler }
+		OR = {
+			country_has_primary_culture = cu:north_german
+			country_has_primary_culture = cu:south_german
+		}
+	}
+
+	immediate = {
+		create_character  = {
+			template = heinrich_himmler_character_template
+		}
+		set_variable = { name = is_himmler }
+	}
+
+	option = {
+		name = himmler_event.1.a
+		default_option = yes
+	}
+}

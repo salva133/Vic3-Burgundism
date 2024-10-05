@@ -1,57 +1,71 @@
-﻿# namespace = bgy_characters
+﻿namespace = bgy_characters
 
-# chamberlain_event.1 = {
-# 	type = country_event
-# 	placement = root
-# 	title = chamberlain_event.1.t
-# 	desc = chamberlain_event.1.d
-# 	flavor = chamberlain_event.1.f
+chamberlain_event.1 = {
+	type = country_event
+	placement = root
+	title = chamberlain_event.1.t
+	desc = chamberlain_event.1.d
+	flavor = chamberlain_event.1.f
 
-# 	duration = 1
+	duration = 3
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+event_image = {
+	video = "europenorthamerica_political_extremism"
+}
 
-# 	trigger = {
-# 		game_date > 1888
-# 		NOT = { has_variable = houston_chamberlain_var }
-# 		exists = c:GER
-# 	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-# 	immediate = {
-# 		random_country_scope = {
-# 			limit = { scope:country = { c:GER ?= this } }
-# 			create_character  = {
-# 				template = houston_chamberlain_character_template
-# 				on_created = {
-# 					set_variable = houston_chamberlain_var
-# 				}
-# 			}
-# 		}
-# 	}
-# }
+	trigger = {
+		game_date > 1888.1.1
+		NOT = { has_variable = is_chamberlain }
+		exists = c:GER
+	}
 
-# chamberlain_event.2 = {
-# 	type = country_event
-# 	placement = root
-# 	title = chamberlain_event.1.t
-# 	desc = chamberlain_event.1.d
-# 	flavor = chamberlain_event.1.f
+	immediate = {
+		create_character  = {
+			template = houston_chamberlain_character_template
+		}
+		set_variable = is_chamberlain
+	}
 
-# 	duration = 1
+	option = {
+		name = chamberlain_event.1.a
+		default_option = yes
+	}
+}
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-# 	trigger = {
-# 		game_date > 1927.1.9
-# 		random_character_scope = {
-# 			has_variable = houston_chamberlain_var
-# 		}
-# 	}
+chamberlain_event.2 = {
+	type = country_event
+	placement = root
+	title = chamberlain_event.1.t
+	desc = chamberlain_event.1.d
+	flavor = chamberlain_event.1.f
 
-# 	immediate = {
-# 		random_character_scope = {
-# 			limit = { has_variable = houston_chamberlain_var }
-# 			kill_character = yes
-# 		}
-# 	}
-# }
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1927.1.9
+		has_variable = is_chamberlain
+	}
+
+	immediate = {
+		scope:character = {
+			if = {
+				limit = { has_variable = is_chamberlain }
+				kill_character = yes
+			}
+		}
+	}
+
+	option = {
+		name = chamberlain_event.2.a
+		default_option = yes
+	}
+}

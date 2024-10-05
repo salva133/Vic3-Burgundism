@@ -1,7 +1,8 @@
 ﻿paul_de_lagarde_character_template = {
-	first_name = "paul_de_lagarde_first_name"
-	last_name = "paul_de_lagarde_last_name"
+	first_name = Paul
+	last_name = de_Lagarde
 	historical = yes
+	ig_leader = yes
 	culture = cu:north_german
 	religion = rel:protestant
 	interest_group = ig_burgundists
@@ -16,8 +17,8 @@
 }
 
 houston_chamberlain_character_template = {
-	first_name = "houston_chamberlain_first_name"
-	last_name = "houston_chamberlain_last_name"
+	first_name = Houston
+	last_name = Chamberlain
 	historical = yes
 	culture = cu:british
 	religion = rel:protestant
@@ -33,13 +34,13 @@ houston_chamberlain_character_template = {
 }
 
 heinrich_himmler_character_template = {
-    first_name = "heinrich_himmler_first_name"
-	last_name = "heinrich_himmler_last_name"
+    first_name = Heinrich
+	last_name = Himmler
     historical = yes
 	culture = cu:burgundian
 	religion = rel:spartanist
     interest_group = ig_burgundists
-    is_agitator = yes
+    ig_leader = yes
     female = no
     birth_date = 1900.10.7
 	dna = dna_heinrich_himmler
@@ -54,8 +55,8 @@ heinrich_himmler_character_template = {
 }
 
 rudolf_sebottendorf_character_template = { #  Changed his name from Adam Glauer to Rudolf von Sebottendorf after converting to Islam
-	first_name = "rudolf_sebottendorf_first_name" 
-	last_name = "rudolf_sebottendorf_last_name"
+	first_name = Rudolf
+	last_name = Sebottendorf
 	historical = yes
 	culture = cu:north_german
 	religion = rel:protestant

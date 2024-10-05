@@ -1,24 +1,32 @@
-﻿# namespace = bgy_characters
+﻿namespace = bgy_characters
 
-# de_lagarde.1 = {
-# 	type = country_event
-# 	placement = root
-# 	title = de_lagarde.1.t
-# 	desc = de_lagarde.1.d
-# 	flavor = de_lagarde.1.f
+de_lagarde_event.1 = {
+	type = country_event
+	placement = root
+	title = de_lagarde_event.1.t
+	desc = de_lagarde_event.1.d
+	flavor = de_lagarde_event.1.f
 
-# 	duration = 1
+	duration = 1
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-# 	trigger = {
-# 		game_date > 1891.12.22
-# 	}
+	trigger = {
+		game_date > 1891.12.22
+		has_variable = is_lagarde
+	}
 
-# 	immediate = {
-# 		random_character_scope = {
-# 			limit = { has_variable = lagarde_alive }
-# 			kill_character = yes
-# 		}
-# 	}
-# }
+	immediate = {
+		scope:character = {
+			if = {
+				limit = { has_variable = is_lagarde }
+				kill_character = yes
+			}
+		}
+	}
+
+	option = {
+		name = de_lagarde_event.1.a
+		default_option = yes
+	}
+}
