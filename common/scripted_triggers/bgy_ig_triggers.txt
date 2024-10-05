@@ -1,0 +1,6 @@
+﻿bgy_ig_is_burgundist = {
+	custom_tooltip = {
+		text = "tooltip_bgy_ig_is_burgundist"
+		is_interest_group_type = ig_burgundists
+	}
+}
