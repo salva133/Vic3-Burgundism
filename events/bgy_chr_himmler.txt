@@ -12,7 +12,7 @@
 # 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 # 	trigger = {
-# 		ig:ig_bgy_burgundists = {
+# 		ig:ig_burgundists = {
 # 			is_marginal = no
 # 		}
 # 		game_date > 1919
