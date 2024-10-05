@@ -1,0 +1,68 @@
+﻿# je_bgy_burgundism = {
+# 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+# 	group = je_group_internal_affairs
+
+# 	is_shown_when_inactive = {
+# 		NOT = { has_law = law_type:law_council_republic }
+# 		NOT = { has_variable = completed_burgundism_1_var }
+# 		has_technology_researched = totalism
+# 	}
+
+# 	possible = {
+# 		NOT = { has_law = law_type:law_council_republic }
+# 		game_date > 1880.1.1
+# 	}
+
+# 	immediate = {
+# 		ig:ig_burgundists = {
+# 			save_scope_as = burgundist_ig
+# 		}
+# 	}
+
+# 	complete = {
+# 		any_interest_group = {
+#             is_in_government = yes
+#             leader = {
+# 				bgy_leader_is_burgundist = yes
+#             }
+#         }
+# 		is_at_war = no
+#         institution_investment_level = {
+#             institution = institution_police
+#             value >= 4
+#         }
+#         OR = {
+#             has_law = law_type:law_dedicated_police
+#             has_law = law_type:law_militarized_police
+#         }
+#         any_scope_character = {
+#             has_role = general
+#             is_busy = no
+#             is_ruler = no
+#             count >= 2
+# 			bgy_leader_is_burgundist = no
+#         }
+#     }
+
+# 	on_complete = {
+# 		set_variable = {
+# 			name = completed_burgundist_1_var
+# 		}
+# 		trigger_event = { id = bgy_burgundist_events.1 }
+# 	}
+
+# 	on_monthly_pulse = {
+# 		random_events = {
+# 			100 = 0
+# 			10 = burgundism_events.2
+# 		}
+# 	}
+
+# 	invalid = {
+# 		has_law = law_type:law_council_republic
+# 	}
+
+# 	weight = 10000
+# 	can_deactivate = no
+# }
