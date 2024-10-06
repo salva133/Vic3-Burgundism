@@ -3,11 +3,7 @@
 	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
 	category = military
 
-	unlocking_technologies = {	
-		flamethrowers
-		mobile_armor
-		chemical_warfare
-	}
+	unlocking_technologies = { mobile_armor }
 
 	modifier = {
 		unit_kill_rate_add = 0.05
