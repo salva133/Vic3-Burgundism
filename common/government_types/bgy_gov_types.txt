@@ -5,7 +5,17 @@
 	female_ruler = "RULER_TITLE_BGY_FUEHRER"
 
 	possible = {
-		coa_burgundian_system_trigger = yes
+		OR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+		}
+		OR = {
+			has_law = law_type:law_autocracy 
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_single_party_state
+			has_law = law_type:law_technocracy
+		}
+		coa_burgundist_trigger = yes
 	}
 
 	on_government_type_change = { change_to_dictatorial = yes }

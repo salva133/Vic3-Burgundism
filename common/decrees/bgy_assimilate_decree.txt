@@ -28,12 +28,10 @@
 	}
 
 	modifier = {
-		state_assimilation_mult = 10
-		state_conversion_mult = 10
 		state_turmoil_effects_mult = 1
 		state_radicals_from_discrimination_mult = 1
-		state_mortality_mult = 10
-		state_accepted_birth_rate_mult = 20
+		state_mortality_mult = 1
+		state_accepted_birth_rate_mult = 1.05
 	}
 
 	cost = 100
@@ -83,8 +81,8 @@ decree_lag_reduction = {
 		state_conversion_mult = 5
 		state_turmoil_effects_mult = 0.5
 		state_radicals_from_discrimination_mult = 0.5
-		state_mortality_mult = 1
-		state_accepted_birth_rate_mult = 2
+		state_mortality_mult = 0.5
+		state_accepted_birth_rate_mult = 0.51
 	}
 
 	cost = 100

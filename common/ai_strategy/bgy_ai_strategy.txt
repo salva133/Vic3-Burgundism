@@ -1,120 +1,120 @@
-﻿# ai_strategy_burgundism = {
-# 	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
+﻿ai_strategy_burgundism = {
+	icon = "gfx/interface/icons/ig_icons/burgundists.dds"
 	
-# 	type = diplomatic
+	type = diplomatic
 		
-# 	will_form_power_bloc = { always = no }			
+	will_form_power_bloc = { always = no }			
 	
-# 	undesirable_infamy_level = { value = 75 }
+	undesirable_infamy_level = { value = 75 }
 	
-# 	unacceptable_infamy_level = { value = 100 }
+	unacceptable_infamy_level = { value = 100 }
 	
-# 	ideological_opinion_effect_mult = { value = 3 }
+	ideological_opinion_effect_mult = { value = 3 }
 	
-# 	wargoal_maneuvers_fraction = { value = 1 }		
+	wargoal_maneuvers_fraction = { value = 1 }		
 	
-# 	diplomatic_play_neutrality = { value = 0 }
+	diplomatic_play_neutrality = { value = 0 }
 	
-# 	diplomatic_play_boldness = { value = 100 }
+	diplomatic_play_boldness = { value = 100 }
 	
-# 	recklessness = { value = 1 }
+	recklessness = { value = 1 }
 	
-# 	aggression = {
-# 		value = 1
+	aggression = {
+		value = 1
 		
-# 		if = {
-# 			limit = { 
-# 				scope:target_country = {
-# 					has_burgundist_government = yes
-# 				} 
-# 			}
-# 			multiply = 3
-# 		}	
+		if = {
+			limit = { 
+				scope:target_country = {
+					has_burgundist_government = yes
+				} 
+			}
+			multiply = 3
+		}	
 
-# 		if = {
-# 			limit = {
-# 				scope:target_country = {
-# 					has_radical_leftist_government = yes
-# 				}		
-# 			}
-# 			multiply = 0.25
-# 		}	
+		if = {
+			limit = {
+				scope:target_country = {
+					has_radical_leftist_government = yes
+				}		
+			}
+			multiply = 0.25
+		}	
 
-# 		# More aggressive against ideological enemies, a bit less aggressive against ideological allies
-# 		if = {
-# 			limit = {
-# 				"ai_ideological_opinion(scope:target_country)" < 0
-# 			}
+		# More aggressive against ideological enemies, a bit less aggressive against ideological allies
+		if = {
+			limit = {
+				"ai_ideological_opinion(scope:target_country)" < 0
+			}
 			
-# 			multiply = {
-# 				value = "ai_ideological_opinion(scope:target_country)"
-# 				multiply = -0.2
-# 				add = 1
-# 				max = 4.0
-# 			}				
-# 		}	
-# 		else = {
-# 			multiply = {
-# 				value = "ai_ideological_opinion(scope:target_country)"
-# 				multiply = -0.05
-# 				add = 1
-# 				min = 0.5
-# 			}			
-# 		}			
-# 	}
+			multiply = {
+				value = "ai_ideological_opinion(scope:target_country)"
+				multiply = -0.2
+				add = 1
+				max = 4.0
+			}				
+		}	
+		else = {
+			multiply = {
+				value = "ai_ideological_opinion(scope:target_country)"
+				multiply = -0.05
+				add = 1
+				min = 0.5
+			}			
+		}			
+	}
 
-# 	building_group_weights = { bg_army = 1.5 }
+	building_group_weights = { bg_army = 1.5 }
 	
-# 	secret_goal_scores = {
-# 		conquer = {
-# 			if = {
-# 				limit = {
-# 					has_strategic_adjacency = scope:target_country
-# 					scope:target_country = { NOT = { has_radical_leftist_government = yes } }
-# 				}
-# 				add = 50
-# 			}
-# 		}
-# 	}
+	secret_goal_scores = {
+		conquer = {
+			if = {
+				limit = {
+					has_strategic_adjacency = scope:target_country
+					scope:target_country = { NOT = { has_radical_leftist_government = yes } }
+				}
+				add = 50
+			}
+		}
+	}
 
-# 	wargoal_weights = {
-# 		regime_change = 0.0
-# 		make_protectorate = 0.5
-# 		reduce_autonomy = 1.0
-# 		make_tributary = 0.5
-# 		force_nationalization = 1.0
-# 		conquer = 10.0
-# 	}	
+	wargoal_weights = {
+		regime_change = 0.0
+		make_protectorate = 0.5
+		reduce_autonomy = 1.0
+		make_tributary = 0.5
+		force_nationalization = 1.0
+		conquer = 10.0
+	}	
 		
-# 	possible = {
-# 		is_subject = no
-# 		has_radical_leftist_government = no
-# 	}
+	possible = {
+		is_subject = no
+		has_radical_leftist_government = no
+	}
 
-# 	weight = {
-# 		value = 25
+	weight = {
+		value = 25
 		
-# 		if = {
-# 			limit = { 
-# 				OR = {
-# 					has_law = law_type:law_professional_army 
-# 					has_law = law_type:law_mass_conscription
-# 					has_law = law_type:law_bgy_total_war
-# 				}
-# 			}
-# 			add = 25
-# 		}
+		if = {
+			limit = { 
+				OR = {
+					has_law = law_type:law_professional_army 
+					has_law = law_type:law_mass_conscription
+					has_law = law_type:law_bgy_total_war
+				}
+			}
+			add = 25
+		}
 
-# 		if = {
-# 			limit = { country_rank = rank_value:great_power }
-# 			multiply = 1.25
-# 		}			
+		if = {
+			limit = { country_rank = rank_value:great_power }
+			multiply = 1.25
+		}			
 		
-# 		if = {
-# 			limit = { country_rank = rank_value:major_power }
-# 			multiply = 1.10
-# 		}	
+		if = {
+			limit = { country_rank = rank_value:major_power }
+			multiply = 1.10
+		}	
 
-# 	}
+	}
 
-# }
+}
