@@ -1,8 +1,8 @@
 ﻿{
   "name" : "Burgundism",
 	"id" : "3339182301",
-  "version" : "1.0.013",
-  "supported_game_version" : "1.7.*",
+  "version" : "1.0.014",
+  "supported_game_version" : "1.7.6",
   "short_description" : "",
   "tags" : [],
   "relationships" : [],
