@@ -2,35 +2,35 @@
 
 # Burgundist Parties
 ## Eastern Europe
-  party_bgy_slavics: "Panslawizm"
-  party_bgy_russians: "Slavyanofily"
-  party_bgy_yugos: "Savez za obnovu Jugoslavije"
+  party_burgundists_slavics: "Panslawizm"
+  party_burgundists_russians: "Slavyanofily"
+  party_burgundists_yugos: "Savez za obnovu Jugoslavije"
 ## British and Celtic region
-  party_bgy_irish: "Gaelic League"
-  party_bgy_brits: "Celtic Rebirth"
+  party_burgundists_irish: "Gaelic League"
+  party_burgundists_brits: "Celtic Rebirth"
 ## North America
-  party_bgy_americans: "Aryan Union"
-  party_bgy_fra-canadians: "Société de Frontenac"
-  party_bgy_ang-canadians: "Loyalist Union"
+  party_burgundists_americans: "Aryan Union"
+  party_burgundists_fra-canadians: "Société de Frontenac"
+  party_burgundists_ang-canadians: "Loyalist Union"
 ## German Sphere
-  party_bgy_germans: "Thule Society"
-  party_bgy_burgundians: "Schutzstaffel des Reichsführer-SS"
-  party_bgy_SWI: "Ordenspartei Schwyz"
+  party_burgundists_germans: "Völkische Bewegung"
+  party_burgundists_burgundians: "Schutzstaffel des Reichsführer-SS"
+  party_burgundists_SWI: "Ordenspartei Schwyz"
 ## France
-  party_bgy_FRA: "Parti National-Socialiste Bourguignon"
+  party_burgundists_FRA: "Parti National-Socialiste Bourguignon"
 ## Latin America
-  party_bgy_MEX: "Liga de Iturbide"
-  party_bgy_CLM: "Sociedad de Bolívar"
-  party_bgy_ARG: "Partido Restaurador de Rosas"
-  party_bgy_PEU: "Orden de Gamarra"
-  party_bgy_CHL: "Frente Nacional de Portales"
-  party_bgy_VNZ: "Partido de Páez"
-  party_bgy_BRZ: "Liga Imperial de Pedro I"
-  party_bgy_GUA: "Frente Nacional de Carrera"
-  party_bgy_PRG: "Unión Nacional de Francia"
-  party_bgy_URU: "Partido de Lavalleja"
+  party_burgundists_MEX: "Liga de Iturbide"
+  party_burgundists_CLM: "Sociedad de Bolívar"
+  party_burgundists_ARG: "Partido Restaurador de Rosas"
+  party_burgundists_PEU: "Orden de Gamarra"
+  party_burgundists_CHL: "Frente Nacional de Portales"
+  party_burgundists_VNZ: "Partido de Páez"
+  party_burgundists_BRZ: "Liga Imperial de Pedro I"
+  party_burgundists_GUA: "Frente Nacional de Carrera"
+  party_burgundists_PRG: "Unión Nacional de Francia"
+  party_burgundists_URU: "Partido de Lavalleja"
 ## Default
-  party_burgundist: "Burgundist Party"
+  party_burgundists: "Burgundist Party"
 
 
 # Party weight descriptions

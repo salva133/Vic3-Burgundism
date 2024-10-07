@@ -1,10 +1,10 @@
 ﻿l_english:
 # Military
   thinking_of_ending_things: "Thinking of ending things"
-  thinking_of_ending_things_desc: "New Elberfelder Bible 1885, Revelation 6:8. And I looked, and behold, an ashen horse; and he who sat on it had the name Death (his actual name was Bob but who cares am I right?); and the Black Sun was following with him."
+  thinking_of_ending_things_desc: "New [Concept('concept_elberfelder_bible','$concept_elberfelder_bible$')] 1885, [Concept('concept_revelation','$concept_revelation$')] 6:8\nAnd I looked, and behold, an ashen horse; and he who sat on it had the name [Concept('concept_death','Death')]; and the [Concept('concept_black_sun','$concept_black_sun$')] was following with him."
 
 # Society
   totalism: "Totalism"
-  totalism_desc: "Unlimited Power!"
+  totalism_desc: "\"Unlimited Power!\"\n\n- #italic A guy in a robe#"
   total_war: "Total War"
   total_war_desc: "Eternal peace is a dream, and not even a beautiful one, and war is a part of God's world order. Hearken unto us, and grant us the means, and empower us, to wage war for true greatness."

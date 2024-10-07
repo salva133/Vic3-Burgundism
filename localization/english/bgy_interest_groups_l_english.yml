@@ -4,9 +4,9 @@
   ig_burgundists_desc: "A concept of terror, characterised by absolute power and racist tyranny. Democracy and freedom are despised, dissenting voices are brutally stifled. Total control suffocates all hope."
 
 # Culture dependent Naming
-  ig_bgy_voelkische_bewegung: "Völkische Bewegung"
-  ig_bgy_voelkische_bewegung_desc: "Völkische Bewegung"
-  ig_bgy_ku_klux_klan: "Ku-Klux-Klan"
-  ig_bgy_ku_klux_klan_desc: "Ku-Klux-Klan"
-  ig_bgy_fundamentalists: "Fundamentalists"
-  ig_bgy_fundamentalists_desc: "Fundamentalists"
+  ig_burgundists_germanics: "Thule Society"
+  ig_burgundists_germanics_desc: "Thule Society"
+  ig_burgundists_americans: "Ku-Klux-Klan"
+  ig_burgundists_americans_desc: "Ku-Klux-Klan"
+  ig_burgundists_islamists: "Fundamentalists"
+  ig_burgundists_islamists_desc: "Fundamentalists"

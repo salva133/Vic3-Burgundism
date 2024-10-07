@@ -1,0 +1,124 @@
+﻿law_bgy_burgundism = {
+	group = lawgroup_church_and_state
+	
+	icon = "/gfx/interface/icons/religion_icons/spartanist.dds"
+
+	progressiveness = 0
+
+	# unlocking_technologies = {
+	# 	empiricism
+	# }
+
+	unlocking_laws = {
+		law_theocracy
+	}
+
+	can_enact = {
+		ig:ig_burgundists = {
+			is_in_government = yes
+		}
+	}
+	
+	modifier = {
+		interest_group_ig_burgundists_pol_str_mult = 1
+		state_conversion_mult = 0.5
+		country_authority_add = 500
+	}
+	
+	on_enact = {
+		set_state_religion = rel:spartanist
+		# add_modifier = {
+		# 	name = antireligious_policies
+		# 	months = long_modifier_time
+		# }
+		custom_tooltip = {
+			text = spartanism_conversion_tt
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				convert_population = {
+					target = rel:spartanist
+					value = 0.25
+				}
+			}
+		}
+		recalculate_pop_ig_support = yes
+	}
+	
+	religious_acceptance_rule = {
+		is_state_religion = scope:country
+	}
+	
+	possible_political_movements = {
+		law_freedom_of_conscience
+	}
+
+	can_impose = {
+		OR = {
+			AND = {
+				is_in_same_power_bloc = scope:target_country
+				AND = {
+					modifier:country_can_impose_same_lawgroup_church_and_state_in_power_bloc_bool = yes
+					has_law = scope:law
+				}
+			}
+			can_impose_law_default = yes
+		}
+	}
+	
+	pop_support = {
+		value = 0
+		# Some euphoric academics will support this
+		add = {
+			desc = "POP_ACADEMICS"
+			if = {
+				limit = {
+					is_pop_type = academics
+				}
+				value = 0.1
+			}
+		}
+		# Atheists will support this
+		add = {
+			desc = "POP_SPARTANISTS"
+			if = {
+				limit = {
+					has_pop_religion = spartanist
+				}
+				value = 0.5
+			}
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
+	
+	ai_impose_chance = {
+		value = 0
+		
+		if = {
+			limit = {
+				has_law = law_type:law_bgy_burgundism
+				power_bloc ?= { has_identity = identity:identity_ideological_union }			
+			}
+			
+			add = base_impose_law_weight	
+			
+			# Spartanist leaders of ideological unions want to spread the cult of "reason"
+			if = {
+				limit = { scope:target_country = { has_law = law_type:law_total_separation } }
+				multiply = 0.5
+			}
+			else = {
+				multiply = 2
+			}
+		}
+	}
+}

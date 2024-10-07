@@ -1,4 +1,4 @@
-﻿ig_burgundists = {
+﻿ig_burgundists = {		# Definitely needs rework, is still too close to it's example
 	color = hsv{ 0.75 0.78 0.31 }
 	texture = "gfx/interface/icons/ig_icons/burgundists.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
@@ -18,9 +18,10 @@
 	}
 
 	on_enable = {
-		# set_ig_trait = ig_trait:ig_trait_materiel_waste
-		# set_ig_trait = ig_trait:ig_trait_veteran_consultation
-		# set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+		# New Traits are required
+		set_ig_trait = ig_trait:ig_trait_materiel_waste
+		set_ig_trait = ig_trait:ig_trait_veteran_consultation
+		set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 		if = {
 			limit = {
 				OR = {
@@ -30,7 +31,7 @@
 				}
 			}
 			ig:ig_burgundists = {
-				set_interest_group_name = ig_bgy_voelkische_bewegung
+				set_interest_group_name = ig_burgundists_germanics
 			}
 		}
 		else_if = {
@@ -41,7 +42,7 @@
 				}
 			}
 			ig:ig_burgundists = {
-				set_interest_group_name = ig_bgy_ku_klux_klan
+				set_interest_group_name = ig_burgundists_americans
 			}
 		}
 		else_if = {
@@ -52,7 +53,7 @@
 				}
 			}
 			ig:ig_burgundists = {
-				set_interest_group_name = ig_bgy_fundamentalists
+				set_interest_group_name = ig_burgundists_islamists
 			}
 		}
 	}
@@ -95,6 +96,16 @@
 
 	pop_weight = {
 		value = 0
+
+		add = {
+			desc = "POP_SPARTANISTS"
+			if = {
+				limit = {
+					has_pop_religion = rel:spartanist
+				}
+				value = 250
+			}
+		}
 
 		add = {
 			desc = "POP_SHOPKEEPERS"
@@ -144,12 +155,18 @@
 		}
 
 		add = {
-			desc = "HOMESTEADING_LAW"
+			desc = "owner_has_upper_strata_friendly_agriculture"
 			if = {
 				limit = {
-					is_pop_type = farmers
+					OR = {
+						is_pop_type = aristocrats
+						is_pop_type = capitalists
+					}
 					owner = {
-						has_law = law_type:law_homesteading
+						NOR = {
+							has_law = law_type:law_homesteading
+							has_law = law_type:law_collectivized_agriculture
+						}
 					}
 				}
 				value = 25
@@ -160,7 +177,7 @@
 							is_slave_state = yes
 						}
 					}
-					subtract = 25
+					add = 25
 				}
 			}
 		}

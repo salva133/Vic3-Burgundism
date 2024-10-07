@@ -1,9 +1,12 @@
 ﻿l_english:
   law_bgy_spartanism: "Spartanism"
-  law_bgy_spartanism_desc: "The people are mere cogs within the great machinery of the state.\n\nWARNING: As soon as you introduce this law, your population will shrink, but you will gain an unimaginable amount of labour. Use it wisely.\nThere is no hope under the black sun..."
+  law_bgy_spartanism_desc: "The people are mere cogs within the great machinery of the state.\n\nThere is no hope under the [Concept('concept_black_sun','$concept_black_sun$')]..."
 
   law_bgy_kleptocracy: "Kleptocracy"
   law_bgy_kleptocracy_desc: "The house wins... always!"
 
   law_bgy_total_war: "Total War"
-  law_bgy_total_war_desc: "Sometimes we have to make sacrifices to achieve our goals. By involving all able-bodied men, women and yes, even children, we can grow our armed forces to the necessary level.\nUnleash the might of the Volkssturm!"
+  law_bgy_total_war_desc: "Sometimes we have to make sacrifices to achieve our goals. By involving all able-bodied men, women and yes, even children, we can grow our armed forces to the necessary level.\nUnleash the might of the [Concept('concept_volkssturm','$concept_volkssturm$')]!"
+
+  law_bgy_burgundism: "Burgundism"
+  law_bgy_burgundism_desc: "Under the Burgundian system, the \"Burgundism\" is established as the official state religion, enforcing the principles of the Spartan faith upon all citizens. This belief system promotes absolute discipline, self-sacrifice, and collective strength above all else.\nCitizens are required to abandon personal desires and luxuries, dedicating their lives to the common good. Individuality is erased in favor of unwavering loyalty to the state. Every man and woman undergoes rigorous military training, for readiness for war is seen not only as a duty but a spiritual calling.\nAt the core of this faith is the worship of the Leader, whose authority is unquestionable, regarded as the divine embodiment of the state's will. Weakness, both physical and moral, is scorned, and those deemed unfit are excluded from society, ensuring only the strong contribute to the state's power.\nIn this harsh theocracy, the state demands absolute obedience. The collective thrives through the suppression of the self, shaping a society where citizens are molded into warriors, loyal only to the state and its supreme Leader."

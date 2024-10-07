@@ -1,0 +1,2 @@
+﻿l_english:
+  spartanism_conversion_tt: "10% of [Concept('concept_pop', '$concept_pops$')] in your [Concept('concept_incorporated_state', '$concept_incorporated_states$')] are persuaded to become Spartanists"

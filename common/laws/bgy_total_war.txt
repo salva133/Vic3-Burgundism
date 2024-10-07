@@ -12,13 +12,14 @@
 		law_single_party_state
 		law_technocracy
 	}
-	
-	modifier = {
-		unit_morale_loss_mult = 0.10
-		state_conscription_rate_add = 0.99
-		building_training_rate_mult = 0.5
-		state_building_barracks_max_level_add = 200
-		state_building_conscription_center_max_level_add = 1000
+
+	institution = institution_miniwar
+	institution_modifier = {
+		unit_morale_loss_mult = 0.02
+		state_conscription_rate_add = 0.19
+		building_training_rate_mult = 0.1
+		state_building_barracks_max_level_add = 40
+		state_building_conscription_center_max_level_add = 200
 	}
 
 	can_impose = {
