@@ -22,6 +22,10 @@
 		state_building_conscription_center_max_level_add = 200
 	}
 
+	modifier = {
+		country_institution_miniwar_max_investment_add = 5
+	}
+
 	can_impose = {
 		OR = {
 			AND = {

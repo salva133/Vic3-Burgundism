@@ -2,3 +2,6 @@
   ig_variant_burgundists: "[GetInterestGroupVariant('ig_burgundists',GetPlayer).GetNameWithCountryVariant]"
   interest_group_ig_burgundists_pol_str_mult: "$ig_variant_burgundists$ [concept_political_strength]"
   interest_group_ig_burgundists_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_burgundists$ [concept_interest_group]"
+
+  country_institution_miniwar_max_investment_add: "Max $institution_miniwar$ [concept_institution] Investment"
+  country_institution_miniwar_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_miniwar$ [concept_institution]"
