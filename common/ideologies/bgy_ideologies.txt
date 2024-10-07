@@ -4,8 +4,8 @@
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
-		law_theocracy = strongly_disapprove		
-		law_presidential_republic = strongly_approve
+		law_theocracy = strongly_approve		
+		law_presidential_republic = approve
 		law_parliamentary_republic = neutral
 		law_council_republic = strongly_disapprove
 	}
@@ -42,10 +42,11 @@
 		law_bgy_total_war = approve
 	}
 	lawgroup_church_and_state = {
-		law_state_religion = strongly_approve
+		law_state_religion = neutral
 		law_freedom_of_conscience = disapprove
 		law_total_separation = disapprove
 		law_state_atheism = strongly_disapprove
+		law_bgy_burgundism = strongly_approve
 	}
 	lawgroup_internal_security = {
 		law_no_home_affairs = strongly_disapprove
@@ -74,10 +75,10 @@ ideology_bgy_burgundist_economy = {
 		law_mercantilism = strongly_disapprove
 	}
     lawgroup_land_reform = {
-		law_serfdom = strongly_disapprove
-		law_tenant_farmers = strongly_disapprove
+		law_serfdom = approve
+		law_tenant_farmers = approve
 		law_homesteading = strongly_disapprove
-		law_commercialized_agriculture = strongly_approve
+		law_commercialized_agriculture = approve
 		law_collectivized_agriculture = strongly_disapprove
 	}
     lawgroup_taxation = {
@@ -92,7 +93,7 @@ ideology_bgy_burgundist_economy = {
 		law_slavery_banned = strongly_disapprove
 		law_debt_slavery = strongly_approve
 		law_slave_trade = neutral
-		law_legacy_slavery = disapprove
+		law_legacy_slavery = neutral
 	}
 	lawgroup_policing = {
 		law_no_police = strongly_disapprove
