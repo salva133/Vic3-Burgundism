@@ -1,0 +1,36 @@
+﻿# namespace = judgement_day
+
+# judgement_day.1 = {
+# 	type = state_event
+# 	placement = root
+# 	title = judgement_day.1.t
+# 	desc = judgement_day.1.d
+# 	flavor = judgement_day.1.f
+
+# 	duration = 1
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	trigger = {
+		
+# 	}
+
+# 	immediate = {
+
+# 	}
+
+# 	option = {
+# 		name = judgement_day.1.a 
+# 		default_option = yes
+
+# 		every_state = {
+# 			limit = { NOT = { owner = c:BGY } }
+# 			state_region = {
+# 				add_devastation = 90
+# 			}
+# 			kill_population_percent_in_state = {
+# 				percent = 0.95
+# 			}
+# 		}
+# 	}
+# }
