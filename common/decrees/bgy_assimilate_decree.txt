@@ -29,10 +29,10 @@
 	}
 
 	modifier = {
-		state_turmoil_effects_mult = 1
+		# state_turmoil_effects_mult = 1
 		state_radicals_from_discrimination_mult = 1
-		state_mortality_mult = 1
-		state_accepted_birth_rate_mult = 1.05
+		state_mortality_mult = 100
+		state_accepted_birth_rate_mult = 105
 	}
 
 	cost = 100

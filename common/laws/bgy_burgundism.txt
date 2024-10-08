@@ -27,10 +27,10 @@
 	
 	on_enact = {
 		set_state_religion = rel:spartanist
-		# add_modifier = {
-		# 	name = antireligious_policies
-		# 	months = long_modifier_time
-		# }
+		add_modifier = {
+			name = spartanist_policies
+			months = long_modifier_time
+		}
 		custom_tooltip = {
 			text = spartanism_conversion_tt
 			every_scope_state = {
