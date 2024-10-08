@@ -41,6 +41,13 @@
 					THIS = c:YUG
 				}
 			}
+			# Northern Europe
+			triggered_desc = {
+				desc = party_burgundists_icelandic
+				trigger = {
+					country_has_primary_culture = cu:icelandic
+				}
+			}
 			# British and Celtic region
 			triggered_desc = {
 				desc = party_burgundists_irish

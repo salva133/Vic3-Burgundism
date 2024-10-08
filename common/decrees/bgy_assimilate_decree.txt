@@ -25,6 +25,7 @@
 			has_decree = decree_lag_reduction
 			has_decree = decree_homelandoverall_values
 		}
+		is_incorporated = yes
 	}
 
 	modifier = {
@@ -74,11 +75,12 @@ decree_lag_reduction = {
 			has_decree = decree_true_lag_reduction
 			has_decree = decree_homelandoverall_values
 		}
+		is_incorporated = yes
 	}
 
 	modifier = {
-		state_assimilation_mult = 5
-		state_conversion_mult = 5
+		state_assimilation_mult = 1
+		state_conversion_mult = 1
 		state_turmoil_effects_mult = 0.5
 		state_radicals_from_discrimination_mult = 0.5
 		state_mortality_mult = 0.5
@@ -118,6 +120,7 @@ decree_homelandoverall_values = {
 			has_decree = decree_lag_reduction
 			has_decree = decree_true_lag_reduction
 		}
+		is_incorporated = yes
 	}
 
 	modifier = {

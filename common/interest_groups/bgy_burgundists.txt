@@ -56,6 +56,14 @@
 				set_interest_group_name = ig_burgundists_islamists
 			}
 		}
+		else_if = {
+			limit = {
+				country_has_primary_culture = cu:icelandic
+			}
+			ig:ig_burgundists = {
+				set_interest_group_name = ig_burgundists_icelandic
+			}
+		}
 	}
 
 	on_disable = {}
