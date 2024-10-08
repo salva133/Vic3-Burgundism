@@ -14,32 +14,23 @@ judgement_day.1 = {
 
 	trigger = {
 		NAND = {
-			has_variable = second_seal_broken
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = first_seal_broken
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = first_seal_broken
+		set_global_variable = first_seal_broken
 	}
 
 	option = {
 		name = judgement_day.1.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -57,31 +48,22 @@ judgement_day.2 = {
 
 	trigger = {
 		NAND = {
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = second_seal_broken
+		set_global_variable = second_seal_broken
 	}
 
 	option = {
 		name = judgement_day.2.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -99,30 +81,21 @@ judgement_day.3 = {
 
 	trigger = {
 		NAND = {
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = third_seal_broken
+		set_global_variable = third_seal_broken
 	}
 
 	option = {
 		name = judgement_day.3.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -140,29 +113,20 @@ judgement_day.4 = {
 
 	trigger = {
 		NAND = {
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = fourth_seal_broken
+		set_global_variable = fourth_seal_broken
 	}
 
 	option = {
 		name = judgement_day.4.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -180,28 +144,19 @@ judgement_day.5 = {
 
 	trigger = {
 		NAND = {
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = fifth_seal_broken
+		set_global_variable = fifth_seal_broken
 	}
 
 	option = {
 		name = judgement_day.5.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -219,27 +174,18 @@ judgement_day.6 = {
 
 	trigger = {
 		NAND = {
-			has_variable = judgement_day_completed
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = sixth_seal_broken
+		set_global_variable = sixth_seal_broken
 	}
 
 	option = {
 		name = judgement_day.6.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -257,18 +203,17 @@ judgement_day.7 = {
 
 	trigger = {
 		AND = {
-			has_variable = first_seal_broken
-			has_variable = second_seal_broken
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = first_seal_broken
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
 		}
 	}
 
 	immediate = {
-		set_variable = judgement_day_completed
+		set_global_variable = judgement_day_completed
 	}
 
 	option = {
@@ -301,33 +246,23 @@ judgement_day.8 = {
 
 	trigger = {
 		NAND = {
-			has_variable = first_seal_broken
-			has_variable = second_seal_broken
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = first_seal_broken
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = first_seal_broken
+		set_global_variable = first_seal_broken
 	}
 
 	option = {
 		name = judgement_day.8.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -345,33 +280,23 @@ judgement_day.9 = {
 
 	trigger = {
 		NAND = {
-			has_variable = first_seal_broken
-			has_variable = second_seal_broken
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = first_seal_broken
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = first_seal_broken
+		set_global_variable = first_seal_broken
 	}
 
 	option = {
 		name = judgement_day.9.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -389,33 +314,23 @@ judgement_day.10 = {
 
 	trigger = {
 		NAND = {
-			has_variable = first_seal_broken
-			has_variable = second_seal_broken
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = first_seal_broken
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = first_seal_broken
+		set_global_variable = first_seal_broken
 	}
 
 	option = {
 		name = judgement_day.10.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -433,33 +348,23 @@ judgement_day.11 = {
 
 	trigger = {
 		NAND = {
-			has_variable = first_seal_broken
-			has_variable = second_seal_broken
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = first_seal_broken
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = first_seal_broken
+		set_global_variable = first_seal_broken
 	}
 
 	option = {
 		name = judgement_day.11.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -477,33 +382,23 @@ judgement_day.12 = {
 
 	trigger = {
 		NAND = {
-			has_variable = first_seal_broken
-			has_variable = second_seal_broken
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = first_seal_broken
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = first_seal_broken
+		set_global_variable = first_seal_broken
 	}
 
 	option = {
 		name = judgement_day.12.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
 
@@ -521,32 +416,22 @@ judgement_day.13 = {
 
 	trigger = {
 		NAND = {
-			has_variable = first_seal_broken
-			has_variable = second_seal_broken
-			has_variable = third_seal_broken
-			has_variable = fourth_seal_broken
-			has_variable = fifth_seal_broken
-			has_variable = sixth_seal_broken
-			has_variable = judgement_day_completed
+			has_global_variable = first_seal_broken
+			has_global_variable = second_seal_broken
+			has_global_variable = third_seal_broken
+			has_global_variable = fourth_seal_broken
+			has_global_variable = fifth_seal_broken
+			has_global_variable = sixth_seal_broken
+			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		set_variable = first_seal_broken
+		set_global_variable = first_seal_broken
 	}
 
 	option = {
 		name = judgement_day.13.a 
 		default_option = yes
-
-		every_state = {
-			limit = { NOT = { owner = c:BGY } }
-			state_region = {
-				add_devastation = 90
-			}
-			kill_population_percent_in_state = {
-				percent = 0.95
-			}
-		}
 	}
 }
