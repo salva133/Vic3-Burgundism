@@ -1,4 +1,5 @@
 ﻿l_english:
+  broken_seal_counter: "This amount of Seals have already been broken: $broken_seal_counter_glob_var$"
   # judgement_day.1.t: "First Seal broken"
   # judgement_day.1.d: ""
   # judgement_day.1.f: "And I saw the first seal was broken, and I heard, as it were the noise of thunder, one of the four beasts saying, Come and see. And I saw the first seal was restored, and I heard, as it were the silence of peace, one of the four beasts saying, Depart and be still. And I saw, and behold a white horse: and he that sat on him had a bow; and a crown was given unto him: and he went forth conquering, and to conquer."
