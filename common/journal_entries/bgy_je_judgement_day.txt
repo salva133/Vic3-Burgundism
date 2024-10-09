@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-﻿
-=======
 ﻿# Judgement Day
 je_judgement_day = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
@@ -188,4 +185,3 @@ je_judgement_day = {
 	
 	weight = 5000
 }
->>>>>>> c9d651f (changed pulse intervall for testing)
