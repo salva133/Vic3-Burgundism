@@ -1,4 +1,4 @@
-﻿namespace = judgement_day
+﻿# namespace = judgement_day
 
 
 # ### First Seal broken
