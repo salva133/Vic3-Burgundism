@@ -43,8 +43,8 @@
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = neutral
-		law_freedom_of_conscience = disapprove
-		law_total_separation = disapprove
+		law_freedom_of_conscience = neutral
+		law_total_separation = strongly_disapprove
 		law_state_atheism = strongly_disapprove
 		law_bgy_burgundism = strongly_approve
 	}
