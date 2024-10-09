@@ -1,0 +1,145 @@
+﻿# Judgement Day
+je_judgement_day = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	
+	group = je_group_burgundism
+
+	immediate = {
+		set_global_variable = {
+			name = broken_seal_counter_glob_var
+			value = 0
+		}
+	}
+
+	possible = {
+		country_rank >= rank_value:major_power
+		is_player = yes
+		NOT = { has_global_variable = judgement_day_completed_glob_var }
+		has_technology_researched = totalism
+	}
+
+	complete = {
+		has_law = law_type:law_bgy_burgundism
+		has_law = law_type:law_bgy_kleptocracy
+		has_law = law_type:law_bgy_total_war
+		AND = {
+			has_law = law_type:law_bgy_spartanism
+			institution_investment_level = {
+				institution = institution:institution_workplace_safety
+				value = 5
+			}
+		}
+		country_army_unit_type_fraction = {  
+            target = unit_type:combat_unit_type_apocalyptic_artillery  
+            value >= 0.25
+        }
+		
+		custom_tooltip = {
+			text = broken_seal_counter
+		}
+		global_var:broken_seal_counter_glob_var >= 7
+	}
+
+	on_complete = {
+		set_global_variable = judgement_day_completed_glob_var
+		trigger_event = {
+			id = judgement_day.7
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					country_navy_unit_type_fraction = {  
+						target = unit_type:combat_unit_type_apocalyptic_artillery  
+						value >= 0.33
+					}
+					NOT = { has_variable = a_third_of_military_is_apoc_arty_var }
+				}
+				set_variable = a_third_of_military_is_apoc_arty_var
+				change_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+		}
+	}
+
+	on_yearly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					has_law = law_type:law_bgy_burgundism_var
+					NOT = { has_variable = enacted_law_bgy_burgundism_var }
+				}
+				set_variable = enacted_law_bgy_burgundism
+				change_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_bgy_kleptocracy_var
+					NOT = { has_variable = enacted_law_bgy_kleptocracy_var }
+				}
+				set_variable = enacted_law_bgy_kleptocracy
+				change_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_bgy_total_war
+					NOT = { has_variable = enacted_law_bgy_total_war_var }
+				}
+				set_variable = enacted_law_bgy_total_war_var
+				change_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_bgy_spartanism
+					institution_investment_level = {
+						institution = institution:institution_workplace_safety
+						value = 5
+					}
+					NOT = { has_variable = enacted_law_bgy_spartanism }
+				}
+				set_variable = enacted_law_bgy_spartanism
+				change_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			# if = {
+			# 	limit = {
+			# 		has_law = law_type:law_bgy_burgundism
+			# 		NOT = { has_variable = enacted_law_bgy_burgundism }
+			# 	}
+			# 	set_variable = enacted_law_bgy_burgundism
+			# 	change_variable = {
+			# 		name = broken_seal_counter_glob_var
+			# 		add = 1
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		has_law = law_type:law_bgy_burgundism
+			# 		NOT = { has_variable = enacted_law_bgy_burgundism }
+			# 	}
+			# 	set_variable = enacted_law_bgy_burgundism
+			# 	change_variable = {
+			# 		name = broken_seal_counter_glob_var
+			# 		add = 1
+			# 	}
+			# }
+		}
+	}
+	
+	weight = 5000
+}
