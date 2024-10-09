@@ -1,4 +1,4 @@
-﻿# Judgement Day
+﻿﻿# Judgement Day
 je_judgement_day = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
