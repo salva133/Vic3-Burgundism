@@ -1,5 +1,57 @@
 ﻿namespace = judgement_day
 
+
+### INSTRUCTIONS ###
+#
+# The trigger logic must recognise when a normal law 
+# has been changed to a Burgundian law or a Burgundian law has been revoked.
+# The conditions has to be as follows (pseudo-code, not usable):
+# 
+# 
+## Condition for Seal-Breaking
+# OR = {
+# 	has_enacted = law_type:law_bgy_burgundism
+# 	has_enacted = law_type:law_bgy_kleptocracy
+# 	has_enacted = law_type:law_bgy_total_war
+# 	has_enacted = law_type:law_bgy_spartanism
+# 	AND = {
+# 		has_enacted = law_type:law_bgy_spartanism
+# 		institution_investment_level = {
+# 			institution = institution:institution_workplace_safety
+# 			value = 5
+# 		}
+# 		NOT = { has_institution = institution:institution_workplace_safety }
+# 	}
+# }
+# any_country = {   # AI is not allowed to bring judgement day
+# 	filter = {
+# 		is_player = yes
+# 	}
+# }
+
+## Condition for Seal-Restoration
+# OR = {
+# 	NOT = { has_enacted = law_type:law_bgy_burgundism }
+# 	NOT = { has_enacted = law_type:law_bgy_kleptocracy }
+# 	NOT = { has_enacted = law_type:law_bgy_total_war }
+# 	OR = {
+# 		NOT = { has_enacted = law_type:law_bgy_spartanism }
+# 		OR = {
+# 			institution_investment_level = {
+# 				institution = institution:institution_workplace_safety
+# 				value < 5
+# 			}
+# 			NOT = { has_institution = institution:institution_workplace_safety }
+# 		}
+# 	}
+# 	any_country = {   # AI is not allowed to bring judgement day
+# 		filter = {
+# 			is_player = yes
+# 		}
+# 	}
+# }
+
+
 ### First Seal broken
 judgement_day.1 = {
 	type = country_event
