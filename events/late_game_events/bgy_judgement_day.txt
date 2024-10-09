@@ -14,12 +14,12 @@ judgement_day.1 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = first_seal_broken
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = first_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
@@ -48,11 +48,11 @@ judgement_day.2 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
@@ -81,10 +81,10 @@ judgement_day.3 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
@@ -113,9 +113,9 @@ judgement_day.4 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
@@ -144,8 +144,8 @@ judgement_day.5 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
@@ -174,7 +174,7 @@ judgement_day.6 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = sixth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
@@ -203,12 +203,12 @@ judgement_day.7 = {
 
 	trigger = {
 		AND = {
-			has_global_variable = first_seal_broken
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = first_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			NOT = { has_global_variable = judgement_day_completed }
 		}
 	}
@@ -247,18 +247,18 @@ judgement_day.8 = {
 
 	trigger = {
 		AND = {
-			has_global_variable = first_seal_broken
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
+			has_variable = first_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
 			has_global_variable = sixth_seal_broken
 		}
 		NOT = { has_global_variable = judgement_day_completed }
 	}
 
 	immediate = {
-		remove_global_variable = sixth_seal_broken
+		remove_variable = sixth_seal_broken
 	}
 
 	option = {
@@ -281,18 +281,18 @@ judgement_day.9 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = first_seal_broken
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = first_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		remove_global_variable = fifth_seal_broken
+		remove_variable = fifth_seal_broken
 	}
 
 	option = {
@@ -315,18 +315,18 @@ judgement_day.10 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = first_seal_broken
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = first_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		remove_global_variable = fifth_seal_broken
+		remove_variable = fifth_seal_broken
 	}
 
 	option = {
@@ -349,18 +349,18 @@ judgement_day.11 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = first_seal_broken
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = first_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		remove_global_variable = first_seal_broken
+		remove_variable = first_seal_broken
 	}
 
 	option = {
@@ -383,18 +383,18 @@ judgement_day.12 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = first_seal_broken
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = first_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		remove_global_variable = first_seal_broken
+		remove_variable = first_seal_broken
 	}
 
 	option = {
@@ -417,18 +417,18 @@ judgement_day.13 = {
 
 	trigger = {
 		NAND = {
-			has_global_variable = first_seal_broken
-			has_global_variable = second_seal_broken
-			has_global_variable = third_seal_broken
-			has_global_variable = fourth_seal_broken
-			has_global_variable = fifth_seal_broken
-			has_global_variable = sixth_seal_broken
+			has_variable = first_seal_broken
+			has_variable = second_seal_broken
+			has_variable = third_seal_broken
+			has_variable = fourth_seal_broken
+			has_variable = fifth_seal_broken
+			has_variable = sixth_seal_broken
 			has_global_variable = judgement_day_completed
 		}
 	}
 
 	immediate = {
-		remove_global_variable = first_seal_broken
+		remove_variable = first_seal_broken
 	}
 
 	option = {
