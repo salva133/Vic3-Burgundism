@@ -9,42 +9,79 @@ je_judgement_day = {
 			name = broken_seal_counter_glob_var
 			value = 0
 		}
+		set_global_variable = {
+			name = broken_seal_counter_max_glob_var
+			value = 7
+		}
+	}
+
+	is_shown_when_inactive = {
+		is_player = yes
+
+		# OR = {
+		# 	AND = {
+		# 		exists = c:BGY
+		# 		c:BGY = root
+		# 	}
+		# 	AND = {	
+		# 		is_player = yes
+		# 		NOT = { has_global_variable = judgement_day_completed_glob_var }
+		# 		country_rank >= rank_value:major_power
+		# 		has_technology_researched = totalism
+		# 	}
+		# }
 	}
 
 	possible = {
-		country_rank >= rank_value:major_power
-		is_player = yes
-		NOT = { has_global_variable = judgement_day_completed_glob_var }
-		has_technology_researched = totalism
+		OR = {
+			AND = {
+				custom_tooltip = {
+					text = is_burgundy
+					exists = c:BGY
+					c:BGY = root
+				}
+			}
+			AND = {	
+				is_player = yes
+				country_rank >= rank_value:major_power
+				has_technology_researched = totalism
+				custom_tooltip = {
+					text = judgement_day_completed_tt
+					NOT = { has_global_variable = judgement_day_completed_glob_var }
+				}
+			}
+		}
 	}
 
 	complete = {
 		has_law = law_type:law_bgy_burgundism
 		has_law = law_type:law_bgy_kleptocracy
 		has_law = law_type:law_bgy_total_war
-		AND = {
-			has_law = law_type:law_bgy_spartanism
-			institution_investment_level = {
-				institution = institution:institution_workplace_safety
-				value = 5
-			}
+		institution_investment_level = {
+			institution = institution_miniwar
+			value = 5
 		}
+		has_law = law_type:law_bgy_spartanism
+		institution_investment_level = {
+			institution = institution_workplace_safety
+			value = 5
+		}
+		army_size >= 200
 		country_army_unit_type_fraction = {  
             target = unit_type:combat_unit_type_apocalyptic_artillery  
-            value >= 0.25
+            value >= 0.33
         }
-		
-		custom_tooltip = {
-			text = broken_seal_counter
+		custom_tooltip = { 
+			text = broken_seal_counter_tt
+			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
 		}
-		global_var:broken_seal_counter_glob_var >= 7
 	}
 
 	on_complete = {
 		set_global_variable = judgement_day_completed_glob_var
-		trigger_event = {
-			id = judgement_day.7
-		}
+		# trigger_event = {
+		# 	id = judgement_day.7
+		# }
 	}
 
 	on_monthly_pulse = {
@@ -58,7 +95,7 @@ je_judgement_day = {
 					NOT = { has_variable = a_third_of_military_is_apoc_arty_var }
 				}
 				set_variable = a_third_of_military_is_apoc_arty_var
-				change_variable = {
+				change_global_variable = {
 					name = broken_seal_counter_glob_var
 					add = 1
 				}
@@ -70,22 +107,22 @@ je_judgement_day = {
 		effect = {
 			if = {
 				limit = {
-					has_law = law_type:law_bgy_burgundism_var
+					has_law = law_type:law_bgy_burgundism
 					NOT = { has_variable = enacted_law_bgy_burgundism_var }
 				}
-				set_variable = enacted_law_bgy_burgundism
-				change_variable = {
+				set_variable = enacted_law_bgy_burgundism_var
+				change_global_variable = {
 					name = broken_seal_counter_glob_var
 					add = 1
 				}
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_bgy_kleptocracy_var
+					has_law = law_type:law_bgy_kleptocracy
 					NOT = { has_variable = enacted_law_bgy_kleptocracy_var }
 				}
-				set_variable = enacted_law_bgy_kleptocracy
-				change_variable = {
+				set_variable = enacted_law_bgy_kleptocracy_var
+				change_global_variable = {
 					name = broken_seal_counter_glob_var
 					add = 1
 				}
@@ -96,7 +133,7 @@ je_judgement_day = {
 					NOT = { has_variable = enacted_law_bgy_total_war_var }
 				}
 				set_variable = enacted_law_bgy_total_war_var
-				change_variable = {
+				change_global_variable = {
 					name = broken_seal_counter_glob_var
 					add = 1
 				}
@@ -105,13 +142,27 @@ je_judgement_day = {
 				limit = {
 					has_law = law_type:law_bgy_spartanism
 					institution_investment_level = {
-						institution = institution:institution_workplace_safety
+						institution = institution_workplace_safety
 						value = 5
 					}
-					NOT = { has_variable = enacted_law_bgy_spartanism }
+					NOT = { has_variable = enacted_law_bgy_spartanism_var }
 				}
-				set_variable = enacted_law_bgy_spartanism
-				change_variable = {
+				set_variable = enacted_law_bgy_spartanism_var
+				change_global_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					institution_investment_level = {
+						institution = institution_miniwar
+						value = 5
+					}
+					NOT = { has_variable = maxed_out_miniwar_var }
+				}
+				set_variable = maxed_out_miniwar_var
+				change_global_variable = {
 					name = broken_seal_counter_glob_var
 					add = 1
 				}
@@ -119,27 +170,18 @@ je_judgement_day = {
 			# if = {
 			# 	limit = {
 			# 		has_law = law_type:law_bgy_burgundism
-			# 		NOT = { has_variable = enacted_law_bgy_burgundism }
+			# 		NOT = { has_variable = enacted_law_bgy_burgundism_var }
 			# 	}
-			# 	set_variable = enacted_law_bgy_burgundism
-			# 	change_variable = {
-			# 		name = broken_seal_counter_glob_var
-			# 		add = 1
-			# 	}
-			# }
-			# if = {
-			# 	limit = {
-			# 		has_law = law_type:law_bgy_burgundism
-			# 		NOT = { has_variable = enacted_law_bgy_burgundism }
-			# 	}
-			# 	set_variable = enacted_law_bgy_burgundism
-			# 	change_variable = {
+			# 	set_variable = enacted_law_bgy_burgundism_var
+			# 	change_global_variable = {
 			# 		name = broken_seal_counter_glob_var
 			# 		add = 1
 			# 	}
 			# }
 		}
 	}
+
+	should_be_pinned_by_default = yes
 	
 	weight = 5000
 }
