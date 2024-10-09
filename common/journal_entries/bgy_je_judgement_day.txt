@@ -17,40 +17,44 @@ je_judgement_day = {
 
 	is_shown_when_inactive = {
 		is_player = yes
-
 		# OR = {
 		# 	AND = {
-		# 		exists = c:BGY
-		# 		c:BGY = root
+		# 		custom_tooltip = {
+		# 			text = is_burgundy_tt
+		# 			exists = c:BGY
+		# 			c:BGY = root
+		# 		}
 		# 	}
 		# 	AND = {	
-		# 		is_player = yes
-		# 		NOT = { has_global_variable = judgement_day_completed_glob_var }
 		# 		country_rank >= rank_value:major_power
 		# 		has_technology_researched = totalism
 		# 	}
 		# }
+		# custom_tooltip = {
+		# 	text = judgement_day_completed_tt
+		# 	NOT = { has_global_variable = judgement_day_completed_glob_var }
+		# }
 	}
 
 	possible = {
-		OR = {
-			AND = {
-				custom_tooltip = {
-					text = is_burgundy
-					exists = c:BGY
-					c:BGY = root
-				}
-			}
-			AND = {	
-				is_player = yes
-				country_rank >= rank_value:major_power
-				has_technology_researched = totalism
-				custom_tooltip = {
-					text = judgement_day_completed_tt
-					NOT = { has_global_variable = judgement_day_completed_glob_var }
-				}
-			}
-		}
+		is_player = yes
+		# OR = {
+		# 	AND = {
+		# 		custom_tooltip = {
+		# 			text = is_burgundy_tt
+		# 			exists = c:BGY
+		# 			c:BGY = root
+		# 		}
+		# 	}
+		# 	AND = {	
+		# 		country_rank >= rank_value:major_power
+		# 		has_technology_researched = totalism
+		# 	}
+		# }
+		# custom_tooltip = {
+		# 	text = judgement_day_completed_tt
+		# 	NOT = { has_global_variable = judgement_day_completed_glob_var }
+		# }
 	}
 
 	complete = {
