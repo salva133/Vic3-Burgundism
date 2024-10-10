@@ -15,29 +15,6 @@ je_judgement_day = {
 		}
 	}
 
-	is_shown_when_inactive = {
-		is_player = yes
-
-		# OR = {
-		# 	AND = {
-		# 		custom_tooltip = {
-		# 			text = is_burgundy_tt
-		# 			exists = c:BGY
-		# 			c:BGY = root
-		# 		}
-		# 	}
-		# 	AND = {	
-		# 		country_rank >= rank_value:major_power
-		# 		has_technology_researched = totalism
-		# 	}
-		# }
-		# custom_tooltip = {
-		# 	text = judgement_day_completed_tt
-		# 	NOT = { has_global_variable = judgement_day_completed_glob_var }
-		# }
-
-	}
-
 	possible = {
 		is_player = yes
 		OR = {
@@ -84,10 +61,9 @@ je_judgement_day = {
 	}
 
 	on_complete = {
-		set_global_variable = judgement_day_completed_glob_var
-		# trigger_event = {
-		# 	id = judgement_day.7
-		# }
+		trigger_event = {
+			id = judgement_day.7
+		}
 	}
 
 	on_monthly_pulse = {
