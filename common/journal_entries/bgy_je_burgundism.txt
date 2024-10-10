@@ -1,4 +1,4 @@
-﻿# je_bgy_burgundism = {
+# je_bgy_burgundism = {
 # 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	
 # 	group = je_group_internal_affairs

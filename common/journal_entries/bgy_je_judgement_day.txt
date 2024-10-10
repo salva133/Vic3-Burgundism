@@ -1,7 +1,7 @@
-﻿﻿# Judgement Day
+﻿# JE Judgement Day (never save as UTF-8 with BOM)
 je_judgement_day = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
-	
+
 	group = je_group_burgundism
 
 	immediate = {
@@ -17,6 +17,7 @@ je_judgement_day = {
 
 	is_shown_when_inactive = {
 		is_player = yes
+
 		# OR = {
 		# 	AND = {
 		# 		custom_tooltip = {
@@ -34,27 +35,28 @@ je_judgement_day = {
 		# 	text = judgement_day_completed_tt
 		# 	NOT = { has_global_variable = judgement_day_completed_glob_var }
 		# }
+
 	}
 
 	possible = {
 		is_player = yes
-		# OR = {
-		# 	AND = {
-		# 		custom_tooltip = {
-		# 			text = is_burgundy_tt
-		# 			exists = c:BGY
-		# 			c:BGY = root
-		# 		}
-		# 	}
-		# 	AND = {	
-		# 		country_rank >= rank_value:major_power
-		# 		has_technology_researched = totalism
-		# 	}
-		# }
-		# custom_tooltip = {
-		# 	text = judgement_day_completed_tt
-		# 	NOT = { has_global_variable = judgement_day_completed_glob_var }
-		# }
+		OR = {
+			AND = {
+				custom_tooltip = {
+					text = is_burgundy_tt
+					exists = c:BGY
+					c:BGY = root
+				}
+			}
+			AND = {	
+				country_rank >= rank_value:major_power
+				has_technology_researched = totalism
+			}
+		}
+		custom_tooltip = {
+			text = judgement_day_completed_tt
+			NOT = { has_global_variable = judgement_day_completed_glob_var }
+		}
 	}
 
 	complete = {
@@ -71,10 +73,10 @@ je_judgement_day = {
 			value = 5
 		}
 		army_size >= 200
-		country_army_unit_type_fraction = {  
-            target = unit_type:combat_unit_type_apocalyptic_artillery  
-            value >= 0.33
-        }
+		country_army_unit_type_fraction = {
+			target = unit_type:combat_unit_type_apocalyptic_artillery  
+			value >= 0.33
+		}
 		custom_tooltip = { 
 			text = broken_seal_counter_tt
 			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
@@ -92,8 +94,8 @@ je_judgement_day = {
 		effect = {
 			if = {
 				limit = {
-					country_navy_unit_type_fraction = {  
-						target = unit_type:combat_unit_type_apocalyptic_artillery  
+					country_navy_unit_type_fraction = {
+						target = unit_type:combat_unit_type_apocalyptic_artillery
 						value >= 0.33
 					}
 					NOT = { has_variable = a_third_of_military_is_apoc_arty_var }
@@ -171,6 +173,7 @@ je_judgement_day = {
 					add = 1
 				}
 			}
+
 			# if = {
 			# 	limit = {
 			# 		has_law = law_type:law_bgy_burgundism
@@ -182,10 +185,11 @@ je_judgement_day = {
 			# 		add = 1
 			# 	}
 			# }
+			
 		}
 	}
 
 	should_be_pinned_by_default = yes
 	
-	weight = 5000
+	weight = 999999
 }
