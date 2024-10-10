@@ -36,6 +36,7 @@ je_the_ticking = {
 
 	possible = {
 		is_player = yes
+		is_subject = no
 		OR = {
 			AND = {
 				custom_tooltip = {
@@ -45,7 +46,7 @@ je_the_ticking = {
 				}
 				country_rank >= rank_value:major_power
 			}
-			AND = {	
+			AND = {
 				has_technology_researched = totalism
 				country_rank >= rank_value:major_power
 			}
