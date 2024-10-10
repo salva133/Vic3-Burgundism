@@ -21,18 +21,18 @@
   judgement_day.4.a: "And when he had broken the fourth seal..."
 
   # judgement_day.5.t: "Fifth Seal broken"
-  # judgement_day.5.d: ""
+  # judgement_day.5.d: "Verify you clock."
   # judgement_day.5.f: "And when he had broken the fifth seal, I saw under the altar the souls of them that were slain for the word of God, and for the testimony which they held: And they cried with a loud voice, saying, How long, O Lord, holy and true, dost thou not judge and avenge our blood on them that dwell on the earth? And white robes were given unto every one of them; and it was said unto them, that they should rest yet for a little season, until their fellowservants also and their brethren, that should be killed as they were, should be fulfilled."
   judgement_day.5.a: "And when he had broken the fifth seal..."
 
   # judgement_day.6.t: "Sixth Seal broken"
-  # judgement_day.6.d: ""
+  # judgement_day.6.d: "The ticking slows, but will it stop?"
   # judgement_day.6.f: "And I beheld when he had broken the sixth seal, and, lo, there was a great earthquake; and the sun became black as sackcloth of hair, and the moon became as blood; And the stars of heaven fell unto the earth, even as a fig tree casteth her untimely figs, when she is shaken of a mighty wind. And the heaven departed as a scroll when it is rolled together; and every mountain and island were moved out of their places. And the kings of the earth, and the great men, and the rich men, and the chief captains, and the mighty men, and every bondman, and every free man, hid themselves in the dens and in the rocks of the mountains; And said to the mountains and rocks, Fall on us, and hide us from the face of him that sitteth on the throne, and from the wrath of the Lamb: For the great day of his wrath is come; and who shall be able to stand?"
   judgement_day.6.a: "And I beheld when he had broken the sixth seal..."
 
-  # judgement_day.7.t: "Seventh Seal broken"
-  # judgement_day.7.d: ""
-  # judgement_day.7.f: "And when he had broken the seventh seal, there was silence in heaven about the space of half an hour. And I saw the seven angels which stood before God; and to them were given seven trumpets."
+  judgement_day.7.t: "Seventh Seal broken"
+  judgement_day.7.d: "Times up..."
+  judgement_day.7.f: "And when he had broken the seventh seal, there was silence in heaven about the space of half an hour. And I saw the seven angels which stood before God; and to them were given seven trumpets."
   judgement_day.7.a: "And when he had broken the final seal..."
 
   # judgement_day.8.t: "Sixth Seal restored"
