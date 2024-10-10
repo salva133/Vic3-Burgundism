@@ -67,7 +67,7 @@ je_judgement_day = {
 		}
 		has_law = law_type:law_bgy_spartanism
 		institution_investment_level = {
-			institution = institution_workplace_safety
+			institution = institution_minilab
 			value = 5
 		}
 		army_size >= 200

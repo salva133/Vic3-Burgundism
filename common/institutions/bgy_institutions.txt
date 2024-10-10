@@ -3,7 +3,7 @@
 	background_texture = "gfx/interface/illustrations/institutions/miniwar_illustration.dds"
 }
 
-institution_office_for_labour_allocation = {
+institution_minilab = {
 	icon = "gfx/interface/icons/institution_icons/minilab.dds"
 	background_texture = "gfx/interface/illustrations/institutions/minilab_illustration.dds"
 
