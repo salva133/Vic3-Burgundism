@@ -2,5 +2,5 @@
   institution_miniwar: "Ministry of War"
   institution_miniwar_desc: "The [Concept('concept_institution','$institution_miniwar$')] is dedicated to safeguarding the well-being of our nation and its citizens. Its primary mission is to maintain peace and stability, ensuring that external threats are neutralized before they can disrupt the order of our society. Through its strategic operations, the $institution_miniwar$ upholds our freedom and prosperity, fostering an environment where we can continue to grow and thrive. By maintaining strong offensive capacities, the $institution_miniwar$ guarantees the safety of future generations, securing a peace at last for all."
 
-  institution_office_for_labour_allocation: "Office for Labour Allocation"
-  institution_office_for_labour_allocation: "The [Concept('concept_institution','$institution_office_for_labour_allocation$')] supports the government with assigning the ever-growing amount of work force to get into labour."
+  institution_minilab: "Office for Labour Allocation"
+  institution_minilab_desc: "The [Concept('concept_institution','$institution_minilab$')] supports the government with assigning the ever-growing amount of work force to get into labour."

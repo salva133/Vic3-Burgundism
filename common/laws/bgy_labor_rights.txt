@@ -13,7 +13,7 @@
 		law_technocracy
 	}
 
-	institution = institution_office_for_labour_allocation
+	institution = institution_minilab
 	
 	on_enact = {
 		recalculate_pop_ig_support = yes

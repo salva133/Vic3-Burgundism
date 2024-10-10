@@ -3,12 +3,14 @@
 	background_texture = "gfx/interface/illustrations/institutions/miniwar_illustration.dds"
 }
 
-institution_office_for_labour_allocation = {
-	icon = "gfx/interface/icons/institution_icons/workplace_safety.dds"
-	background_texture = "gfx/interface/illustrations/institutions/workplace_safety.dds"
+institution_minilab = {
+	icon = "gfx/interface/icons/institution_icons/minilab.dds"
+	background_texture = "gfx/interface/illustrations/institutions/minilab_illustration.dds"
 
-	building_minimum_wage_mult = -0.198
-	state_birth_rate_mult = -0.05
-	state_accepted_birth_rate_mult = 0.06
-	state_working_adult_ratio_add = 0.15
+	modifier = {
+		building_minimum_wage_mult = -0.198
+		state_birth_rate_mult = -0.05
+		state_accepted_birth_rate_mult = 0.06
+		state_working_adult_ratio_add = 0.15
+	}
 }
