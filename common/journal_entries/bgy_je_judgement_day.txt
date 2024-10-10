@@ -92,7 +92,7 @@ je_the_ticking = {
 		}
 	}
 
-	on_weekly_pulse = {		# Weekly for testing purposes, actually needs to be yearly
+	on_yearly_pulse = {
 		effect = {
 			if = {
 				limit = {
@@ -130,10 +130,6 @@ je_the_ticking = {
 			if = {
 				limit = {
 					has_law = law_type:law_bgy_spartanism
-					institution_investment_level = {
-						institution = institution_workplace_safety
-						value = 5
-					}
 					NOT = { has_variable = enacted_law_bgy_spartanism_var }
 				}
 				set_variable = enacted_law_bgy_spartanism_var
@@ -156,19 +152,20 @@ je_the_ticking = {
 					add = 1
 				}
 			}
-
-			# if = {
-			# 	limit = {
-			# 		has_law = law_type:law_bgy_burgundism
-			# 		NOT = { has_variable = enacted_law_bgy_burgundism_var }
-			# 	}
-			# 	set_variable = enacted_law_bgy_burgundism_var
-			# 	change_global_variable = {
-			# 		name = broken_seal_counter_glob_var
-			# 		add = 1
-			# 	}
-			# }
-			
+			if = {
+				limit = {
+					institution_investment_level = {
+						institution = institution_minilab
+						value = 5
+					}
+					NOT = { has_variable = maxed_out_minlab_var }
+				}
+				set_variable = maxed_out_minlab_var
+				change_global_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
 		}
 	}
 
