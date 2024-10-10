@@ -66,6 +66,13 @@ je_judgement_day = {
 		}
 	}
 
+	fail = {
+		custom_tooltip = {
+			text = judgement_day_completed_tt
+			has_global_variable = judgement_day_completed_glob_var
+		}
+	}
+
 	on_monthly_pulse = {
 		effect = {
 			if = {
