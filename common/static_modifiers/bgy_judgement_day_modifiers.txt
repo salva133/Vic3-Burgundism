@@ -1,0 +1,4 @@
+﻿end_time_mortality = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	state_mortality_mult = 19.58113
+}
