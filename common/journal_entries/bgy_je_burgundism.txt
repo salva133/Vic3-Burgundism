@@ -1,7 +1,7 @@
 # je_bgy_burgundism = {
 # 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 	
-# 	group = je_group_internal_affairs
+# 	group = je_group_burgundism
 
 # 	is_shown_when_inactive = {
 # 		NOT = { has_law = law_type:law_council_republic }
