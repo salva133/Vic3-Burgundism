@@ -1,13 +1,13 @@
-﻿namespace = judgement_day_events
+﻿namespace = the_ticking_events
 
 
 # ### First Seal broken
-# judgement_day.1 = {
+# the_ticking.1 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.1.t
-# 	desc = judgement_day.1.d
-# 	flavor = judgement_day.1.f
+# 	title = the_ticking.1.t
+# 	desc = the_ticking.1.d
+# 	flavor = the_ticking.1.f
 
 # 	duration = 3
 
@@ -21,7 +21,7 @@
 # 			has_variable = fourth_seal_broken
 # 			has_variable = fifth_seal_broken
 # 			has_variable = sixth_seal_broken
-# 			has_global_variable = judgement_day_completed_glob_var
+# 			has_global_variable = the_ticking_completed_glob_var
 # 		}
 # 	}
 
@@ -30,18 +30,18 @@
 # 	}
 
 # 	option = {
-# 		name = judgement_day.1.a
+# 		name = the_ticking.1.a
 # 		default_option = yes
 # 	}
 # }
 
 # ### Second Seal broken
-# judgement_day.2 = {
+# the_ticking.2 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.2.t
-# 	desc = judgement_day.2.d
-# 	flavor = judgement_day.2.f
+# 	title = the_ticking.2.t
+# 	desc = the_ticking.2.d
+# 	flavor = the_ticking.2.f
 
 # 	duration = 3
 
@@ -54,7 +54,7 @@
 # 			has_variable = fourth_seal_broken
 # 			has_variable = fifth_seal_broken
 # 			has_variable = sixth_seal_broken
-# 			has_global_variable = judgement_day_completed_glob_var
+# 			has_global_variable = the_ticking_completed_glob_var
 # 		}
 # 	}
 
@@ -63,18 +63,18 @@
 # 	}
 
 # 	option = {
-# 		name = judgement_day.2.a 
+# 		name = the_ticking.2.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Thrid Seal broken
-# judgement_day.3 = {
+# the_ticking.3 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.3.t
-# 	desc = judgement_day.3.d
-# 	flavor = judgement_day.3.f
+# 	title = the_ticking.3.t
+# 	desc = the_ticking.3.d
+# 	flavor = the_ticking.3.f
 
 # 	duration = 3
 
@@ -86,7 +86,7 @@
 # 			has_variable = fourth_seal_broken
 # 			has_variable = fifth_seal_broken
 # 			has_variable = sixth_seal_broken
-# 			has_global_variable = judgement_day_completed_glob_var
+# 			has_global_variable = the_ticking_completed_glob_var
 # 		}
 # 	}
 
@@ -95,18 +95,18 @@
 # 	}
 
 # 	option = {
-# 		name = judgement_day.3.a 
+# 		name = the_ticking.3.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Fourth Seal broken
-# judgement_day.4 = {
+# the_ticking.4 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.4.t
-# 	desc = judgement_day.4.d
-# 	flavor = judgement_day.4.f
+# 	title = the_ticking.4.t
+# 	desc = the_ticking.4.d
+# 	flavor = the_ticking.4.f
 
 # 	duration = 3
 
@@ -117,7 +117,7 @@
 # 			has_variable = fourth_seal_broken
 # 			has_variable = fifth_seal_broken
 # 			has_variable = sixth_seal_broken
-# 			has_global_variable = judgement_day_completed_glob_var
+# 			has_global_variable = the_ticking_completed_glob_var
 # 		}
 # 	}
 
@@ -126,18 +126,18 @@
 # 	}
 
 # 	option = {
-# 		name = judgement_day.4.a 
+# 		name = the_ticking.4.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Fifth Seal broken
-# judgement_day.5 = {
+# the_ticking.5 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.5.t
-# 	desc = judgement_day.5.d
-# 	flavor = judgement_day.5.f
+# 	title = the_ticking.5.t
+# 	desc = the_ticking.5.d
+# 	flavor = the_ticking.5.f
 
 # 	duration = 3
 
@@ -147,7 +147,7 @@
 # 		NAND = {
 # 			has_variable = fifth_seal_broken
 # 			has_variable = sixth_seal_broken
-# 			has_global_variable = judgement_day_completed_glob_var
+# 			has_global_variable = the_ticking_completed_glob_var
 # 		}
 # 	}
 
@@ -156,18 +156,18 @@
 # 	}
 
 # 	option = {
-# 		name = judgement_day.5.a 
+# 		name = the_ticking.5.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Sixth Seal broken
-# judgement_day.6 = {
+# the_ticking.6 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.6.t
-# 	desc = judgement_day.6.d
-# 	flavor = judgement_day.6.f
+# 	title = the_ticking.6.t
+# 	desc = the_ticking.6.d
+# 	flavor = the_ticking.6.f
 
 # 	duration = 3
 
@@ -176,7 +176,7 @@
 # 	trigger = {
 # 		NAND = {
 # 			has_variable = sixth_seal_broken
-# 			has_global_variable = judgement_day_completed_glob_var
+# 			has_global_variable = the_ticking_completed_glob_var
 # 		}
 # 	}
 
@@ -185,29 +185,29 @@
 # 	}
 
 # 	option = {
-# 		name = judgement_day.6.a 
+# 		name = the_ticking.6.a 
 # 		default_option = yes
 # 	}
 # }
 
 ### Seventh Seal broken
-judgement_day.7 = {
+the_ticking.7 = {
 	type = country_event
 	placement = root
-	title = judgement_day.7.t
-	desc = judgement_day.7.d
-	flavor = judgement_day.7.f
+	title = the_ticking.7.t
+	desc = the_ticking.7.d
+	flavor = the_ticking.7.f
 
 	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
-		NOT = { has_global_var = judgement_day_completed_glob_var }
+		NOT = { has_global_var = the_ticking_completed_glob_var }
 	}
 
 	immediate = {
-		set_global_variable = judgement_day_completed_glob_var
+		set_global_variable = the_ticking_completed_glob_var
 		every_state = {
 			limit = {
 				has_modifier = end_time_mortality
@@ -217,11 +217,11 @@ judgement_day.7 = {
 	}
 
 	option = {
-		name = judgement_day.7.a
+		name = the_ticking.7.a
 		default_option = yes
 
 		custom_tooltip = {
-			text = judgement_day.7.a_tt
+			text = the_ticking.7.a_tt
 			every_state = {
 				limit = { 
 					NOR = { 
@@ -243,12 +243,12 @@ judgement_day.7 = {
 }
 
 # ### Sixth Seal restored
-# judgement_day.8 = {
+# the_ticking.8 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.8.t
-# 	desc = judgement_day.8.d
-# 	flavor = judgement_day.8.f
+# 	title = the_ticking.8.t
+# 	desc = the_ticking.8.d
+# 	flavor = the_ticking.8.f
 
 # 	duration = 3
 
@@ -262,7 +262,7 @@ judgement_day.7 = {
 # 			has_variable = fourth_seal_broken
 # 			has_variable = fifth_seal_broken
 # 			has_variable = sixth_seal_broken
-# 			NOT = { has_global_variable = judgement_day_completed_glob_var }
+# 			NOT = { has_global_variable = the_ticking_completed_glob_var }
 # 		}
 # 	}
 
@@ -271,18 +271,18 @@ judgement_day.7 = {
 # 	}
 
 # 	option = {
-# 		name = judgement_day.8.a 
+# 		name = the_ticking.8.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Fifth Seal restored
-# judgement_day.9 = {
+# the_ticking.9 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.9.t
-# 	desc = judgement_day.9.d
-# 	flavor = judgement_day.9.f
+# 	title = the_ticking.9.t
+# 	desc = the_ticking.9.d
+# 	flavor = the_ticking.9.f
 
 # 	duration = 3
 
@@ -295,7 +295,7 @@ judgement_day.7 = {
 # 			has_variable = third_seal_broken
 # 			has_variable = fourth_seal_broken
 # 			has_variable = fifth_seal_broken
-# 			NOT = { has_global_variable = judgement_day_completed_glob_var }
+# 			NOT = { has_global_variable = the_ticking_completed_glob_var }
 # 		}
 # 	}
 
@@ -304,18 +304,18 @@ judgement_day.7 = {
 # 	}
 
 # 	option = {
-# 		name = judgement_day.9.a 
+# 		name = the_ticking.9.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Fourth Seal restored
-# judgement_day.10 = {
+# the_ticking.10 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.10.t
-# 	desc = judgement_day.10.d
-# 	flavor = judgement_day.10.f
+# 	title = the_ticking.10.t
+# 	desc = the_ticking.10.d
+# 	flavor = the_ticking.10.f
 
 # 	duration = 3
 
@@ -327,7 +327,7 @@ judgement_day.7 = {
 # 			has_variable = second_seal_broken
 # 			has_variable = third_seal_broken
 # 			has_variable = fourth_seal_broken
-# 			NOT = { has_global_variable = judgement_day_completed_glob_var }
+# 			NOT = { has_global_variable = the_ticking_completed_glob_var }
 # 		}
 # 	}
 
@@ -336,18 +336,18 @@ judgement_day.7 = {
 # 	}
 
 # 	option = {
-# 		name = judgement_day.10.a 
+# 		name = the_ticking.10.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Third Seal restored
-# judgement_day.11 = {
+# the_ticking.11 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.11.t
-# 	desc = judgement_day.11.d
-# 	flavor = judgement_day.11.f
+# 	title = the_ticking.11.t
+# 	desc = the_ticking.11.d
+# 	flavor = the_ticking.11.f
 
 # 	duration = 3
 
@@ -358,7 +358,7 @@ judgement_day.7 = {
 # 			has_variable = first_seal_broken
 # 			has_variable = second_seal_broken
 # 			has_variable = third_seal_broken
-# 			NOT = { has_global_variable = judgement_day_completed_glob_var }
+# 			NOT = { has_global_variable = the_ticking_completed_glob_var }
 # 		}
 # 	}
 
@@ -367,18 +367,18 @@ judgement_day.7 = {
 # 	}
 
 # 	option = {
-# 		name = judgement_day.11.a 
+# 		name = the_ticking.11.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Second Seal restored
-# judgement_day.12 = {
+# the_ticking.12 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.12.t
-# 	desc = judgement_day.12.d
-# 	flavor = judgement_day.12.f
+# 	title = the_ticking.12.t
+# 	desc = the_ticking.12.d
+# 	flavor = the_ticking.12.f
 
 # 	duration = 3
 
@@ -388,7 +388,7 @@ judgement_day.7 = {
 # 		AND = {
 # 			has_variable = first_seal_broken
 # 			has_variable = second_seal_broken
-# 			NOT = { has_global_variable = judgement_day_completed_glob_var }
+# 			NOT = { has_global_variable = the_ticking_completed_glob_var }
 # 		}
 # 	}
 
@@ -397,18 +397,18 @@ judgement_day.7 = {
 # 	}
 
 # 	option = {
-# 		name = judgement_day.12.a 
+# 		name = the_ticking.12.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### First Seal restored
-# judgement_day.13 = {
+# the_ticking.13 = {
 # 	type = country_event
 # 	placement = root
-# 	title = judgement_day.13.t
-# 	desc = judgement_day.13.d
-# 	flavor = judgement_day.13.f
+# 	title = the_ticking.13.t
+# 	desc = the_ticking.13.d
+# 	flavor = the_ticking.13.f
 
 # 	duration = 3
 
@@ -417,7 +417,7 @@ judgement_day.7 = {
 # 	trigger = {
 # 		AND = {
 # 			has_variable = first_seal_broken
-# 			NOT = { has_global_variable = judgement_day_completed_glob_var }
+# 			NOT = { has_global_variable = the_ticking_completed_glob_var }
 # 		}
 # 	}
 
@@ -426,7 +426,7 @@ judgement_day.7 = {
 # 	}
 
 # 	option = {
-# 		name = judgement_day.13.a 
+# 		name = the_ticking.13.a 
 # 		default_option = yes
 # 	}
 # }

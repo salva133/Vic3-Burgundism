@@ -1,5 +1,5 @@
-﻿# JE Judgement Day (never save as UTF-8 with BOM)
-je_judgement_day = {
+﻿# JE The Ticking (never save as UTF-8 with BOM)
+je_the_ticking = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
 	group = je_group_burgundism
@@ -31,8 +31,8 @@ je_judgement_day = {
 			}
 		}
 		custom_tooltip = {
-			text = judgement_day_not_completed_tt
-			NOT = { has_global_variable = judgement_day_completed_glob_var }
+			text = the_ticking_not_completed_tt
+			NOT = { has_global_variable = the_ticking_completed_glob_var }
 		}
 	}
 
@@ -62,14 +62,14 @@ je_judgement_day = {
 
 	on_complete = {
 		trigger_event = {
-			id = judgement_day.7
+			id = the_ticking.7
 		}
 	}
 
 	fail = {
 		custom_tooltip = {
-			text = judgement_day_completed_tt
-			has_global_variable = judgement_day_completed_glob_var
+			text = the_ticking_completed_tt
+			has_global_variable = the_ticking_completed_glob_var
 		}
 	}
 
