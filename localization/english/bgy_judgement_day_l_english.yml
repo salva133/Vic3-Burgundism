@@ -1,0 +1,67 @@
+﻿l_english:
+  broken_seal_counter_tt: "This amount of seals have already been broken: [GetGlobalVariable('broken_seal_counter_glob_var').GetValue] of [GetGlobalVariable('broken_seal_counter_max_glob_var').GetValue]"
+  # the_ticking.1.t: "First Seal broken"
+  # the_ticking.1.d: ""
+  # the_ticking.1.f: "And I saw the first seal was broken, and I heard, as it were the noise of thunder, one of the four beasts saying, Come and see. And I saw the first seal was restored, and I heard, as it were the silence of peace, one of the four beasts saying, Depart and be still. And I saw, and behold a white horse: and he that sat on him had a bow; and a crown was given unto him: and he went forth conquering, and to conquer."
+  the_ticking.1.a: "The first seal was broken..."
+
+  # the_ticking.2.t: "Second Seal broken"
+  # the_ticking.2.d: ""
+  # the_ticking.2.f: "And when he had broken the second seal, I heard the second beast say, Come and see. And there went out another horse that was red: and power was given to him that sat thereon to take peace from the earth, and that they should kill one another: and there was given unto him a great sword."
+  the_ticking.2.a: "And when he had broken the second seal..."
+
+  # the_ticking.3.t: "Third Seal broken"
+  # the_ticking.3.d: ""
+  # the_ticking.3.f: "And when he had broken the third seal, I heard the third beast say, Come and see. And I beheld, and lo a black horse; and he that sat on him had a pair of balances in his hand. And I heard a voice in the midst of the four beasts say, A measure of wheat for a penny, and three measures of barley for a penny; and see thou hurt not the oil and the wine."
+  the_ticking.3.a: "And when he had broken the third seal..."
+
+  # the_ticking.4.t: "Fourth Seal broken"
+  # the_ticking.4.d: ""
+  # the_ticking.4.f: "And when he had broken the fourth seal, I heard the voice of the fourth beast say, Come and see. And I looked, and behold a pale horse: and his name that sat on him was Death, and Hell followed with him. And power was given unto them over the fourth part of the earth, to kill with sword, and with hunger, and with death, and with the beasts of the earth."
+  the_ticking.4.a: "And when he had broken the fourth seal..."
+
+  # the_ticking.5.t: "Fifth Seal broken"
+  # the_ticking.5.d: "Verify you clock."
+  # the_ticking.5.f: "And when he had broken the fifth seal, I saw under the altar the souls of them that were slain for the word of God, and for the testimony which they held: And they cried with a loud voice, saying, How long, O Lord, holy and true, dost thou not judge and avenge our blood on them that dwell on the earth? And white robes were given unto every one of them; and it was said unto them, that they should rest yet for a little season, until their fellowservants also and their brethren, that should be killed as they were, should be fulfilled."
+  the_ticking.5.a: "And when he had broken the fifth seal..."
+
+  # the_ticking.6.t: "Sixth Seal broken"
+  # the_ticking.6.d: "The ticking slows, but will it stop?"
+  # the_ticking.6.f: "And I beheld when he had broken the sixth seal, and, lo, there was a great earthquake; and the sun became black as sackcloth of hair, and the moon became as blood; And the stars of heaven fell unto the earth, even as a fig tree casteth her untimely figs, when she is shaken of a mighty wind. And the heaven departed as a scroll when it is rolled together; and every mountain and island were moved out of their places. And the kings of the earth, and the great men, and the rich men, and the chief captains, and the mighty men, and every bondman, and every free man, hid themselves in the dens and in the rocks of the mountains; And said to the mountains and rocks, Fall on us, and hide us from the face of him that sitteth on the throne, and from the wrath of the Lamb: For the great day of his wrath is come; and who shall be able to stand?"
+  the_ticking.6.a: "And I beheld when he had broken the sixth seal..."
+
+  the_ticking.7.t: "Seventh Seal broken"
+  the_ticking.7.d: "Times up..."
+  the_ticking.7.f: "And when he had broken the seventh seal, there was silence in heaven about the space of half an hour. And I saw the seven angels which stood before God; and to them were given seven trumpets."
+  the_ticking.7.a: "And when he had broken the final seal..."
+  the_ticking.7.a_tt: "...the heavens were opened; and carried by a black sun, devastation was brought upon the unclean and unworthy..."
+
+  # the_ticking.8.t: "Sixth Seal restored"
+  # the_ticking.8.d: ""
+  # the_ticking.8.f: "And I saw the sixth seal was restored, and I heard, as it were the silence of peace, one of the four beasts saying, Depart and be still. And I saw, and behold the white horse vanished: and he that sat on him was stripped of his bow and his crown; and he withdrew, surrendering, and no longer seeking to conquer."
+  the_ticking.8.a: "And I saw the sixth seal was restored"
+
+  # the_ticking.9.t: "Fifth Seal restored"
+  # the_ticking.9.d: ""
+  # the_ticking.9.f: "And when the fifth seal was restored, I heard the second beast say, Depart and be still. And the red horse retreated: and power was taken from him that sat thereon to restore peace to the earth, and that they should heal one another: and his great sword was removed."
+  the_ticking.9.a: "And when the fifth seal was restored"
+
+  # the_ticking.10.t: "Fourth Seal restored"
+  # the_ticking.10.d: ""
+  # the_ticking.10.f: "And when the fourth seal was restored, I heard the third beast say, Depart and be still. And I beheld, and lo the black horse vanished; and he that sat on him let go of the pair of balances in his hand. And I heard no voice in the midst of the four beasts, and the measures of wheat and barley became abundant; and the oil and the wine were unharmed without warning."
+  the_ticking.10.a: "And when the fourth seal was restored"
+
+  # the_ticking.11.t: "Third Seal restored"
+  # the_ticking.11.d: ""
+  # the_ticking.11.f: "And when the third seal was restored, I heard the voice of the fourth beast say, Depart and be still. And I looked, and behold the pale horse vanished: and his name that sat on him was Life, and Heaven followed with him. And power was taken from them over the fourth part of the earth, to heal with kindness, to feed with abundance, and to restore life among the beasts of the earth."
+  the_ticking.11.a: "And when the third seal was restored"
+
+  # the_ticking.12.t: "Second Seal restored"
+  # the_ticking.12.d: ""
+  # the_ticking.12.f: "And when the second seal was restored, I saw under the altar the souls of them that were spared for the word of God, and for the testimony which they renounced. And they were silent with a soft voice, saying, How soon, O Lord, merciful and kind, dost thou forgive and reconcile our lives with those that dwell on the earth? And their white robes were taken from them; and it was said unto them, that they should rise now, for their fellowservants and their brethren, that should be spared as they were, have fulfilled their destiny."
+  the_ticking.12.a: "And when the second seal was restored"
+
+  # the_ticking.13.t: "First Seal restored"
+  # the_ticking.13.d: ""
+  # the_ticking.13.f: "And I beheld when the first seal was restored, and, lo, the earth stood firm; and the sun shone bright as morning, and the moon glowed white as silver. And the stars of heaven rose back from the earth, even as a fig tree gathers her fruit, restored gently by a soft breeze. And the heaven returned as a scroll unrolled; and every mountain and island were restored to their rightful places. And the kings of the earth, and the great men, and the rich men, and the chief captains, and the mighty men, and every bondman, and every free man, emerged from the dens and the rocks of the mountains. And they spoke to the mountains and rocks, Rise up and reveal us to the face of him that sitteth on the throne, and from the grace of the Lamb. For the great day of his peace has come; and all shall be able to stand."
+  the_ticking.13.a: "And I beheld when the first seal was restored"

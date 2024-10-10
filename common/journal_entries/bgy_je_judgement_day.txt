@@ -1,0 +1,178 @@
+﻿# JE The Ticking (never save as UTF-8 with BOM)
+je_the_ticking = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_burgundism
+
+	immediate = {
+		set_global_variable = {
+			name = broken_seal_counter_glob_var
+			value = 0
+		}
+		set_global_variable = {
+			name = broken_seal_counter_max_glob_var
+			value = 7
+		}
+	}
+
+	possible = {
+		is_player = yes
+		OR = {
+			AND = {
+				custom_tooltip = {
+					text = is_burgundy_tt
+					exists = c:BGY
+					c:BGY = root
+				}
+			}
+			AND = {	
+				country_rank >= rank_value:major_power
+				has_technology_researched = totalism
+			}
+		}
+		custom_tooltip = {
+			text = the_ticking_not_completed_tt
+			NOT = { has_global_variable = the_ticking_completed_glob_var }
+		}
+	}
+
+	complete = {
+		has_law = law_type:law_bgy_burgundism
+		has_law = law_type:law_bgy_kleptocracy
+		has_law = law_type:law_bgy_total_war
+		institution_investment_level = {
+			institution = institution_miniwar
+			value = 5
+		}
+		has_law = law_type:law_bgy_spartanism
+		institution_investment_level = {
+			institution = institution_minilab
+			value = 5
+		}
+		army_size >= 200
+		country_army_unit_type_fraction = {
+			target = unit_type:combat_unit_type_apocalyptic_artillery  
+			value >= 0.33
+		}
+		custom_tooltip = { 
+			text = broken_seal_counter_tt
+			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = the_ticking.7
+		}
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = the_ticking_completed_tt
+			has_global_variable = the_ticking_completed_glob_var
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					country_navy_unit_type_fraction = {
+						target = unit_type:combat_unit_type_apocalyptic_artillery
+						value >= 0.33
+					}
+					NOT = { has_variable = a_third_of_military_is_apoc_arty_var }
+				}
+				set_variable = a_third_of_military_is_apoc_arty_var
+				change_global_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+		}
+	}
+
+	on_weekly_pulse = {		# Weekly for testing purposes, actually needs to be yearly
+		effect = {
+			if = {
+				limit = {
+					has_law = law_type:law_bgy_burgundism
+					NOT = { has_variable = enacted_law_bgy_burgundism_var }
+				}
+				set_variable = enacted_law_bgy_burgundism_var
+				change_global_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_bgy_kleptocracy
+					NOT = { has_variable = enacted_law_bgy_kleptocracy_var }
+				}
+				set_variable = enacted_law_bgy_kleptocracy_var
+				change_global_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_bgy_total_war
+					NOT = { has_variable = enacted_law_bgy_total_war_var }
+				}
+				set_variable = enacted_law_bgy_total_war_var
+				change_global_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					has_law = law_type:law_bgy_spartanism
+					institution_investment_level = {
+						institution = institution_workplace_safety
+						value = 5
+					}
+					NOT = { has_variable = enacted_law_bgy_spartanism_var }
+				}
+				set_variable = enacted_law_bgy_spartanism_var
+				change_global_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					institution_investment_level = {
+						institution = institution_miniwar
+						value = 5
+					}
+					NOT = { has_variable = maxed_out_miniwar_var }
+				}
+				set_variable = maxed_out_miniwar_var
+				change_global_variable = {
+					name = broken_seal_counter_glob_var
+					add = 1
+				}
+			}
+
+			# if = {
+			# 	limit = {
+			# 		has_law = law_type:law_bgy_burgundism
+			# 		NOT = { has_variable = enacted_law_bgy_burgundism_var }
+			# 	}
+			# 	set_variable = enacted_law_bgy_burgundism_var
+			# 	change_global_variable = {
+			# 		name = broken_seal_counter_glob_var
+			# 		add = 1
+			# 	}
+			# }
+			
+		}
+	}
+
+	should_be_pinned_by_default = yes
+	
+	weight = 999999
+}
