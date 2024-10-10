@@ -38,6 +38,7 @@ je_the_ticking = {
 		is_player = yes
 		is_subject = no
 		is_in_power_bloc = no
+		has_technology_researched = thinking_of_ending_things
 		OR = {
 			AND = {
 				custom_tooltip = {
