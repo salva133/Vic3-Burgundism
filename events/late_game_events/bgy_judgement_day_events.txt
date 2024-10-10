@@ -208,20 +208,35 @@ judgement_day.7 = {
 
 	immediate = {
 		set_global_variable = judgement_day_completed_glob_var
+		every_state = {
+			limit = {
+				has_modifier = end_time_mortality
+			}
+			remove_modifier = end_time_mortality
+		}
 	}
 
 	option = {
-		name = judgement_day.7.a 
+		name = judgement_day.7.a
 		default_option = yes
 
-		every_state = {
-			limit = { NOT = { owner = root } }
-			state_region = {
-				add_devastation = 99
-			}
-			add_modifier = {
-				name = end_time_mortality
-				months = normal_modifier_time
+		custom_tooltip = {
+			text = judgement_day.7.a_tt
+			every_state = {
+				limit = { 
+					NOR = { 
+						owner = root
+						has_modifier = end_time_mortality
+					}
+				}
+				state_region = {
+					add_devastation = 999
+					add_pollution = 999
+				}
+				# add_modifier = {
+				# 	name = end_time_mortality
+				# 	months = normal_modifier_time
+				# }
 			}
 		}
 	}
