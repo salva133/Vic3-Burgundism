@@ -37,6 +37,7 @@ je_the_ticking = {
 	possible = {
 		is_player = yes
 		is_subject = no
+		is_in_power_bloc = no
 		OR = {
 			AND = {
 				custom_tooltip = {
