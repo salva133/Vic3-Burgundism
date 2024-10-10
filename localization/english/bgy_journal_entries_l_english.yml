@@ -3,7 +3,7 @@
   je_judgement_day: "Judgement Day"
   je_judgement_day_reason: "Day of the Judgementation"
 
-  judgement_day_not_completed_tt: "Judgement Day hasn't come yet..."
+  judgement_day_not_completed_tt: "The ticking hasn't started yet..."
   judgement_day_completed_tt: "The ticking's gone..."
 
   is_burgundy_tt: "You are Burgundy"
