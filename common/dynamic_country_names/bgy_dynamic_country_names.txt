@@ -15,23 +15,36 @@
 
 BGY = {
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy
+		name = dyn_c_bgy_burgundy_duchy
 		adjective = BGY_ADJ
 
-		priority = 100
+		priority = 10
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				coa_monarchy_trigger = yes
+				recognized = no
 			}
 		}
 	}
-	
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_democratic
+		name = dyn_c_bgy_burgundy_high_duchy
 		adjective = BGY_ADJ
 
-		priority = 1000
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				coa_monarchy_trigger = yes
+				recognized = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_republic_democratic
+		adjective = BGY_ADJ
+
+		priority = 30
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -41,26 +54,67 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_ordensstaat
+		name = dyn_c_bgy_burgundy_republic_dictatorial
 		adjective = BGY_ADJ
 
-		priority = 10000
+		priority = 40
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				coa_dictatorship_trigger = yes
+				coa_republic_trigger = yes
+				country_has_voting_franchise = no
 			}
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist
+		name = dyn_c_bgy_burgundy_theocracy_democratic
 		adjective = BGY_ADJ
 
-		priority = 1000
+		priority = 50
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				coa_theocracy_trigger = yes
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_theocracy_dictatorial
+		adjective = BGY_ADJ
+
+		priority = 60
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				coa_theocracy_trigger = yes
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_communist_democratic
+		adjective = BGY_ADJ
+
+		priority = 70
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				coa_communist_trigger = yes
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_communist_dictatorial
+		adjective = BGY_ADJ
+
+		priority = 80
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				coa_communist_trigger = yes
+				country_has_voting_franchise = no
 			}
 		}
 	}
