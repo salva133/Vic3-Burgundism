@@ -54,7 +54,7 @@ je_judgement_day = {
 			}
 		}
 		custom_tooltip = {
-			text = judgement_day_completed_tt
+			text = judgement_day_not_completed_tt
 			NOT = { has_global_variable = judgement_day_completed_glob_var }
 		}
 	}
