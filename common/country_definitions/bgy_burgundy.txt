@@ -1,5 +1,5 @@
 ﻿BGY = {
-	color = { 28 0 25 }
+	color = { 28 0 28 }
 	country_type = unrecognized
 	tier = principality
 	cultures = { burgundian }
