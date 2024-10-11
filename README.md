@@ -34,18 +34,19 @@ For use in lag reduction only ;)
 
 [h3] Interest Groups and Parties [/h3]
 - Burgundist Party: Available for multiple countries with flavored names.
-- Burgundist Interest Group: Represents various social strata, including officers, soldiers, and middle-class professionals. It serves as the primary political vehicle for the Burgundist ideology​ and will become available as soon as 
+- Burgundist Interest Group: Represents various social strata, including officers, soldiers, and middle-class professionals. It serves as the primary political vehicle for the Burgundist ideology and will become available as soon as the corresponding tech has been researched, a certain historical date has been reached (shortly after the historical end of the Great War), or you play a certain country (the name says it all here).
 
 [h3] Country [/h3]
-- Burgundy is now a release-able nation on the french soil with flags and flavored names for almost every government type. Simply select France, release Burgundy via the diplomacy screen and don't forget to tick "Play as". Burgundists are the primary culture and a minority in that region, so you will have to handle cultures with care at first.
+- Burgundy is now a release-able nation on the french soil with flags and flavored names for almost every government type. Simply select France, release Burgundy via the diplomacy screen and don't forget to tick "Play as". Burgundists with spartanist believes are the primary culture and a minority in that region, so you will have to handle cultures with care at first.
 
 [h3] Economy [/h3]
-- raised the limit for the amount of slaves just to be able to get everyone into work. Remember: When you have work, your day has structure.
+- raised the limit for the amount of slaves just to be able to get everyone into work. Remember: When you have work, your day has structure. To be precise, I have increased the maximum percentage of debt slaves in the population per state to 66% (vanilla is 15%).
 
 [h3] Technologies [/h3]
 - introducing some tech, more to gatekeep the burgundian stuff not to get launched into the world too fast. The world may not be prepared for the glory of the black sun that early.
 
 [h2] Events & Journal Entries [/h2]
+
 [h3] The Ticking [/h3]
 - Once you reached totalism and your country has a say on the world stage (or you simply be Burgundy), you will be guided to the truest of lag reductions. Don't let the ticking drive you crazy. Or maybe.. maybe that is for the better. Ain't that true Alexey?
 
@@ -57,6 +58,14 @@ For use in lag reduction only ;)
 - Houston Chamberlain: He develops racial theories that argue for the superiority of the Aryan race, heavily influencing German nationalist and anti-Semitic thought, particularly in the early 20th century.
 - Heinrich Himmler: He leads the SS and oversees many of the Nazi regime's crimes, including the Holocaust. He promotes a twisted view of racial purity and oversees the establishment of concentration camps.
 - Rudolf Sebottendorf: He is a key figure in the Thule Society, which blends occultism and nationalist ideologies. His ideas contribute to the rise of German nationalism and later influence the nutsi movement.
+
+[h3] More Flavour [/h3]
+- More flag and name variations depending on enacted laws
+
+[h3] Small Map reworks [/h3]
+- still trying to find a method to rename cities based on the primary culture of the owner or simply the owning country.
+-- Rodomo
+-- East Paris!
 
 [h2] Compatibility [/h2]
 Can have issues with mods that adapt:

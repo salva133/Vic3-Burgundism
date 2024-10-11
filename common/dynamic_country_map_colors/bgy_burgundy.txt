@@ -1,89 +1,94 @@
 ### Burgundy ###
 
-burgundy_duchy = {
-color = "burgundy_duchy"
-	
-	possible = {
-		exists = c:BGY
-		THIS = c:BGY
-		coa_monarchy_trigger = yes
-		recognized = no 
-	}
-}
-
 burgundy_high_duchy = {
-color = "burgundy_high_duchy"
+color = rgb { 122 0 122 }
 	
 	possible = {
 		exists = c:BGY
 		THIS = c:BGY
-		coa_monarchy_trigger = yes
-		recognized = yes 
+		has_law = law_type:law_monarchy
 	}
 }
 
 burgundy_republic_democratic = {
-color = "burgundy_republic_democratic"
+color = rgb { 95 0 168 }
 	
 	possible = {
 		exists = c:BGY
 		THIS = c:BGY
-		coa_republic_trigger = yes
+		OR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+		}
 		country_has_voting_franchise = yes
 	}
-} 
+}
 
 burgundy_republic_dictatorial = {
-color = "burgundy_republic_dictatorial"
+color = rgb { 51 0 89 }
 	
 	possible = {
 		exists = c:BGY
 		THIS = c:BGY
-		coa_republic_trigger = yes
+		OR = {
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+		}
 		country_has_voting_franchise = no
 	}
-} 
+}
 
-burgundy_theocracy_democratic = {
-color = "burgundy_theocracy_democratic"
+burgundy_theocracy = {
+color = "saffron"
 	
 	possible = {
 		exists = c:BGY
 		THIS = c:BGY
-		coa_theocracy_trigger = yes
-		country_has_voting_franchise = yes
+		has_law = law_type:law_theocracy
 	}
 } 
 
-burgundy_theocracy_dictatorial = {
-color = "burgundy_theocracy_dictatorial"
+burgundy_burgundian_system = {
+color = rgb { 28 0 28 }
 	
 	possible = {
 		exists = c:BGY
 		THIS = c:BGY
-		coa_theocracy_trigger = yes
+		coa_has_burgundist_leader_trigger = yes
+		has_law = law_type:law_bgy_burgundism
+		has_law = law_type:law_bgy_spartanism
 		country_has_voting_franchise = no
 	}
 } 
 
 burgundy_communist_democratic = {
-color = "burgundy_communist_democratic"
+color = rgb { 176 0 61 }
 	
 	possible = {
 		exists = c:BGY
 		THIS = c:BGY
-		coa_communist_trigger = yes
+		has_law = law_type:law_council_republic
 		country_has_voting_franchise = yes
 	}
 } 
 
 burgundy_communist_dictatorial = {
-color = "burgundy_communist_dictatorial"
+color = rgb { 125 0 44 }
 	
 	possible = {
 		exists = c:BGY
 		THIS = c:BGY
-		coa_communist_trigger = yes
+		has_law = law_type:law_council_republic
 		country_has_voting_franchise = no
+	}
+} 
+
+burgundy_technocratic = {
+color = "grey"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		has_law = law_type:law_technocracy
 	}
 } 

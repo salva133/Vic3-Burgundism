@@ -6,6 +6,15 @@
 		texture = "ce_cross_burgundy.dds"
 		color1 = "purple"
 	}
+	colored_emblem = {
+		texture = "ce_laurel_circled.dds"
+		color1 = "saffron"
+		color2 = "blue"
+	}
+	textured_emblem = {
+		texture = "te_burgundy.dds"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}
 }
 
 BGY_democratic = {
@@ -24,17 +33,60 @@ BGY_dictatorship = {
 	color1 = "black"
 
 	colored_emblem = {
+		texture = "ce_tribar.dds"
+		color1 = "black"
+		color2 = "purple"
+		color3 = "white"
+	}
+	colored_emblem = {
+		texture = "ce_triskel.dds"
+		color1 = "black"
+
+		instance = { scale = { 0.6 0.6 } position = { 0.17 0.5 } }
+	}
+}
+
+BGY_burgundian_system = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
 		texture = "ce_frame_circle_outline.dds"
 		color1 = "purple"
 
-		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+		instance = { scale = { 0.85 0.8 } position = { 0.5 0.5 } }
 	}
 
 	colored_emblem = {
 		texture = "ce_kolovrat.dds"
 		color1 = "purple"
 
-		instance = { scale = { 0.75 0.7 } position = { 0.5 0.5 } }
+		instance = { scale = { 0.9 0.85 } position = { 0.5 0.5 } }
+	}
+}
+
+BGY_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "saffron"
+
+	textured_emblem = {
+		texture = "te_wewelsburg.dds"
+		instance = { scale = { 1 1 } position = { 0.5 0.5 } }
+	}
+}
+
+BGY_technocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "grey"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "purple"
+	}
+
+	colored_emblem = {
+		texture = "ce_triskel.dds"
+		color1 = "purple"
 	}
 }
 
@@ -45,7 +97,19 @@ BGY_communist = {
 	colored_emblem = {
 		texture = "ce_saltire_fimbriated_02.dds"
 		color1 = "purple"
-		color2 = "yellow"
-		color3 = "yellow"
+		color2 = "saffron"
+		color3 = "saffron"
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "purple"
+
+		instance = { scale = { 1.5 1.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_hammer_sickle_star_cogwheel.dds"
+		color1 = "golden"
+
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.47 } }
 	}
 }

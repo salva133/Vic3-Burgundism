@@ -1,0 +1,7 @@
+﻿l_english:
+  create_claims_for_burgundy: "Assert #bold Burgundian#! Claims"
+  create_claims_for_burgundy_desc: "#bold Burgundy#! needs to claim certain regions in it's vicinity"
+
+  burgundian_claims_asserted_tt: "[ROOT.GetCountry.GetName] didn't yet assert #bold Burgundian#! claims"
+  burgundy_not_already_owning_the_states_in_question_tt: "[ROOT.GetCountry.GetName] is not already owning the states in question"
+  burgundy_has_no_real_elections_tt: "[ROOT.GetCountry.GetName] is not democratic"
