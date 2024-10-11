@@ -1,0 +1,15 @@
+colors = {
+
+	burgundy_duchy = rgb { 0 0 0 }
+	burgundy_high_duchy = rgb { 100 18 32 }
+
+	burgundy_republic_democratic = rgb { 110 20 35 }
+	burgundy_republic_dictatorial = rgb { 133 24 42 }
+	
+	burgundy_theocracy_democratic = rgb { 161 29 51 }
+	burgundy_theocracy_dictatorial = rgb { 167 30 52 }
+
+	burgundy_communist_democratic = rgb { 3 4 94 }
+	burgundy_communist_dictatorial = rgb { 2 62 138 }
+
+}

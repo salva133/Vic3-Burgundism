@@ -1,0 +1,89 @@
+### Burgundy ###
+
+burgundy_duchy = {
+color = "burgundy_duchy"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		coa_monarchy_trigger = yes
+		recognized = no 
+	}
+}
+
+burgundy_high_duchy = {
+color = "burgundy_high_duchy"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		coa_monarchy_trigger = yes
+		recognized = yes 
+	}
+}
+
+burgundy_republic_democratic = {
+color = "burgundy_republic_democratic"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		coa_republic_trigger = yes
+		country_has_voting_franchise = yes
+	}
+} 
+
+burgundy_republic_dictatorial = {
+color = "burgundy_republic_dictatorial"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		coa_republic_trigger = yes
+		country_has_voting_franchise = no
+	}
+} 
+
+burgundy_theocracy_democratic = {
+color = "burgundy_theocracy_democratic"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		coa_theocracy_trigger = yes
+		country_has_voting_franchise = yes
+	}
+} 
+
+burgundy_theocracy_dictatorial = {
+color = "burgundy_theocracy_dictatorial"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		coa_theocracy_trigger = yes
+		country_has_voting_franchise = no
+	}
+} 
+
+burgundy_communist_democratic = {
+color = "burgundy_communist_democratic"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		coa_communist_trigger = yes
+		country_has_voting_franchise = yes
+	}
+} 
+
+burgundy_communist_dictatorial = {
+color = "burgundy_communist_dictatorial"
+	
+	possible = {
+		exists = c:BGY
+		THIS = c:BGY
+		coa_communist_trigger = yes
+		country_has_voting_franchise = no
+	}
+} 
