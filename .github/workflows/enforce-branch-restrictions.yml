@@ -3,23 +3,24 @@ name: Enforce PR Branch Rules
 on:
   pull_request:
     branches:
-      - released      # Prüft PRs, die in den "released"-Branch gehen
-      - releasing    # Prüft PRs, die in den "releasing"-Branch gehen
+      - master
+      - testing
+      - hotfix
 
 jobs:
-  check_released_branch:
+  check_master_branch:
     runs-on: ubuntu-latest
-    if: github.base_ref == 'released'  # Triggert diesen Job nur für PRs auf den "released"-Branch
+    if: github.base_ref == 'master'
     steps:
-      - name: Check if PR is from 'releasing'
-        if: github.head_ref != 'releasing'  # Prüft, ob der Quell-Branch nicht "releasing" ist
+      - name: Check if PR is from 'testing'
+        if: github.head_ref != 'testing' && github.head_ref != 'hotfix'
         run: |
-          echo "Pull requests to 'released' are only allowed from 'releasing'."
+          echo "Pull requests to 'master' are only allowed from 'testing' or 'hotfix'."
           exit 1
 
-  allow_to_releasing:
+  allow_to_testing:
     runs-on: ubuntu-latest
-    if: github.base_ref == 'releasing'  # Triggert diesen Job nur für PRs auf den "releasing"-Branch
+    if: github.base_ref == 'testing' || github.base_ref == 'hotfix'
     steps:
-      - name: Allow PR to 'releasing'
-        run: echo "Pull request to 'releasing' allowed."  # Zulässt, dass in "releasing" gemerged wird
+      - name: Allow PR to 'testing'
+        run: echo "Pull request to 'testing' allowed."  # Zulässt, dass in "testing" gemerged wird
