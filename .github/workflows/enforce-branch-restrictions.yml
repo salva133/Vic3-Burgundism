@@ -45,7 +45,7 @@ jobs:
 
       - name: Determine version bump
         run: |
-          FILE="./metadata/metadata.json"
+          FILE="metadata/metadata.json"
           VERSION=$(grep '"version"' $FILE | sed 's/[^0-9.]//g')
           MAJOR=$(echo $VERSION | cut -d. -f1)
           MINOR=$(echo $VERSION | cut -d. -f2)
@@ -69,5 +69,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add metadata.json
+          git add metadata/metadata.json
           git commit -m "raised version to $NEW_VERSION"
