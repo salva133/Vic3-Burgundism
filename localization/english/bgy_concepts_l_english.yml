@@ -15,3 +15,5 @@
   concept_death_desc: "Actually his name was Bob but who cares am I right?\nBringer of death, ruin and [Concept('concept_parisian_beer','an abomination of a pale lager')]."
   concept_parisian_beer: "Parisian \"Beer\""
   concept_parisian_beer_desc: "Probably France's second biggest insult to the world.\nYou're welcome to guess which is the biggest."
+  concept_streng_geheim: "STRENG GEHEIM"
+  concept_streng_geheim_desc: "It's #bold STRENG GEHEIM#!, Schweinhunds!"
