@@ -42,6 +42,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Stelle sicher, dass das komplette Repository ausgecheckt wird
 
       - name: Determine version bump
         run: |
