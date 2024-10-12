@@ -1,0 +1,132 @@
+﻿create_claims_for_burgundy = {
+
+	is_shown = {
+		exists = c:BGY
+		this = c:BGY
+		NAND = {
+			owns_entire_state_region = STATE_NORMANDY
+			owns_entire_state_region = STATE_ILE_DE_FRANCE
+			owns_entire_state_region = STATE_WALLONIA
+			owns_entire_state_region = STATE_FLANDERS
+			owns_entire_state_region = STATE_HOLLAND
+			owns_entire_state_region = STATE_GELRE
+			owns_entire_state_region = STATE_FRIESLAND
+			owns_entire_state_region = STATE_PROVENCE
+		}
+		NOT = { has_global_variable = burgundian_claims_asserted }
+	}
+
+	possible = {
+		this = c:BGY
+		is_at_war = no
+		is_subject = no
+		custom_tooltip = {
+			text = burgundy_has_no_real_elections_tt
+			OR = {
+				has_law = law_type:law_autocracy
+				has_law = law_type:law_technocracy
+				has_law = law_type:law_oligarchy
+				has_law = law_type:law_single_party_state
+			}
+		}
+		custom_tooltip = {
+			text = burgundy_not_already_owning_the_states_in_question_tt
+			NAND = {
+				owns_entire_state_region = STATE_NORMANDY
+				owns_entire_state_region = STATE_ILE_DE_FRANCE
+				owns_entire_state_region = STATE_WALLONIA
+				owns_entire_state_region = STATE_FLANDERS
+				owns_entire_state_region = STATE_HOLLAND
+				owns_entire_state_region = STATE_GELRE
+				owns_entire_state_region = STATE_FRIESLAND
+				owns_entire_state_region = STATE_PROVENCE
+			}
+		}
+		country_rank >= rank_value:major_power
+		ruler = {
+			has_ideology = ideology:ideology_bgy_burgundist_leader
+		}
+		custom_tooltip = {
+			text = burgundian_claims_asserted_tt
+			NOT = { has_global_variable = burgundian_claims_asserted }
+		}
+	}
+
+	when_taken = {
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_NORMANDY }
+			}
+			s:STATE_NORMANDY = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_ILE_DE_FRANCE }
+			}
+			s:STATE_ILE_DE_FRANCE = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_WALLONIA }
+			}
+			s:STATE_WALLONIA = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_FLANDERS }
+			}
+			s:STATE_FLANDERS = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_HOLLAND }
+			}
+			s:STATE_HOLLAND = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_GELRE }
+			}
+			s:STATE_GELRE = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_FRIESLAND }
+			}
+			s:STATE_FRIESLAND = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				NOT = { owns_entire_state_region = STATE_PROVENCE }
+			}
+			s:STATE_PROVENCE = {
+				add_claim = ROOT
+			}
+		}
+		set_global_variable = burgundian_claims_asserted
+	}
+
+	ai_chance = {
+		base = 0
+		modifier = {
+			ruler = {
+				has_ideology = ideology:ideology_bgy_burgundist_leader
+				add = 100
+			}
+		}
+	}
+}

@@ -1,58 +1,59 @@
-﻿# namespace = debug_burgund
+﻿namespace = debug_burgund
 
-# debug_burgund.1 = {
-# 	type = country_event
-# 	placement = root
-# 	title = debug_burgund.1.t
-# 	desc = debug_burgund.1.d
-# 	flavor = debug_burgund.1.f
+debug_burgund.1 = {
+	type = country_event
+	placement = root
+	title = debug_burgund.1.t
+	desc = debug_burgund.1.d
+	flavor = debug_burgund.1.f
 
-# 	duration = 3
+	duration = 3
 
-# 	event_image = {
-# 		video = "europenorthamerica_springtime_of_nations"
-# 	}
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-# 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-# 	option = {
-# 		name = debug_burgund.1.a
-# 		ai_chance = {
-# 			base = 0
-# 		}
-# 		activate_law = law_type:law_presidential_republic
-# 		activate_law = law_type:law_single_party_state
-# 		activate_law = law_type:law_ethnostate
-# 		activate_law = law_type:law_outlawed_dissent
-# 		activate_law = law_type:law_bgy_spartanism
-# 		activate_law = law_type:law_appointed_bureaucrats
-# 		activate_law = law_type:law_mass_conscription
-# 		if = {
-# 			limit = { country_has_state_religion = rel:spartanist }
-# 			activate_law = law_type:law_state_religion
-# 		}
-# 		else = { activate_law = law_type:law_state_atheism	}
-# 		activate_law = law_type:law_secret_police
-# 		activate_law = law_type:law_command_economy
-# 		activate_law = law_type:law_isolationism
-# 		activate_law = law_type:law_collectivized_agriculture
-# 		activate_law = law_type:law_debt_slavery
-# 		activate_law = law_type:law_militarized_police
-# 		activate_law = law_type:law_closed_borders
-# 		activate_law = law_type:law_no_womens_rights
-# 		activate_law = law_type:law_no_social_security
-# 		ruler = {
-# 			set_ideology = ideology:ideology_bgy_burgundist_leader
-# 		}
-# 	}
+	option = {
+		default_option = yes
+		name = debug_burgund.1.a
+		ai_chance = {
+			base = 100
+		}
+	}
 
-# 	option = {
-# 		name = debug_burgund.1.b
-# 		default_option = yes
-# 		ai_chance = {
-# 			base = 100
-# 		}
-# 	}
-# }
+	option = {
+		name = debug_burgund.1.b
+		ai_chance = {
+			base = 0
+		}
+		activate_law = law_type:law_bgy_burgundism
+		activate_law = law_type:law_bgy_kleptocracy
+		activate_law = law_type:law_bgy_spartanism
+		activate_law = law_type:law_bgy_total_war
+	}
+	
+	option = {
+		name = debug_burgund.1.c
+		ai_chance = {
+			base = 0
+		}
+		ruler = {
+			set_ideology = ideology:ideology_bgy_burgundist_leader
+		}
+	}
+
+	option = {
+		name = debug_burgund.1.d
+		ai_chance = {
+			base = 0
+		}
+		ruler = {
+			set_ideology = ideology:ideology_moderate
+		}
+	}
+
+}

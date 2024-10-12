@@ -11,9 +11,14 @@
 	}
 
 	enable = {
+		owner = { NOT = { is_country_type = decentralized } }
 		OR = {
 			has_technology_researched = totalism
 			game_date > 1919.11.3
+			AND = {
+				exists = c:BGY
+				c:BGY = root
+			}
 		}
 	}
 
@@ -74,15 +79,6 @@
 	
 	pop_potential = {
 		custom_tooltip = {
-			text = BGY_VALID_POP_FOR_IG
-			owner = { NOT = { is_country_type = decentralized }
-			}
-		}
-		custom_tooltip = {
-			text = bgy_has_researched_totalism_tt
-			owner = { has_technology_researched = totalism }
-		}
-		custom_tooltip = {
 			text = bgy_is_middle_strata_tt
 			NOR = {
 				is_pop_type = aristocrats
@@ -101,6 +97,7 @@
 			}
 		}
 	}
+		
 
 	pop_weight = {
 		value = 0

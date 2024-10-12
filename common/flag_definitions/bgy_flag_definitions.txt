@@ -6,25 +6,54 @@
 	flag_definition = {
 		coa = BGY_democratic
 		subject_canton = BGY_democratic
-		priority = 10
-		trigger = { 
-			coa_def_republic_flag_trigger = yes
+		priority = 1000
+		trigger = {
+			coa_def_democratic_republic_trigger = yes
 		}
 	}
 	flag_definition = {
 		coa = BGY_dictatorship
 		subject_canton = BGY_dictatorship
-		priority = 15
+		priority = 2000
 		trigger = { 
-			coa_def_dictatorship_flag_trigger = yes
+			coa_def_undemocratic_republic_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BGY_theocracy
+		subject_canton = BGY_theocracy
+		priority = 3000
+		trigger = { 
+			coa_def_theocracy_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BGY_technocracy
+		subject_canton = BGY_technocracy
+		priority = 4000 
+		trigger = { 
+			coa_def_technocratic_trigger = yes
 		}
 	}
 	flag_definition = {
 		coa = BGY_communist
 		subject_canton = BGY_communist
-		priority = 2000
-		trigger = { 
-			coa_def_communist_flag_trigger = yes
+		priority = 5000
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= { 
+				OR = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = BGY_burgundian_system
+		subject_canton = BGY_burgundian_system
+		priority = 6000
+		trigger = {
+			coa_def_burgundian_system_trigger = yes
 		}
 	}
 }

@@ -34,7 +34,7 @@
   the_ticking.7.d: "Times up..."
   the_ticking.7.f: "And when he had broken the seventh seal, there was silence in heaven about the space of half an hour. And I saw the seven angels which stood before God; and to them were given seven trumpets."
   the_ticking.7.a: "And when he had broken the final seal..."
-  the_ticking.7.a_tt: "...the heavens were opened; and carried by a black sun, devastation was brought upon the unclean and unworthy..."
+  the_ticking.7.a_tt: "...the heavens were opened; and carried by a [Concept('concept_black_sun','$black sun$')], devastation was brought upon the unclean and unworthy..."
 
   # the_ticking.8.t: "Sixth Seal restored"
   # the_ticking.8.d: ""
