@@ -136,5 +136,33 @@ BGY = {
 			coa_def_protectorate_trigger = yes
 		}
 	}
-
+	
+}
+DEFAULT = {
+	dynamic_country_name = {
+		name = dyn_c_kommissariat_of_burgundy
+		adjective = generic_adjective
+		is_main_tag_only = yes
+		priority = 2000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				is_subject_of = c:BGY
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_division_of_kommissariat_of_burgundy
+		adjective = generic_adjective
+		is_main_tag_only = yes
+		priority = 3000
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				overlord ?= {
+					is_subject_of = c:BGY
+				}
+			}
+		}
+	}
 }
