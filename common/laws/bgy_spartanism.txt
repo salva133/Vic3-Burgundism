@@ -11,6 +11,8 @@
 		law_oligarchy
 		law_single_party_state
 		law_technocracy
+		law_no_social_security
+		law_no_womens_rights
 	}
 
 	institution = institution_minilab
