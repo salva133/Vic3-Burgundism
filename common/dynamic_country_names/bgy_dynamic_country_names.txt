@@ -17,7 +17,7 @@ BGY = {
 	dynamic_country_name = {
 		name = dyn_c_bgy_burgundy_high_duchy
 		adjective = BGY_ADJ
-
+		
 		priority = 100
 		trigger = {
 			coa_def_monarchy_trigger = yes
@@ -26,7 +26,7 @@ BGY = {
 	dynamic_country_name = {
 		name = dyn_c_bgy_burgundy_republic_democratic
 		adjective = BGY_ADJ
-
+		
 		priority = 200
 		trigger = {
 			exists = scope:actor
@@ -42,7 +42,7 @@ BGY = {
 	dynamic_country_name = {
 		name = dyn_c_bgy_burgundy_republic_dictatorial
 		adjective = BGY_ADJ
-
+		
 		priority = 300
 		trigger = {
 			exists = scope:actor
@@ -58,7 +58,7 @@ BGY = {
 	dynamic_country_name = {
 		name = dyn_c_bgy_burgundy_theocracy
 		adjective = BGY_ADJ
-
+		
 		priority = 400
 		trigger = {
 			exists = scope:actor
@@ -118,13 +118,22 @@ BGY = {
 	dynamic_country_name = {
 		name = dyn_c_bgy_burgundy_burgundian_system
 		adjective = BGY_ADJ
-
+		
 		priority = 900
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
 				coa_burgundian_system_trigger = yes
 			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_protectorate
+		adjective = BGY_ADJ
+
+		priority = 1000
+		trigger = {
+			coa_def_protectorate_trigger = yes
 		}
 	}
 
