@@ -1,27 +1,70 @@
-﻿coa_no_elections_trigger = {
-	OR = {
-		has_law = law_type:law_autocracy
-		has_law = law_type:law_oligarchy
-		has_law = law_type:law_technocracy
-		has_law = law_type:law_single_party_state
-	}
-}
-
-coa_burgundist_trigger = {
-	coa_dictatorship_trigger = yes
+﻿coa_has_burgundist_leader_trigger = {
 	ruler ?= {
 		has_ideology = ideology:ideology_bgy_burgundist_leader
     }
 }
 
-coa_no_free_speech = {
-	NOR = {
-		has_law = law_type:law_right_of_assembly
-		has_law = law_type:law_protected_speech
-	}
+coa_burgundian_system_trigger = {
+	coa_has_burgundist_leader_trigger = yes
+	coa_has_burgundian_laws_trigger = yes
+	coa_has_elections_trigger = no
 }
 
-coa_burgundian_system_trigger = {
-	coa_burgundist_trigger = yes
-	coa_no_free_speech = yes
+coa_def_burgundian_system_trigger = {
+	exists = scope:actor
+	scope:actor ?= { coa_burgundian_system_trigger = yes }
+}
+
+coa_def_theocracy_trigger = {
+	exists = scope:actor
+	scope:actor ?= { coa_theocracy_trigger = yes }
+}
+
+coa_technocratic_trigger = {
+	has_law = law_type:law_technocracy
+}
+
+coa_def_technocratic_trigger = {
+	exists = scope:actor
+	scope:actor ?= { coa_technocratic_trigger = yes }
+}
+
+coa_has_elections_trigger = {
+	country_has_voting_franchise = yes
+}
+
+coa_has_burgundian_laws_trigger = {
+	has_law = law_type:law_bgy_burgundism
+	has_law = law_type:law_bgy_spartanism
+}
+
+coa_def_monarchy_trigger = {
+	exists = scope:actor
+	scope:actor ?= { coa_monarchy_trigger = yes }
+}
+
+coa_democratic_republic_trigger = {
+	OR = {
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_parliamentary_republic
+	}
+	coa_has_elections_trigger = yes
+}
+
+coa_def_democratic_republic_trigger = {
+	exists = scope:actor
+	scope:actor ?= { coa_democratic_republic_trigger = yes }
+}
+
+coa_undemocratic_republic_trigger = {
+	OR = {
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_parliamentary_republic
+	}
+	coa_has_elections_trigger = no
+}
+
+coa_def_undemocratic_republic_trigger = {
+	exists = scope:actor
+	scope:actor ?= { coa_undemocratic_republic_trigger = yes }
 }

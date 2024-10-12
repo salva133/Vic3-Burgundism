@@ -24,6 +24,7 @@
 		NOR = {
 			has_decree = decree_lag_reduction
 			has_decree = decree_homelandoverall_values
+			has_decree = decree_promote_national_values
 		}
 		is_incorporated = yes
 	}
@@ -74,6 +75,7 @@ decree_lag_reduction = {
 		NOR = {
 			has_decree = decree_true_lag_reduction
 			has_decree = decree_homelandoverall_values
+			has_decree = decree_promote_national_values
 		}
 		is_incorporated = yes
 	}
@@ -119,6 +121,7 @@ decree_homelandoverall_values = {
 		NOR = {
 			has_decree = decree_lag_reduction
 			has_decree = decree_true_lag_reduction
+			has_decree = decree_promote_national_values
 		}
 		is_incorporated = yes
 	}
@@ -141,4 +144,84 @@ decree_homelandoverall_values = {
 		}
 	}
 
+}
+
+decree_promote_national_values = {
+	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
+	unlocking_technologies = {
+		centralization
+	}
+	valid = {
+		NOR = {
+			has_decree = decree_lag_reduction
+			has_decree = decree_true_lag_reduction
+		}
+		OR = {
+			has_assimilating_pops = yes
+			has_converting_pops = yes
+		}	
+	}
+	modifier = {
+		state_assimilation_mult = 1
+		state_conversion_mult = 1
+	}
+	cost = 100
+	
+	ai_weight = {
+		value = 0
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_reactionary_agenda
+						has_strategy = ai_strategy_maintain_mandate_of_heaven
+					}
+				}
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				scope:country = {
+					has_strategy = ai_strategy_nationalist_agenda
+				}
+			}
+			add = 200
+		}		
+		if = {
+			limit = {
+				state_population < 100000
+			}
+			multiply = 0
+		}
+		if = {
+			limit = {
+				state_population < 300000
+			}
+			multiply = 0.5
+		}	
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_reactionary_agenda
+						has_strategy = ai_strategy_conservative_agenda
+						has_strategy = ai_strategy_maintain_mandate_of_heaven
+					}
+				}
+			}
+			multiply = 0.5
+		}
+		if = {
+			limit = {
+				scope:country = {
+					OR = {
+						has_strategy = ai_strategy_progressive_agenda
+						has_strategy = ai_strategy_egalitarian_agenda
+					}
+				}
+			}
+			multiply = 1.5
+		}		
+	}
 }

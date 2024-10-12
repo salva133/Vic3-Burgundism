@@ -15,8 +15,30 @@ je_the_ticking = {
 		}
 	}
 
+	is_shown_when_inactive = {
+		is_player = yes
+		OR = {
+			custom_tooltip = {
+				text = is_burgundy_tt
+				exists = c:BGY
+				c:BGY = root
+			}
+			AND = {	
+				country_rank >= rank_value:major_power
+				has_technology_researched = totalism
+			}
+		}
+		custom_tooltip = {
+			text = the_ticking_not_completed_tt
+			NOT = { has_global_variable = the_ticking_completed_glob_var }
+		}
+	}
+
 	possible = {
 		is_player = yes
+		is_subject = no
+		is_in_power_bloc = no
+		has_technology_researched = thinking_of_ending_things
 		OR = {
 			AND = {
 				custom_tooltip = {
@@ -24,10 +46,11 @@ je_the_ticking = {
 					exists = c:BGY
 					c:BGY = root
 				}
-			}
-			AND = {	
 				country_rank >= rank_value:major_power
+			}
+			AND = {
 				has_technology_researched = totalism
+				country_rank >= rank_value:major_power
 			}
 		}
 		custom_tooltip = {
