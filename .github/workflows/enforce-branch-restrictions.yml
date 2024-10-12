@@ -70,5 +70,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add metadata.json
-          git commit -m "Bump version to $NEW_VERSION"
+          git commit -m "raised version to $NEW_VERSION"
           git push origin ${{ github.head_ref }}
