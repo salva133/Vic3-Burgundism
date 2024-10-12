@@ -30,6 +30,13 @@ jobs:
           echo "Pull requests to 'master' are only allowed from 'testing' or 'hotfix'."
           exit 1
 
+  allow_to_testing:
+    runs-on: ubuntu-latest
+    if: github.base_ref == 'testing' || github.base_ref == 'hotfix'
+    steps:
+      - name: Allow PR to 'testing'
+        run: echo "Pull request to 'testing' or 'hotfix' allowed."
+
   bump_version:
     runs-on: ubuntu-latest
     steps:
