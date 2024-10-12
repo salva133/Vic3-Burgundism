@@ -61,7 +61,6 @@ je_the_ticking = {
 
 	complete = {
 		has_law = law_type:law_bgy_burgundism
-		has_law = law_type:law_bgy_kleptocracy
 		has_law = law_type:law_bgy_total_war
 		institution_investment_level = {
 			institution = institution_miniwar
