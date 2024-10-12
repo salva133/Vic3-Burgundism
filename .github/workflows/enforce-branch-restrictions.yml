@@ -45,7 +45,7 @@ jobs:
 
       - name: Determine version bump
         run: |
-          FILE="metadata.json"
+          FILE="metadata/metadata.json"
           VERSION=$(grep '"version"' $FILE | sed 's/[^0-9.]//g')
           MAJOR=$(echo $VERSION | cut -d. -f1)
           MINOR=$(echo $VERSION | cut -d. -f2)
