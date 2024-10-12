@@ -147,6 +147,7 @@ DEFAULT = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
+				exists = c:BGY
 				is_subject_of = c:BGY
 			}
 		}
@@ -159,6 +160,7 @@ DEFAULT = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
+				exists = c:BGY
 				overlord ?= {
 					is_subject_of = c:BGY
 				}

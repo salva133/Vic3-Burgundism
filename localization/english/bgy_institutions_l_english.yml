@@ -4,3 +4,6 @@
 
   institution_minilab: "Office for Labour Allocation"
   institution_minilab_desc: "The [Concept('concept_institution','$institution_minilab$')] supports the government with assigning the ever-growing amount of work force to get into labour."
+
+  institution_minitrue: "Ministry of Truth"
+  institution_minitrue_desc: "The [Concept('concept_institution','$institution_minitrue$')] "

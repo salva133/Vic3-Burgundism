@@ -5,7 +5,7 @@
 
 	male_common_first_names = {
 		Adelbert Adolf Albrecht Alexander Alfred August
-		Bernhard Burkhard Bruno		
+		Bernhard Burkhard Bruno	
 		Dieter
 		Eduard Edwin Erich Ernst Erwin Esaias
 		Florian Franz Friedrich Fritz
@@ -43,31 +43,26 @@
 	}
 
 	noble_last_names = {
-		Herwarth_von_Bittenfeld
-		Vogel_von_Falkenstein
-		von_Falkenstein
-		von_Alten von_Tischen von_Arens
-		von_Bisanz von_Bittenfeld von_Blomberg von_Borries von_Boyen von_Braunschweig von_Breitenbach
+		von_Alten von_Arens am_Auxois von_Aussern zur_Aube
+		von_Bisanz von_Bittenfeld von_Blomberg von_Borries von_Boyen von_Braunschweig von_Breitenbach von_Beuen von_Baar
 		von_Clemm von_Cramm
-		von_Doenhoff von_Dieskau
+		von_Doenhoff von_Dieskau von_Donnern
 		von_Eck
 		von_Fritsch Firnhaber_von_Eberstein
 		von_Gebser von_Gagern de_Greiff von_GO_rtz von_GU_nderrode von_der_Gabelentz
-		von_Halkett von_Neuwehr von_Aussern von_Maken von_Kahlen von_Holstein-Gottorp von_Beuen von_Haupt von_Heyden
-		von_Langer
-		von_Kleefeld von_Knorr von_dem_Knesebeck
-		zur_Senn
-		von_Senz von_Treuen von_Baar zur_Aube von_Donnern von_Semuren
-		am_Auxois von_Nordeck_zur_Rabenau
-		von_NU_tten_Sankt_Georg
+		von_Halkett von_Holstein-Gottorp von_Heyden Herwarth_von_Bittenfeld von_Haupt
+		von_Jons
+		von_Kahlen von_Kleefeld von_Knorr von_dem_Knesebeck
+		von_Langer de_Lagarde
+		von_Maken
+		von_NU_tten_Sankt_Georg von_Neuwehr von_Nordeck_zur_Rabenau von_Nanzig
 		von_PlO_nnies
-		Riedesel_zu_Eisenbach von_Rauch von_Ravensberg von_Reuter von_Richthofen von_Roon von_Radowitz von_Reichenbach
-		von_Sachsen-Altenburg von_Sachsen-Coburg-Gotha von_Sachsen-Meiningen von_Sachsen-Weimar-Eisenach von_Schlieffen von_Schwarzburg von_Spee zu_Stolberg-Wernigerode von_Sybel von_Solms-Laubach von_Stein von_StO_ssert von_Spesshardt
-		Treusch_von_Butlar von_Tirpitz von_ThU_nen
-		von_Vahlkampf
+		Riedesel_zu_Eisenbach von_Rauch von_Ravensberg von_Reuter von_Richthofen von_Roon von_Radowitz von_Reichenbach von_Rodomo_Hafenstadt von_Ryssel
+		von_Sachsen-Altenburg von_Sachsen-Coburg-Gotha von_Sachsen-Meiningen von_Sachsen-Weimar-Eisenach von_Schlieffen von_Schwarzburg von_Spee zu_Stolberg-Wernigerode von_Sybel von_Solms-Laubach von_Stein von_StO_ssert von_Spesshardt zur_Senn von_Senz von_Semuren von_Straßburg
+		Treusch_von_Butlar von_Tirpitz von_ThU_nen von_Tischen von_Treuen
+		von_Vahlkampf Vogel_von_Falkenstein von_Falkenstein
 		von_Waldeck_und_Pyrmont von_Wettin von_Wrangel von_Willich von_Watzdorf Waitz_von_Eschen
 		von_Zieten von_Zwierlein
-		von_Jons
 	}
 
 	common_last_names = {
@@ -86,8 +81,8 @@
 		NettstrA_tter Neuerburg Neunzig Nohl
 		Olbers Oetker
 		Pelz Pax Peiser Plange Pagenstecher Peters Pfeiffer Philippi Prinzen Proff PflU_ger Pitschaft PrA_torius Preusser Pogge Pohle
-		Rehfisch Roepke RU_ckert Ronge Reichensperger Reinartz Rittinghausen Ritz Rewitzer Rauschenplat RO_ssler RU_hl Ramspeck Rauschers Reh Runge Reinganum
-		Scherfke Schimmelfennig Schmidt Schree Schurz Schnitter SchlO_ffel Stahlschmidt Schwetschke Schnake Schneider Schuchart SchU_renberg Schigard Scheidt Scherer Schleicher SchlO_sser Schmitz SchO_ller Stapper Stedmann Strom Schaffrath SchlU_ter Schnabel Schwarzenberg Steuernagel Stoll Strecker Schleiden Schlettwein Schnelle Stever Sonnenkalb Souchay
+		Rehfisch Roepke RU_ckert Ronge Reichensperger Reinartz Rittinghausen Ritz Rewitzer Rauschenplat RO_ssler RU_hl Ramspeck Rauschers Reh Runge Reinganum Rodomo
+		Scherfke Schimmelfennig Schmidt Schree Schurz Schnitter SchlO_ffel Stahlschmidt Schwetschke Schnake Schneider Schuchart SchU_renberg Schigard Scheidt Scherer Schleicher SchlO_sser Schmitz SchO_ller Stapper Stedmann Strom Schaffrath SchlU_ter Schnabel Schwarzenberg Steuernagel Stoll Strecker Schleiden Schlettwein Schnelle Stever Sonnenkalb Souchay Sebottendorf
 		Treibe TU_rke Theyssen Thilmany Trombetta
 		Umbscheiden
 		Venedy Vogt Volhard Varrentrapp Vorwerck
