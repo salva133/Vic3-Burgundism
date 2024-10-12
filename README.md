@@ -61,6 +61,7 @@ For use in lag reduction only ;)
 
 [h3] More Flavour [/h3]
 - More flag and name variations depending on enacted laws
+- a dedicated music mod maybe
 
 [h3] Small Map reworks [/h3]
 - still trying to find a method to rename cities based on the primary culture of the owner or simply the owning country.
