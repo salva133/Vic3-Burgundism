@@ -2,12 +2,16 @@
 
 
 ### First Seal broken
-the_ticking.1 = {
+the_ticking_events.1 = {
 	type = country_event
 	placement = root
-	title = the_ticking.1.t
-	desc = the_ticking.1.d
-	flavor = the_ticking.1.f
+	title = the_ticking_events.1.t
+	desc = the_ticking_events.1.d
+	flavor = the_ticking_events.1.f
+	
+	event_image = {
+		video = "unspecific_devastation"
+	}
 
 	duration = 3
 
@@ -21,18 +25,22 @@ the_ticking.1 = {
 	}
 
 	option = {
-		name = the_ticking.1.a
+		name = the_ticking_events.1.a
 		default_option = yes
 	}
 }
 
 ### Second Seal broken
-the_ticking.2 = {
+the_ticking_events.2 = {
 	type = country_event
 	placement = root
-	title = the_ticking.2.t
-	desc = the_ticking.2.d
-	flavor = the_ticking.2.f
+	title = the_ticking_events.2.t
+	desc = the_ticking_events.2.d
+	flavor = the_ticking_events.2.f
+	
+	event_image = {
+		video = "unspecific_devastation"
+	}
 
 	duration = 3
 
@@ -46,18 +54,22 @@ the_ticking.2 = {
 	}
 
 	option = {
-		name = the_ticking.2.a 
+		name = the_ticking_events.2.a 
 		default_option = yes
 	}
 }
 
 ### Thrid Seal broken
-the_ticking.3 = {
+the_ticking_events.3 = {
 	type = country_event
 	placement = root
-	title = the_ticking.3.t
-	desc = the_ticking.3.d
-	flavor = the_ticking.3.f
+	title = the_ticking_events.3.t
+	desc = the_ticking_events.3.d
+	flavor = the_ticking_events.3.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
 
 	duration = 3
 
@@ -71,18 +83,22 @@ the_ticking.3 = {
 	}
 
 	option = {
-		name = the_ticking.3.a 
+		name = the_ticking_events.3.a 
 		default_option = yes
 	}
 }
 
 ### Fourth Seal broken
-the_ticking.4 = {
+the_ticking_events.4 = {
 	type = country_event
 	placement = root
-	title = the_ticking.4.t
-	desc = the_ticking.4.d
-	flavor = the_ticking.4.f
+	title = the_ticking_events.4.t
+	desc = the_ticking_events.4.d
+	flavor = the_ticking_events.4.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
 
 	duration = 3
 
@@ -96,18 +112,22 @@ the_ticking.4 = {
 	}
 
 	option = {
-		name = the_ticking.4.a 
+		name = the_ticking_events.4.a 
 		default_option = yes
 	}
 }
 
 ### Fifth Seal broken
-the_ticking.5 = {
+the_ticking_events.5 = {
 	type = country_event
 	placement = root
-	title = the_ticking.5.t
-	desc = the_ticking.5.d
-	flavor = the_ticking.5.f
+	title = the_ticking_events.5.t
+	desc = the_ticking_events.5.d
+	flavor = the_ticking_events.5.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
 
 	duration = 3
 
@@ -122,18 +142,22 @@ the_ticking.5 = {
 	}
 
 	option = {
-		name = the_ticking.5.a 
+		name = the_ticking_events.5.a 
 		default_option = yes
 	}
 }
 
 ### Sixth Seal broken
-the_ticking.6 = {
+the_ticking_events.6 = {
 	type = country_event
 	placement = root
-	title = the_ticking.6.t
-	desc = the_ticking.6.d
-	flavor = the_ticking.6.f
+	title = the_ticking_events.6.t
+	desc = the_ticking_events.6.d
+	flavor = the_ticking_events.6.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
 
 	duration = 3
 
@@ -147,18 +171,22 @@ the_ticking.6 = {
 	}
 
 	option = {
-		name = the_ticking.6.a 
+		name = the_ticking_events.6.a 
 		default_option = yes
 	}
 }
 
 ### Seventh Seal broken
-the_ticking.7 = {
+the_ticking_events.7 = {
 	type = country_event
 	placement = root
-	title = the_ticking.7.t
-	desc = the_ticking.7.d
-	flavor = the_ticking.7.f
+	title = the_ticking_events.7.t
+	desc = the_ticking_events.7.d
+	flavor = the_ticking_events.7.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
 
 	duration = 3
 
@@ -179,11 +207,11 @@ the_ticking.7 = {
 	}
 
 	option = {
-		name = the_ticking.7.a
+		name = the_ticking_events.7.a
 		default_option = yes
 
 		custom_tooltip = {
-			text = the_ticking.7.a_tt
+			text = the_ticking_events.7.a_tt
 			every_state = {
 				limit = { 
 					NOR = { 
