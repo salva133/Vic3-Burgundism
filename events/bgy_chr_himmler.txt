@@ -20,7 +20,7 @@ himmler_events.1 = {
 			is_marginal = no
 		}
 		game_date > 1919.11.3
-		NOT = { has_variable = is_himmler }
+		NOT = { has_variable = himmler_alive_var }
 		OR = {
 			country_has_primary_culture = cu:north_german
 			country_has_primary_culture = cu:south_german
@@ -28,14 +28,20 @@ himmler_events.1 = {
 	}
 
 	immediate = {
-		create_character  = {
-			template = heinrich_himmler_character_template
-		}
-		set_variable = { name = is_himmler }
+		
 	}
 
 	option = {
 		name = himmler_events.1.a
 		default_option = yes
+
+		create_character  = {
+			template = heinrich_himmler_character_template
+		}
+		set_variable = himmler_alive_var
+
+		ai_chance = {
+			base = 100
+		}
 	}
 }

@@ -41,10 +41,8 @@
 		priority = 5000
 		trigger = {
 			exists = scope:actor
-			scope:actor ?= { 
-				OR = {
-					has_law = law_type:law_council_republic
-				}
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
 			}
 		}
 	}

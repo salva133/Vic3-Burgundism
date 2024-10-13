@@ -4,7 +4,7 @@
 		create_character = {
 			template = paul_de_lagarde_character_template
 			on_created = {
-				set_variable = { name = is_lagarde }
+				set_variable = de_lagarde_alive_var
 			}
 		}
 		

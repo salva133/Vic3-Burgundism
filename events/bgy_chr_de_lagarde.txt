@@ -13,7 +13,7 @@ de_lagarde_events.1 = {
 
 	trigger = {
 		game_date > 1891.12.22
-		has_variable = is_lagarde
+		has_variable = de_lagarde_alive_var
 	}
 
 	immediate = {
