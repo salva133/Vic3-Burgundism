@@ -1,0 +1,205 @@
+﻿namespace = the_ticking_events
+
+
+### First Seal broken
+the_ticking.1 = {
+	type = country_event
+	placement = root
+	title = the_ticking.1.t
+	desc = the_ticking.1.d
+	flavor = the_ticking.1.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = the_ticking.1.a
+		default_option = yes
+	}
+}
+
+### Second Seal broken
+the_ticking.2 = {
+	type = country_event
+	placement = root
+	title = the_ticking.2.t
+	desc = the_ticking.2.d
+	flavor = the_ticking.2.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = the_ticking.2.a 
+		default_option = yes
+	}
+}
+
+### Thrid Seal broken
+the_ticking.3 = {
+	type = country_event
+	placement = root
+	title = the_ticking.3.t
+	desc = the_ticking.3.d
+	flavor = the_ticking.3.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = the_ticking.3.a 
+		default_option = yes
+	}
+}
+
+### Fourth Seal broken
+the_ticking.4 = {
+	type = country_event
+	placement = root
+	title = the_ticking.4.t
+	desc = the_ticking.4.d
+	flavor = the_ticking.4.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = the_ticking.4.a 
+		default_option = yes
+	}
+}
+
+### Fifth Seal broken
+the_ticking.5 = {
+	type = country_event
+	placement = root
+	title = the_ticking.5.t
+	desc = the_ticking.5.d
+	flavor = the_ticking.5.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = the_ticking.5.a 
+		default_option = yes
+	}
+}
+
+### Sixth Seal broken
+the_ticking.6 = {
+	type = country_event
+	placement = root
+	title = the_ticking.6.t
+	desc = the_ticking.6.d
+	flavor = the_ticking.6.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = the_ticking.6.a 
+		default_option = yes
+	}
+}
+
+### Seventh Seal broken
+the_ticking.7 = {
+	type = country_event
+	placement = root
+	title = the_ticking.7.t
+	desc = the_ticking.7.d
+	flavor = the_ticking.7.f
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+	}
+
+	immediate = {
+		set_global_variable = the_ticking_completed_glob_var
+		every_state = {
+			limit = {
+				has_modifier = end_time_mortality
+			}
+			remove_modifier = end_time_mortality
+		}
+	}
+
+	option = {
+		name = the_ticking.7.a
+		default_option = yes
+
+		custom_tooltip = {
+			text = the_ticking.7.a_tt
+			every_state = {
+				limit = { 
+					NOR = { 
+						owner = root
+						has_modifier = end_time_mortality
+					}
+				}
+				state_region = {
+					add_devastation = 999
+					add_pollution = 999
+				}
+				# add_modifier = {
+				# 	name = end_time_mortality
+				# 	months = normal_modifier_time
+				# }
+			}
+		}
+	}
+}
