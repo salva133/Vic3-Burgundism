@@ -13,3 +13,15 @@ institution_minilab = {
 		state_working_adult_ratio_add = 0.15
 	}
 }
+
+institution_minitrue = {
+	icon = "gfx/interface/icons/institution_icons/minitrue.dds"
+	background_texture = "gfx/interface/illustrations/institutions/minitrue_illustration.dds"
+	modifier = {
+		country_authority_add = 100
+		country_bolster_ig_attraction_mult = 0.2
+		country_suppression_ig_attraction_mult = -0.2
+		country_tech_spread_mult = -0.198
+		country_leverage_resistance_mult = 0.2
+	}
+}

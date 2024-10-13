@@ -68,3 +68,12 @@ coa_def_undemocratic_republic_trigger = {
 	exists = scope:actor
 	scope:actor ?= { coa_undemocratic_republic_trigger = yes }
 }
+
+coa_def_protectorate_trigger = {
+	exists = scope:actor
+	scope:actor ?= { coa_is_subject = yes }
+}
+
+coa_is_subject = {
+	is_subject = yes
+}

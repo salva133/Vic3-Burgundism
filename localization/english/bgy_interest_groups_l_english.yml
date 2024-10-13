@@ -1,7 +1,11 @@
 ﻿l_english:
+  ig_is_burgundist_tt: "Is IG $ig_variant_burgundists$"
   ig_burgundists: "Burgundists"
   ig_burgundists_only_icon: "@burgundists!"
   ig_burgundists_desc: "A concept of terror, characterised by absolute power and racist tyranny. Democracy and freedom are despised, dissenting voices are brutally stifled. Total control suffocates all hope."
+
+  ig_burgundists_burgund: "Reichsstaffel"
+  ig_burgundists_burgund_desc: "The 'Reichsstaffel' is a paramilitary organisation in Burgundy. The 'Reichsstaffel' is ruled by an authoritarian leader who strives to completely permeate society with extreme National Socialist values."
 
 # Culture dependent Naming
   ig_burgundists_germanics: "Thule Society"

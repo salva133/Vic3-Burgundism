@@ -1,6 +1,6 @@
 ﻿thinking_of_ending_things = {
 	era = era_6
-	texture = "gfx/interface/icons/mobilization_options/nuke.dds"
+	texture = "gfx/interface/icons/invention_icons/thinking_of_ending_things.dds"
 	category = military
 
 	unlocking_technologies = { mobile_armor }
@@ -16,7 +16,7 @@
 
 total_war = {
 	era = era_5
-	texture = "gfx/interface/icons/law_icons/total_war.dds"
+	texture = "gfx/interface/icons/invention_icons/total_war.dds"
 	category = military
 
 	unlocking_technologies = { war_propaganda }

@@ -1,4 +1,4 @@
-name: Enforce PR Branch Rules
+name: Enforce PR Branch Rules and Bump Version
 
 on:
   pull_request:
@@ -6,6 +6,18 @@ on:
       - master
       - testing
       - hotfix
+
+  workflow_dispatch:  # Dies erlaubt manuelle Trigger
+    inputs:
+      action_type:
+        description: 'Choose version bump type: patch, minor, or major'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
 
 jobs:
   check_master_branch:
@@ -23,4 +35,4 @@ jobs:
     if: github.base_ref == 'testing' || github.base_ref == 'hotfix'
     steps:
       - name: Allow PR to 'testing'
-        run: echo "Pull request to 'testing' allowed."  # Zulässt, dass in "testing" gemerged wird
+        run: echo "Pull request to 'testing' or 'hotfix' allowed."

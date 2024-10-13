@@ -1,0 +1,55 @@
+﻿law_bgy_monitored_speech = {
+	group = lawgroup_free_speech
+	icon = "gfx/interface/icons/institution_icons/minitrue.dds"
+	
+	progressiveness = 0
+
+	unlocking_laws = {
+		law_secret_police
+	}
+
+	institution = institution_minitrue
+
+	modifier = {
+		country_institution_minitrue_max_investment_add = 5
+	}
+	
+	possible_political_movements = {
+		law_censorship
+		law_right_of_assembly
+	}
+
+	unlocking_technologies = {
+		totalism
+	}
+
+	pop_support = {
+		value = 0
+		add = {
+			desc = "POP_ACADEMICS"			
+			if = {
+				limit = {
+					is_pop_type = academics
+				}
+				value = -0.33
+			}
+		}
+		add = {
+			desc = "ALL_POPS"			
+			value = -0.01
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+		
+		if = {
+			limit = { 
+				has_journal_entry = je_government_petition
+				has_variable = desired_law_var
+                scope:law = var:desired_law_var
+			}
+			add = 750
+		}
+	}
+}

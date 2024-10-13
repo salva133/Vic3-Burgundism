@@ -15,3 +15,9 @@
   dyn_c_bgy_burgundy_communist_dictatorial: "Democratic People's Republic of Burgundy"
   dyn_c_bgy_burgundy_communist_technocratic: "Techno-Union"
   dyn_c_bgy_burgundy_technocratic: "Burgundian Science Assembly"
+  dyn_c_bgy_burgundy_protectorate: "Burgundian Protectorate"
+
+# Generic Dynamic Country Names
+  dyn_c_kommissariat_of_burgundy: "Kommissariat $NAME$"
+  dyn_c_division_of_kommissariat_of_burgundy: "$ADJECTIVE$ Kommissariatsabteilung"
+  generic_adjective: "$ADJECTIVE$"
