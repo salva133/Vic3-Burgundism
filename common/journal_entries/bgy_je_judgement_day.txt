@@ -108,6 +108,56 @@ je_the_ticking = {
 		effect = {
 			if = {
 				limit = {
+					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_global_variable = the_ticking_completed_glob_var }
+					broken_seal_counter_glob_var >= 1
+				}
+				set_variable = first_seal_broken_var
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_global_variable = the_ticking_completed_glob_var }
+					broken_seal_counter_glob_var >= 2
+				}
+				set_variable = first_seal_broken_var
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_global_variable = the_ticking_completed_glob_var }
+					broken_seal_counter_glob_var >= 3
+				}
+				set_variable = first_seal_broken_var
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_global_variable = the_ticking_completed_glob_var }
+					broken_seal_counter_glob_var >= 4
+				}
+				set_variable = first_seal_broken_var
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_global_variable = the_ticking_completed_glob_var }
+					broken_seal_counter_glob_var >= 5
+				}
+				set_variable = first_seal_broken_var
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_global_variable = the_ticking_completed_glob_var }
+					broken_seal_counter_glob_var >= 6
+				}
+				set_variable = first_seal_broken_var
+			}
+
+
+			if = {
+				limit = {
 					country_navy_unit_type_fraction = {
 						target = unit_type:combat_unit_type_apocalyptic_artillery
 						value >= 0.33
