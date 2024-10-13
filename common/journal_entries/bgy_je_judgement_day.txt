@@ -1,4 +1,4 @@
-﻿# JE The Ticking (never save as UTF-8 with BOM)
+﻿# JE The Ticking
 je_the_ticking = {
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
@@ -13,6 +13,7 @@ je_the_ticking = {
 			name = broken_seal_counter_max_glob_var
 			value = 7
 		}
+
 	}
 
 	is_shown_when_inactive = {
@@ -62,11 +63,11 @@ je_the_ticking = {
 	complete = {
 		has_law = law_type:law_bgy_burgundism
 		has_law = law_type:law_bgy_total_war
+		has_law = law_type:law_bgy_spartanism
 		institution_investment_level = {
 			institution = institution_miniwar
 			value = 5
 		}
-		has_law = law_type:law_bgy_spartanism
 		institution_investment_level = {
 			institution = institution_minilab
 			value = 5
@@ -75,12 +76,9 @@ je_the_ticking = {
 			text = has_300_army_size_tt
 			army_size >= 300
 		}
-		custom_tooltip = {
-			text= has_100_apocalyptic_artillery_tt
-			country_army_unit_type_fraction = {
-				target = unit_type:combat_unit_type_apocalyptic_artillery  
-				value >= 0.3333
-			}
+		country_army_unit_type_fraction = {
+			target = unit_type:combat_unit_type_apocalyptic_artillery  
+			value >= 0.3333
 		}
 		custom_tooltip = { 
 			text = broken_seal_counter_tt
@@ -92,7 +90,7 @@ je_the_ticking = {
 		custom_tooltip = {
 			text = will_lead_to_the_end_tt
 			trigger_event = {
-				id = the_ticking.7
+				id = the_ticking_events.7
 			}
 		}
 	}
@@ -104,55 +102,73 @@ je_the_ticking = {
 		}
 	}
 
-	on_monthly_pulse = {
+	on_weekly_pulse = {
 		effect = {
 			if = {
 				limit = {
 					NOT = { has_variable = first_seal_broken_var }
 					NOT = { has_global_variable = the_ticking_completed_glob_var }
-					broken_seal_counter_glob_var >= 1
+					global_var:broken_seal_counter_glob_var >= 1
+				}
+				trigger_event = {
+					id = the_ticking_events.1
 				}
 				set_variable = first_seal_broken_var
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_variable = second_seal_broken_var }
 					NOT = { has_global_variable = the_ticking_completed_glob_var }
-					broken_seal_counter_glob_var >= 2
+					global_var:broken_seal_counter_glob_var >= 2
 				}
-				set_variable = first_seal_broken_var
+				trigger_event = {
+					id = the_ticking_events.2
+				}
+				set_variable = second_seal_broken_var
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_variable = third_seal_broken_var }
 					NOT = { has_global_variable = the_ticking_completed_glob_var }
-					broken_seal_counter_glob_var >= 3
+					global_var:broken_seal_counter_glob_var >= 3
 				}
-				set_variable = first_seal_broken_var
+				trigger_event = {
+					id = the_ticking_events.3
+				}
+				set_variable = third_seal_broken_var
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_variable = fourth_seal_broken_var }
 					NOT = { has_global_variable = the_ticking_completed_glob_var }
-					broken_seal_counter_glob_var >= 4
+					global_var:broken_seal_counter_glob_var >= 4
 				}
-				set_variable = first_seal_broken_var
+				trigger_event = {
+					id = the_ticking_events.4
+				}
+				set_variable = fourth_seal_broken_var
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_variable = fifth_seal_broken_var }
 					NOT = { has_global_variable = the_ticking_completed_glob_var }
-					broken_seal_counter_glob_var >= 5
+					global_var:broken_seal_counter_glob_var >= 5
 				}
-				set_variable = first_seal_broken_var
+				trigger_event = {
+					id = the_ticking_events.5
+				}
+				set_variable = fifth_seal_broken_var
 			}
 			if = {
 				limit = {
-					NOT = { has_variable = first_seal_broken_var }
+					NOT = { has_variable = sixth_seal_broken_var }
 					NOT = { has_global_variable = the_ticking_completed_glob_var }
-					broken_seal_counter_glob_var >= 6
+					global_var:broken_seal_counter_glob_var >= 6
 				}
-				set_variable = first_seal_broken_var
+				trigger_event = {
+					id = the_ticking_events.6
+				}
+				set_variable = sixth_seal_broken_var
 			}
 
 
@@ -183,10 +199,10 @@ je_the_ticking = {
 			}
 			if = {
 				limit = {
-					has_law = law_type:law_bgy_kleptocracy
-					NOT = { has_variable = enacted_law_bgy_kleptocracy_var }
+					army_size >= 300
+					NOT = { has_variable = has_300_army_size_var }
 				}
-				set_variable = enacted_law_bgy_kleptocracy_var
+				set_variable = has_300_army_size_var
 				change_global_variable = {
 					name = broken_seal_counter_glob_var
 					add = 1

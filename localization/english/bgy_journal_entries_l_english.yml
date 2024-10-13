@@ -1,6 +1,7 @@
 ﻿l_english:
   je_group_burgundism: "Burgundism"
   je_the_ticking: "The Ticking"
+  je_the_ticking_status: "Create a new order and make the world subject to you."
   je_the_ticking_reason: "...Heinrich? Is that you?..."
 
   the_ticking_not_completed_tt: "The ticking hasn't started yet..."

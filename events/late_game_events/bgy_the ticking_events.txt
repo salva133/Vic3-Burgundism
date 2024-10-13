@@ -13,7 +13,7 @@ the_ticking_events.1 = {
 		video = "southamerica_christianity"
 	}
 
-	duration = 3
+	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -45,7 +45,7 @@ the_ticking_events.2 = {
 		video = "unspecific_world_fair"
 	}
 
-	duration = 3
+	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -77,7 +77,7 @@ the_ticking_events.3 = {
 		video = "southamerica_christianity"
 	}
 
-	duration = 3
+	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -109,7 +109,7 @@ the_ticking_events.4 = {
 		video = "southamerica_christianity"
 	}
 
-	duration = 3
+	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -141,7 +141,7 @@ the_ticking_events.5 = {
 		video = "southamerica_christianity"
 	}
 
-	duration = 3
+	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -173,7 +173,7 @@ the_ticking_events.6 = {
 		video = "southamerica_christianity"
 	}
 
-	duration = 3
+	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -205,7 +205,7 @@ the_ticking_events.7 = {
 		video = "unspecific_devastation"
 	}
 
-	duration = 3
+	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -214,7 +214,6 @@ the_ticking_events.7 = {
 	}
 
 	immediate = {
-		set_global_variable = the_ticking_completed_glob_var
 		every_state = {
 			limit = {
 				has_modifier = end_time_mortality
