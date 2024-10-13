@@ -34,6 +34,7 @@ debug_burgund.1 = {
 		activate_law = law_type:law_bgy_kleptocracy
 		activate_law = law_type:law_bgy_spartanism
 		activate_law = law_type:law_bgy_total_war
+		activate_law = law_type:law_bgy_orwellian_police
 	}
 	
 	option = {
@@ -47,12 +48,23 @@ debug_burgund.1 = {
 	}
 
 	option = {
-		name = debug_burgund.1.d
+		name = debug_burgund.1.e
 		ai_chance = {
 			base = 0
 		}
 		ruler = {
 			set_ideology = ideology:ideology_moderate
+		}
+	}
+
+	option = {
+		name = debug_burgund.1.g
+		ai_chance = {
+			base = 0
+		}
+		change_global_variable = {
+			name = broken_seal_counter_glob_var
+			add = 1
 		}
 	}
 
