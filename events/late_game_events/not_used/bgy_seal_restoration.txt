@@ -1,0 +1,176 @@
+### Currently not in use ###
+
+
+# ### Sixth Seal restored
+# the_ticking_events.8 = {
+# 	type = country_event
+# 	placement = root
+# 	title = the_ticking_events.8.t
+# 	desc = the_ticking_events.8.d
+# 	flavor = the_ticking_events.8.f
+
+#	event_image = {
+#		video = ""
+#	}
+
+# 	duration = 3
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	trigger = {
+# 	}
+
+# 	immediate = {
+# 		remove_variable = sixth_seal_broken
+# 	}
+
+# 	option = {
+# 		name = the_ticking_events.8.a 
+# 		default_option = yes
+# 	}
+# }
+
+# ### Fifth Seal restored
+# the_ticking_events.9 = {
+# 	type = country_event
+# 	placement = root
+# 	title = the_ticking_events.9.t
+# 	desc = the_ticking_events.9.d
+# 	flavor = the_ticking_events.9.f
+
+#	event_image = {
+#		video = ""
+#	}
+
+# 	duration = 3
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	trigger = {
+# 	}
+
+# 	immediate = {
+# 		remove_variable = fifth_seal_broken
+# 	}
+
+# 	option = {
+# 		name = the_ticking_events.9.a 
+# 		default_option = yes
+# 	}
+# }
+
+# ### Fourth Seal restored
+# the_ticking_events.10 = {
+# 	type = country_event
+# 	placement = root
+# 	title = the_ticking_events.10.t
+# 	desc = the_ticking_events.10.d
+# 	flavor = the_ticking_events.10.f
+
+#	event_image = {
+#		video = ""
+#	}
+
+# 	duration = 3
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	trigger = {
+# 	}
+
+# 	immediate = {
+# 		remove_variable = fourth_seal_broken
+# 	}
+
+# 	option = {
+# 		name = the_ticking_events.10.a 
+# 		default_option = yes
+# 	}
+# }
+
+# ### Third Seal restored
+# the_ticking_events.11 = {
+# 	type = country_event
+# 	placement = root
+# 	title = the_ticking_events.11.t
+# 	desc = the_ticking_events.11.d
+# 	flavor = the_ticking_events.11.f
+
+#	event_image = {
+#		video = ""
+#	}
+
+# 	duration = 3
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	trigger = {
+# 	}
+
+# 	immediate = {
+# 		remove_variable = third_seal_broken
+# 	}
+
+# 	option = {
+# 		name = the_ticking_events.11.a 
+# 		default_option = yes
+# 	}
+# }
+
+# ### Second Seal restored
+# the_ticking_events.12 = {
+# 	type = country_event
+# 	placement = root
+# 	title = the_ticking_events.12.t
+# 	desc = the_ticking_events.12.d
+# 	flavor = the_ticking_events.12.f
+
+#	event_image = {
+#		video = ""
+#	}
+
+# 	duration = 3
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	trigger = {
+# 	}
+
+# 	immediate = {
+# 		remove_variable = second_seal_broken
+# 	}
+
+# 	option = {
+# 		name = the_ticking_events.12.a 
+# 		default_option = yes
+# 	}
+# }
+
+# ### First Seal restored
+# the_ticking_events.13 = {
+# 	type = country_event
+# 	placement = root
+# 	title = the_ticking_events.13.t
+# 	desc = the_ticking_events.13.d
+# 	flavor = the_ticking_events.13.f
+
+#	event_image = {
+#		video = ""
+#	}
+
+# 	duration = 3
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	trigger = {
+# 	}
+
+# 	immediate = {
+# 		remove_variable = first_seal_broken
+# 	}
+
+# 	option = {
+# 		name = the_ticking_events.13.a 
+# 		default_option = yes
+# 	}
+# }

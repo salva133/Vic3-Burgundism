@@ -15,3 +15,38 @@ country_institution_miniwar_max_investment_add={
 		ai_value=0
 	}
 }
+
+country_institution_minilab_max_investment_add={
+	decimals=0
+	color=good
+	percent=no
+	game_data={
+		ai_value=0
+	}
+}
+
+country_institution_minitrue_max_investment_add={
+	decimals=0
+	color=good
+	percent=no
+	game_data={
+		ai_value=0
+	}
+
+}
+
+state_burgundian_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+state_spartanist_standard_of_living_add={
+	decimals=1
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
