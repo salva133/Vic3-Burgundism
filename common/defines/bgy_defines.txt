@@ -1,5 +1,5 @@
 ﻿NWar = {
-	DEVASTATION_MAX = 1000.0
+	DEVASTATION_MAX = 200.0
 	DEVASTATION_INCREASE_RATE = 1 # Per day, scales with level of occupation
 	DEVASTATION_DECAY_RATE = -0.1 # Per day, when there are no occupations
 	DEVASTATION_FROM_BATTLES = 10 # For each battle
