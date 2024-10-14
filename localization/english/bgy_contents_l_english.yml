@@ -1,10 +1,10 @@
 ﻿l_english:
-# Burgundy Event
-  burgund.1.t: "Turn to Burgundism"
-  burgund.1.d: "This agreement will turn your state into a place of terror and eternal horror. Are you sure?"
-  burgund.1.f: "THERE IS NO HOPE UNDER THE [Concept('concept_black_sun','BLACK SUN')]"
-  burgund.1.a: "Yes, let us begin..."
-  burgund.1.b: "I made up my mind..."
+# Burgundism Event
+  burgundism_events.1.t: "Progroms in [SCOPE.sState('progrom_state_scope').GetName]"
+  burgundism_events.1.d: "Loyalists of the Burgundian government have risen up in [SCOPE.sState('progrom_state_scope').GetName] to hunt down the so-called unwelcome."
+  burgundism_events.1.f: "\"We're using force. And force, my friends, is violence, the supreme authority from which all other authority is derived.\n\nNaked force has resolved more issues throughout history than any other factor. The contrary opinion, that violence never solves anything, is wishful thinking at its worst.\"\n\n#italic - Robert Heinlein#!"
+  burgundism_events.1.a: "How... unfortunate?"
+  burgundism_events.1.b: "How barbaric!"
 
 # Himmler
 	himmler_events.1.t: "Heinrich Himmler Rises"
@@ -22,17 +22,9 @@
   chamberlain_events.1.t: "WIP"
   chamberlain_events.1.d: "WIP"
   chamberlain_events.1.f: "WIP"
+  chamberlain_events.1.a: "WIP"
+
+  chamberlain_events.2.t: "WIP"
+  chamberlain_events.2.d: "WIP"
+  chamberlain_events.2.f: "WIP"
   chamberlain_events.2.a: "WIP"
-
-# Burgundism
-  burgundism.1.t: "The EMERGENCE of the Burgundists"
-  burgundism.1.d: "Burgundist movements have appeared on our political stage"
-  burgundism.1.f: ""
-  burgundism.1.a: "Woe is us, I guess?"
-
-  burgundism.2.t: "Progroms in $STATE_NAME$"
-  burgundism.2.d: "Loyalists of the Burgundian government have risen up in $STATE_NAME$ to hunt down the so-called unwelcome."
-  burgundism.2.f: "''We're using force. And force,\nmy friends, is violence,\nthe supreme authority from which\nall other authority is derived.\n\nNaked force has resolved\nmore issues\nthroughout history\nthan any other factor.\nThe contrary opinion, that\nviolence never solves anything,\nis wishful thinking\nat its worst.''\n\n- Robert Heinlein"
-  burgundism.2.a: "How... unfortunate?"
-
-  burgundistic_progroms: "Burgundistic Progroms"

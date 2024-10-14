@@ -15,7 +15,7 @@
 
 BGY = {
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_high_duchy
+		name = dyn_c_bgy_burgundy_monarchy
 		adjective = BGY_ADJ
 		
 		priority = 100

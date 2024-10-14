@@ -7,7 +7,13 @@ de_lagarde_events.1 = {
 	desc = de_lagarde_events.1.d
 	flavor = de_lagarde_events.1.f
 
+	left_icon = scope:paul_de_lagarde_scope
+
 	duration = 1
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -17,13 +23,12 @@ de_lagarde_events.1 = {
 	}
 
 	immediate = {
-		scope:character = {
-			if = {
-				limit = { has_variable = is_de_lagarde_var }
-				kill_character = yes
-			}
+		random_scope_character = {
+			limit = { has_variable = is_de_lagarde_var }
+			save_scope_as = paul_de_lagarde_scope
+			kill_character = yes
 		}
-		remove_global_variable = de_lagarde_alive_glob_var
+		set_global_variable = de_lagarde_dead_glob_var
 	}
 
 	option = {

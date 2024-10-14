@@ -41,4 +41,43 @@
 			value = -0.01
 		}
 	}
+
+	ai_enact_weight_modifier = {
+		value = 0
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+				ruler = {
+					has_ideology = ideology:ideology_bgy_burgundist_leader
+				}
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_marginal = no
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_marginal = yes
+				}
+			}
+			multiply = 0
+		}
+	}
 }

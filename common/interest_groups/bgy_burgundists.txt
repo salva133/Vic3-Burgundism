@@ -24,9 +24,9 @@
 
 	on_enable = {
 		# New Traits are required
-		set_ig_trait = ig_trait:ig_trait_materiel_waste
-		set_ig_trait = ig_trait:ig_trait_veteran_consultation
-		set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+		# set_ig_trait = ig_trait:ig_trait_materiel_waste
+		# set_ig_trait = ig_trait:ig_trait_veteran_consultation
+		# set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 		if = {
 			limit = {
 				country_has_primary_culture = cu:burgundian
@@ -105,13 +105,12 @@
 			}
 		}
 	}
-		
 
 	pop_weight = {
 		value = 0
-
+		
 		add = {
-			desc = "POP_SPARTANISTS"
+			desc = "POP_SPARTANIST"
 			if = {
 				limit = {
 					has_pop_religion = rel:spartanist
@@ -121,12 +120,22 @@
 		}
 
 		add = {
+			desc = "POP_BURGUNDIAN"
+			if = {
+				limit = {
+					has_pop_culture = cu:burgundian
+				}
+				value = 250
+			}
+		}
+		
+		add = {
 			desc = "POP_SHOPKEEPERS"
 			if = {
 				limit = {
 					is_pop_type = shopkeepers
 				}
-				value = 250
+				value = 100
 			}
 		}
 
@@ -136,7 +145,7 @@
 				limit = {
 					is_pop_type = clerks
 				}
-				value = 50
+				value = 10
 			}
 		}
 
@@ -146,18 +155,38 @@
 				limit = {
 					is_pop_type = engineers
 				}
-				value = 100
+				value = 50
+			}
+		}
+
+		add = {
+			desc = "POP_OFFICERS"
+			if = {
+				limit = {
+					is_pop_type = officers
+				}
+				value = 70
+			}
+		}
+
+		add = {
+			desc = "POP_SOLDIERS"
+			if = {
+				limit = {
+					is_pop_type = soldiers
+				}
+				value = 20
 			}
 		}
 
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_elected_bureaucrats
+					has_law = law_type:law_appointed_bureaucrats
 				}
 			}
 			add = {
-				desc = "POP_BUREAUCRATS_ELECTED"
+				desc = "POP_BUREAUCRATS_APPOINTED"
 				if = {
 					limit = {
 						is_pop_type = bureaucrats

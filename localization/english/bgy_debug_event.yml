@@ -1,7 +1,7 @@
 ﻿l_english:
   debug_burgund_event.1.t: "Burgundism: Debug"
   debug_burgund_event.1.d: "Giving debugging options"
-  debug_burgund_event.1.t: ""
+  debug_burgund_event.1.f: ""
 
   debug_burgund_event.1.a: "Do nothing"
   debug_burgund_event.1.b: "Activate burgundian laws"

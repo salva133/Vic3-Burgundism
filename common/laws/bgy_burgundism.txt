@@ -82,7 +82,7 @@
 		}
 		# SPARTANISTS will support this
 		add = {
-			desc = "POP_SPARTANISTS"
+			desc = "POP_SPARTANIST"
 			if = {
 				limit = {
 					has_pop_religion = spartanist
@@ -103,7 +103,41 @@
 	
 	ai_impose_chance = {
 		value = 0
-		
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+				ruler = {
+					has_ideology = ideology:ideology_bgy_burgundist_leader
+				}
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_marginal = no
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_marginal = yes
+				}
+			}
+			multiply = 0
+		}
 		if = {
 			limit = {
 				has_law = law_type:law_bgy_burgundism

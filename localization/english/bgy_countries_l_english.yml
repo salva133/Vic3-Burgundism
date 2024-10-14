@@ -5,8 +5,7 @@
 # Dynamic Country Names
   dyn_c_bgy_ordenstaat_hessen: "Ordensstaat Hessen"
 
-  dyn_c_bgy_burgundy_duchy: "Duchy of Burgundy"
-  dyn_c_bgy_burgundy_high_duchy: "High Duchy of Burgundy"
+  dyn_c_bgy_burgundy_monarchy: "Grand Duchy of Burgundy"
   dyn_c_bgy_burgundy_republic_democratic: "Republic of Burgundy"
   dyn_c_bgy_burgundy_republic_dictatorial: "Independent Republic of Burgundy"
   dyn_c_bgy_burgundy_theocracy: "Order of Wewel"
