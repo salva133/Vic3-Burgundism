@@ -85,13 +85,14 @@ je_the_ticking = {
 			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
 		}
 	}
-
+	
 	on_complete = {
 		custom_tooltip = {
 			text = will_lead_to_the_end_tt
 			trigger_event = {
 				id = the_ticking_events.7
 			}
+			set_global_variable = the_ticking_completed_glob_var
 		}
 	}
 
