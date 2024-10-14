@@ -33,39 +33,6 @@
 
 	unlocking_technologies = { thinking_of_ending_things }
 
-    # combat_unit_image = {
-    #     trigger = { 
-    #         has_culture_graphics = east_asian
-    #     }
-    #     texture = "gfx/unit_illustrations/artillery_east_asian_shrapnel.dds"
-    # }
-
-    # combat_unit_image = {
-    #     trigger = { 
-    #         has_culture_graphics = south_asian
-    #     }
-    #     texture = "gfx/unit_illustrations/artillery_south_asian_shrapnel.dds"
-    # }
-
-    # combat_unit_image = {
-    #     trigger = { 
-    #         has_culture_graphics = african
-    #     }
-    #     texture = "gfx/unit_illustrations/artillery_african_shrapnel.dds"
-    # }
-
-    # combat_unit_image = {
-    #     trigger = { 
-    #         has_culture_graphics = arabic
-    #     }
-    #     texture = "gfx/unit_illustrations/artillery_arabic_shrapnel.dds"
-    # }
-
-    # combat_unit_image = {
-    #     # fallback
-    #     texture = "gfx/unit_illustrations/artillery_eu_shrapnel.dds"
-    # }
-
     combat_unit_image = {
         texture = "gfx/unit_illustrations/artillery_apocalyptic.dds"
     }
