@@ -4,9 +4,10 @@
 		create_character = {
 			template = paul_de_lagarde_character_template
 			on_created = {
-				set_variable = de_lagarde_alive_var
+				set_variable = is_de_lagarde_var
 			}
 		}
+		set_global_variable = de_lagarde_alive_glob_var
 		
 		create_character = {
 			template = pru_wilhelm_III_hohenzollern_template			

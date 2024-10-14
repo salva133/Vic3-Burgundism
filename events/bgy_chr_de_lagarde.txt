@@ -13,16 +13,17 @@ de_lagarde_events.1 = {
 
 	trigger = {
 		game_date > 1891.12.22
-		has_variable = de_lagarde_alive_var
+		has_global_variable = de_lagarde_alive_glob_var
 	}
 
 	immediate = {
 		scope:character = {
 			if = {
-				limit = { has_variable = is_lagarde }
+				limit = { has_variable = is_de_lagarde_var }
 				kill_character = yes
 			}
 		}
+		remove_global_variable = de_lagarde_alive_glob_var
 	}
 
 	option = {

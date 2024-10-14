@@ -7,7 +7,7 @@ himmler_events.1 = {
 	desc = himmler_events.1.d
 	flavor = himmler_events.1.f
 
-	duration = 3
+	duration = 1
 
 	event_image = {
 		video = "europenorthamerica_political_extremism"
@@ -20,11 +20,9 @@ himmler_events.1 = {
 			is_marginal = no
 		}
 		game_date > 1919.11.3
-		NOT = { has_variable = himmler_alive_var }
-		OR = {
-			country_has_primary_culture = cu:north_german
-			country_has_primary_culture = cu:south_german
-		}
+		NOT = { has_global_variable = himmler_alive_glob_var }
+		exists = c:GER
+		c:GER = root
 	}
 
 	immediate = {
@@ -37,8 +35,11 @@ himmler_events.1 = {
 
 		create_character  = {
 			template = heinrich_himmler_character_template
+			on_created = {
+				set_variable = is_himmler_var
+			}
 		}
-		set_variable = himmler_alive_var
+		set_global_variable = himmler_alive_glob_var
 
 		ai_chance = {
 			base = 100
