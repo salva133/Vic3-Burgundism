@@ -16,6 +16,22 @@
   dyn_c_BGY_protectorate: "Burgundian Protectorate"
 
 ## Others
+  dyn_c_bgy_FRA_burgundian_system: "Pure France"
+  dyn_c_bgy_GBR_burgundian_system: "United British Churches"
+  dyn_c_bgy_SPA_burgundian_system: "Spain of the Holy Crusade"
+  dyn_c_bgy_POR_burgundian_system: "Dark Blue Shirt-Portugal"
+  dyn_c_bgy_SWE_burgundian_system: "Nordic Union"
+  dyn_c_bgy_NOR_burgundian_system: "Buccaneers of the Wild Coasts"
+  dyn_c_bgy_FIN_burgundian_system: "Free and Pure Finland"
+  dyn_c_bgy_GER_burgundian_system: "Reich of the Black Sun"
+  dyn_c_bgy_ITA_burgundian_system: "National-Burgundian Italy"
+  dyn_c_bgy_AUS_burgundian_system: "Emperor's Black Guard"
+  dyn_c_bgy_SWI_burgundian_system: "Theocanton Schwyz"
+  dyn_c_bgy_USA_burgundian_system: "White States of America"
+  dyn_c_bgy_PRU_burgundian_system: "Order of the Holy Germans"
+  dyn_c_bgy_BEL_burgundian_system: "Flemish-Walloon Order"
+  dyn_c_bgy_NET_burgundian_system: "Faithful Netherlands"
+  dyn_c_bgy_HES_burgundian_system: "Ordensstaat Hessen"
 
 # Generic Dynamic Country Names
   dyn_c_kommissariat_of_burgundy: "Kommissariat $NAME$"
