@@ -5,7 +5,7 @@
 	ig_leader = yes
 	culture = cu:north_german
 	religion = rel:protestant
-	interest_group = ig_burgundists
+	is_agitator = yes
 	female = no
 	birth_date = 1827.11.2
 	ideology = ideology_bgy_burgundist_leader
@@ -40,7 +40,6 @@ heinrich_himmler_character_template = {
 	# culture = cu:burgundian
 	religion = rel:spartanist
     interest_group = ig_burgundists
-    ig_leader = yes
     female = no
     birth_date = 1900.10.7
 	dna = dna_heinrich_himmler
