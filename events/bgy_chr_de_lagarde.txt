@@ -20,6 +20,9 @@ de_lagarde_events.1 = {
 	trigger = {
 		game_date > 1891.12.22
 		has_global_variable = de_lagarde_alive_glob_var
+		NOT = {
+			has_global_variable = de_lagarde_dead_glob_var
+		}
 	}
 
 	immediate = {
