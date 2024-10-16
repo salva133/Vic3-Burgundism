@@ -4,18 +4,6 @@ je_the_ticking = {
 
 	group = je_group_burgundism
 
-	immediate = {
-		set_global_variable = {
-			name = broken_seal_counter_glob_var
-			value = 0
-		}
-		set_global_variable = {
-			name = broken_seal_counter_max_glob_var
-			value = 7
-		}
-
-	}
-
 	is_shown_when_inactive = {
 		is_player = yes
 		OR = {
@@ -58,6 +46,18 @@ je_the_ticking = {
 			text = the_ticking_not_completed_tt
 			NOT = { has_global_variable = the_ticking_completed_glob_var }
 		}
+	}
+
+	immediate = {
+		set_global_variable = {
+			name = broken_seal_counter_glob_var
+			value = 0
+		}
+		set_global_variable = {
+			name = broken_seal_counter_max_glob_var
+			value = 7
+		}
+
 	}
 
 	complete = {
@@ -264,5 +264,5 @@ je_the_ticking = {
 
 	should_be_pinned_by_default = yes
 	
-	weight = 999999
+	weight = 10000
 }
