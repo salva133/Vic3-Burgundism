@@ -2,7 +2,7 @@
 	color = hsv{ 0.75 0.78 0.31 }
 	texture = "gfx/interface/icons/ig_icons/burgundists.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
-	index = 0
+	index = 8
 
 	ideologies = {
 		ideology_bgy_burgundist_power_structure
