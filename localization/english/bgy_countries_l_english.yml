@@ -3,9 +3,7 @@
   BGY_ADJ: "Burgundian"
 
 # Dynamic Country Names
-  dyn_c_bgy_ordenstaat_hessen: "Ordensstaat Hessen"
-
-
+## Burgundy
   dyn_c_BGY_monarchy: "Grand Duchy of Burgundy"
   dyn_c_BGY_republic_democratic: "Republic of Burgundy"
   dyn_c_BGY_republic_dictatorial: "Independent Republic of Burgundy"
@@ -16,6 +14,8 @@
   dyn_c_BGY_communist_technocratic: "Techno-Union"
   dyn_c_BGY_technocratic: "Burgundian Science Assembly"
   dyn_c_BGY_protectorate: "Burgundian Protectorate"
+
+## Others
 
 # Generic Dynamic Country Names
   dyn_c_kommissariat_of_burgundy: "Kommissariat $NAME$"
