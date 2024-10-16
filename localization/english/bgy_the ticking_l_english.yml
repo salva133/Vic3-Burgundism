@@ -1,5 +1,4 @@
 ﻿l_english:
-  broken_seal_counter_tt: "This amount of seals have already been broken: [GetGlobalVariable('broken_seal_counter_glob_var').GetValue] of [GetGlobalVariable('broken_seal_counter_max_glob_var').GetValue]"
   the_ticking_events.1.t: "One basic principle"
   the_ticking_events.1.d: "With the first steps towards a new order, [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName] has started to gather unsavoury personalities from all countries in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]."
   the_ticking_events.1.f: "#italic And I saw the first seal was broken, and I heard, as it were the noise of thunder, one of the four beasts saying, Come and see. And I saw, and behold a white horse: and he that sat on him had a bow; and a crown was given unto him: and he went forth conquering, and to conquer."
@@ -34,4 +33,3 @@
   the_ticking_events.7.d: "Times up..."
   the_ticking_events.7.f: "#italic And when he had broken the final seal..."
   the_ticking_events.7.a: "...the heavens were opened;"
-  the_ticking_events.7.a_tt: " and carried by a [Concept('concept_black_sun','$black sun$')], devastation was brought upon the unclean and unworthy..."
