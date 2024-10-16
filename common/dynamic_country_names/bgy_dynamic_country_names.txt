@@ -1,144 +1,4 @@
-﻿HES = {
-	dynamic_country_name = {
-		name = dyn_c_bgy_ordenstaat_hessen
-		adjective = HES_ADJ
-
-		priority = 10000
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				coa_burgundian_system_trigger = yes
-			}
-		}
-	}
-}
-
-BGY = {
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_monarchy
-		adjective = BGY_ADJ
-		
-		priority = 100
-		trigger = {
-			coa_def_monarchy_trigger = yes
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_republic_democratic
-		adjective = BGY_ADJ
-		
-		priority = 200
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-				}
-				country_has_voting_franchise = yes
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_republic_dictatorial
-		adjective = BGY_ADJ
-		
-		priority = 300
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-				}
-				country_has_voting_franchise = no
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_theocracy
-		adjective = BGY_ADJ
-		
-		priority = 400
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law = law_type:law_theocracy
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_technocratic
-		adjective = BGY_ADJ
-		
-		priority = 500
-		trigger = {
-			coa_def_technocratic_trigger = yes
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_democratic
-		adjective = BGY_ADJ
-		
-		priority = 600
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law = law_type:law_council_republic
-				country_has_voting_franchise = yes
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_dictatorial
-		adjective = BGY_ADJ
-		
-		priority = 700
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law = law_type:law_council_republic
-				country_has_voting_franchise = no
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_technocratic
-		adjective = BGY_ADJ
-		
-		priority = 800
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law = law_type:law_council_republic
-				has_law = law_type:law_technocracy
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_burgundian_system
-		adjective = BGY_ADJ
-		
-		priority = 900
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				coa_burgundian_system_trigger = yes
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_protectorate
-		adjective = BGY_ADJ
-
-		priority = 1000
-		trigger = {
-			coa_def_protectorate_trigger = yes
-		}
-	}
-	
-}
-DEFAULT = {
+﻿DEFAULT = {
 	dynamic_country_name = {
 		name = dyn_c_kommissariat_of_burgundy
 		adjective = generic_adjective
@@ -662,3 +522,145 @@ DEFAULT = {
 		}
 	}
 }
+
+BGY = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_monarchy
+		adjective = BGY_ADJ
+		
+		priority = 100
+		trigger = {
+			coa_def_monarchy_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_republic_democratic
+		adjective = BGY_ADJ
+		
+		priority = 200
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_republic_dictatorial
+		adjective = BGY_ADJ
+		
+		priority = 300
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_theocracy
+		adjective = BGY_ADJ
+		
+		priority = 400
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_theocracy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_technocratic
+		adjective = BGY_ADJ
+		
+		priority = 500
+		trigger = {
+			coa_def_technocratic_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_communist_democratic
+		adjective = BGY_ADJ
+		
+		priority = 600
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_communist_dictatorial
+		adjective = BGY_ADJ
+		
+		priority = 700
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_communist_technocratic
+		adjective = BGY_ADJ
+		
+		priority = 800
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_burgundian_system
+		adjective = BGY_ADJ
+		
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bgy_burgundy_protectorate
+		adjective = BGY_ADJ
+
+		priority = 1000
+		trigger = {
+			coa_def_protectorate_trigger = yes
+		}
+	}
+	
+}
+
+HES = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_ordenstaat_hessen
+		adjective = HES_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
