@@ -525,7 +525,7 @@
 
 BGY = {
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_monarchy
+		name = dyn_c_BGY_monarchy
 		adjective = BGY_ADJ
 		
 		priority = 100
@@ -534,7 +534,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_republic_democratic
+		name = dyn_c_BGY_republic_democratic
 		adjective = BGY_ADJ
 		
 		priority = 200
@@ -550,7 +550,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_republic_dictatorial
+		name = dyn_c_BGY_republic_dictatorial
 		adjective = BGY_ADJ
 		
 		priority = 300
@@ -566,7 +566,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_theocracy
+		name = dyn_c_BGY_theocracy
 		adjective = BGY_ADJ
 		
 		priority = 400
@@ -578,7 +578,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_technocratic
+		name = dyn_c_BGY_technocratic
 		adjective = BGY_ADJ
 		
 		priority = 500
@@ -587,7 +587,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_democratic
+		name = dyn_c_BGY_communist_democratic
 		adjective = BGY_ADJ
 		
 		priority = 600
@@ -600,7 +600,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_dictatorial
+		name = dyn_c_BGY_communist_dictatorial
 		adjective = BGY_ADJ
 		
 		priority = 700
@@ -613,7 +613,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_technocratic
+		name = dyn_c_BGY_communist_technocratic
 		adjective = BGY_ADJ
 		
 		priority = 800
@@ -626,7 +626,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_burgundian_system
+		name = dyn_c_BGY_burgundian_system
 		adjective = BGY_ADJ
 		
 		priority = 900
@@ -638,7 +638,7 @@ BGY = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_protectorate
+		name = dyn_c_BGY_protectorate
 		adjective = BGY_ADJ
 
 		priority = 1000
