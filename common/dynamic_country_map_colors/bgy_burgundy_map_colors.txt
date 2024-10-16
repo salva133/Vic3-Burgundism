@@ -1,4 +1,4 @@
-### Burgundy ###
+﻿### Burgundy ###
 
 burgundy_grand_duchy = {
 color = rgb { 122 0 122 }
