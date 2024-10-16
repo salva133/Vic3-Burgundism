@@ -1,12 +1,12 @@
-﻿# namespace = burgundism_events
+﻿# namespace = burgundism
 
-# burgundism_events.1 = {
+# burgundism.1 = {
 # 	type = country_event
 # 	placement = root
 
-# 	title = burgundism_events.1.t
-# 	desc = burgundism_events.1.d
-# 	flavor = burgundism_events.1.f
+# 	title = burgundism.1.t
+# 	desc = burgundism.1.d
+# 	flavor = burgundism.1.f
 
 # 	duration = 1
 
@@ -51,7 +51,7 @@
 
 
 # 	option = {
-# 		name = burgundism_events.1.a
+# 		name = burgundism.1.a
 		
 # 		random_scope_state = {
 # 			limit = {

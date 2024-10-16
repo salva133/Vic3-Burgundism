@@ -1,11 +1,11 @@
-﻿namespace = chamberlain_events
+﻿namespace = chamberlain
 
-chamberlain_events.1 = {
+chamberlain.1 = {
 	type = country_event
 	placement = root
-	title = chamberlain_events.1.t
-	desc = chamberlain_events.1.d
-	flavor = chamberlain_events.1.f
+	title = chamberlain.1.t
+	desc = chamberlain.1.d
+	flavor = chamberlain.1.f
 
 	left_icon = scope:houston_chamberlain_scope
 
@@ -46,7 +46,7 @@ chamberlain_events.1 = {
 	}
 
 	option = {
-		name = chamberlain_events.1.a
+		name = chamberlain.1.a
 		default_option = yes
 
 		set_global_variable = chamberlain_alive_glob_var
@@ -57,12 +57,12 @@ chamberlain_events.1 = {
 	}
 }
 
-chamberlain_events.2 = {
+chamberlain.2 = {
 	type = country_event
 	placement = root
-	title = chamberlain_events.2.t
-	desc = chamberlain_events.2.d
-	flavor = chamberlain_events.2.f
+	title = chamberlain.2.t
+	desc = chamberlain.2.d
+	flavor = chamberlain.2.f
 
 	left_icon = scope:heinrich_himmler_scope
 
@@ -92,7 +92,7 @@ chamberlain_events.2 = {
 	}
 
 	option = {
-		name = chamberlain_events.2.a
+		name = chamberlain.2.a
 		default_option = yes
 	}
 }

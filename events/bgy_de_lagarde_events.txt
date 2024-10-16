@@ -1,11 +1,11 @@
-﻿namespace = de_lagarde_events
+﻿namespace = de_lagarde
 
-de_lagarde_events.1 = {
+de_lagarde.1 = {
 	type = country_event
 	placement = root
-	title = de_lagarde_events.1.t
-	desc = de_lagarde_events.1.d
-	flavor = de_lagarde_events.1.f
+	title = de_lagarde.1.t
+	desc = de_lagarde.1.d
+	flavor = de_lagarde.1.f
 
 	left_icon = scope:paul_de_lagarde_scope
 
@@ -35,7 +35,7 @@ de_lagarde_events.1 = {
 	}
 
 	option = {
-		name = de_lagarde_events.1.a
+		name = de_lagarde.1.a
 		default_option = yes
 	}
 }

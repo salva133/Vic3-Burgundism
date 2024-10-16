@@ -16,7 +16,7 @@
   camps_for_workers_tt: "We set up camps to further improve our agricultural efficiency."
   spartanism_conversion_tt: "10% of [Concept('concept_pop', '$concept_pops$')] in your [Concept('concept_incorporated_state', '$concept_incorporated_states$')] are persuaded to become Spartanists"
   broken_seal_counter_tt: "This amount of seals have already been broken: [GetGlobalVariable('broken_seal_counter_glob_var').GetValue] of [GetGlobalVariable('broken_seal_counter_max_glob_var').GetValue]"
-  the_ticking_events.7.a_tt: " and carried by a [Concept('concept_black_sun','$black sun$')], devastation was brought upon the unclean and unworthy..."
+  the_ticking.7.a_tt: " and carried by a [Concept('concept_black_sun','$black sun$')], devastation was brought upon the unclean and unworthy..."
   bgy_has_researched_totalism_tt: "Is made possible through Totalism."
   bgy_is_middle_strata_tt: "Is part of the middle strata."
   bgy_is_spartanist_tt: "Believes in Spartanism"

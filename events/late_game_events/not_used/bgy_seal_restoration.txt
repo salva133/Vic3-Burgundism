@@ -2,12 +2,12 @@
 
 
 # ### Sixth Seal restored
-# the_ticking_events.8 = {
+# the_ticking.8 = {
 # 	type = country_event
 # 	placement = root
-# 	title = the_ticking_events.8.t
-# 	desc = the_ticking_events.8.d
-# 	flavor = the_ticking_events.8.f
+# 	title = the_ticking.8.t
+# 	desc = the_ticking.8.d
+# 	flavor = the_ticking.8.f
 
 #	event_image = {
 #		video = ""
@@ -25,18 +25,18 @@
 # 	}
 
 # 	option = {
-# 		name = the_ticking_events.8.a 
+# 		name = the_ticking.8.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Fifth Seal restored
-# the_ticking_events.9 = {
+# the_ticking.9 = {
 # 	type = country_event
 # 	placement = root
-# 	title = the_ticking_events.9.t
-# 	desc = the_ticking_events.9.d
-# 	flavor = the_ticking_events.9.f
+# 	title = the_ticking.9.t
+# 	desc = the_ticking.9.d
+# 	flavor = the_ticking.9.f
 
 #	event_image = {
 #		video = ""
@@ -54,18 +54,18 @@
 # 	}
 
 # 	option = {
-# 		name = the_ticking_events.9.a 
+# 		name = the_ticking.9.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Fourth Seal restored
-# the_ticking_events.10 = {
+# the_ticking.10 = {
 # 	type = country_event
 # 	placement = root
-# 	title = the_ticking_events.10.t
-# 	desc = the_ticking_events.10.d
-# 	flavor = the_ticking_events.10.f
+# 	title = the_ticking.10.t
+# 	desc = the_ticking.10.d
+# 	flavor = the_ticking.10.f
 
 #	event_image = {
 #		video = ""
@@ -83,18 +83,18 @@
 # 	}
 
 # 	option = {
-# 		name = the_ticking_events.10.a 
+# 		name = the_ticking.10.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Third Seal restored
-# the_ticking_events.11 = {
+# the_ticking.11 = {
 # 	type = country_event
 # 	placement = root
-# 	title = the_ticking_events.11.t
-# 	desc = the_ticking_events.11.d
-# 	flavor = the_ticking_events.11.f
+# 	title = the_ticking.11.t
+# 	desc = the_ticking.11.d
+# 	flavor = the_ticking.11.f
 
 #	event_image = {
 #		video = ""
@@ -112,18 +112,18 @@
 # 	}
 
 # 	option = {
-# 		name = the_ticking_events.11.a 
+# 		name = the_ticking.11.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### Second Seal restored
-# the_ticking_events.12 = {
+# the_ticking.12 = {
 # 	type = country_event
 # 	placement = root
-# 	title = the_ticking_events.12.t
-# 	desc = the_ticking_events.12.d
-# 	flavor = the_ticking_events.12.f
+# 	title = the_ticking.12.t
+# 	desc = the_ticking.12.d
+# 	flavor = the_ticking.12.f
 
 #	event_image = {
 #		video = ""
@@ -141,18 +141,18 @@
 # 	}
 
 # 	option = {
-# 		name = the_ticking_events.12.a 
+# 		name = the_ticking.12.a 
 # 		default_option = yes
 # 	}
 # }
 
 # ### First Seal restored
-# the_ticking_events.13 = {
+# the_ticking.13 = {
 # 	type = country_event
 # 	placement = root
-# 	title = the_ticking_events.13.t
-# 	desc = the_ticking_events.13.d
-# 	flavor = the_ticking_events.13.f
+# 	title = the_ticking.13.t
+# 	desc = the_ticking.13.d
+# 	flavor = the_ticking.13.f
 
 #	event_image = {
 #		video = ""
@@ -170,7 +170,7 @@
 # 	}
 
 # 	option = {
-# 		name = the_ticking_events.13.a 
+# 		name = the_ticking.13.a 
 # 		default_option = yes
 # 	}
 # }
