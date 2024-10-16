@@ -649,10 +649,10 @@ BGY = {
 	
 }
 
-HES = {
+FRA = {
 	dynamic_country_name = {
-		name = dyn_c_bgy_ordenstaat_hessen
-		adjective = HES_ADJ
+		name = dyn_c_bgy_FRA_burgundian_system
+		adjective = FRA_ADJ
 
 		priority = 900
 		trigger = {
@@ -664,3 +664,227 @@ HES = {
 	}
 }
 
+GBR = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_GBR_burgundian_system
+		adjective = GBR_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+SPA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_SPA_burgundian_system
+		adjective = SPA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+POR = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_POR_burgundian_system
+		adjective = POR_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+SWE = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_SWE_burgundian_system
+		adjective = SWE_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+NOR = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_NOR_burgundian_system
+		adjective = NOR_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+FIN = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_FIN_burgundian_system
+		adjective = FIN_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+GER = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_GER_burgundian_system
+		adjective = GER_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+ITA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_ITA_burgundian_system
+		adjective = ITA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+AUS = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_AUS_burgundian_system
+		adjective = AUS_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+SWI = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_SWI_burgundian_system
+		adjective = SWI_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+USA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_USA_burgundian_system
+		adjective = USA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+PRU = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_PRU_burgundian_system
+		adjective = PRU_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+BEL = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_BEL_burgundian_system
+		adjective = BEL_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+NET = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_NET_burgundian_system
+		adjective = NET_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+HES = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_HES_burgundian_system
+		adjective = HES_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
