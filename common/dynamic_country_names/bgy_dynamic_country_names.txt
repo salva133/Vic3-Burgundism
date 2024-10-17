@@ -829,6 +829,21 @@ USA = {
 	}
 }
 
+CSA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_CSA_burgundian_system
+		adjective = CSA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
 PRU = {
 	dynamic_country_name = {
 		name = dyn_c_bgy_PRU_burgundian_system
