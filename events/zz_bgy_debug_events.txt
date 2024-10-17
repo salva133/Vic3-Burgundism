@@ -1,11 +1,11 @@
-﻿namespace = debug_burgund_event
+﻿namespace = bgy_debug
 
-debug_burgund_event.1 = {
+bgy_debug.1 = {
 	type = country_event
 	placement = root
-	title = debug_burgund_event.1.t
-	desc = debug_burgund_event.1.d
-	flavor = debug_burgund_event.1.f
+	title = bgy_debug.1.t
+	desc = bgy_debug.1.d
+	flavor = bgy_debug.1.f
 
 	duration = 3
 
@@ -19,36 +19,27 @@ debug_burgund_event.1 = {
 
 	option = {
 		default_option = yes
-		name = debug_burgund_event.1.a
+		name = bgy_debug.1.a
 		ai_chance = {
 			base = 100
 		}
 	}
 
 	option = {
-		name = debug_burgund_event.1.b
+		name = bgy_debug.1.b
 		ai_chance = {
 			base = 0
 		}
+		activate_law = law_type:law_autocracy
 		activate_law = law_type:law_bgy_burgundism
-		activate_law = law_type:law_bgy_kleptocracy
 		activate_law = law_type:law_bgy_spartanism
-		activate_law = law_type:law_bgy_total_war
-		activate_law = law_type:law_bgy_orwellian_police
-	}
-	
-	option = {
-		name = debug_burgund_event.1.c
-		ai_chance = {
-			base = 0
-		}
 		ruler = {
 			set_ideology = ideology:ideology_bgy_burgundist_leader
 		}
 	}
 
 	option = {
-		name = debug_burgund_event.1.e
+		name = bgy_debug.1.e
 		ai_chance = {
 			base = 0
 		}
@@ -58,7 +49,7 @@ debug_burgund_event.1 = {
 	}
 
 	option = {
-		name = debug_burgund_event.1.g
+		name = bgy_debug.1.g
 		ai_chance = {
 			base = 0
 		}
