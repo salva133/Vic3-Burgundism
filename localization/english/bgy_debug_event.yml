@@ -6,5 +6,5 @@
   bgy_debug.1.a: "Do nothing"
   bgy_debug.1.b: "Activate burgundian laws"
   bgy_debug.1.c: "Make leader burgundist"
-  bgy_debug.1.e: "Un-burgundise leader"
-  bgy_debug.1.g: "Break another seal"
+  bgy_debug.1.c: "Un-burgundise leader"
+  bgy_debug.1.e: "Break another seal"
