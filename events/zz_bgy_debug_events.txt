@@ -30,11 +30,35 @@ bgy_debug.1 = {
 		ai_chance = {
 			base = 0
 		}
-		activate_law = law_type:law_autocracy
-		activate_law = law_type:law_bgy_burgundism
-		activate_law = law_type:law_bgy_spartanism
-		ruler = {
-			set_ideology = ideology:ideology_bgy_burgundist_leader
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_autocracy }
+			}
+			activate_law = law_type:law_autocracy
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_bgy_burgundism }
+			}
+			activate_law = law_type:law_bgy_burgundism
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_bgy_spartanism }
+			}
+			activate_law = law_type:law_bgy_spartanism
+		}
+		if = {
+			limit = {
+				NOT = {
+					ruler = {
+						has_ideology = ideology:ideology_bgy_burgundist_leader
+					}
+				}
+			}
+			ruler = {
+				set_ideology = ideology:ideology_bgy_burgundist_leader
+			}
 		}
 	}
 
@@ -43,8 +67,15 @@ bgy_debug.1 = {
 		ai_chance = {
 			base = 0
 		}
-		ruler = {
-			set_ideology = ideology:ideology_moderate
+		if = {
+			limit = {
+				ruler = {
+					has_ideology = ideology:ideology_bgy_burgundist_leader
+				}
+			}
+			ruler = {
+				set_ideology = ideology:ideology_moderate
+			}
 		}
 	}
 
