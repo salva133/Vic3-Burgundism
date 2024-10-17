@@ -844,6 +844,21 @@ PRU = {
 	}
 }
 
+RUS = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_RUS_burgundian_system
+		adjective = RUS_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
 BEL = {
 	dynamic_country_name = {
 		name = dyn_c_bgy_BEL_burgundian_system
