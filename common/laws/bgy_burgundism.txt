@@ -5,13 +5,11 @@
 
 	progressiveness = 0
 
-	unlocking_laws = {
-		law_theocracy
-	}
+	unlocking_laws = { law_theocracy }
 
 	can_enact = {
+		exists = ig:ig_burgundists
 		ig:ig_burgundists = {
-			exists = yes
 			is_in_government = yes
 		}
 	}
