@@ -1,0 +1,138 @@
+﻿namespace = himmler
+
+himmler.1 = {
+	type = country_event
+	placement = root
+	title = himmler.1.t
+	desc = himmler.1.d
+	flavor = himmler.1.f
+
+	left_icon = scope:heinrich_himmler_scope
+
+	duration = 1
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		scope:country = {
+			ig:ig_burgundists = {
+				exists = yes
+				is_marginal = no
+			}
+		}
+		custom_tooltip = {
+			text = date_is_past_pnf_foundation_tt
+			game_date >= 1919.11.3
+		}
+		custom_tooltip = {
+			text = himmler_not_yet_alive_tt
+			NOT = { has_global_variable = himmler_alive_glob_var }
+		}
+		OR = {
+			AND = {
+				custom_tooltip = {
+					text = is_burgundy_tt
+					exists = c:BGY
+					c:BGY = root
+				}
+			}
+			AND = {
+				custom_tooltip = {
+					text = is_germany_tt
+					exists = c:GER
+					c:GER = root
+				}
+			}
+		}
+	}
+
+	immediate = {
+		custom_tooltip = {
+			text = himmler_not_yet_alive_tt
+			if = {
+				limit = {
+					NOT = { has_global_variable = himmler_alive_glob_var }
+					exists = c:BGY
+				}
+				create_character  = {
+					template = heinrich_himmler_character_template
+					culture = cu:burgundian
+					on_created = {
+						set_variable = is_himmler_var
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_global_variable = himmler_alive_glob_var }
+				}
+				create_character  = {
+					template = heinrich_himmler_character_template
+					culture = cu:south_german
+					on_created = {
+						set_variable = is_himmler_var
+					}
+				}
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = is_himmler_var
+			}
+			save_scope_as = heinrich_himmler_scope
+			set_global_variable = himmler_alive_glob_var
+		}
+	}
+		
+	option = {
+		name = himmler.1.a
+		trigger = {
+			NOT = { has_global_variable = himmler_alive_glob_var }
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = is_himmler_var
+			}
+			set_as_interest_group_leader = yes
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = himmler.1.b
+		default_option = yes
+		trigger = {
+			has_global_variable = himmler_alive_glob_var
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = himmler.1.c
+		default_option = yes
+		trigger = {
+			has_global_variable = himmler_alive_glob_var
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = is_himmler_var
+			}
+			kill_character = yes
+		}
+		remove_global_variable = himmler_alive_glob_var
+
+		ai_chance = {
+			base = 0
+		}
+	}
+}

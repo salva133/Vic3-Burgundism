@@ -7,7 +7,7 @@
 coa_burgundian_system_trigger = {
 	coa_has_burgundist_leader_trigger = yes
 	coa_has_burgundian_laws_trigger = yes
-	coa_has_elections_trigger = no
+	country_has_voting_franchise = no
 }
 
 coa_def_burgundian_system_trigger = {
@@ -29,10 +29,6 @@ coa_def_technocratic_trigger = {
 	scope:actor ?= { coa_technocratic_trigger = yes }
 }
 
-coa_has_elections_trigger = {
-	country_has_voting_franchise = yes
-}
-
 coa_has_burgundian_laws_trigger = {
 	has_law = law_type:law_bgy_burgundism
 	has_law = law_type:law_bgy_spartanism
@@ -48,7 +44,7 @@ coa_democratic_republic_trigger = {
 		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_parliamentary_republic
 	}
-	coa_has_elections_trigger = yes
+	country_has_voting_franchise = yes
 }
 
 coa_def_democratic_republic_trigger = {
@@ -61,7 +57,7 @@ coa_undemocratic_republic_trigger = {
 		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_parliamentary_republic
 	}
-	coa_has_elections_trigger = no
+	country_has_voting_franchise = no
 }
 
 coa_def_undemocratic_republic_trigger = {

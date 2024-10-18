@@ -1,144 +1,4 @@
-﻿HES = {
-	dynamic_country_name = {
-		name = dyn_c_bgy_ordenstaat_hessen
-		adjective = HES_ADJ
-
-		priority = 10000
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				coa_burgundian_system_trigger = yes
-			}
-		}
-	}
-}
-
-BGY = {
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_high_duchy
-		adjective = BGY_ADJ
-		
-		priority = 100
-		trigger = {
-			coa_def_monarchy_trigger = yes
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_republic_democratic
-		adjective = BGY_ADJ
-		
-		priority = 200
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-				}
-				country_has_voting_franchise = yes
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_republic_dictatorial
-		adjective = BGY_ADJ
-		
-		priority = 300
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-				}
-				country_has_voting_franchise = no
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_theocracy
-		adjective = BGY_ADJ
-		
-		priority = 400
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law = law_type:law_theocracy
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_technocratic
-		adjective = BGY_ADJ
-		
-		priority = 500
-		trigger = {
-			coa_def_technocratic_trigger = yes
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_democratic
-		adjective = BGY_ADJ
-		
-		priority = 600
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law = law_type:law_council_republic
-				country_has_voting_franchise = yes
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_dictatorial
-		adjective = BGY_ADJ
-		
-		priority = 700
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law = law_type:law_council_republic
-				country_has_voting_franchise = no
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_communist_technocratic
-		adjective = BGY_ADJ
-		
-		priority = 800
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law = law_type:law_council_republic
-				has_law = law_type:law_technocracy
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_burgundian_system
-		adjective = BGY_ADJ
-		
-		priority = 900
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				coa_burgundian_system_trigger = yes
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_bgy_burgundy_protectorate
-		adjective = BGY_ADJ
-
-		priority = 1000
-		trigger = {
-			coa_def_protectorate_trigger = yes
-		}
-	}
-	
-}
-DEFAULT = {
+﻿DEFAULT = {
 	dynamic_country_name = {
 		name = dyn_c_kommissariat_of_burgundy
 		adjective = generic_adjective
@@ -658,6 +518,402 @@ DEFAULT = {
 			exists = scope:actor
 			scope:actor ?= {
 				has_variable = senegal_subject_var
+			}
+		}
+	}
+}
+
+BGY = {
+	dynamic_country_name = {
+		name = dyn_c_BGY_monarchy
+		adjective = BGY_ADJ
+		
+		priority = 100
+		trigger = {
+			coa_def_monarchy_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_republic_democratic
+		adjective = BGY_ADJ
+		
+		priority = 200
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_republic_dictatorial
+		adjective = BGY_ADJ
+		
+		priority = 300
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_theocracy
+		adjective = BGY_ADJ
+		
+		priority = 400
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_theocracy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_technocratic
+		adjective = BGY_ADJ
+		
+		priority = 500
+		trigger = {
+			coa_def_technocratic_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_communist_democratic
+		adjective = BGY_ADJ
+		
+		priority = 600
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				country_has_voting_franchise = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_communist_dictatorial
+		adjective = BGY_ADJ
+		
+		priority = 700
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				country_has_voting_franchise = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_communist_technocratic
+		adjective = BGY_ADJ
+		
+		priority = 800
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_technocracy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_burgundian_system
+		adjective = BGY_ADJ
+		
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_BGY_protectorate
+		adjective = BGY_ADJ
+
+		priority = 1000
+		trigger = {
+			coa_def_protectorate_trigger = yes
+		}
+	}
+	
+}
+
+FRA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_FRA_burgundian_system
+		adjective = FRA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+GBR = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_GBR_burgundian_system
+		adjective = GBR_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+SPA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_SPA_burgundian_system
+		adjective = SPA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+POR = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_POR_burgundian_system
+		adjective = POR_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+SWE = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_SWE_burgundian_system
+		adjective = SWE_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+NOR = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_NOR_burgundian_system
+		adjective = NOR_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+FIN = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_FIN_burgundian_system
+		adjective = FIN_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+GER = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_GER_burgundian_system
+		adjective = GER_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+ITA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_ITA_burgundian_system
+		adjective = ITA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+AUS = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_AUS_burgundian_system
+		adjective = AUS_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+SWI = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_SWI_burgundian_system
+		adjective = SWI_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+USA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_USA_burgundian_system
+		adjective = USA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+CSA = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_CSA_burgundian_system
+		adjective = CSA_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+PRU = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_PRU_burgundian_system
+		adjective = PRU_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+RUS = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_RUS_burgundian_system
+		adjective = RUS_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+BEL = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_BEL_burgundian_system
+		adjective = BEL_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+NET = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_NET_burgundian_system
+		adjective = NET_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
+			}
+		}
+	}
+}
+
+HES = {
+	dynamic_country_name = {
+		name = dyn_c_bgy_HES_burgundian_system
+		adjective = HES_ADJ
+
+		priority = 900
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				coa_burgundian_system_trigger = yes
 			}
 		}
 	}

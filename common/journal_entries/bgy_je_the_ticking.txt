@@ -4,18 +4,6 @@ je_the_ticking = {
 
 	group = je_group_burgundism
 
-	immediate = {
-		set_global_variable = {
-			name = broken_seal_counter_glob_var
-			value = 0
-		}
-		set_global_variable = {
-			name = broken_seal_counter_max_glob_var
-			value = 7
-		}
-
-	}
-
 	is_shown_when_inactive = {
 		is_player = yes
 		OR = {
@@ -60,6 +48,18 @@ je_the_ticking = {
 		}
 	}
 
+	immediate = {
+		set_global_variable = {
+			name = broken_seal_counter_glob_var
+			value = 0
+		}
+		set_global_variable = {
+			name = broken_seal_counter_max_glob_var
+			value = 7
+		}
+
+	}
+
 	complete = {
 		has_law = law_type:law_bgy_burgundism
 		has_law = law_type:law_bgy_total_war
@@ -85,13 +85,14 @@ je_the_ticking = {
 			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
 		}
 	}
-
+	
 	on_complete = {
 		custom_tooltip = {
 			text = will_lead_to_the_end_tt
 			trigger_event = {
-				id = the_ticking_events.7
+				id = the_ticking.7
 			}
+			set_global_variable = the_ticking_completed_glob_var
 		}
 	}
 
@@ -111,7 +112,7 @@ je_the_ticking = {
 					global_var:broken_seal_counter_glob_var >= 1
 				}
 				trigger_event = {
-					id = the_ticking_events.1
+					id = the_ticking.1
 				}
 				set_variable = first_seal_broken_var
 			}
@@ -122,7 +123,7 @@ je_the_ticking = {
 					global_var:broken_seal_counter_glob_var >= 2
 				}
 				trigger_event = {
-					id = the_ticking_events.2
+					id = the_ticking.2
 				}
 				set_variable = second_seal_broken_var
 			}
@@ -133,7 +134,7 @@ je_the_ticking = {
 					global_var:broken_seal_counter_glob_var >= 3
 				}
 				trigger_event = {
-					id = the_ticking_events.3
+					id = the_ticking.3
 				}
 				set_variable = third_seal_broken_var
 			}
@@ -144,7 +145,7 @@ je_the_ticking = {
 					global_var:broken_seal_counter_glob_var >= 4
 				}
 				trigger_event = {
-					id = the_ticking_events.4
+					id = the_ticking.4
 				}
 				set_variable = fourth_seal_broken_var
 			}
@@ -155,7 +156,7 @@ je_the_ticking = {
 					global_var:broken_seal_counter_glob_var >= 5
 				}
 				trigger_event = {
-					id = the_ticking_events.5
+					id = the_ticking.5
 				}
 				set_variable = fifth_seal_broken_var
 			}
@@ -166,7 +167,7 @@ je_the_ticking = {
 					global_var:broken_seal_counter_glob_var >= 6
 				}
 				trigger_event = {
-					id = the_ticking_events.6
+					id = the_ticking.6
 				}
 				set_variable = sixth_seal_broken_var
 			}
@@ -263,5 +264,5 @@ je_the_ticking = {
 
 	should_be_pinned_by_default = yes
 	
-	weight = 999999
+	weight = 10000
 }

@@ -5,10 +5,6 @@
 
 	progressiveness = 0
 
-	# unlocking_technologies = {
-	# 	empiricism
-	# }
-
 	unlocking_laws = {
 		law_theocracy
 	}
@@ -70,31 +66,62 @@
 	
 	pop_support = {
 		value = 0
-		# Some euphoric academics will support this
+		# Burgundians will support this
 		add = {
-			desc = "POP_ACADEMICS"
+			desc = "POP_BURGUNDIAN"
 			if = {
 				limit = {
-					is_pop_type = academics
+					has_pop_culture = cu:burgundian
 				}
-				value = 0.1
+				value = 250
 			}
 		}
-		# SPARTANISTS will support this
+		# Spartanists will support this
 		add = {
-			desc = "POP_SPARTANISTS"
+			desc = "POP_SPARTANIST"
 			if = {
 				limit = {
 					has_pop_religion = spartanist
 				}
-				value = 0.5
+				value = 250
 			}
 		}
 	}
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+		if = {
+			limit = {
+				ruler = {
+					has_ideology = ideology:ideology_bgy_burgundist_leader
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_marginal = no
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_marginal = yes
+				}
+			}
+			multiply = 0
+		}
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
@@ -103,7 +130,41 @@
 	
 	ai_impose_chance = {
 		value = 0
-		
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+				ruler = {
+					has_ideology = ideology:ideology_bgy_burgundist_leader
+				}
+			}
+			add = 100
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_marginal = no
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				ig:ig_burgundists = {
+					is_marginal = yes
+				}
+			}
+			multiply = 0
+		}
 		if = {
 			limit = {
 				has_law = law_type:law_bgy_burgundism

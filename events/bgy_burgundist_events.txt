@@ -1,160 +1,14 @@
-﻿# namespace = burgundism_events
+﻿# namespace = burgundism
 
-# burgundism_events.1 = {
+# burgundism.1 = {
 # 	type = country_event
 # 	placement = root
 
-# 	title = burgundism_events.1.t
-# 	desc = burgundism_events.1.d
-# 	flavor = burgundism_events.1.f
+# 	title = burgundism.1.t
+# 	desc = burgundism.1.d
+# 	flavor = burgundism.1.f
 
-# 	duration = 3
-
-# 	event_image = {
-# 		video = "votp_cops_march"
-# 	}
-
-# 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
-
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-# 	trigger	= {
-# 		# triggered by JE
-# 	}
-
-# 	immediate = {
-#     }
-
-# 	option = {
-# 		name = burgundism_events.1.a
-# 	}
-
-# }
-
-# burgundism_events.2 = { #fascist leader gains popularity
-# 	type = country_event
-# 	placement = root
-
-# 	title = fascism_events.2.t
-# 	desc = fascism_events.2.d
-# 	flavor = fascism_events.2.f
-
-# 	duration = 3
-
-# 	event_image = {
-# 		video = "votp_agitator_speaking"
-# 	}
-
-# 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-# 	trigger = {
-# 		#JE monthly pulse
-# 	}
-
-# 	immediate = {
-# 		random_interest_group = {
-# 			limit = { has_variable = og_fascist_ig }
-# 			save_scope_as = fascist_ig
-# 			leader = {
-# 				save_scope_as = fascist_leader
-# 			}
-# 		}
-# 		random_interest_group = {
-# 			limit = {
-# 				OR = {
-# 					is_being_bolstered = yes
-# 					is_in_government = yes
-# 				}
-# 				NOT = { has_variable = og_fascist_ig }
-# 				leader = {
-# 					OR = {
-# 						has_ideology = ideology:ideology_fascist
-# 						has_ideology = ideology:ideology_integralist
-# 					}
-# 				}
-# 			}
-# 			leader = {
-# 				save_scope_as = fascist_leader_2
-# 			}
-# 		}
-# 	}
-
-# 	option = { #cool speech bro
-# 		name = fascism_events.2.a
-# 		default_option = yes
-# 		scope:fascist_leader = {
-# 			add_modifier = {
-# 				name = promoted_fascist_leader_modifier
-# 				months = short_modifier_time
-# 			}
-# 		}
-# 		scope:fascist_ig = {
-# 			add_modifier = {
-# 				name = promoted_fascist_leader_ig_modifier
-# 				months = short_modifier_time
-# 			}
-# 		}
-# 	}
-
-# 	option = { #not super impressive
-# 		name = fascism_events.2.b
-# 		scope:fascist_leader = {
-# 			add_modifier = {
-# 				name = ignored_fascist_leader_modifier
-# 				months = normal_modifier_time
-# 			}
-# 		}
-# 		scope:fascist_ig = {
-# 			add_modifier = {
-# 				name = ignored_fascist_leader_ig_modifier
-# 				months = normal_modifier_time
-# 			}
-# 		}
-# 	}
-
-# 	option = { #now THIS other guy is a good leader
-# 		name = fascism_events.2.c
-# 		trigger = {
-# 			any_interest_group = {
-# 				OR = {
-# 					is_being_bolstered = yes
-# 					is_in_government = yes
-# 				}
-# 				NOT = { has_variable = og_fascist_ig }
-# 				leader = {
-# 					OR = {
-# 						has_ideology = ideology:ideology_fascist
-# 						has_ideology = ideology:ideology_integralist
-# 					}
-# 				}
-# 			}
-# 		}
-# 		scope:fascist_leader_2 = {
-# 			add_modifier = {
-# 				name = promoted_fascist_leader_modifier
-# 				months = short_modifier_time
-# 			}
-# 		}
-# 		scope:fascist_ig = {
-# 			add_modifier = {
-# 				name = promoted_fascist_leader_ig_modifier
-# 				months = short_modifier_time
-# 			}
-# 		}
-# 	}
-# }
-
-# burgundism_events.3 = {
-# 	type = country_event
-# 	placement = root
-
-# 	title = burgundism_events.2.t
-# 	desc = burgundism_events.2.d
-# 	flavor = burgundism_events.2.f
-
-# 	duration = 3
+# 	duration = 1
 
 # 	trigger	= {
 # 		has_technology_researched = totalism
@@ -165,6 +19,7 @@
 # 			is_incorporated = yes
 # 			NOT = {
 # 				has_decree = decree_true_lag_reduction
+# 				has_modifier = burgundistic_progroms
 # 			}
 # 			any_scope_pop = {
 # 				pop_is_discriminated = yes
@@ -176,12 +31,45 @@
 # 		}
 # 	}
 
-# 	option = {
-# 		name = burgundism_events.2.a
+# 	immediate = {
+# 		random_scope_state = {
+# 			limit = {
+# 				loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
+# 				is_incorporated = yes
+# 				NOT = { has_decree = decree_true_lag_reduction }
+# 				any_scope_pop = {
+# 					pop_is_discriminated = yes
+# 					OR = {
+# 						culture_accepted = no
+# 						religion_accepted = no
+# 					}
+# 				}
+# 			}
+# 			save_scope_as = progrom_state_scope
+# 		}
+# 	}
 
-# 		add_modifier = {
-# 			name = burgundistic_progroms
-# 			months = very_short_modifier_time
+
+# 	option = {
+# 		name = burgundism.1.a
+		
+# 		random_scope_state = {
+# 			limit = {
+# 				loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
+# 				is_incorporated = yes
+# 				NOT = { has_decree = decree_true_lag_reduction }
+# 				any_scope_pop = {
+# 					pop_is_discriminated = yes
+# 					OR = {
+# 						culture_accepted = no
+# 						religion_accepted = no
+# 					}
+# 				}
+# 			}
+# 			add_modifier = {
+# 				name = burgundistic_progroms
+# 				months = very_short_modifier_time
+# 			}
 # 		}
 # 	}
 

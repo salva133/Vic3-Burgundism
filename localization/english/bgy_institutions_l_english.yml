@@ -6,4 +6,7 @@
   institution_minilab_desc: "The [Concept('concept_institution','$institution_minilab$')] supports the government with assigning the ever-growing amount of work force to get into labour."
 
   institution_minitrue: "Ministry of Truth"
-  institution_minitrue_desc: "The [Concept('concept_institution','$institution_minitrue$')] "
+  institution_minitrue_desc: "The [Concept('concept_institution','$institution_minitrue$')] ensures the propagation of true-flagged information."
+
+  institution_self_improvement: "Office for Self-Improvement"
+  institution_self_improvement_desc: "The [Concept('concept_institution','$institution_self_improvement$')] encourages our citizen to work hard on themselves, ultimately overcoming themselves to get to true greatness."

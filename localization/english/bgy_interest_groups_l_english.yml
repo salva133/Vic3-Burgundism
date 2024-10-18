@@ -1,5 +1,4 @@
 ﻿l_english:
-  ig_is_burgundist_tt: "Is IG $ig_variant_burgundists$"
   ig_burgundists: "Burgundists"
   ig_burgundists_only_icon: "@burgundists!"
   ig_burgundists_desc: "A concept of terror, characterised by absolute power and racist tyranny. Democracy and freedom are despised, dissenting voices are brutally stifled. Total control suffocates all hope."
@@ -10,7 +9,7 @@
 # Culture dependent Naming
   ig_burgundists_germanics: "Thule Society"
   ig_burgundists_germanics_desc: "Thule Society"
-  ig_burgundists_americans: "Ku-Klux-Klan"
+  ig_burgundists_americans: "The Klans"
   ig_burgundists_americans_desc: "Ku-Klux-Klan"
   ig_burgundists_islamists: "Fundamentalists"
   ig_burgundists_islamists_desc: "Fundamentalists"
