@@ -38,6 +38,7 @@ heinrich_himmler_character_template = {
 	last_name = Himmler
     historical = yes
 	# culture = cu:burgundian
+	is_agitator = yes
 	religion = rel:spartanist
     interest_group = ig_burgundists
     female = no
