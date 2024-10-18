@@ -13,6 +13,8 @@ the_ticking.1 = {
 		video = "southamerica_christianity"
 	}
 
+	is_popup = yes
+
 	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -44,6 +46,8 @@ the_ticking.2 = {
 	event_image = {
 		video = "unspecific_world_fair"
 	}
+
+	is_popup = yes
 
 	duration = 1
 
@@ -77,6 +81,8 @@ the_ticking.3 = {
 		video = "southamerica_christianity"
 	}
 
+	is_popup = yes
+
 	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -108,6 +114,8 @@ the_ticking.4 = {
 	event_image = {
 		video = "southamerica_christianity"
 	}
+
+	is_popup = yes
 
 	duration = 1
 
@@ -141,6 +149,8 @@ the_ticking.5 = {
 		video = "southamerica_christianity"
 	}
 
+	is_popup = yes
+
 	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -173,6 +183,8 @@ the_ticking.6 = {
 		video = "southamerica_christianity"
 	}
 
+	is_popup = yes
+
 	duration = 1
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
@@ -204,6 +216,8 @@ the_ticking.7 = {
 	event_image = {
 		video = "unspecific_devastation"
 	}
+
+	is_popup = yes
 
 	duration = 1
 
