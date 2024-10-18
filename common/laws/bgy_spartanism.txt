@@ -42,18 +42,15 @@
 		}
 	}
 
-	ai_enact_weight_modifier = {
+	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		if = {
 			limit = {
-				ig:ig_burgundists = {
-					is_in_government = yes
-				}
 				ruler = {
 					has_ideology = ideology:ideology_bgy_burgundist_leader
 				}
 			}
-			add = 100
+			add = 50
 		}
 		if = {
 			limit = {
@@ -69,7 +66,7 @@
 					is_marginal = no
 				}
 			}
-			add = 1
+			add = 10
 		}
 		if = {
 			limit = {
@@ -78,6 +75,10 @@
 				}
 			}
 			multiply = 0
+		}
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
 		}
 	}
 }
