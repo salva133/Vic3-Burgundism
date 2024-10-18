@@ -45,6 +45,44 @@
 
 	pop_support = {
 		value = 0
+		# Burgundians will support this
+		add = {
+			desc = "POP_BURGUNDIAN"
+			if = {
+				limit = {
+					has_pop_culture = cu:burgundian
+				}
+				value = 250
+			}
+		}
+		# Spartanists will support this
+		add = {
+			desc = "POP_SPARTANIST"
+			if = {
+				limit = {
+					has_pop_religion = spartanist
+				}
+				value = 250
+			}
+		}
+		add = {
+			desc = "POP_SOLDIERS"
+			if = {
+				limit = {
+					is_pop_type = soldiers
+				}
+				value = 0.25
+			}
+		}
+		add = {
+			desc = "POP_OFFICERS"
+			if = {
+				limit = {
+					is_pop_type = officers
+				}
+				value = 0.25
+			}
+		}
 	}
 
 	ai_enact_weight_modifier = { #Petitions

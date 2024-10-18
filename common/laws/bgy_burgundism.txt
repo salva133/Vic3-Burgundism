@@ -70,24 +70,24 @@
 	
 	pop_support = {
 		value = 0
-		# Some euphoric academics will support this
+		# Burgundians will support this
 		add = {
-			desc = "POP_ACADEMICS"
+			desc = "POP_BURGUNDIAN"
 			if = {
 				limit = {
-					is_pop_type = academics
+					has_pop_culture = cu:burgundian
 				}
-				value = 0.1
+				value = 250
 			}
 		}
-		# SPARTANISTS will support this
+		# Spartanists will support this
 		add = {
 			desc = "POP_SPARTANIST"
 			if = {
 				limit = {
 					has_pop_religion = spartanist
 				}
-				value = 0.5
+				value = 250
 			}
 		}
 	}
