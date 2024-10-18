@@ -64,14 +64,11 @@
 		value = 0
 		if = {
 			limit = {
-				ig:ig_burgundists = {
-					is_in_government = yes
-				}
 				ruler = {
 					has_ideology = ideology:ideology_bgy_burgundist_leader
 				}
 			}
-			add = 100
+			add = 50
 		}
 		if = {
 			limit = {
@@ -87,7 +84,7 @@
 					is_marginal = no
 				}
 			}
-			add = 1
+			add = 10
 		}
 		if = {
 			limit = {

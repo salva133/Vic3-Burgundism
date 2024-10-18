@@ -25,18 +25,25 @@
 
 	pop_support = {
 		value = 0
+		# Burgundians will support this
 		add = {
-			desc = "POP_ACADEMICS"			
+			desc = "POP_BURGUNDIAN"
 			if = {
 				limit = {
-					is_pop_type = academics
+					has_pop_culture = cu:burgundian
 				}
-				value = -0.33
+				value = 250
 			}
 		}
+		# Spartanists will support this
 		add = {
-			desc = "ALL_POPS"			
-			value = -0.01
+			desc = "POP_SPARTANIST"
+			if = {
+				limit = {
+					has_pop_religion = spartanist
+				}
+				value = 250
+			}
 		}
 	}
 
@@ -44,14 +51,11 @@
 		value = 0
 		if = {
 			limit = {
-				ig:ig_burgundists = {
-					is_in_government = yes
-				}
 				ruler = {
 					has_ideology = ideology:ideology_bgy_burgundist_leader
 				}
 			}
-			add = 100
+			add = 50
 		}
 		if = {
 			limit = {
@@ -67,7 +71,7 @@
 					is_marginal = no
 				}
 			}
-			add = 1
+			add = 10
 		}
 		if = {
 			limit = {
@@ -78,11 +82,7 @@
 			multiply = 0
 		}
 		if = {
-			limit = { 
-				has_journal_entry = je_government_petition
-				has_variable = desired_law_var
-                scope:law = var:desired_law_var
-			}
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
 	}
