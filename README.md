@@ -74,4 +74,5 @@ Can have issues with mods that adapt:
 - pops
 - techs
 
-[url=https://github.com/salva133/Vic3-Burgundism]GitHub[/url]
+Here  you can find the repo: [url=https://github.com/salva133/Vic3-Burgundism]GitHub[/url]
+Do you have an idea how the mod can be improved or have you found a bug? -> [url=https://github.com/salva133/Vic3-Burgundism/issues/new]Create an issue[/url]
