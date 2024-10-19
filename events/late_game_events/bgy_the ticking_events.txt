@@ -1,4 +1,4 @@
-namespace = the_ticking
+﻿namespace = the_ticking
 
 
 ### First Seal broken
