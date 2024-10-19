@@ -11,6 +11,9 @@
 
   the_ticking_not_completed_tt: "The ticking hasn't started yet..."
   the_ticking_completed_tt: "The ticking's gone..."
+  the_ticking.6.a_tt: "Himmler exists"
+  the_ticking.7.a_tt: " and carried by a [Concept('concept_black_sun','$black sun$')], devastation was brought upon the unclean and unworthy..."
+  the_ticking.8.a_tt: "-- CALLBACK PING --"
   will_lead_to_the_end_tt: "Will lead to #bold [Concept('concept_streng_geheim','$concept_streng_geheim$')]!#!"
   has_300_army_size_tt: "[ROOT.GetCountry.GetNameNoFlag] has a mighty army of #bold 300 Battailons#! in total"
   has_100_apocalyptic_artillery_tt: "[ROOT.GetCountry.GetNameNoFlag] has #bold 100 $combat_unit_type_apocalyptic_artillery$#! units"
