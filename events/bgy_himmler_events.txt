@@ -98,6 +98,7 @@ himmler.1 = {
 		random_scope_character = {
 			limit = {
 				has_variable = is_himmler_var
+				exists = ig:ig_burgundists
 			}
 			set_as_interest_group_leader = yes
 		}
