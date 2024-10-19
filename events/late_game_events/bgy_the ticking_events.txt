@@ -260,10 +260,10 @@ the_ticking.7 = {
 					add_devastation = 999
 					add_pollution = 999
 				}
-				# add_modifier = {
-				# 	name = end_time_mortality_modifier
-				# 	months = normal_modifier_time
-				# }
+				add_modifier = {
+					name = end_time_mortality_modifier
+					months = normal_modifier_time
+				}
 			}
 		}
 	}
