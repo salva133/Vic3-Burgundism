@@ -21,6 +21,9 @@ the_ticking.1 = {
 
 	trigger = {
 		# Gets triggered by JE
+		custom_tooltip = {
+			text = a_seal_has_been_broken_tt
+		}
 	}
 
 	immediate = {
@@ -55,6 +58,9 @@ the_ticking.2 = {
 
 	trigger = {
 		# Gets triggered by JE
+		custom_tooltip = {
+			text = a_seal_has_been_broken_tt
+		}
 	}
 
 	immediate = {
@@ -89,6 +95,9 @@ the_ticking.3 = {
 
 	trigger = {
 		# Gets triggered by JE
+		custom_tooltip = {
+			text = a_seal_has_been_broken_tt
+		}
 	}
 
 	immediate = {
@@ -123,6 +132,9 @@ the_ticking.4 = {
 
 	trigger = {
 		# Gets triggered by JE
+		custom_tooltip = {
+			text = a_seal_has_been_broken_tt
+		}
 	}
 
 	immediate = {
@@ -157,6 +169,9 @@ the_ticking.5 = {
 
 	trigger = {
 		# Gets triggered by JE
+		custom_tooltip = {
+			text = a_seal_has_been_broken_tt
+		}
 	}
 
 	immediate = {
@@ -191,6 +206,9 @@ the_ticking.6 = {
 
 	trigger = {
 		# Gets triggered by JE
+		custom_tooltip = {
+			text = a_seal_has_been_broken_tt
+		}
 	}
 
 	immediate = {
@@ -200,7 +218,7 @@ the_ticking.6 = {
 	}
 
 	option = {
-		name = the_ticking.6.a 
+		name = the_ticking.6.a
 		default_option = yes
 	}
 }
@@ -250,8 +268,8 @@ the_ticking.7 = {
 		custom_tooltip = {
 			text = the_ticking.7.a_tt
 			every_state = {
-				limit = { 
-					NOR = { 
+				limit = {
+					NOR = {
 						owner = root
 						has_modifier = end_time_mortality_modifier
 					}
