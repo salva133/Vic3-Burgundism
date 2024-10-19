@@ -9,6 +9,8 @@ himmler.1 = {
 
 	left_icon = scope:heinrich_himmler_scope
 
+	is_popup = yes
+
 	duration = 1
 
 	event_image = {
