@@ -342,6 +342,7 @@ the_ticking.7 = {
 				limit = {
 					NOR = {
 						owner = root
+						owner = { is_subject_of = ROOT }  # Did not work in tests, needs re-check
 						has_modifier = end_time_mortality_modifier
 					}
 				}
