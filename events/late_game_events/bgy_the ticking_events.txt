@@ -215,6 +215,18 @@ the_ticking.6 = {
 		ruler = {
 			save_scope_as = ruler_scope
 		}
+		if = {  # Still needs to be tested
+			limit = {
+				any_character = {
+					has_variable = is_himmler_var
+				}
+			}
+			save_scope_as = heinrich_himmler_scope
+		}
+		# every_character = {  # Character clean-up for testing, disable when done
+		# 	limit = { has_variable = is_ticking_6_burgundian_leader_var }
+		# 	kill_character = yes
+		# }
 	}
 
 	option = {
