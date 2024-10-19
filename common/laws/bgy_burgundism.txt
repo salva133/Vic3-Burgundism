@@ -5,13 +5,7 @@
 
 	progressiveness = 0
 
-	# unlocking_technologies = {
-	# 	empiricism
-	# }
-
-	unlocking_laws = {
-		law_theocracy
-	}
+	unlocking_laws = { law_theocracy }
 
 	can_enact = {
 		ig:ig_burgundists = {
