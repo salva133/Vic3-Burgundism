@@ -232,6 +232,42 @@ the_ticking.6 = {
 	option = {
 		name = the_ticking.6.a
 		default_option = yes
+
+		if = {  # Sets Himmler as ruler if he is alive
+			limit = {
+				custom_tooltip = {
+					text = the_ticking.6.a_tt
+					has_global_variable = himmler_alive_glob_var
+					any_character = {
+						has_variable = is_himmler_var
+					}
+				}
+			}
+			heinrich_himmler_scope = {
+				set_character_as_ruler = yes
+			}
+		}
+		else = {
+			create_character = {
+				culture = cu:burgundian
+				religion = rel:spartanist
+				ideology = ideology_bgy_burgundist_leader
+				if = {
+					limit = {
+						exists = ig_burgundists
+					}
+					interest_group = ig_burgundists
+				}
+				traits = {
+					ambitious
+					pious
+				}
+				on_created = {
+					set_variable = is_ticking_6_burgundian_leader_var
+					set_character_as_ruler = yes
+				}
+			}
+		}
 	}
 }
 
