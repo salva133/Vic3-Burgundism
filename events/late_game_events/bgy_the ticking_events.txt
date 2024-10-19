@@ -1,4 +1,4 @@
-﻿namespace = the_ticking
+namespace = the_ticking
 
 
 ### First Seal broken
@@ -233,6 +233,10 @@ the_ticking.7 = {
 				has_modifier = end_time_mortality_modifier
 			}
 			remove_modifier = end_time_mortality_modifier
+			state_region = {
+				add_devastation = -999
+				add_pollution = -999
+			}
 		}
 		ruler = {
 			save_scope_as = ruler_scope
