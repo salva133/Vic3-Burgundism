@@ -356,6 +356,11 @@ the_ticking.7 = {
 				}
 			}
 		}
+
+		ruler = {  # The ticking kills your ruler, because why not
+			kill_character = yes
+		}
+
 	}
 }
 
