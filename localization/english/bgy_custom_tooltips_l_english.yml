@@ -4,12 +4,13 @@
   burgundy_has_no_real_elections_tt: "[ROOT.GetCountry.GetName] is not democratic"
 
   is_germany_tt: "You are $GER$"
+  is_burgundy_tt: "You are $BGY$"
   ig_is_burgundist_tt: "Is IG $ig_variant_burgundists$"
+  is_spartanist_tt: "Believes in Spartanism"
+  is_middle_strata_tt: "Is part of the middle strata."
 
   the_ticking_not_completed_tt: "The ticking hasn't started yet..."
   the_ticking_completed_tt: "The ticking's gone..."
-
-  is_burgundy_tt: "You are $BGY$"
   will_lead_to_the_end_tt: "Will lead to #bold [Concept('concept_streng_geheim','$concept_streng_geheim$')]!#!"
   has_300_army_size_tt: "[ROOT.GetCountry.GetNameNoFlag] has a mighty army of #bold 300 Battailons#! in total"
   has_100_apocalyptic_artillery_tt: "[ROOT.GetCountry.GetNameNoFlag] has #bold 100 $combat_unit_type_apocalyptic_artillery$#! units"
@@ -18,7 +19,5 @@
   broken_seal_counter_tt: "This amount of seals have already been broken: [GetGlobalVariable('broken_seal_counter_glob_var').GetValue] of [GetGlobalVariable('broken_seal_counter_max_glob_var').GetValue]"
   the_ticking.7.a_tt: " and carried by a [Concept('concept_black_sun','$black sun$')], devastation was brought upon the unclean and unworthy..."
   bgy_has_researched_totalism_tt: "Is made possible through Totalism."
-  bgy_is_middle_strata_tt: "Is part of the middle strata."
-  bgy_is_spartanist_tt: "Believes in Spartanism"
   date_is_past_pnf_foundation_tt: "Current game date is greater or equal to the historical foundation date of the Partito Nazionale Fascista"
   himmler_not_yet_alive_tt: "Himmler is #bold not yet#! alive"
