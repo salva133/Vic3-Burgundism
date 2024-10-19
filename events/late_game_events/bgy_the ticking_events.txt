@@ -291,6 +291,29 @@ the_ticking.7 = {
 
 	trigger = {
 		# Gets triggered by JE
+		has_law = law_type:law_bgy_burgundism
+		has_law = law_type:law_bgy_total_war
+		has_law = law_type:law_bgy_spartanism
+		institution_investment_level = {
+			institution = institution_miniwar
+			value = 5
+		}
+		institution_investment_level = {
+			institution = institution_minilab
+			value = 5
+		}
+		custom_tooltip = {
+			text = has_300_army_size_tt
+			army_size >= 300
+		}
+		country_army_unit_type_fraction = {
+			target = unit_type:combat_unit_type_apocalyptic_artillery  
+			value >= 0.3333
+		}
+		custom_tooltip = { 
+			text = broken_seal_counter_tt
+			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
+		}
 	}
 
 	immediate = {
