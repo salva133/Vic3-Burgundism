@@ -14,7 +14,10 @@
 		owner = { NOT = { is_country_type = decentralized } }
 		OR = {
 			has_technology_researched = totalism
-			game_date > 1919.11.3
+			AND = {
+				game_date > 1919.11.3
+				has_technology_researched = political_agitation
+			}
 			AND = {
 				exists = c:BGY
 				c:BGY = root
