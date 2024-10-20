@@ -203,7 +203,7 @@
 
 	icon = { default = "gfx/interface/icons/political_parties/party_burgundist.dds" }
 
-	unlocking_technologies = { totalism }
+	unlocking_technologies = { political_agitation }
 
 	available_for_interest_group = {
 		owner = { country_has_voting_franchise = yes }
