@@ -57,12 +57,6 @@ For use in lag reduction only ;)
 ..Alexey?
 
 [h2] Planned Features and Changes [/h2]
-[h3] Characters [/h3]
-- Paul de Lagarde: He promotes völkisch ideologies, emphasizing the superiority of German culture and advocating for its dominance. His ideas influence later nationalist and anti-Semitic movements.
-- Houston Chamberlain: He develops racial theories that argue for the superiority of the Aryan race, heavily influencing German nationalist and anti-Semitic thought, particularly in the early 20th century.
-- Heinrich Himmler: He leads the SS and oversees many of the Nazi regime's crimes, including the Holocaust. He promotes a twisted view of racial purity and oversees the establishment of concentration camps.
-- Rudolf von Sebottendorf: He is a key figure in the Thule Society, which blends occultism and nationalist ideologies. His ideas contribute to the rise of German nationalism and later influence the nutsi movement.
-
 [h3] More Flavour [/h3]
 - More flag and name variations depending on enacted laws
 - a dedicated music mod maybe
