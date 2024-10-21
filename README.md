@@ -1,3 +1,7 @@
+[b]Note: The mod is to be taken semi-seriously. Some elements can come across as a bit meme-ish, and if they do, it's because it's intended that way.
+If you find any problems, please do not hesitate to report them here in the comments or on [url=https://github.com/salva133/Vic3-Burgundism/issues/new]GiHub[/url] as an issue.
+I would very much like to deliver a stable functional mod for you and I can sometimes miss something in testing.[/b]
+
 [h1] Burgundism [/h1]
 [h2] Overview [/h2]
 
