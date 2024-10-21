@@ -1,0 +1,45 @@
+﻿namespace = de_lagarde
+
+de_lagarde.1 = {
+	type = country_event
+	placement = root
+	title = de_lagarde.1.t
+	desc = de_lagarde.1.d
+	flavor = de_lagarde.1.f
+
+	left_icon = scope:paul_de_lagarde_scope
+
+	duration = 1
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		ig:ig_burgundists = {
+			exists = yes
+			is_marginal = no
+		}
+		game_date > 1891.12.22
+		has_global_variable = de_lagarde_alive_glob_var
+		NOT = {
+			has_global_variable = de_lagarde_dead_glob_var
+		}
+	}
+
+	immediate = {
+		random_scope_character = {
+			limit = { has_variable = is_de_lagarde_var }
+			save_scope_as = paul_de_lagarde_scope
+			kill_character = yes
+		}
+		set_global_variable = de_lagarde_dead_glob_var
+	}
+
+	option = {
+		name = de_lagarde.1.a
+		default_option = yes
+	}
+}

@@ -1,6 +1,6 @@
-### Burgundy ###
+﻿### Burgundy ###
 
-burgundy_high_duchy = {
+burgundy_grand_duchy = {
 color = rgb { 122 0 122 }
 	
 	possible = {

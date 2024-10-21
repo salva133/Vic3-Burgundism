@@ -1,0 +1,99 @@
+﻿namespace = chamberlain
+
+chamberlain.1 = {
+	type = country_event
+	placement = root
+	title = chamberlain.1.t
+	desc = chamberlain.1.d
+	flavor = chamberlain.1.f
+
+	left_icon = scope:houston_chamberlain_scope
+
+	duration = 1
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		ig:ig_burgundists = {
+			exists = yes
+			is_marginal = no
+		}
+		game_date > 1888.1.1
+		NOT = {
+			has_global_variable = chamberlain_alive_glob_var
+			has_global_variable = chamberlain_dead_glob_var
+		}
+		exists = c:GER
+		c:GER = root
+	}
+
+	immediate = {
+		create_character  = {
+			template = houston_chamberlain_character_template
+			on_created = {
+				set_variable = is_chamberlain_var
+			}
+		}
+		random_scope_character = {
+			limit = {
+				has_variable = is_chamberlain_var
+			}
+			save_scope_as = houston_chamberlain_scope
+		}
+	}
+
+	option = {
+		name = chamberlain.1.a
+		default_option = yes
+
+		set_global_variable = chamberlain_alive_glob_var
+
+		ai_chance = {
+			base = 100
+		}
+	}
+}
+
+chamberlain.2 = {
+	type = country_event
+	placement = root
+	title = chamberlain.2.t
+	desc = chamberlain.2.d
+	flavor = chamberlain.2.f
+
+	left_icon = scope:heinrich_himmler_scope
+
+	duration = 1
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		game_date > 1927.1.9
+		has_global_variable = chamberlain_alive_glob_var
+		NOT = { has_global_variable = chamberlain_dead_glob_var }
+		
+	}
+
+	immediate = {
+		random_scope_character = {
+			if = {
+				limit = { has_variable = is_chamberlain_var }
+				kill_character = yes
+			}
+		}
+		set_global_variable = chamberlain_dead_glob_var
+	}
+
+	option = {
+		name = chamberlain.2.a
+		default_option = yes
+	}
+}

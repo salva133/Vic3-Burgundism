@@ -1,0 +1,93 @@
+﻿namespace = bgy_debug
+
+bgy_debug.1 = {
+	type = country_event
+	placement = root
+	title = bgy_debug.1.t
+	desc = bgy_debug.1.d
+	flavor = bgy_debug.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	option = {
+		name = bgy_debug.1.a
+		default_option = yes
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = bgy_debug.1.b
+		ai_chance = {
+			base = 0
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_autocracy }
+			}
+			activate_law = law_type:law_autocracy
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_bgy_burgundism }
+			}
+			activate_law = law_type:law_bgy_burgundism
+		}
+		if = {
+			limit = {
+				NOT = { has_law = law_type:law_bgy_spartanism }
+			}
+			activate_law = law_type:law_bgy_spartanism
+		}
+		if = {
+			limit = {
+				NOT = {
+					ruler = {
+						has_ideology = ideology:ideology_bgy_burgundist_leader
+					}
+				}
+			}
+			ruler = {
+				set_ideology = ideology:ideology_bgy_burgundist_leader
+			}
+		}
+	}
+
+	option = {
+		name = bgy_debug.1.c
+		ai_chance = {
+			base = 0
+		}
+		if = {
+			limit = {
+				ruler = {
+					has_ideology = ideology:ideology_bgy_burgundist_leader
+				}
+			}
+			ruler = {
+				set_ideology = ideology:ideology_moderate
+			}
+		}
+	}
+
+	option = {
+		name = bgy_debug.1.e
+		ai_chance = {
+			base = 0
+		}
+		change_global_variable = {
+			name = broken_seal_counter_glob_var
+			add = 1
+		}
+	}
+
+}

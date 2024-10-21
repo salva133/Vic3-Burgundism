@@ -1,2 +1,3 @@
 ﻿l_english:
-  POP_SPARTANISTS: "Spartanists"
+  POP_SPARTANIST: "$spartanist$ [concept_religion]"
+  POP_BURGUNDIAN: "$burgundian$ [concept_culture]"

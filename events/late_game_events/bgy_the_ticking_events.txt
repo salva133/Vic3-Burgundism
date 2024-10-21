@@ -1,0 +1,418 @@
+﻿namespace = the_ticking
+
+
+### First Seal broken
+the_ticking.1 = {
+	type = country_event
+	placement = root
+	title = the_ticking.1.t
+	desc = the_ticking.1.d
+	flavor = the_ticking.1.f
+	
+	event_image = {
+		video = "southamerica_christianity"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+		custom_tooltip = {
+			text = first_seal_has_been_broken_tt
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = the_ticking.1.a
+		default_option = yes
+	}
+}
+
+### Second Seal broken
+the_ticking.2 = {
+	type = country_event
+	placement = root
+	title = the_ticking.2.t
+	desc = the_ticking.2.d
+	flavor = the_ticking.2.f
+	
+	event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+		custom_tooltip = {
+			text = second_seal_has_been_broken_tt
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = the_ticking.2.a 
+		default_option = yes
+	}
+}
+
+### Thrid Seal broken
+the_ticking.3 = {
+	type = country_event
+	placement = root
+	title = the_ticking.3.t
+	desc = the_ticking.3.d
+	flavor = the_ticking.3.f
+
+	event_image = {
+		video = "southamerica_christianity"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+		custom_tooltip = {
+			text = third_seal_has_been_broken_tt
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = the_ticking.3.a 
+		default_option = yes
+	}
+}
+
+### Fourth Seal broken
+the_ticking.4 = {
+	type = country_event
+	placement = root
+	title = the_ticking.4.t
+	desc = the_ticking.4.d
+	flavor = the_ticking.4.f
+
+	event_image = {
+		video = "southamerica_christianity"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+		custom_tooltip = {
+			text = fourth_seal_has_been_broken_tt
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = the_ticking.4.a 
+		default_option = yes
+	}
+}
+
+### Fifth Seal broken
+the_ticking.5 = {
+	type = country_event
+	placement = root
+	title = the_ticking.5.t
+	desc = the_ticking.5.d
+	flavor = the_ticking.5.f
+
+	event_image = {
+		video = "southamerica_christianity"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+		custom_tooltip = {
+			text = fifth_seal_has_been_broken_tt
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = the_ticking.5.a 
+		default_option = yes
+	}
+}
+
+### Sixth Seal broken
+the_ticking.6 = {
+	type = country_event
+	placement = root
+	title = the_ticking.6.t
+	desc = the_ticking.6.d
+	flavor = the_ticking.6.f
+
+	event_image = {
+		video = "southamerica_christianity"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+		custom_tooltip = {
+			text = sixth_seal_has_been_broken_tt
+		}
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+		random_scope_character = {  # Still needs to be tested
+			limit = {
+				any_character = {
+					has_variable = is_himmler_var
+				}
+			}
+			save_scope_as = heinrich_himmler_scope
+		}
+		# every_character = {  # Character clean-up for testing, disable when done
+		# 	limit = { has_variable = is_ticking_6_burgundian_leader_var }
+		# 	kill_character = yes
+		# }
+	}
+
+	option = {
+		name = the_ticking.6.a
+		default_option = yes
+
+		if = {  # Sets Himmler as ruler if he is alive
+			limit = {
+				custom_tooltip = {
+					text = himmler_alive_tt
+					has_global_variable = himmler_alive_glob_var
+				}
+			}
+			scope:heinrich_himmler_scope = {
+				transfer_character = ROOT
+				set_character_as_ruler = yes
+			}
+		}
+		else = {
+			create_character = {
+				culture = cu:burgundian
+				religion = rel:spartanist
+				ideology = ideology_bgy_burgundist_leader
+				interest_group = ig_burgundists
+				traits = {
+					ambitious
+					pious
+				}
+				on_created = {
+					# set_variable = is_ticking_6_burgundian_leader_var   # Identifier for Character clean-up, disable when done
+					set_character_as_ruler = yes
+				}
+			}
+		}
+		trigger_event = { id = the_ticking.8 popup = yes }
+	}
+}
+
+### Seventh Seal broken
+the_ticking.7 = {
+	type = country_event
+	placement = root
+	title = the_ticking.7.t
+	desc = the_ticking.7.d
+	flavor = the_ticking.7.f
+
+	event_image = {
+		video = "unspecific_devastation"
+	}
+
+	duration = 3
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by JE
+		has_law = law_type:law_bgy_burgundism
+		has_law = law_type:law_bgy_total_war
+		has_law = law_type:law_bgy_spartanism
+		institution_investment_level = {
+			institution = institution_miniwar
+			value = 5
+		}
+		institution_investment_level = {
+			institution = institution_minilab
+			value = 5
+		}
+		custom_tooltip = {
+			text = has_300_army_size_tt
+			army_size >= 300
+		}
+		country_army_unit_type_fraction = {
+			target = unit_type:combat_unit_type_apocalyptic_artillery  
+			value >= 0.3333
+		}
+		custom_tooltip = {
+			text = broken_seal_counter_tt
+			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
+		}
+		custom_tooltip = {
+			text = seventh_seal_has_been_broken_tt
+		}
+	}
+
+	immediate = {
+		every_state = {
+			limit = {
+				has_modifier = end_time_mortality_modifier
+			}
+			remove_modifier = end_time_mortality_modifier
+			# state_region = {  # Recovery modifiers for testing, disable when done
+			# 	add_devastation = -999
+			# 	add_pollution = -999
+			# }
+		}
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = the_ticking.7.a
+		default_option = yes
+
+		custom_tooltip = {
+			text = the_ticking.7.a_tt
+			every_state = {
+				limit = {
+					NOR = {
+						owner = root
+						owner = { is_subject_of = ROOT }  # Did not work in tests yet
+						has_modifier = end_time_mortality_modifier
+					}
+				}
+				state_region = {
+					add_devastation = 999
+					add_pollution = 999
+				}
+				add_modifier = {
+					name = end_time_mortality_modifier
+					months = normal_modifier_time
+				}
+			}
+		}
+
+		ruler = {  # The ticking kills your ruler, because why not
+			kill_character = yes
+		}
+
+	}
+}
+
+### Mass Migration of Burgundians and Spartanists to your country
+# the_ticking.8 = {		# Still needs work
+# 	type = country_event
+# 	placement = root
+# 	title = the_ticking.8.t
+# 	desc = the_ticking.8.d
+# 	flavor = the_ticking.8.f
+
+# 	event_image = {
+# 		video = "unspecific_world_fair"
+# 	}
+
+# 	duration = 3
+
+# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+# 	trigger = {
+# 		custom_tooltip = {
+# 			text = "Gets triggered by the_ticking.6"
+# 		}
+# 		# Gets triggered by JE
+# 	}
+
+# 	immediate = {
+# 		every_country = {
+# 			every_scope_state = {
+# 				limit = {
+# 					any_scope_pop = {
+# 						culture = cu:burgundian
+# 					}
+# 					is_incorporated = yes
+# 				}
+# 				save_scope_as = migration_source_states
+# 			}
+# 			# ordered_scope_state = {
+# 			# 	limit = {
+# 			# 	trigger_if = {
+# 			# 			limit = {
+# 			# 				ROOT = {
+# 			# 					has_journal_entry = je_the_ticking
+# 			# 				}
+# 			# 			}
+# 			# 		}
+# 			# 		state_is_eligible_as_mass_migration_target = yes
+# 			# 	}
+# 			# 	order_by = migration_pull
+# 			# 	save_scope_as = migration_target_state
+# 			# }
+# 		}
+# 		scope:root_country = {
+# 			capital = {
+# 				save_scope_as = migration_target_state
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = the_ticking.8.a
+# 		custom_tooltip = {
+# 			text = the_ticking.8.a_tt
+# 		}
+# 		scope:migration_target_state = {
+# 			create_mass_migration = {
+# 				origin = scope:migration_source_states
+# 				culture = cu:burgundian
+# 			}
+# 		}
+# 	}
+# }

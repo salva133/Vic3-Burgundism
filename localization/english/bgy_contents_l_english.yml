@@ -1,38 +1,35 @@
 ﻿l_english:
-# Burgundy Event
-  burgund.1.t: "Turn to Burgundism"
-  burgund.1.d: "This agreement will turn your state into a place of terror and eternal horror. Are you sure?"
-  burgund.1.f: "THERE IS NO HOPE UNDER THE [Concept('concept_black_sun','BLACK SUN')]"
-  burgund.1.a: "Yes, let us begin..."
-  burgund.1.b: "I made up my mind..."
+# Burgundism Event
+  burgundism.1.t: "Progroms in [SCOPE.sState('progrom_state_scope').GetName]"
+  burgundism.1.d: "Loyalists of the Burgundian government have risen up in [SCOPE.sState('progrom_state_scope').GetName] to hunt down the so-called unwelcome."
+  burgundism.1.f: "\"We're using force. And force, my friends, is violence, the supreme authority from which all other authority is derived.\n\nNaked force has resolved more issues throughout history than any other factor. The contrary opinion, that violence never solves anything, is wishful thinking at its worst.\"\n\n#italic - Robert Heinlein#!"
+  burgundism.1.a: "How... unfortunate?"
+  burgundism.1.b: "How barbaric!"
 
 # Himmler
-	himmler_events.1.t: "Heinrich Himmler Rises"
-  himmler_events.1.d: "Heinrich Himmler, a prominent figure, emerges as a new influential character in your country."
-  himmler_events.1.f: "A new era begins with Himmler's rise to power."
-  himmler_events.1.a: "Yey, I guess?"
+	himmler.1.t: "A new character arises"
+  himmler.1.d: ""
+  himmler.1.f: "\"Comrades of the people! Brothers and sisters of our proud [ROOT.GetCountry.GetAdjectiveNoFlag] people!\n\nToday I stand before you as the leader of the $ig_variant_burgundists$, a movement that will defend the [ROOT.GetCountry.GetAdjectiveNoFlag] blood, honour and future of our people with iron determination. The fight for our soul has only just begun.\n\nThe enemies of [ROOT.GetCountry.GetNameNoFlag] may hide in the dark corners, but we will find them.\""
+  himmler.1.a: "Who could it be?"
+	himmler.2.t: "[SCOPE.sCharacter('heinrich_himmler_scope').GetFullName] arises"
+  himmler.2.d: "[SCOPE.sCharacter('heinrich_himmler_scope').GetFullName], a prominent figure, emerges as a new influential character in our country."
+  himmler.2.f: "\"We will uplift the [ROOT.GetCountry.GetAdjectiveNoFlag] people, purify them and give them the strength they deserve. We are a chosen people who will not bow to international intrigues!\n\nOur path is clear: we stand for order, discipline and an unshakeable belief in the destiny of our people. A new era is beginning with us, an era of strength, purity and unshakeable will.\n\nWe will be victorious. Hail to the new [ROOT.GetCountry.GetNameNoFlag]!\"\n\n#italic - Heinrich Himmler, Association headquarters of the $ig_variant_burgundists$, 3 November 1919#!"
+  himmler.2.a: "Yey, I guess?"
+  himmler.2.b: "DEBUG: Reset himmler_alive_glob_var"
 
 # De Lagarde
-  de_lagarde_events.1.t: "The Death of Paul de Lagarde"
-	de_lagarde_events.1.d: "The respected German biblical scholar and orientalist Paul de Lagarde died on 22 December 1891. Lagarde was known for his extensive work on Syriac, Aramaic, Arabic and Coptic texts. In addition to his scholarly contributions, he was also an important voice of German nationalism and the Völkisch movement. His writings significantly influenced the politics and culture of the German nation."
-	de_lagarde_events.1.f: "''Freedom and democracy go together like fire and water. He is not free who can do what he wants, but who can become what he should. Free is he who is able to follow his predetermined principle of life.''\n\n- Paul de Lagarde"
-  de_lagarde_events.1.a: ""
+  de_lagarde.1.t: "The Death of Paul de Lagarde"
+	de_lagarde.1.d: "The respected German biblical scholar and orientalist Paul de Lagarde died on 22 December 1891. Lagarde was known for his extensive work on Syriac, Aramaic, Arabic and Coptic texts. In addition to his scholarly contributions, he was also an important voice of German nationalism and the Völkisch movement. His writings significantly influenced the politics and culture of the German nation."
+	de_lagarde.1.f: "''Freedom and democracy go together like fire and water. He is not free who can do what he wants, but who can become what he should. Free is he who is able to follow his predetermined principle of life.''\n\n- Paul de Lagarde"
+  de_lagarde.1.a: ""
 
 # Chamberlain
-  chamberlain_events.1.t: "WIP"
-  chamberlain_events.1.d: "WIP"
-  chamberlain_events.1.f: "WIP"
-  chamberlain_events.2.a: "WIP"
+  chamberlain.1.t: "WIP"
+  chamberlain.1.d: "WIP"
+  chamberlain.1.f: "WIP"
+  chamberlain.1.a: "WIP"
 
-# Burgundism
-  burgundism.1.t: "The EMERGENCE of the Burgundists"
-  burgundism.1.d: "Burgundist movements have appeared on our political stage"
-  burgundism.1.f: ""
-  burgundism.1.a: "Woe is us, I guess?"
-
-  burgundism.2.t: "Progroms in $STATE_NAME$"
-  burgundism.2.d: "Loyalists of the Burgundian government have risen up in $STATE_NAME$ to hunt down the so-called unwelcome."
-  burgundism.2.f: "''We're using force. And force,\nmy friends, is violence,\nthe supreme authority from which\nall other authority is derived.\n\nNaked force has resolved\nmore issues\nthroughout history\nthan any other factor.\nThe contrary opinion, that\nviolence never solves anything,\nis wishful thinking\nat its worst.''\n\n- Robert Heinlein"
-  burgundism.2.a: "How... unfortunate?"
-
-  burgundistic_progroms: "Burgundistic Progroms"
+  chamberlain.2.t: "WIP"
+  chamberlain.2.d: "WIP"
+  chamberlain.2.f: "WIP"
+  chamberlain.2.a: "WIP"

@@ -2,7 +2,7 @@
 	color = hsv{ 0.75 0.78 0.31 }
 	texture = "gfx/interface/icons/ig_icons/burgundists.dds"
 	layer = "revolution_dynamic_petty_bourgeoisie"
-	index = 0
+	index = 8
 
 	ideologies = {
 		ideology_bgy_burgundist_power_structure
@@ -14,7 +14,10 @@
 		owner = { NOT = { is_country_type = decentralized } }
 		OR = {
 			has_technology_researched = totalism
-			game_date > 1919.11.3
+			AND = {
+				game_date > 1919.11.3
+				has_technology_researched = political_agitation
+			}
 			AND = {
 				exists = c:BGY
 				c:BGY = root
@@ -24,9 +27,9 @@
 
 	on_enable = {
 		# New Traits are required
-		set_ig_trait = ig_trait:ig_trait_materiel_waste
-		set_ig_trait = ig_trait:ig_trait_veteran_consultation
-		set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+		# set_ig_trait = ig_trait:ig_trait_materiel_waste
+		# set_ig_trait = ig_trait:ig_trait_veteran_consultation
+		# set_ig_trait = ig_trait:ig_trait_patriotic_fervor
 		if = {
 			limit = {
 				country_has_primary_culture = cu:burgundian
@@ -62,7 +65,7 @@
 			limit = {
 				OR = {
 					country_has_state_religion = rel:sunni
-					country_has_state_religion = rel:shia
+					country_has_state_religion = rel:shiite
 				}
 			}
 			ig:ig_burgundists = {
@@ -87,7 +90,7 @@
 	
 	pop_potential = {
 		custom_tooltip = {
-			text = bgy_is_middle_strata_tt
+			text = is_middle_strata_tt
 			NOR = {
 				is_pop_type = aristocrats
 				is_pop_type = capitalists
@@ -105,13 +108,12 @@
 			}
 		}
 	}
-		
 
 	pop_weight = {
 		value = 0
-
+		
 		add = {
-			desc = "POP_SPARTANISTS"
+			desc = "POP_SPARTANIST"
 			if = {
 				limit = {
 					has_pop_religion = rel:spartanist
@@ -121,12 +123,22 @@
 		}
 
 		add = {
+			desc = "POP_BURGUNDIAN"
+			if = {
+				limit = {
+					has_pop_culture = cu:burgundian
+				}
+				value = 250
+			}
+		}
+		
+		add = {
 			desc = "POP_SHOPKEEPERS"
 			if = {
 				limit = {
 					is_pop_type = shopkeepers
 				}
-				value = 250
+				value = 100
 			}
 		}
 
@@ -136,7 +148,7 @@
 				limit = {
 					is_pop_type = clerks
 				}
-				value = 50
+				value = 10
 			}
 		}
 
@@ -146,18 +158,38 @@
 				limit = {
 					is_pop_type = engineers
 				}
-				value = 100
+				value = 50
+			}
+		}
+
+		add = {
+			desc = "POP_OFFICERS"
+			if = {
+				limit = {
+					is_pop_type = officers
+				}
+				value = 70
+			}
+		}
+
+		add = {
+			desc = "POP_SOLDIERS"
+			if = {
+				limit = {
+					is_pop_type = soldiers
+				}
+				value = 20
 			}
 		}
 
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_elected_bureaucrats
+					has_law = law_type:law_appointed_bureaucrats
 				}
 			}
 			add = {
-				desc = "POP_BUREAUCRATS_ELECTED"
+				desc = "POP_BUREAUCRATS_APPOINTED"
 				if = {
 					limit = {
 						is_pop_type = bureaucrats

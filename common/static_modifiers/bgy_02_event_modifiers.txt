@@ -1,8 +1,8 @@
 ﻿burgundistic_progroms = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 
-	state_assimilation_mult = 5
-	state_conversion_mult = 5
+	state_assimilation_mult = 1
+	state_conversion_mult = 1
 	state_turmoil_effects_mult = 0.5
 	state_radicals_from_discrimination_mult = 0.5
 	state_mortality_mult = 1

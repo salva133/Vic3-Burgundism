@@ -1,0 +1,8 @@
+﻿on_monthly_pulse = {
+	events = {
+		chamberlain.1
+		chamberlain.2
+		de_lagarde.1
+		himmler.1
+	}
+}

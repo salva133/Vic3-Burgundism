@@ -1,26 +1,24 @@
-﻿law_bgy_monitored_speech = {
-	group = lawgroup_free_speech
-	icon = "gfx/interface/icons/institution_icons/minitrue.dds"
+﻿law_bgy_duty_for_self_improvement = {
+	group = lawgroup_health_system
+	icon = "gfx/interface/icons/law_icons/no_health_system.dds"
 	
-	progressiveness = 0
+	progressiveness = -100
 
-	unlocking_laws = {
-		law_secret_police
-	}
-
-	institution = institution_minitrue
-
-	modifier = {
-		country_institution_minitrue_max_investment_add = 5
-	}
+	unlocking_technologies = { totalism }
 	
-	possible_political_movements = {
-		law_censorship
-		law_right_of_assembly
-	}
+	institution = institution_self_improvement
 
-	unlocking_technologies = {
-		totalism
+	can_enact = {
+		exists = ig:ig_burgundists
+		ig:ig_burgundists = {
+			is_in_government = yes
+		}
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_technocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_single_party_state
+		}
 	}
 
 	pop_support = {
@@ -46,9 +44,12 @@
 			}
 		}
 	}
+	
+	# AI shouldn't try to abolish institutions
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
+		
 		if = {
 			limit = {
 				ruler = {

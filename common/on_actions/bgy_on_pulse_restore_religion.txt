@@ -1,0 +1,5 @@
+﻿on_yearly_pulse = {
+	events = {
+		restore_religion.1
+	}
+}
