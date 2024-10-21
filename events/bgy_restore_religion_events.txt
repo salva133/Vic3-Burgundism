@@ -1,0 +1,38 @@
+namespace = restore_religion
+
+restore_religion.1 = {
+	type = country_event
+	placement = root
+	title = restore_religion.1.t
+	desc = restore_religion.1.d
+	flavor = restore_religion.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "southamerica_christianity"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		ROOT = {
+			OR = {
+				country_has_state_religion = rel:atheist
+				country_has_state_religion = rel:spartanist
+			}
+			NOR = { 
+				has_law = law_type:law_state_atheism
+				has_law = law_type:law_bgy_burgundism
+			}
+		}
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		name = restore_religion.1.a
+	}
+}
