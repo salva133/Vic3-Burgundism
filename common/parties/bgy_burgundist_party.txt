@@ -192,6 +192,14 @@
 					THIS = c:URU
 				}
 			}
+			# European Fallback
+			triggered_desc = {
+				desc = party_burgundists_europe
+				trigger = {
+					country_is_in_europe = yes
+				}
+			}
+			# Standard Name
 			triggered_desc = {
 				desc = party_burgundists
 				trigger = {
