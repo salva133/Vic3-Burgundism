@@ -65,7 +65,7 @@
 			limit = {
 				OR = {
 					country_has_state_religion = rel:sunni
-					country_has_state_religion = rel:shia
+					country_has_state_religion = rel:shiite
 				}
 			}
 			ig:ig_burgundists = {
