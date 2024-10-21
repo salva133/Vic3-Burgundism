@@ -15,7 +15,7 @@ the_ticking.1 = {
 
 	is_popup = yes
 
-	duration = 1
+	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -52,7 +52,7 @@ the_ticking.2 = {
 
 	is_popup = yes
 
-	duration = 1
+	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -89,7 +89,7 @@ the_ticking.3 = {
 
 	is_popup = yes
 
-	duration = 1
+	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -126,7 +126,7 @@ the_ticking.4 = {
 
 	is_popup = yes
 
-	duration = 1
+	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -163,7 +163,7 @@ the_ticking.5 = {
 
 	is_popup = yes
 
-	duration = 1
+	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -200,7 +200,7 @@ the_ticking.6 = {
 
 	is_popup = yes
 
-	duration = 1
+	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -283,7 +283,7 @@ the_ticking.7 = {
 
 	is_popup = yes
 
-	duration = 1
+	duration = 3
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
