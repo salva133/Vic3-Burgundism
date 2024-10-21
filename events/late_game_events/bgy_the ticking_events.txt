@@ -390,8 +390,8 @@ the_ticking.8 = {
 			limit = {
 				any_scope_pop = {
 					OR = {
-						has_culture = cu:burgundian
-						has_religion = rel:spartanist
+						culture = cu:burgundian
+						religion = rel:spartanist
 					}
 				}
 			}
