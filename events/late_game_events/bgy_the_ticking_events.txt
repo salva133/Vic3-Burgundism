@@ -348,7 +348,7 @@ the_ticking.7 = {
 }
 
 ### Mass Migration of Burgundians and Spartanists to your country
-the_ticking.8 = {
+the_ticking.8 = {		# Still needs work
 	type = country_event
 	placement = root
 	title = the_ticking.8.t
