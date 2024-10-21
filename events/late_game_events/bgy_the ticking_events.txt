@@ -363,66 +363,66 @@ the_ticking.7 = {
 }
 
 ### Mass Migration of Burgundians and Spartanists to your country
-# the_ticking.8 = {
-# 	type = country_event
-# 	placement = root
-# 	title = the_ticking.8.t
-# 	desc = the_ticking.8.d
-# 	flavor = the_ticking.8.f
+the_ticking.8 = {
+	type = country_event
+	placement = root
+	title = the_ticking.8.t
+	desc = the_ticking.8.d
+	flavor = the_ticking.8.f
 
-# 	event_image = {
-# 		video = "unspecific_devastation"
-# 	}
+	event_image = {
+		video = "unspecific_devastation"
+	}
 
-# 	is_popup = yes
+	is_popup = yes
 
-# 	duration = 1
+	duration = 3
 
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-# 	trigger = {
-# 		# Gets triggered by JE
-# 	}
+	trigger = {
+		# Gets triggered by JE
+	}
 
-# 	immediate = {
-# 		# Note that this closely reflects triggers in the button. Do not change one without changing both
-# 		every_state = {
-# 			limit = {
-# 				any_scope_pop = {
-# 					OR = {
-# 						has_culture = cu:burgundian
-# 						has_religion = rel:spartanist
-# 					}
-# 				}
-# 			}
-# 			save_scope_as = migration_source_states
-# 		}
-# 		ordered_scope_state = {
-# 			limit = {
-# 				trigger_if = {
-# 					limit = {
-# 						ROOT = {
-# 							has_journal_entry = je_the_ticking
-# 						}
-# 					}
-# 				}
-# 				state_is_eligible_as_mass_migration_target = yes
-# 			}
-# 			order_by = migration_pull
-# 			save_scope_as = migration_target_state
-# 		}
-# 	}
+	immediate = {
+		# Note that this closely reflects triggers in the button. Do not change one without changing both
+		every_state = {
+			limit = {
+				any_scope_pop = {
+					OR = {
+						has_culture = cu:burgundian
+						has_religion = rel:spartanist
+					}
+				}
+			}
+			save_scope_as = migration_source_states
+		}
+		ordered_scope_state = {
+			limit = {
+				trigger_if = {
+					limit = {
+						ROOT = {
+							has_journal_entry = je_the_ticking
+						}
+					}
+				}
+				state_is_eligible_as_mass_migration_target = yes
+			}
+			order_by = migration_pull
+			save_scope_as = migration_target_state
+		}
+	}
 
-# 	option = {
-# 		name = the_ticking.8.a
-# 		custom_tooltip = {
-# 			text = the_ticking.8.a_tt
-# 		}
-# 		scope:migration_target_state = {
-# 			create_mass_migration = {
-# 				origin = scope:migration_source_states
-# 				culture = cu:burgundian
-# 			}
-# 		}
-# 	}
-# }
+	option = {
+		name = the_ticking.8.a
+		custom_tooltip = {
+			text = the_ticking.8.a_tt
+		}
+		scope:migration_target_state = {
+			create_mass_migration = {
+				origin = scope:migration_source_states
+				culture = cu:burgundian
+			}
+		}
+	}
+}
