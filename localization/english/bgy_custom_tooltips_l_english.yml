@@ -13,7 +13,7 @@
   the_ticking_completed_tt: "The ticking's gone..."
   a_seal_has_been_broken_tt: "A Seal has been broken"
   broken_seal_counter_tt: "This amount of seals have already been broken: [GetGlobalVariable('broken_seal_counter_glob_var').GetValue] of [GetGlobalVariable('broken_seal_counter_max_glob_var').GetValue]"
-  the_ticking.6.a_tt: "Himmler exists"
+  himmler_alive_tt: "Himmler is alive"
   the_ticking.7.a_tt: " and carried by a [Concept('concept_black_sun','$black sun$')], devastation was brought upon the unclean and unworthy..."
   the_ticking.8.a_tt: "-- CALLBACK PING --"
   will_lead_to_the_end_tt: "Will lead to #bold [Concept('concept_streng_geheim','$concept_streng_geheim$')]!#!"
