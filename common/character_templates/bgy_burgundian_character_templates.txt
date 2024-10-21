@@ -48,8 +48,6 @@ heinrich_himmler_character_template = {
     traits = {
 		bigoted
 		ambitious
-		imperious
-		wrathful
 		cruel
     }
 }
