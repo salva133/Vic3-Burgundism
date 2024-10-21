@@ -1,4 +1,4 @@
-on_monthly_pulse = {
+﻿on_monthly_pulse = {
 	events = {
 		chamberlain.1
 		chamberlain.2

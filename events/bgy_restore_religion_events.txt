@@ -1,4 +1,4 @@
-namespace = restore_religion
+﻿namespace = restore_religion
 
 restore_religion.1 = {
 	type = country_event
