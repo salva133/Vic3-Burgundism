@@ -249,6 +249,7 @@ the_ticking.6 = {
 				}
 			}
 		}
+		trigger_event = { id = the_ticking.8 popup = yes }
 	}
 }
 
@@ -363,6 +364,9 @@ the_ticking.8 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
+		custom_tooltip = {
+			text = "Gets triggered by the_ticking.6"
+		}
 		# Gets triggered by JE
 	}
 
