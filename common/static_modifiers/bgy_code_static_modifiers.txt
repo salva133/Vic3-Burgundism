@@ -1,0 +1,6 @@
+﻿bridging_legitimacy_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_in_government_approval_add = 5
+	country_legitimacy_base_add = 70
+	country_prestige_mult = -0.50
+}

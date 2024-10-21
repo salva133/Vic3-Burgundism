@@ -1,76 +1,166 @@
-﻿# namespace = burgundism
+﻿namespace = burgundism
 
-# burgundism.1 = {
-# 	type = country_event
-# 	placement = root
+burgundism.1 = {
+	type = country_event
+	placement = root
 
-# 	title = burgundism.1.t
-# 	desc = burgundism.1.d
-# 	flavor = burgundism.1.f
+	title = burgundism.1.t
+	desc = burgundism.1.d
+	flavor = burgundism.1.f
 
-# 	duration = 1
+	cooldown = { months = 60 }
 
-# 	trigger	= {
-# 		has_technology_researched = totalism
-# 		ig:ig_burgundists = { is_in_government = yes }
-# 		has_law = law_type:law_ethnostate
-# 		any_scope_state = {
-# 			loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
-# 			is_incorporated = yes
-# 			NOT = {
-# 				has_decree = decree_true_lag_reduction
-# 				has_modifier = burgundistic_progroms
-# 			}
-# 			any_scope_pop = {
-# 				pop_is_discriminated = yes
-# 				OR = {
-# 					culture_accepted = no
-# 					religion_accepted = no
-# 				}
-# 			}
-# 		}
-# 	}
+	duration = 3
 
-# 	immediate = {
-# 		random_scope_state = {
-# 			limit = {
-# 				loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
-# 				is_incorporated = yes
-# 				NOT = { has_decree = decree_true_lag_reduction }
-# 				any_scope_pop = {
-# 					pop_is_discriminated = yes
-# 					OR = {
-# 						culture_accepted = no
-# 						religion_accepted = no
-# 					}
-# 				}
-# 			}
-# 			save_scope_as = progrom_state_scope
-# 		}
-# 	}
+	trigger	= {
+		has_technology_researched = totalism
+		ig:ig_burgundists = { is_in_government = yes }
+		has_law = law_type:law_ethnostate
+		any_scope_state = {
+			loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
+			is_incorporated = yes
+			NOR = {
+				has_decree = decree_true_lag_reduction
+				has_modifier = burgundistic_progroms
+			}
+			any_scope_pop = {
+				pop_is_discriminated = yes
+				OR = {
+					culture_accepted = no
+					religion_accepted = no
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_scope_state = {
+			limit = {
+				loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
+				is_incorporated = yes
+				NOR = {
+					has_decree = decree_true_lag_reduction
+					has_modifier = burgundistic_progroms
+				}
+				any_scope_pop = {
+					pop_is_discriminated = yes
+					OR = {
+						culture_accepted = no
+						religion_accepted = no
+					}
+				}
+			}
+			save_scope_as = progrom_state_scope
+		}
+	}
 
 
-# 	option = {
-# 		name = burgundism.1.a
+	option = {
+		name = burgundism.1.a
+		default_option = yes
+
+		scope:progrom_state_scope = {
+			add_modifier = {
+				name = burgundistic_progroms
+				months = 4
+			}
+		}
 		
-# 		random_scope_state = {
-# 			limit = {
-# 				loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
-# 				is_incorporated = yes
-# 				NOT = { has_decree = decree_true_lag_reduction }
-# 				any_scope_pop = {
-# 					pop_is_discriminated = yes
-# 					OR = {
-# 						culture_accepted = no
-# 						religion_accepted = no
-# 					}
-# 				}
-# 			}
-# 			add_modifier = {
-# 				name = burgundistic_progroms
-# 				months = very_short_modifier_time
-# 			}
-# 		}
-# 	}
+		# random_scope_state = {
+		# 	limit = {
+		# 		loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
+		# 		is_incorporated = yes
+		# 		NOR = {
+		# 			has_decree = decree_true_lag_reduction
+		# 			has_modifier = burgundistic_progroms
+		# 		}
+		# 		any_scope_pop = {
+		# 			pop_is_discriminated = yes
+		# 			OR = {
+		# 				culture_accepted = no
+		# 				religion_accepted = no
+		# 			}
+		# 		}
+		# 	}
+		# }
+	}
 
-# }
+}
+
+burgundism.2 = {
+	type = country_event
+	placement = root
+
+	title = burgundism.2.t
+	desc = burgundism.2.d
+	flavor = burgundism.2.f
+
+	duration = 3
+
+	event_image = {
+		texture = "gfx/event_images/burgundism_2.dds"
+	}
+
+	trigger = {
+		exists = c:BGY
+		c:BGY = root
+		NOT = { has_global_variable = burgundy_formed_glob_var }
+	}
+
+	immediate = {
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+		set_global_variable = burgundy_formed_glob_var
+	}
+
+	option = {		# Has potential for dynamization
+		name = burgundism.2.a
+		default_option = yes
+
+		add_modifier = {
+			name = bridging_legitimacy_modifier
+			months = 7
+		}
+		set_ruling_interest_groups = {
+        	ig_burgundists
+        }
+		s:STATE_FRENCH_LOW_COUNTRIES = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_WALLONIA = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_FLANDERS = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_PICARDY = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_CHAMPAGNE = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_ALSACE_LORRAINE = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_LORRAINE = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_FRANCHE_COMTE = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_BURGUNDY = {
+			add_homeland = cu:burgundian
+		}
+		s:STATE_RHONE = {
+			add_homeland = cu:burgundian
+		}
+	}
+}
+	event_image = {
+		texture = "gfx/event_images/burgundism_2.dds"
+	}
+		add_modifier = {
+			name = bridging_legitimacy_modifier
+			months = 7
+		}

@@ -30,7 +30,7 @@
 			desc = "POP_BURGUNDIAN"
 			if = {
 				limit = {
-					has_pop_culture = cu:burgundian
+					culture = cu:burgundian
 				}
 				value = 250
 			}
@@ -40,7 +40,7 @@
 			desc = "POP_SPARTANIST"
 			if = {
 				limit = {
-					has_pop_religion = spartanist
+					religion = rel:spartanist
 				}
 				value = 250
 			}

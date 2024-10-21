@@ -10,7 +10,7 @@ the_ticking.1 = {
 	flavor = the_ticking.1.f
 	
 	event_image = {
-		video = "southamerica_christianity"
+		texture = "gfx/event_images/the_ticking_1.dds"
 	}
 
 	duration = 3
@@ -45,7 +45,7 @@ the_ticking.2 = {
 	flavor = the_ticking.2.f
 	
 	event_image = {
-		video = "unspecific_world_fair"
+		texture = "gfx/event_images/the_ticking_2.dds"
 	}
 
 	duration = 3
@@ -80,7 +80,7 @@ the_ticking.3 = {
 	flavor = the_ticking.3.f
 
 	event_image = {
-		video = "southamerica_christianity"
+		texture = "gfx/event_images/the_ticking_3.dds"
 	}
 
 	duration = 3
@@ -115,7 +115,7 @@ the_ticking.4 = {
 	flavor = the_ticking.4.f
 
 	event_image = {
-		video = "southamerica_christianity"
+		texture = "gfx/event_images/the_ticking_4.dds"
 	}
 
 	duration = 3
@@ -150,7 +150,7 @@ the_ticking.5 = {
 	flavor = the_ticking.5.f
 
 	event_image = {
-		video = "southamerica_christianity"
+		texture = "gfx/event_images/the_ticking_5.dds"
 	}
 
 	duration = 3
@@ -185,7 +185,7 @@ the_ticking.6 = {
 	flavor = the_ticking.6.f
 
 	event_image = {
-		video = "southamerica_christianity"
+		texture = "gfx/event_images/the_ticking_6.dds"
 	}
 
 	duration = 3
@@ -249,7 +249,6 @@ the_ticking.6 = {
 				}
 			}
 		}
-		trigger_event = { id = the_ticking.8 popup = yes }
 	}
 }
 
@@ -262,7 +261,7 @@ the_ticking.7 = {
 	flavor = the_ticking.7.f
 
 	event_image = {
-		video = "unspecific_devastation"
+		texture = "gfx/event_images/the_ticking_7.dds"
 	}
 
 	duration = 3
@@ -292,7 +291,7 @@ the_ticking.7 = {
 		}
 		custom_tooltip = {
 			text = broken_seal_counter_tt
-			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
+			global_var:broken_seal_counter_glob_var >= 7
 		}
 		custom_tooltip = {
 			text = seventh_seal_has_been_broken_tt
@@ -346,73 +345,3 @@ the_ticking.7 = {
 
 	}
 }
-
-### Mass Migration of Burgundians and Spartanists to your country
-# the_ticking.8 = {		# Still needs work
-# 	type = country_event
-# 	placement = root
-# 	title = the_ticking.8.t
-# 	desc = the_ticking.8.d
-# 	flavor = the_ticking.8.f
-
-# 	event_image = {
-# 		video = "unspecific_world_fair"
-# 	}
-
-# 	duration = 3
-
-# 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-# 	trigger = {
-# 		custom_tooltip = {
-# 			text = "Gets triggered by the_ticking.6"
-# 		}
-# 		# Gets triggered by JE
-# 	}
-
-# 	immediate = {
-# 		every_country = {
-# 			every_scope_state = {
-# 				limit = {
-# 					any_scope_pop = {
-# 						culture = cu:burgundian
-# 					}
-# 					is_incorporated = yes
-# 				}
-# 				save_scope_as = migration_source_states
-# 			}
-# 			# ordered_scope_state = {
-# 			# 	limit = {
-# 			# 	trigger_if = {
-# 			# 			limit = {
-# 			# 				ROOT = {
-# 			# 					has_journal_entry = je_the_ticking
-# 			# 				}
-# 			# 			}
-# 			# 		}
-# 			# 		state_is_eligible_as_mass_migration_target = yes
-# 			# 	}
-# 			# 	order_by = migration_pull
-# 			# 	save_scope_as = migration_target_state
-# 			# }
-# 		}
-# 		scope:root_country = {
-# 			capital = {
-# 				save_scope_as = migration_target_state
-# 			}
-# 		}
-# 	}
-
-# 	option = {
-# 		name = the_ticking.8.a
-# 		custom_tooltip = {
-# 			text = the_ticking.8.a_tt
-# 		}
-# 		scope:migration_target_state = {
-# 			create_mass_migration = {
-# 				origin = scope:migration_source_states
-# 				culture = cu:burgundian
-# 			}
-# 		}
-# 	}
-# }

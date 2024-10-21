@@ -18,8 +18,8 @@ chamberlain.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
+		exists = ig:ig_burgundists
 		ig:ig_burgundists = {
-			exists = yes
 			is_marginal = no
 		}
 		game_date > 1888.1.1
