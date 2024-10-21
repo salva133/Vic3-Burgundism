@@ -90,6 +90,7 @@
 		}
 		if = {
 			limit = {
+				exists = ig:ig_burgundists
 				ig:ig_burgundists = {
 					is_in_government = yes
 				}
@@ -98,6 +99,7 @@
 		}
 		if = {
 			limit = {
+				exists = ig:ig_burgundists
 				ig:ig_burgundists = {
 					is_marginal = no
 				}
@@ -106,6 +108,7 @@
 		}
 		if = {
 			limit = {
+				exists = ig:ig_burgundists
 				ig:ig_burgundists = {
 					is_marginal = yes
 				}
