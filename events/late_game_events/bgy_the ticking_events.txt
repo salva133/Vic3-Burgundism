@@ -20,7 +20,7 @@ the_ticking.1 = {
 	trigger = {
 		# Gets triggered by JE
 		custom_tooltip = {
-			text = a_seal_has_been_broken_tt
+			text = first_seal_has_been_broken_tt
 		}
 	}
 
@@ -55,7 +55,7 @@ the_ticking.2 = {
 	trigger = {
 		# Gets triggered by JE
 		custom_tooltip = {
-			text = a_seal_has_been_broken_tt
+			text = second_seal_has_been_broken_tt
 		}
 	}
 
@@ -90,7 +90,7 @@ the_ticking.3 = {
 	trigger = {
 		# Gets triggered by JE
 		custom_tooltip = {
-			text = a_seal_has_been_broken_tt
+			text = third_seal_has_been_broken_tt
 		}
 	}
 
@@ -125,7 +125,7 @@ the_ticking.4 = {
 	trigger = {
 		# Gets triggered by JE
 		custom_tooltip = {
-			text = a_seal_has_been_broken_tt
+			text = fourth_seal_has_been_broken_tt
 		}
 	}
 
@@ -160,7 +160,7 @@ the_ticking.5 = {
 	trigger = {
 		# Gets triggered by JE
 		custom_tooltip = {
-			text = a_seal_has_been_broken_tt
+			text = fifth_seal_has_been_broken_tt
 		}
 	}
 
@@ -195,7 +195,7 @@ the_ticking.6 = {
 	trigger = {
 		# Gets triggered by JE
 		custom_tooltip = {
-			text = a_seal_has_been_broken_tt
+			text = sixth_seal_has_been_broken_tt
 		}
 	}
 
@@ -292,6 +292,9 @@ the_ticking.7 = {
 		custom_tooltip = { 
 			text = broken_seal_counter_tt
 			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
+		}
+		custom_tooltip = {
+			text = seventh_seal_has_been_broken_tt
 		}
 	}
 
