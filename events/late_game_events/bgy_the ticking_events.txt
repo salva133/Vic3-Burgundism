@@ -289,7 +289,7 @@ the_ticking.7 = {
 			target = unit_type:combat_unit_type_apocalyptic_artillery  
 			value >= 0.3333
 		}
-		custom_tooltip = { 
+		custom_tooltip = {
 			text = broken_seal_counter_tt
 			global_var:broken_seal_counter_glob_var >= global_var:broken_seal_counter_max_glob_var
 		}
