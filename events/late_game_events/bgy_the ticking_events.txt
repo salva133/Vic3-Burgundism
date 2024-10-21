@@ -369,7 +369,6 @@ the_ticking.8 = {
 	}
 
 	immediate = {
-		# Note that this closely reflects triggers in the button. Do not change one without changing both
 		every_state = {
 			limit = {
 				any_scope_pop = {
