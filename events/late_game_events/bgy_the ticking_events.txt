@@ -375,10 +375,7 @@ the_ticking.8 = {
 			every_scope_state = {
 				limit = {
 					any_scope_pop = {
-						OR = {
-							culture = cu:burgundian
-							religion = rel:spartanist
-						}
+						culture = cu:burgundian
 					}
 					is_incorporated = yes
 				}
