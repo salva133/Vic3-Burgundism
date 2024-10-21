@@ -3,15 +3,15 @@
   ig_burgundists_only_icon: "@burgundists!"
   ig_burgundists_desc: "A concept of terror, characterised by absolute power and racist tyranny. Democracy and freedom are despised, dissenting voices are brutally stifled. Total control suffocates all hope."
 
-  ig_burgundists_burgund: "Reichsstaffel"
-  ig_burgundists_burgund_desc: "The 'Reichsstaffel' is a paramilitary organisation in Burgundy. The 'Reichsstaffel' is ruled by an authoritarian leader who strives to completely permeate society with extreme National Socialist values."
+  ig_burgundists_burgund: "Neji Wältordnig"
+  ig_burgundists_burgund_desc: "The '$ig_burgundists_burgund$' is a paramilitary organisation in Burgundy. They are is guided by an authoritarian leader who strives to completely permeate society with extreme orderly values."
 
 # Culture dependent Naming
   ig_burgundists_germanics: "Thule Society"
-  ig_burgundists_germanics_desc: "Thule Society"
+  ig_burgundists_germanics_desc: "$ig_burgundists_germanics$"
   ig_burgundists_americans: "The Klans"
-  ig_burgundists_americans_desc: "Ku-Klux-Klan"
+  ig_burgundists_americans_desc: "$ig_burgundists_americans$"
   ig_burgundists_islamists: "Fundamentalists"
-  ig_burgundists_islamists_desc: "Fundamentalists"
+  ig_burgundists_islamists_desc: "$ig_burgundists_islamists$"
   ig_burgundists_icelandic: "Norræna félagið"
-  ig_burgundists_icelandic_desc: "Norræna félagið"
+  ig_burgundists_icelandic_desc: "Smørrebrød, Smørrebrød røm, pøm, pøm, pøm"
