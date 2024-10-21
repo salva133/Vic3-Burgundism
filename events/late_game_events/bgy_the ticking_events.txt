@@ -356,7 +356,7 @@ the_ticking.8 = {
 	flavor = the_ticking.8.f
 
 	event_image = {
-		video = "unspecific_devastation"
+		video = "unspecific_world_fair"
 	}
 
 	duration = 3
