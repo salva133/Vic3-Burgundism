@@ -244,7 +244,7 @@ the_ticking.6 = {
 					pious
 				}
 				on_created = {
-					set_variable = is_ticking_6_burgundian_leader_var
+					# set_variable = is_ticking_6_burgundian_leader_var   # Identifier for Character clean-up, disable when done
 					set_character_as_ruler = yes
 				}
 			}
