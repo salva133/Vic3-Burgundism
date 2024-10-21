@@ -40,6 +40,34 @@
 
 	pop_support = {
 		value = 0
+		# Burgundians will support this
+		add = {
+			desc = "POP_BURGUNDIAN"
+			any_scope_state = {
+				limit = {
+					any_scope_pop = {
+						limit = {
+							culture = cu:burgundian
+						}
+					}
+				}
+				value = 250
+			}
+		}
+		# Spartanists will support this
+		add = {
+			desc = "POP_SPARTANIST"
+			any_scope_state = {
+				limit = {
+					any_scope_pop = {
+						limit = {
+							religion = rel:spartanist
+						}
+					}
+				}
+				value = 250
+			}
+		}
 		add = {
 			desc = "POP_SOLDIERS"
 			if = {

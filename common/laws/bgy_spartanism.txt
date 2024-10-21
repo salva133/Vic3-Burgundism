@@ -37,9 +37,13 @@
 		# Burgundians will support this
 		add = {
 			desc = "POP_BURGUNDIAN"
-			if = {
+			any_scope_state = {
 				limit = {
-					has_pop_culture = cu:burgundian
+					any_scope_pop = {
+						limit = {
+							culture = cu:burgundian
+						}
+					}
 				}
 				value = 250
 			}
@@ -47,9 +51,13 @@
 		# Spartanists will support this
 		add = {
 			desc = "POP_SPARTANIST"
-			if = {
+			any_scope_state = {
 				limit = {
-					has_pop_religion = spartanist
+					any_scope_pop = {
+						limit = {
+							religion = rel:spartanist
+						}
+					}
 				}
 				value = 250
 			}
