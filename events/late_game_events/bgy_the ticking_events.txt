@@ -371,30 +371,33 @@ the_ticking.8 = {
 	}
 
 	immediate = {
-		every_state = {
-			limit = {
-				any_scope_pop = {
-					OR = {
-						culture = cu:burgundian
-						religion = rel:spartanist
-					}
-				}
-			}
-			save_scope_as = migration_source_states
-		}
-		ordered_scope_state = {
-			limit = {
-				trigger_if = {
-					limit = {
-						ROOT = {
-							has_journal_entry = je_the_ticking
+		every_country = {
+			every_scope_state = {
+				limit = {
+					any_scope_pop = {
+						OR = {
+							culture = cu:burgundian
+							religion = rel:spartanist
 						}
 					}
+					is_incorporated = yes
 				}
-				state_is_eligible_as_mass_migration_target = yes
+				save_scope_as = migration_source_states
 			}
-			order_by = migration_pull
-			save_scope_as = migration_target_state
+			ordered_scope_state = {
+				limit = {
+					trigger_if = {
+						limit = {
+							ROOT = {
+								has_journal_entry = je_the_ticking
+							}
+						}
+					}
+					state_is_eligible_as_mass_migration_target = yes
+				}
+				order_by = migration_pull
+				save_scope_as = migration_target_state
+			}
 		}
 	}
 
@@ -403,11 +406,11 @@ the_ticking.8 = {
 		custom_tooltip = {
 			text = the_ticking.8.a_tt
 		}
-		# scope:migration_target_state = {
-		# 	create_mass_migration = {
-		# 		origin = scope:migration_source_states
-		# 		culture = cu:burgundian
-		# 	}
-		# }
+		scope:migration_target_state = {
+			create_mass_migration = {
+				origin = scope:migration_source_states
+				culture = cu:burgundian
+			}
+		}
 	}
 }
