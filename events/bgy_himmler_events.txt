@@ -7,15 +7,12 @@ himmler.1 = {
 	desc = himmler.1.d
 	flavor = himmler.1.f
 
-	left_icon = scope:heinrich_himmler_scope
-
-	is_popup = yes
-
-	duration = 1
+	duration = 3
 
 	event_image = {
 		video = "europenorthamerica_political_extremism"
 	}
+
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
@@ -51,8 +48,15 @@ himmler.1 = {
 	}
 
 	immediate = {
+
+	}
+		
+	option = {
+		name = himmler.1.a
+		default_option = yes
+
 		custom_tooltip = {
-			text = himmler_not_yet_alive_tt
+			text = ""
 			if = {
 				limit = {
 					NOT = { has_global_variable = himmler_alive_glob_var }
@@ -78,25 +82,49 @@ himmler.1 = {
 					}
 				}
 			}
-		}
-		random_scope_character = {
-			limit = {
-				has_variable = is_himmler_var
+			random_scope_character = {
+				limit = {
+					has_variable = is_himmler_var
+				}
+				save_scope_as = heinrich_himmler_scope
+				set_global_variable = himmler_alive_glob_var
 			}
-			save_scope_as = heinrich_himmler_scope
-			set_global_variable = himmler_alive_glob_var
+			trigger_event = { id = himmler.2 popup = yes }
 		}
+		
+	}
+}
+
+himmler.2 = {
+	type = country_event
+	placement = root
+	title = himmler.2.t
+	desc = himmler.2.d
+	flavor = himmler.2.f
+
+	left_icon = scope:heinrich_himmler_scope
+
+	duration = 1
+
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by himmler.1
+	}
+
+	immediate = {
+
 	}
 		
 	option = {
-		name = himmler.1.a
-		trigger = {
-			NOT = { has_global_variable = himmler_alive_glob_var }
-		}
+		name = himmler.2.a
+		default_option = yes
 		random_scope_character = {
 			limit = {
 				has_variable = is_himmler_var
-				exists = ig:ig_burgundists
+				exists = prev.ig:ig_burgundists
 			}
 			set_as_interest_group_leader = yes
 		}
@@ -106,34 +134,21 @@ himmler.1 = {
 		}
 	}
 
-	option = {
-		name = himmler.1.b
-		default_option = yes
-		trigger = {
-			has_global_variable = himmler_alive_glob_var
-		}
-		
-		ai_chance = {
-			base = 0
-		}
-	}
+	# option = { # Debug Option, disable when not testing
+	# 	name = himmler.2.b
+	# 	trigger = {
+	# 		has_global_variable = himmler_alive_glob_var
+	# 	}
+	# 	random_scope_character = {
+	# 		limit = {
+	# 			has_variable = is_himmler_var
+	# 		}
+	# 		kill_character = yes
+	# 	}
+	# 	remove_global_variable = himmler_alive_glob_var
 
-	option = {
-		name = himmler.1.c
-		default_option = yes
-		trigger = {
-			has_global_variable = himmler_alive_glob_var
-		}
-		random_scope_character = {
-			limit = {
-				has_variable = is_himmler_var
-			}
-			kill_character = yes
-		}
-		remove_global_variable = himmler_alive_glob_var
-
-		ai_chance = {
-			base = 0
-		}
-	}
+	# 	ai_chance = {
+	# 		base = 0
+	# 	}
+	# }
 }

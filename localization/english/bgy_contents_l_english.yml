@@ -7,12 +7,15 @@
   burgundism.1.b: "How barbaric!"
 
 # Himmler
-	himmler.1.t: "Heinrich Himmler Rises"
-  himmler.1.d: "Heinrich Himmler, a prominent figure, emerges as a new influential character in our country."
-  himmler.1.f: "\"Comrades of the people! Brothers and sisters of our proud [ROOT.GetCountry.GetAdjectiveNoFlag] people!\n\nToday I stand before you as the leader of the $ig_variant_burgundists$, a movement that will defend the [ROOT.GetCountry.GetAdjectiveNoFlag] blood, honour and future of our people with iron determination. The fight for our soul has only just begun.\n\nThe enemies of [ROOT.GetCountry.GetNameNoFlag] may hide in the dark corners, but we will find them. We will uplift the [ROOT.GetCountry.GetAdjectiveNoFlag] people, purify them and give them the strength they deserve. We are a chosen people who will not bow to international intrigues!\n\nOur path is clear: we stand for order, discipline and an unshakeable belief in the destiny of our people. A new era is beginning with us, an era of strength, purity and unshakeable will.\n\nWe will be victorious. Hail to the new [ROOT.GetCountry.GetNameNoFlag]!\"\n\n#italic - Heinrich Himmler, Association headquarters of the $ig_variant_burgundists$, 3 November 1919#!"
-  himmler.1.a: "Yey, I guess?"
-  himmler.1.b: "DEBUG: #italic This event already fired"
-  himmler.1.c: "DEBUG: Reset himmler_alive_glob_var"
+	himmler.1.t: "A new character arises"
+  himmler.1.d: ""
+  himmler.1.f: "\"Comrades of the people! Brothers and sisters of our proud [ROOT.GetCountry.GetAdjectiveNoFlag] people!\n\nToday I stand before you as the leader of the $ig_variant_burgundists$, a movement that will defend the [ROOT.GetCountry.GetAdjectiveNoFlag] blood, honour and future of our people with iron determination. The fight for our soul has only just begun.\n\nThe enemies of [ROOT.GetCountry.GetNameNoFlag] may hide in the dark corners, but we will find them.\""
+  himmler.1.a: "Who could it be?"
+	himmler.2.t: "[SCOPE.sCharacter('heinrich_himmler_scope').GetFullName] arises"
+  himmler.2.d: "[SCOPE.sCharacter('heinrich_himmler_scope').GetFullName], a prominent figure, emerges as a new influential character in our country."
+  himmler.2.f: "\"We will uplift the [ROOT.GetCountry.GetAdjectiveNoFlag] people, purify them and give them the strength they deserve. We are a chosen people who will not bow to international intrigues!\n\nOur path is clear: we stand for order, discipline and an unshakeable belief in the destiny of our people. A new era is beginning with us, an era of strength, purity and unshakeable will.\n\nWe will be victorious. Hail to the new [ROOT.GetCountry.GetNameNoFlag]!\"\n\n#italic - Heinrich Himmler, Association headquarters of the $ig_variant_burgundists$, 3 November 1919#!"
+  himmler.2.a: "Yey, I guess?"
+  himmler.2.b: "DEBUG: Reset himmler_alive_glob_var"
 
 # De Lagarde
   de_lagarde.1.t: "The Death of Paul de Lagarde"
