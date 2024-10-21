@@ -215,7 +215,7 @@ the_ticking.6 = {
 		ruler = {
 			save_scope_as = ruler_scope
 		}
-		if = {  # Still needs to be tested
+		random_scope_character = {  # Still needs to be tested
 			limit = {
 				any_character = {
 					has_variable = is_himmler_var
@@ -238,12 +238,10 @@ the_ticking.6 = {
 				custom_tooltip = {
 					text = himmler_alive_tt
 					has_global_variable = himmler_alive_glob_var
-					any_character = {
-						has_variable = is_himmler_var
-					}
 				}
 			}
-			heinrich_himmler_scope = {
+			scope:heinrich_himmler_scope = {
+				transfer_character = ROOT
 				set_character_as_ruler = yes
 			}
 		}
