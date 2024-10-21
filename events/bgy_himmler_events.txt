@@ -1,4 +1,4 @@
-namespace = himmler
+﻿namespace = himmler
 
 himmler.1 = {
 	type = country_event
