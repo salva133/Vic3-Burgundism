@@ -20,11 +20,9 @@ himmler.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
-		scope:country = {
-			ig:ig_burgundists = {
-				exists = yes
-				is_marginal = no
-			}
+		ig:ig_burgundists = {
+			exists = yes
+			is_marginal = no
 		}
 		custom_tooltip = {
 			text = date_is_past_pnf_foundation_tt

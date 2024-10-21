@@ -729,7 +729,7 @@
 			create_pop = {
 				culture = burgundian
 				religion = spartanist
-				size = 1000
+				size = 3000
 			}
 		}
 	}

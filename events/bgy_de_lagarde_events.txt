@@ -18,6 +18,10 @@ de_lagarde.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
+		ig:ig_burgundists = {
+			exists = yes
+			is_marginal = no
+		}
 		game_date > 1891.12.22
 		has_global_variable = de_lagarde_alive_glob_var
 		NOT = {

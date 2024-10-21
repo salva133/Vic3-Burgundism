@@ -19,6 +19,7 @@ chamberlain.1 = {
 
 	trigger = {
 		ig:ig_burgundists = {
+			exists = yes
 			is_marginal = no
 		}
 		game_date > 1888.1.1
