@@ -403,11 +403,11 @@ the_ticking.8 = {
 		custom_tooltip = {
 			text = the_ticking.8.a_tt
 		}
-		scope:migration_target_state = {
-			create_mass_migration = {
-				origin = scope:migration_source_states
-				culture = cu:burgundian
-			}
-		}
+		# scope:migration_target_state = {
+		# 	create_mass_migration = {
+		# 		origin = scope:migration_source_states
+		# 		culture = cu:burgundian
+		# 	}
+		# }
 	}
 }
