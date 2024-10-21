@@ -238,12 +238,7 @@ the_ticking.6 = {
 				culture = cu:burgundian
 				religion = rel:spartanist
 				ideology = ideology_bgy_burgundist_leader
-				if = {
-					limit = {
-						exists = ig_burgundists
-					}
-					interest_group = ig_burgundists
-				}
+				interest_group = ig_burgundists
 				traits = {
 					ambitious
 					pious
