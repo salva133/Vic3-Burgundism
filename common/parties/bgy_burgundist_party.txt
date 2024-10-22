@@ -192,6 +192,14 @@
 					THIS = c:URU
 				}
 			}
+			# European Fallback
+			triggered_desc = {
+				desc = party_burgundists_europe
+				trigger = {
+					country_is_in_europe = yes
+				}
+			}
+			# Standard Name
 			triggered_desc = {
 				desc = party_burgundists
 				trigger = {
@@ -203,7 +211,7 @@
 
 	icon = { default = "gfx/interface/icons/political_parties/party_burgundist.dds" }
 
-	unlocking_technologies = { totalism }
+	unlocking_technologies = { political_agitation }
 
 	available_for_interest_group = {
 		owner = { country_has_voting_franchise = yes }

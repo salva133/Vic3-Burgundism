@@ -3,11 +3,3 @@
   je_the_ticking: "The Ticking"
   je_the_ticking_status: "Create a new order and make the world subject to you."
   je_the_ticking_reason: "...Heinrich? Is that you?..."
-
-  the_ticking_not_completed_tt: "The ticking hasn't started yet..."
-  the_ticking_completed_tt: "The ticking's gone..."
-
-  is_burgundy_tt: "You are Burgundy"
-  will_lead_to_the_end_tt: "Will lead to #bold [Concept('concept_streng_geheim','$concept_streng_geheim$')]!#!"
-  has_300_army_size_tt: "[ROOT.GetCountry.GetNameNoFlag] has a mighty army of #bold 300 Battailons#! in total"
-  has_100_apocalyptic_artillery_tt: "[ROOT.GetCountry.GetNameNoFlag] has #bold 100 $combat_unit_type_apocalyptic_artillery$#! units"

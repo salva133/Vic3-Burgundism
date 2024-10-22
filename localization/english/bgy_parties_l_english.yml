@@ -31,6 +31,8 @@
   party_burgundists_GUA: "Frente Nacional de Carrera"
   party_burgundists_PRG: "Unión Nacional de Francia"
   party_burgundists_URU: "Partido de Lavalleja"
+## Continental Naming
+  party_burgundists_europe: "New Order of the old World"
 ## Default
   party_burgundists: "Burgundist Party"
 

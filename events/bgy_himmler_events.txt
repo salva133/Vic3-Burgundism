@@ -1,0 +1,153 @@
+﻿namespace = himmler
+
+himmler.1 = {
+	type = country_event
+	placement = root
+	title = himmler.1.t
+	desc = himmler.1.d
+	flavor = himmler.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		exists = ig:ig_burgundists
+		ig:ig_burgundists = {
+			is_marginal = no
+		}
+		custom_tooltip = {
+			text = date_is_past_pnf_foundation_tt
+			game_date >= 1919.11.3
+		}
+		custom_tooltip = {
+			text = himmler_not_yet_alive_tt
+			NOT = { has_global_variable = himmler_alive_glob_var }
+		}
+		OR = {
+			AND = {
+				custom_tooltip = {
+					text = is_burgundy_tt
+					exists = c:BGY
+					c:BGY = root
+				}
+			}
+			AND = {
+				custom_tooltip = {
+					text = is_germany_tt
+					exists = c:GER
+					c:GER = root
+				}
+			}
+		}
+	}
+
+	immediate = {
+
+	}
+		
+	option = {
+		name = himmler.1.a
+		default_option = yes
+
+		custom_tooltip = {
+			text = himmler.1.a_tt
+			if = {
+				limit = {
+					NOT = { has_global_variable = himmler_alive_glob_var }
+				}
+				create_character  = {
+					template = heinrich_himmler_character_template
+					culture = cu:burgundian
+					on_created = {
+						set_variable = is_himmler_var
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = { has_global_variable = himmler_alive_glob_var }
+				}
+				create_character  = {
+					template = heinrich_himmler_character_template
+					culture = cu:south_german
+					on_created = {
+						set_variable = is_himmler_var
+					}
+				}
+			}
+			random_scope_character = {
+				limit = {
+					has_variable = is_himmler_var
+				}
+				save_scope_as = heinrich_himmler_scope
+				set_global_variable = himmler_alive_glob_var
+			}
+			trigger_event = { id = himmler.2 popup = yes }
+		}
+		
+	}
+}
+
+himmler.2 = {
+	type = country_event
+	placement = root
+	title = himmler.2.t
+	desc = himmler.2.d
+	flavor = himmler.2.f
+
+	left_icon = scope:heinrich_himmler_scope
+
+	duration = 1
+
+	gui_window = event_window_1char_tabloid
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	trigger = {
+		# Gets triggered by himmler.1
+	}
+
+	immediate = {
+
+	}
+		
+	option = {
+		name = himmler.2.a
+		default_option = yes
+		random_scope_character = {
+			limit = {
+				has_variable = is_himmler_var
+				exists = prev.ig:ig_burgundists
+			}
+			set_as_interest_group_leader = yes
+		}
+
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	# option = { # Debug Option, disable when not testing
+	# 	name = himmler.2.b
+	# 	trigger = {
+	# 		has_global_variable = himmler_alive_glob_var
+	# 	}
+	# 	random_scope_character = {
+	# 		limit = {
+	# 			has_variable = is_himmler_var
+	# 		}
+	# 		kill_character = yes
+	# 	}
+	# 	remove_global_variable = himmler_alive_glob_var
+
+	# 	ai_chance = {
+	# 		base = 0
+	# 	}
+	# }
+}

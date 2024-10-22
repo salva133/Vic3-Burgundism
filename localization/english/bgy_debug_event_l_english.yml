@@ -1,0 +1,9 @@
+﻿l_english:
+  bgy_debug.1.t: "Burgundism: Debug"
+  bgy_debug.1.d: "Providing debugging options"
+  bgy_debug.1.f: ""
+
+  bgy_debug.1.a: "Do nothing"
+  bgy_debug.1.b: "Activate burgundian laws and make leader burgundist"
+  bgy_debug.1.c: "Un-burgundise leader"
+  bgy_debug.1.e: "Break another seal"

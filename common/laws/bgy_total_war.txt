@@ -14,13 +14,6 @@
 	}
 
 	institution = institution_miniwar
-	institution_modifier = {
-		unit_morale_loss_mult = 0.02
-		state_conscription_rate_add = 0.19
-		building_training_rate_mult = 0.1
-		state_building_barracks_max_level_add = 40
-		state_building_conscription_center_max_level_add = 200
-	}
 
 	modifier = {
 		country_institution_miniwar_max_investment_add = 5
@@ -45,16 +38,87 @@
 
 	pop_support = {
 		value = 0
+		# Burgundians will support this
+		add = {
+			desc = "POP_BURGUNDIAN"
+			if = {
+				limit = {
+					culture = cu:burgundian
+				}
+				value = 250
+			}
+		}
+		# Spartanists will support this
+		add = {
+			desc = "POP_SPARTANIST"
+			if = {
+				limit = {
+					religion = rel:spartanist
+				}
+				value = 250
+			}
+		}
+		add = {
+			desc = "POP_SOLDIERS"
+			if = {
+				limit = {
+					is_pop_type = soldiers
+				}
+				value = 0.25
+			}
+		}
+		add = {
+			desc = "POP_OFFICERS"
+			if = {
+				limit = {
+					is_pop_type = officers
+				}
+				value = 0.25
+			}
+		}
 	}
 
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
-		
+		if = {
+			limit = {
+				ruler = {
+					has_ideology = ideology:ideology_bgy_burgundist_leader
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				exists = ig:ig_burgundists
+				ig:ig_burgundists = {
+					is_in_government = yes
+				}
+			}
+			add = 50
+		}
+		if = {
+			limit = {
+				exists = ig:ig_burgundists
+				ig:ig_burgundists = {
+					is_marginal = no
+				}
+			}
+			add = 10
+		}
+		if = {
+			limit = {
+				exists = ig:ig_burgundists
+				ig:ig_burgundists = {
+					is_marginal = yes
+				}
+			}
+			multiply = 0
+		}
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
-		
 		if = {
 			limit = { 
 				has_journal_entry = je_sick_man_army

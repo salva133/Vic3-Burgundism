@@ -11,8 +11,11 @@
   law_bgy_burgundism: "Burgundism"
   law_bgy_burgundism_desc: "Under the Burgundian system, the \"Burgundism\" is established as the official state religion, enforcing the principles of the Spartan faith upon all citizens. This belief system promotes absolute discipline, self-sacrifice, and collective strength above all else."
 
-  law_bgy_monitored_speech: "Monitored Speech"
+  law_bgy_monitored_speech: "Commitment to State Security"
   law_bgy_monitored_speech_desc: "By ensuring a positive alignment of the people with the government we can provide stability."
 
-  law_bgy_orwellian_police: "Orwellian Police"
+  law_bgy_orwellian_police: "Extensive Police Powers"
   law_bgy_orwellian_police_desc: "An expansion and empowerment of the police force. Also leads to more police violence."
+
+  law_bgy_duty_for_self_improvement: "Duty for Self-Improvement"
+  law_bgy_duty_for_self_improvement_desc: "Everyone is encouraged to make the most of their body and to use all means and methods to do so. In the event of non-compliance or neglect, more training units are allocated to make up for the deficit."
