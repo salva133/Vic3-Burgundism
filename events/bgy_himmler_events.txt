@@ -17,8 +17,8 @@ himmler.1 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
 	trigger = {
+		exists = ig:ig_burgundists
 		ig:ig_burgundists = {
-			exists = yes
 			is_marginal = no
 		}
 		custom_tooltip = {
@@ -56,11 +56,10 @@ himmler.1 = {
 		default_option = yes
 
 		custom_tooltip = {
-			text = ""
+			text = himmler.1.a_tt
 			if = {
 				limit = {
 					NOT = { has_global_variable = himmler_alive_glob_var }
-					exists = c:BGY
 				}
 				create_character  = {
 					template = heinrich_himmler_character_template
