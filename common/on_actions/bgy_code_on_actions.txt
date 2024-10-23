@@ -514,15 +514,12 @@ on_country_released_as_independent = {
 				}
 			}
 			scope:target = {
-				activate_law = law_type:law_parliamentary_republic
+				activate_law = law_type:law_presidential_republic
 				activate_law = law_type:law_oligarchy
-				activate_law = law_type:law_national_supremacy
+				activate_law = law_type:law_ethnostate
 				activate_law = law_type:law_bgy_burgundism
 				activate_law = law_type:law_no_colonial_affairs
-				activate_law = law_type:law_private_health_insurance
-				activate_law = law_type:law_private_schools
-				activate_law = law_type:law_migration_controls
-				activate_law = law_type:law_no_womens_rights
+				activate_law = law_type:law_no_migration_controls
 			}
 		}
 		if = {
