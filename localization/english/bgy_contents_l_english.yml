@@ -8,7 +8,7 @@
 
   burgundism.2.t: "[ROOT.GetCountry.GetCapital.GetCityHubName] - A new Nation"
   burgundism.2.d: "Having broken away from the government, we have now created our [GetCulture('burgundian').GetName] nation and demarcated our borders."
-  burgundism.2.f: "#bold Outcome of the Unity Party Congress in [ROOT.GetCountry.GetCapital.GetCityHubName]:#!\n\n\"To the repressive government!\nYour \'Excellency\',\nYou will no longer exercise power over us. We will take our fate into our own hands. And we will achieve great things.\nTerrible, maybe. But great.\"\n\nMost disrespectfully,\n[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName]\n\n#italic - Dispatch from the transitional government from [ROOT.GetCountry.GetCapital.GetCityHubName]#!"
+  burgundism.2.f: "#bold Outcome of the Unity Party Congress in [ROOT.GetCountry.GetCapital.GetCityHubName]:#!\n\n\"To the repressive government!\nYour \"Excellency\",\nYou will no longer exercise power over us. We will take our fate into our own hands. And we will achieve great things.\nTerrible, maybe. But great.\"\n\nMost disrespectfully,\n[SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName]\n\n#italic - Dispatch from the transitional government from [ROOT.GetCountry.GetCapital.GetCityHubName]#!"
   burgundism.2.a: "Let's shape our future"
 
 # Himmler
