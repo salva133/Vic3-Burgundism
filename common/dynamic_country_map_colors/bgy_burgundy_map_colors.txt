@@ -39,7 +39,7 @@ color = rgb { 51 0 89 }
 }
 
 burgundy_theocracy = {
-color = "saffron"
+color = rgb { 244 196 48 }
 	
 	possible = {
 		exists = c:BGY
