@@ -77,6 +77,8 @@ burgundism.2 = {
 	desc = burgundism.2.d
 	flavor = burgundism.2.f
 
+	is_popup = yes
+
 	duration = 3
 
 	event_image = {
@@ -114,7 +116,6 @@ burgundism.2 = {
 		ruler = {
 			save_scope_as = ruler_scope
 		}
-		set_global_variable = burgundy_formed_glob_var
 	}
 
 	option = {		# Has potential for dynamization
@@ -122,12 +123,13 @@ burgundism.2 = {
 		default_option = yes
 
 		add_modifier = {
-			name = bridging_legitimacy_modifier
-			months = 7
+			name = head_start_BGY_modifier
+			months = normal_modifier_time
 		}
-		set_ruling_interest_groups = {
-        	ig_burgundists
-        }
+		add_modifier = {
+			name = spartanist_policies
+			months = normal_modifier_time
+		}
 		s:STATE_FRENCH_LOW_COUNTRIES = {
 			add_homeland = cu:burgundian
 		}
