@@ -7,6 +7,8 @@ bgy_debug.1 = {
 	desc = bgy_debug.1.d
 	flavor = bgy_debug.1.f
 
+	is_popup = yes
+
 	duration = 3
 
 	event_image = {
@@ -32,21 +34,15 @@ bgy_debug.1 = {
 		}
 		if = {
 			limit = {
+				NOT = { has_law = law_type:law_theocracy }
+			}
+			activate_law = law_type:law_theocracy
+		}
+		if = {
+			limit = {
 				NOT = { has_law = law_type:law_autocracy }
 			}
 			activate_law = law_type:law_autocracy
-		}
-		if = {
-			limit = {
-				NOT = { has_law = law_type:law_bgy_burgundism }
-			}
-			activate_law = law_type:law_bgy_burgundism
-		}
-		if = {
-			limit = {
-				NOT = { has_law = law_type:law_bgy_spartanism }
-			}
-			activate_law = law_type:law_bgy_spartanism
 		}
 		if = {
 			limit = {
