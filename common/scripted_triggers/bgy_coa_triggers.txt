@@ -12,7 +12,11 @@ coa_burgundian_system_trigger = {
 
 coa_def_burgundian_system_trigger = {
 	exists = scope:actor
-	scope:actor ?= { coa_burgundian_system_trigger = yes }
+	scope:actor ?= {
+		coa_has_burgundist_leader_trigger = yes
+		has_law = law_type:law_theocracy
+		has_law = law_type:law_autocracy
+	}
 }
 
 coa_def_theocracy_trigger = {
