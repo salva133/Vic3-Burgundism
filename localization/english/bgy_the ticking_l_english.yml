@@ -2,22 +2,22 @@
   the_ticking.1.t: "One basic principle"
   the_ticking.1.d: "With the first steps towards a new order, [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName] has started to gather unsavoury personalities from all countries in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]."
   the_ticking.1.f: "#italic And I saw the first seal was broken, and I heard, as it were the noise of thunder, one of the four beasts saying, Come and see. And I saw, and behold a white horse: and he that sat on him had a bow; and a crown was given unto him: and he went forth conquering, and to conquer."
-  the_ticking.1.a: ""
+  the_ticking.1.a: "One step further."
 
   the_ticking.2.t: "The absolute rule for the $ig_variant_burgundists$"
   the_ticking.2.d: "With more and more occult personalities in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName], the mood in the city is changing. It's nothing obvious, more a feeling that something is in the air."
   the_ticking.2.f: "#italic And when he had broken the second seal, I heard the second beast say, Come and see. And there went out another horse that was red: and power was given to him that sat thereon to take peace from the earth, and that they should kill one another: and there was given unto him a great sword."
-  the_ticking.2.a: ""
+  the_ticking.2.a: "$the_ticking.1.a$"
 
   the_ticking.3.t: "Honesty, Decency, Loyalty"
   the_ticking.3.d: "Gathering in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName], [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('ruler_scope').GetFullName] has begun to define a set of values for the newly emerging nation."
   the_ticking.3.f: "#italic And when he had broken the third seal, I heard the third beast say, Come and see. And I beheld, and lo a black horse; and he that sat on him had a pair of balances in his hand. And I heard a voice in the midst of the four beasts say, A measure of wheat for a penny, and three measures of barley for a penny; and see thou hurt not the oil and the wine."
-  the_ticking.3.a: ""
+  the_ticking.3.a: "$the_ticking.1.a$"
 
   the_ticking.4.t: "Of our own blood"
   the_ticking.4.d: "For the sake of our nation, sacrifices need to be made. The members of all attending covens are preparing what some would deem to be some kind of ritual.\n\nIs anyone recognizing that ticking sound?"
   the_ticking.4.f: "#italic And when he had broken the fourth seal, I heard the voice of the fourth beast say, Come and see. And I looked, and behold a pale horse: and his name that sat on him was Death, and Hell followed with him. And power was given unto them over the fourth part of the earth, to kill with sword, and with hunger, and with death, and with the beasts of the earth."
-  the_ticking.4.a: ""
+  the_ticking.4.a: "$the_ticking.1.a$"
 
   the_ticking.5.t: "What other nations can offer"
   the_ticking.5.d: "Dark energies flow through the walls of the old town hall in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]. Residents of the town have been noticing for several weeks that it has become unusually dark even on cloudless days. A few even believe that the sun itself has become strange.\n\nVerify you clock."
