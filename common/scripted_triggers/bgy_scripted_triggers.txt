@@ -1,5 +1,0 @@
-﻿has_burgundist_government = {
-	ig:ig_burgundists = {
-		is_in_government = yes
-	}
-}
