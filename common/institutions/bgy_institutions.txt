@@ -4,7 +4,7 @@
 
 	modifier = {
 		unit_morale_loss_mult = 0.02
-		state_conscription_rate_add = 0.19
+		state_conscription_rate_add = 0.16
 		building_training_rate_mult = 0.1
 		state_building_barracks_max_level_add = 40
 		state_building_conscription_center_max_level_add = 200
@@ -16,8 +16,8 @@ institution_minilab = {
 	background_texture = "gfx/interface/illustrations/institutions/minilab_illustration.dds"
 
 	modifier = {
-		building_minimum_wage_mult = -0.198
-		state_working_adult_ratio_add = 0.15
+		building_minimum_wage_mult = -0.16
+		state_working_adult_ratio_add = 0.1
 	}
 }
 
@@ -28,10 +28,10 @@ institution_minitrue = {
 	
 	modifier = {
 		country_authority_add = 100
-		country_bolster_ig_attraction_mult = 0.2
-		country_suppression_ig_attraction_mult = -0.2
-		country_tech_spread_mult = -0.198
-		country_leverage_resistance_mult = 0.2
+		country_bolster_ig_attraction_mult = 0.16
+		country_suppression_ig_attraction_mult = -0.16
+		country_tech_spread_mult = -0.16
+		country_leverage_resistance_mult = 0.16
 	}
 }
 
@@ -40,7 +40,7 @@ institution_self_improvement = {
 	background_texture = "gfx/interface/illustrations/institutions/minilab_illustration.dds"
 
 	modifier = {
-		state_assimilation_mult = 0.2
+		state_assimilation_mult = 0.1
 		state_birth_rate_mult = -0.05
 		state_accepted_birth_rate_mult = 0.06
 	}
