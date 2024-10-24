@@ -7,8 +7,8 @@ on_monthly_pulse_country = {
 		de_lagarde.1
 		himmler.1
 
-		burgundism.3
 		burgundism.2
+		burgundism.3
 
 		### Vanilla from here
 		communism.8 # Red Army

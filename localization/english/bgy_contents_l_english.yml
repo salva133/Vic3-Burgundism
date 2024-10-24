@@ -2,11 +2,11 @@
 # Burgundism Event
   burgundism.1.t: "How do we want to live?"
   burgundism.1.d: "Please select a type of government"
-  burgundism.1.f: "You'll stay the way you are if you do nothing."
-  burgundism.1.a: "Mon-Auto"
-  burgundism.1.b: "Mon-Land"
-  burgundism.1.c: "Pres-Olig"
-  burgundism.1.e: "Pres-Wealth"
+  burgundism.1.f: "I any way your leader will be from the $ig_variant_burgundists$.\n\nHail to..."
+  burgundism.1.a: "...the Grand Duke"
+  burgundism.1.b: "...the Aristocracy"
+  burgundism.1.c: "...the Oligarchs"
+  burgundism.1.e: "...the Constitution"
 
   burgundism.2.t: "[ROOT.GetCountry.GetCapital.GetCityHubName] - A new Nation"
   burgundism.2.d: "Having broken away from the government, we have now created our [GetCulture('burgundian').GetName] nation and demarcated our borders."
