@@ -31,3 +31,4 @@
   date_is_past_pnf_foundation_tt: "Current game date is greater or equal to the historical foundation date of the Partito Nazionale Fascista"
   himmler_not_yet_alive_tt: "Himmler is #bold not yet#! alive"
   himmler.1.a_tt: ""
+  burgundy_not_yet_formed_tt: "Burgundy has #bold not yet#! been formed"

@@ -511,15 +511,17 @@ on_country_released_as_independent = {
 				scope:target = {
 					country_has_primary_culture = cu:burgundian
 					country_has_state_religion = rel:spartanist
+					NOT = { has_global_variable = burgundy_formed_glob_var }
 				}
 			}
 			scope:target = {
 				activate_law = law_type:law_presidential_republic
-				activate_law = law_type:law_oligarchy
+				activate_law = law_type:law_autocracy
 				activate_law = law_type:law_ethnostate
 				activate_law = law_type:law_bgy_burgundism
 				activate_law = law_type:law_no_colonial_affairs
 				activate_law = law_type:law_no_migration_controls
+				activate_law = law_type:law_national_militia
 			}
 		}
 		if = {
