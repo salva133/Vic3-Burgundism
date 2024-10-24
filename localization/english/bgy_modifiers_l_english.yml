@@ -12,6 +12,9 @@
   country_institution_minilab_max_investment_add: "Max $institution_minilab$ [concept_institution] Investment"
   country_institution_minilab_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_minilab$ [concept_institution]"
 
+  country_institution_self_improvement_max_investment_add: "Max $institution_self_improvement$ [concept_institution] Investment"
+  country_institution_self_improvement_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_self_improvement$ [concept_institution]"
+
   end_time_mortality_modifier: "The end has come"
-  bridging_legitimacy_modifier: "Bridging Legitimacy for the election"
+  head_start_BGY_modifier: "Head Start"
   

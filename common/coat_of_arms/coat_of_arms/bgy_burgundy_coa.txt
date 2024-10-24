@@ -39,10 +39,16 @@ BGY_dictatorship = {
 		color3 = "white"
 	}
 	colored_emblem = {
-		texture = "ce_triskel.dds"
+		texture = "ce_triskel_wolfsangel.dds"
 		color1 = "black"
-
-		instance = { scale = { 0.6 0.6 } position = { 0.17 0.5 } }
+	
+		instance = { scale = { 0.5 0.5 } position = { 0.17 0.3 } }
+	}
+	colored_emblem = {
+		texture = "ce_triskel_wolfsangel.dds"
+		color1 = "black"
+	
+		instance = { scale = { 0.5 0.5 } position = { 0.17 0.75 } }
 	}
 }
 
@@ -86,6 +92,21 @@ BGY_technocracy = {
 
 	colored_emblem = {
 		texture = "ce_triskel.dds"
+		color1 = "purple"
+	}
+}
+
+BGY_theo_technocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "grey"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "black"
+	}
+
+	colored_emblem = {
+		texture = "ce_triskelion_double.dds"
 		color1 = "purple"
 	}
 }

@@ -12,44 +12,37 @@
 			OR = {
 				has_law = law_type:law_ethnostate
 				has_law = law_type:law_national_supremacy
-			} 
-			any_scope_pop = {
-				pop_is_discriminated = yes
-				OR = {
-					culture_accepted = no
-					religion_accepted = no
-				}
 			}
+		}
+		custom_tooltip = {
+			text = pop_bigger_than_500k_tt
+			state_population > 500000
+		}
+		OR = {
+			has_assimilating_pops = yes
+			has_converting_pops = yes
 		}
 		NOR = {
 			has_decree = decree_lag_reduction
 			has_decree = decree_homelandoverall_values
 			has_decree = decree_promote_national_values
+			has_modifier = head_start_BGY_modifier
 		}
 		is_incorporated = yes
 	}
 
 	modifier = {
-		# state_turmoil_effects_mult = 1
+		state_turmoil_effects_mult = 1
 		state_radicals_from_discrimination_mult = 1
-		state_mortality_mult = 100
-		state_accepted_birth_rate_mult = 105
+		state_mortality_mult = 10
+		state_accepted_birth_rate_mult = 10.05
 	}
 
-	cost = 100
+	cost = 1000
 	
 	ai_weight = {
 		value = 0
-		# if = {
-		# 	limit = {
-		# 		scope:country = {
-		# 			has_strategy = ai_strategy_burgundism
-		# 		}
-		# 	}
-		# 	add = 100
-		# }
 	}
-	
 }
 
 decree_lag_reduction = {
@@ -65,17 +58,15 @@ decree_lag_reduction = {
 				has_law = law_type:law_secret_police
 			}
 		}
-		any_scope_pop = {
-			pop_is_discriminated = yes
-			OR = {
-				culture_accepted = no
-				religion_accepted = no
-			}
+		OR = {
+			has_assimilating_pops = yes
+			has_converting_pops = yes
 		}
 		NOR = {
 			has_decree = decree_true_lag_reduction
 			has_decree = decree_homelandoverall_values
 			has_decree = decree_promote_national_values
+			has_modifier = head_start_BGY_modifier
 		}
 		is_incorporated = yes
 	}
@@ -93,16 +84,7 @@ decree_lag_reduction = {
 	
 	ai_weight = {
 		value = 0
-		# if = {
-		# 	limit = {
-		# 		scope:country = {
-		# 			has_strategy = ai_strategy_burgundism
-		# 		}
-		# 	}
-		# 	add = 100
-		# }
 	}
-
 }
 
 decree_homelandoverall_values = {
@@ -110,6 +92,10 @@ decree_homelandoverall_values = {
 	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
 
 	valid = {
+		OR = {
+			has_assimilating_pops = yes
+			has_converting_pops = yes
+		}
 		owner = { 
 			has_technology_researched = nationalism
 			NOT = { has_law = law_type:law_multicultural }
@@ -122,6 +108,7 @@ decree_homelandoverall_values = {
 			has_decree = decree_lag_reduction
 			has_decree = decree_true_lag_reduction
 			has_decree = decree_promote_national_values
+			has_modifier = head_start_BGY_modifier
 		}
 		is_incorporated = yes
 	}
@@ -134,16 +121,7 @@ decree_homelandoverall_values = {
 	
 	ai_weight = {
 		value = 0
-		# if = {
-		# 	limit = {
-		# 		scope:country = {
-		# 			has_strategy = ai_strategy_burgundism
-		# 		}
-		# 	}
-		# 	add = 100
-		# }
 	}
-
 }
 
 decree_promote_national_values = {
@@ -155,16 +133,20 @@ decree_promote_national_values = {
 		NOR = {
 			has_decree = decree_lag_reduction
 			has_decree = decree_true_lag_reduction
+			has_decree = decree_homelandoverall_values
+			has_modifier = head_start_BGY_modifier
 		}
 		OR = {
 			has_assimilating_pops = yes
 			has_converting_pops = yes
-		}	
+		}
 	}
+
 	modifier = {
 		state_assimilation_mult = 1
 		state_conversion_mult = 1
 	}
+	
 	cost = 100
 	
 	ai_weight = {

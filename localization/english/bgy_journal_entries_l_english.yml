@@ -1,5 +1,9 @@
 ﻿l_english:
+# JE Group
   je_group_burgundism: "Burgundism"
+
+# JE
   je_the_ticking: "The Ticking"
-  je_the_ticking_status: "Create a new order and make the world subject to you."
-  je_the_ticking_reason: "...Heinrich? Is that you?..."
+  je_the_ticking_status: "Prepare the world for a new order and cleanse it."
+  je_the_ticking_reason: "To bring the new order you need to fulfill some deeds.\nSome will bring you forward, some won't.\n\n- Enact [GetLawType('law_bgy_burgundism').GetName]\n- Enact [GetLawType('law_bgy_total_war').GetName]\n- Enact [GetLawType('law_bgy_spartanism').GetName]\n- Max out the [GetInstitutionType('institution_miniwar').GetName] (enabled by [GetLawType('law_bgy_total_war').GetName]) \n- Max out the [GetInstitutionType('institution_minilab').GetName] (enabled by [GetLawType('law_bgy_spartanism').GetName])\n- Own at least 15 States\n- Own Rodomo\n- Have an army of #bold 300 Battalions#! in total\n  and #bold 100#! of those are #bold $combat_unit_type_apocalyptic_artillery$#!"
+  je_the_ticking_goal: "The right deeds are done"

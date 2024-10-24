@@ -65,24 +65,6 @@ burgundism.1 = {
 				months = 4
 			}
 		}
-		
-		# random_scope_state = {
-		# 	limit = {
-		# 		loyalist_fraction = { value >= 0.51 } # Definitely change that to the fraction of Burgundist supporters
-		# 		is_incorporated = yes
-		# 		NOR = {
-		# 			has_decree = decree_true_lag_reduction
-		# 			has_modifier = burgundistic_progroms
-		# 		}
-		# 		any_scope_pop = {
-		# 			pop_is_discriminated = yes
-		# 			OR = {
-		# 				culture_accepted = no
-		# 				religion_accepted = no
-		# 			}
-		# 		}
-		# 	}
-		# }
 	}
 
 }
@@ -95,6 +77,8 @@ burgundism.2 = {
 	desc = burgundism.2.d
 	flavor = burgundism.2.f
 
+	is_popup = yes
+
 	duration = 3
 
 	event_image = {
@@ -102,65 +86,69 @@ burgundism.2 = {
 	}
 
 	trigger = {
-		exists = c:BGY
-		c:BGY = root
-		NOT = { has_global_variable = burgundy_formed_glob_var }
+		OR = {
+			AND = {
+				exists = c:BGY
+				c:BGY = root
+			}
+			AND = {
+				country_has_primary_culture = cu:burgundian
+				country_has_state_religion = rel:spartanist
+			}
+		}
+		custom_tooltip = {
+			text = burgundy_not_yet_formed_tt
+			NOT = { has_global_variable = burgundy_formed_glob_var }
+		}
 	}
 
 	immediate = {
+		set_global_variable = burgundy_formed_glob_var
+		if = {
+			limit = {
+				has_modifier = head_start_BGY_modifier
+			}
+			remove_modifier = head_start_BGY_modifier
+		}
+		if = {
+			limit = { 
+				has_modifier = spartanist_policies
+			}
+			remove_modifier = spartanist_policies
+		}
+		set_ruling_interest_groups = {
+			ig_burgundists
+		}
+		ig:ig_burgundists = {
+			leader = {
+				set_character_as_ruler = yes
+			}
+		}
 		ruler = {
 			save_scope_as = ruler_scope
 		}
-		set_global_variable = burgundy_formed_glob_var
 	}
 
-	option = {		# Has potential for dynamization
+	option = {
 		name = burgundism.2.a
 		default_option = yes
 
 		add_modifier = {
-			name = bridging_legitimacy_modifier
-			months = 7
+			name = head_start_BGY_modifier
+			months = normal_modifier_time
 		}
-		set_ruling_interest_groups = {
-        	ig_burgundists
-        }
-		s:STATE_FRENCH_LOW_COUNTRIES = {
-			add_homeland = cu:burgundian
+		add_modifier = {
+			name = spartanist_policies
+			months = normal_modifier_time
 		}
-		s:STATE_WALLONIA = {
-			add_homeland = cu:burgundian
-		}
-		s:STATE_FLANDERS = {
-			add_homeland = cu:burgundian
-		}
-		s:STATE_PICARDY = {
-			add_homeland = cu:burgundian
-		}
-		s:STATE_CHAMPAGNE = {
-			add_homeland = cu:burgundian
-		}
-		s:STATE_ALSACE_LORRAINE = {
-			add_homeland = cu:burgundian
-		}
-		s:STATE_LORRAINE = {
-			add_homeland = cu:burgundian
-		}
-		s:STATE_FRANCHE_COMTE = {
-			add_homeland = cu:burgundian
-		}
-		s:STATE_BURGUNDY = {
-			add_homeland = cu:burgundian
-		}
-		s:STATE_RHONE = {
-			add_homeland = cu:burgundian
+
+		every_scope_state = {
+			limit = {
+				owner = root
+			}
+			state_region = {
+				add_homeland = cu:burgundian
+			}
 		}
 	}
 }
-	event_image = {
-		texture = "gfx/event_images/burgundism_2.dds"
-	}
-		add_modifier = {
-			name = bridging_legitimacy_modifier
-			months = 7
-		}

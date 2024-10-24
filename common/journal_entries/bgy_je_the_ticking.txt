@@ -12,19 +12,21 @@ je_the_ticking = {
 				exists = c:BGY
 				c:BGY = root
 			}
-			AND = {	
+			AND = {
 				country_rank >= rank_value:major_power
 				has_technology_researched = totalism
 			}
 		}
 		custom_tooltip = {
 			text = the_ticking_not_completed_tt
-			NOT = { has_global_variable = the_ticking_completed_glob_var }
+			NOT = { has_global_variable = broken_seal_counter_glob_var }
 		}
 	}
 
 	possible = {
-		is_player = yes
+		hidden_trigger = {
+			is_player = yes
+		}
 		is_subject = no
 		is_in_power_bloc = no
 		has_technology_researched = thinking_of_ending_things
@@ -44,7 +46,7 @@ je_the_ticking = {
 		}
 		custom_tooltip = {
 			text = the_ticking_not_completed_tt
-			NOT = { has_global_variable = the_ticking_completed_glob_var }
+			NOT = { has_global_variable = broken_seal_counter_glob_var }
 		}
 	}
 
@@ -57,37 +59,10 @@ je_the_ticking = {
 	}
 
 	complete = {
-			any_scope_state = {
-				owner = root
-				count >= 15
-			}
-		owns_entire_state_region = STATE_NORMANDY
-		has_law = law_type:law_bgy_burgundism
-		has_law = law_type:law_bgy_total_war
-		has_law = law_type:law_bgy_spartanism
-		institution_investment_level = {
-			institution = institution_miniwar
-			value = 5
-		}
-		institution_investment_level = {
-			institution = institution_minilab
-			value = 5
-		}
-		custom_tooltip = {
-			text = has_300_army_size_tt
-			army_size >= 300
-		}
-		country_army_unit_type_fraction = {
-			target = unit_type:combat_unit_type_apocalyptic_artillery  
-			value >= 0.3333
-		}
-		custom_tooltip = { 
-			text = broken_seal_counter_tt
-			has_global_variable = broken_seal_counter_glob_var
-			global_var:broken_seal_counter_glob_var >= 7
+		scope:journal_entry = {
+			is_goal_complete = yes
 		}
 	}
-	
 	
 	on_complete = {
 		custom_tooltip = {
@@ -98,10 +73,6 @@ je_the_ticking = {
 	}
 
 	fail = {
-		custom_tooltip = {
-			text = the_ticking_completed_tt
-			has_global_variable = the_ticking_completed_glob_var
-		}
 	}
 
 	on_weekly_pulse = {
@@ -248,8 +219,26 @@ je_the_ticking = {
 					add = 1
 				}
 			}
+			clamp_variable = {
+				name = broken_seal_counter_glob_var
+				max = 7
+				min = 0
+			}
 		}
 	}
+
+	current_value = {
+		if = {
+			limit = { has_global_variable = broken_seal_counter_glob_var }
+			value = global_var:broken_seal_counter_glob_var
+		}
+	}
+
+	goal_add_value = {
+		value = 7
+	}
+
+	progressbar = yes
 
 	should_be_pinned_by_default = yes
 	
