@@ -1,10 +1,12 @@
 ﻿l_english:
 # Burgundism Event
-  burgundism.1.t: "Progroms in [SCOPE.sStateRegion('progrom_state_scope').GetCityHubName]"
-  burgundism.1.d: "Loyalists of the Burgundian government have risen up in [SCOPE.sStateRegion('progrom_state_scope').GetCityHubName] to hunt down the so-called unwelcome."
-  burgundism.1.f: "\"We're using force. And force, my friends, is violence, the supreme authority from which all other authority is derived.\n\nNaked force has resolved more issues throughout history than any other factor. The contrary opinion, that violence never solves anything, is wishful thinking at its worst.\"\n\n#italic - Robert Heinlein#!"
-  burgundism.1.a: "How... unfortunate?"
-  burgundism.1.b: "How barbaric!"
+  burgundism.1.t: "How do we want to live?"
+  burgundism.1.d: "Please select a type of government"
+  burgundism.1.f: "You'll stay the way you are if you do nothing."
+  burgundism.1.a: "Mon-Auto"
+  burgundism.1.b: "Mon-Land"
+  burgundism.1.c: "Pres-Olig"
+  burgundism.1.e: "Pres-Wealth"
 
   burgundism.2.t: "[ROOT.GetCountry.GetCapital.GetCityHubName] - A new Nation"
   burgundism.2.d: "Having broken away from the government, we have now created our [GetCulture('burgundian').GetName] nation and demarcated our borders."
