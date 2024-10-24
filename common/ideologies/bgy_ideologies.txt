@@ -17,7 +17,7 @@
 		law_multicultural = strongly_disapprove
 	}
 	lawgroup_distribution_of_power = {
-		law_autocracy = approve
+		law_autocracy = strongly_approve
 		law_technocracy = approve
 		law_oligarchy = disapprove
 		law_timocracy = disapprove
