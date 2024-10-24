@@ -36,8 +36,8 @@ institution_minitrue = {
 }
 
 institution_self_improvement = {
-	icon = "gfx/interface/icons/institution_icons/minilab.dds"
-	background_texture = "gfx/interface/illustrations/institutions/minilab_illustration.dds"
+	icon = "gfx/interface/icons/institution_icons/self_improve.dds"
+	background_texture = "gfx/interface/illustrations/institutions/self_improve_illustration.dds"
 
 	modifier = {
 		state_assimilation_mult = 0.1
