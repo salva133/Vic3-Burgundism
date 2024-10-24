@@ -36,9 +36,17 @@
 		}
 	}
 	flag_definition = {
+		coa = BGY_theo_technocracy
+		subject_canton = BGY_theo_technocracy
+		priority = 5000 
+		trigger = {
+			coa_def_theo_technocracy_trigger = yes
+		}
+	}
+	flag_definition = {
 		coa = BGY_communist
 		subject_canton = BGY_communist
-		priority = 5000
+		priority = 6000
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
@@ -49,7 +57,7 @@
 	flag_definition = {
 		coa = BGY_burgundian_system
 		subject_canton = BGY_burgundian_system
-		priority = 6000
+		priority = 7000
 		trigger = {
 			coa_def_burgundian_system_trigger = yes
 		}

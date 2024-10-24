@@ -96,6 +96,21 @@ BGY_technocracy = {
 	}
 }
 
+BGY_theo_technocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "grey"
+
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "black"
+	}
+
+	colored_emblem = {
+		texture = "ce_triskelion_double.dds"
+		color1 = "purple"
+	}
+}
+
 BGY_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"

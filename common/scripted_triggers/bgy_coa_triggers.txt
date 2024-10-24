@@ -30,6 +30,14 @@ coa_def_technocratic_trigger = {
 	scope:actor ?= { coa_technocratic_trigger = yes }
 }
 
+coa_def_theo_technocracy_trigger = {
+	exists = scope:actor
+	scope:actor ?= {
+		coa_theocracy_trigger = yes
+		coa_technocratic_trigger = yes
+	}
+}
+
 coa_has_burgundian_laws_trigger = {
 	has_law = law_type:law_bgy_burgundism
 	has_law = law_type:law_bgy_spartanism
