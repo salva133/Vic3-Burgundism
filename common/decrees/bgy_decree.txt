@@ -42,16 +42,7 @@
 	
 	ai_weight = {
 		value = 0
-		# if = {
-		# 	limit = {
-		# 		scope:country = {
-		# 			has_strategy = ai_strategy_burgundism
-		# 		}
-		# 	}
-		# 	add = 100
-		# }
 	}
-	
 }
 
 decree_lag_reduction = {
@@ -93,16 +84,7 @@ decree_lag_reduction = {
 	
 	ai_weight = {
 		value = 0
-		# if = {
-		# 	limit = {
-		# 		scope:country = {
-		# 			has_strategy = ai_strategy_burgundism
-		# 		}
-		# 	}
-		# 	add = 100
-		# }
 	}
-
 }
 
 decree_homelandoverall_values = {
@@ -139,16 +121,7 @@ decree_homelandoverall_values = {
 	
 	ai_weight = {
 		value = 0
-		# if = {
-		# 	limit = {
-		# 		scope:country = {
-		# 			has_strategy = ai_strategy_burgundism
-		# 		}
-		# 	}
-		# 	add = 100
-		# }
 	}
-
 }
 
 decree_promote_national_values = {
