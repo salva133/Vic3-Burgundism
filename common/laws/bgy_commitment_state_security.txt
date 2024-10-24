@@ -1,4 +1,4 @@
-﻿law_bgy_monitored_speech = {
+﻿law_bgy_commitment_state_security = {
 	group = lawgroup_free_speech
 	icon = "gfx/interface/icons/institution_icons/minitrue.dds"
 	

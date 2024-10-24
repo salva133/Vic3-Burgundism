@@ -45,7 +45,7 @@
 		law_right_of_assembly = approve
 		law_censorship = disapprove
 		law_outlawed_dissent = strongly_disapprove
-		law_bgy_monitored_speech = strongly_disapprove
+		law_bgy_commitment_state_security = strongly_disapprove
 	}
 
 	lawgroup_policing = {
