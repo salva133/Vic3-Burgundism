@@ -1,5 +1,6 @@
 ﻿namespace = burgundism
 
+
 burgundism.1 = {
 	type = country_event
 	placement = root
@@ -7,6 +8,142 @@ burgundism.1 = {
 	title = burgundism.1.t
 	desc = burgundism.1.d
 	flavor = burgundism.1.f
+
+	duration = 3
+
+	event_image = {
+		texture = "gfx/event_images/burgundism_2.dds"
+	}
+
+	trigger = {
+		# Gets triggered by on_country_released_as_independent
+		custom_tooltip = {
+			text = burgundy_not_yet_set_government_tt
+			NOT = { has_global_variable = burgundy_formed_glob_var }
+			NOT = { has_global_variable = burgundy_set_government_glob_var }
+		}
+	}
+
+	immediate = {
+
+	}
+
+	option = {
+		name = burgundism.1.a
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_autocracy
+		set_global_variable = burgundy_set_government_glob_var
+	}
+	option = {
+		name = burgundism.1.b
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_landed_voting
+		set_global_variable = burgundy_set_government_glob_var
+	}
+	option = {
+		name = burgundism.1.c
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_oligarchy
+		set_global_variable = burgundy_set_government_glob_var
+	}
+	option = {
+		name = burgundism.1.e
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_wealth_voting
+		set_global_variable = burgundy_set_government_glob_var
+	}
+
+}
+
+burgundism.2 = {
+	type = country_event
+	placement = root
+
+	title = burgundism.2.t
+	desc = burgundism.2.d
+	flavor = burgundism.2.f
+
+	is_popup = yes
+
+	duration = 3
+
+	event_image = {
+		texture = "gfx/event_images/burgundism_2.dds"
+	}
+
+	trigger = {
+		OR = {
+			AND = {
+				exists = c:BGY
+				c:BGY = root
+			}
+			AND = {
+				country_has_primary_culture = cu:burgundian
+				country_has_state_religion = rel:spartanist
+			}
+		}
+		custom_tooltip = {
+			text = burgundy_not_yet_formed_tt
+			has_global_variable = burgundy_set_government_glob_var
+			NOT = { has_global_variable = burgundy_formed_glob_var }
+		}
+	}
+
+	immediate = {
+		set_global_variable = burgundy_formed_glob_var
+		if = {
+			limit = {
+				has_modifier = head_start_BGY_modifier
+			}
+			remove_modifier = head_start_BGY_modifier
+		}
+		if = {
+			limit = { 
+				has_modifier = spartanist_policies
+			}
+			remove_modifier = spartanist_policies
+		}
+		ig:ig_burgundists = {
+			leader = {
+				set_character_as_ruler = yes
+			}
+		}
+		ruler = {
+			save_scope_as = ruler_scope
+		}
+	}
+
+	option = {
+		name = burgundism.2.a
+		default_option = yes
+
+		add_modifier = {
+			name = head_start_BGY_modifier
+			months = normal_modifier_time
+		}
+		add_modifier = {
+			name = spartanist_policies
+			months = normal_modifier_time
+		}
+
+		every_scope_state = {
+			limit = {
+				owner = root
+			}
+			state_region = {
+				add_homeland = cu:burgundian
+			}
+		}
+	}
+}
+
+burgundism.3 = {
+	type = country_event
+	placement = root
+
+	title = burgundism.3.t
+	desc = burgundism.3.d
+	flavor = burgundism.3.f
 
 	cooldown = { months = 60 }
 
@@ -56,7 +193,7 @@ burgundism.1 = {
 
 
 	option = {
-		name = burgundism.1.a
+		name = burgundism.3.a
 		default_option = yes
 
 		scope:progrom_state_scope = {
@@ -66,89 +203,5 @@ burgundism.1 = {
 			}
 		}
 	}
-
-}
-
-burgundism.2 = {
-	type = country_event
-	placement = root
-
-	title = burgundism.2.t
-	desc = burgundism.2.d
-	flavor = burgundism.2.f
-
-	is_popup = yes
-
-	duration = 3
-
-	event_image = {
-		texture = "gfx/event_images/burgundism_2.dds"
-	}
-
-	trigger = {
-		OR = {
-			AND = {
-				exists = c:BGY
-				c:BGY = root
-			}
-			AND = {
-				country_has_primary_culture = cu:burgundian
-				country_has_state_religion = rel:spartanist
-			}
-		}
-		custom_tooltip = {
-			text = burgundy_not_yet_formed_tt
-			NOT = { has_global_variable = burgundy_formed_glob_var }
-		}
-	}
-
-	immediate = {
-		set_global_variable = burgundy_formed_glob_var
-		if = {
-			limit = {
-				has_modifier = head_start_BGY_modifier
-			}
-			remove_modifier = head_start_BGY_modifier
-		}
-		if = {
-			limit = { 
-				has_modifier = spartanist_policies
-			}
-			remove_modifier = spartanist_policies
-		}
-		set_ruling_interest_groups = {
-			ig_burgundists
-		}
-		ig:ig_burgundists = {
-			leader = {
-				set_character_as_ruler = yes
-			}
-		}
-		ruler = {
-			save_scope_as = ruler_scope
-		}
-	}
-
-	option = {
-		name = burgundism.2.a
-		default_option = yes
-
-		add_modifier = {
-			name = head_start_BGY_modifier
-			months = normal_modifier_time
-		}
-		add_modifier = {
-			name = spartanist_policies
-			months = normal_modifier_time
-		}
-
-		every_scope_state = {
-			limit = {
-				owner = root
-			}
-			state_region = {
-				add_homeland = cu:burgundian
-			}
-		}
-	}
+	
 }
