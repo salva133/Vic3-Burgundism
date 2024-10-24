@@ -25,6 +25,7 @@
 			has_decree = decree_lag_reduction
 			has_decree = decree_homelandoverall_values
 			has_decree = decree_promote_national_values
+			has_modifier = head_start_BGY_modifier
 		}
 		is_incorporated = yes
 	}
@@ -76,6 +77,7 @@ decree_lag_reduction = {
 			has_decree = decree_true_lag_reduction
 			has_decree = decree_homelandoverall_values
 			has_decree = decree_promote_national_values
+			has_modifier = head_start_BGY_modifier
 		}
 		is_incorporated = yes
 	}
@@ -122,6 +124,7 @@ decree_homelandoverall_values = {
 			has_decree = decree_lag_reduction
 			has_decree = decree_true_lag_reduction
 			has_decree = decree_promote_national_values
+			has_modifier = head_start_BGY_modifier
 		}
 		is_incorporated = yes
 	}
@@ -159,7 +162,8 @@ decree_promote_national_values = {
 		OR = {
 			has_assimilating_pops = yes
 			has_converting_pops = yes
-		}	
+		}
+		NOT = { has_modifier = head_start_BGY_modifier }
 	}
 	modifier = {
 		state_assimilation_mult = 1
