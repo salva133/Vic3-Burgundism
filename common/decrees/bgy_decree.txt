@@ -12,14 +12,11 @@
 			OR = {
 				has_law = law_type:law_ethnostate
 				has_law = law_type:law_national_supremacy
-			} 
-			any_scope_pop = {
-				pop_is_discriminated = yes
-				OR = {
-					culture_accepted = no
-					religion_accepted = no
-				}
 			}
+		}
+		OR = {
+			has_assimilating_pops = yes
+			has_converting_pops = yes
 		}
 		NOR = {
 			has_decree = decree_lag_reduction
@@ -66,12 +63,9 @@ decree_lag_reduction = {
 				has_law = law_type:law_secret_police
 			}
 		}
-		any_scope_pop = {
-			pop_is_discriminated = yes
-			OR = {
-				culture_accepted = no
-				religion_accepted = no
-			}
+		OR = {
+			has_assimilating_pops = yes
+			has_converting_pops = yes
 		}
 		NOR = {
 			has_decree = decree_true_lag_reduction
@@ -112,6 +106,10 @@ decree_homelandoverall_values = {
 	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
 
 	valid = {
+		OR = {
+			has_assimilating_pops = yes
+			has_converting_pops = yes
+		}
 		owner = { 
 			has_technology_researched = nationalism
 			NOT = { has_law = law_type:law_multicultural }
