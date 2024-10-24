@@ -7,7 +7,10 @@
 	possible = {
 		coa_has_burgundist_leader_trigger = yes
 		has_law = law_type:law_theocracy
-		has_law = law_type:law_autocracy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_technocracy
+		}
 	}
 
 	on_government_type_change = { change_to_dictatorial = yes }

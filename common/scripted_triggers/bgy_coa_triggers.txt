@@ -4,18 +4,15 @@
     }
 }
 
-coa_burgundian_system_trigger = {
-	coa_has_burgundist_leader_trigger = yes
-	coa_has_burgundian_laws_trigger = yes
-	country_has_voting_franchise = no
-}
-
 coa_def_burgundian_system_trigger = {
 	exists = scope:actor
 	scope:actor ?= {
 		coa_has_burgundist_leader_trigger = yes
 		has_law = law_type:law_theocracy
-		has_law = law_type:law_autocracy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_technocracy
+		}
 	}
 }
 

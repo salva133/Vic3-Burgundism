@@ -60,9 +60,11 @@ color = rgb { 28 0 28 }
 		exists = c:BGY
 		THIS = c:BGY
 		coa_has_burgundist_leader_trigger = yes
-		has_law = law_type:law_bgy_burgundism
-		has_law = law_type:law_bgy_spartanism
-		country_has_voting_franchise = no
+		has_law = law_type:law_theocracy
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_technocracy
+		}
 	}
 }
 
