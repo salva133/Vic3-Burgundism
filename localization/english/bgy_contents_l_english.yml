@@ -11,6 +11,13 @@
   burgundism.2.f: "#bold Outcome of the Unity Party Congress in [ROOT.GetCountry.GetCapital.GetCityHubName]:#!\n\n\"To the repressive government!\nYour \"Excellency\",\nYou will no longer exercise power over us. We will take our fate into our own hands. And we will achieve great things.\nTerrible, maybe. But great.\"\n\nMost disrespectfully,\n[SCOPE.sCharacter('ruler_scope').GetFullName], [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle] of the [ROOT.GetCountry.GetNameNoFlag]\n\n#italic - Dispatch from the transitional government from [ROOT.GetCountry.GetCapital.GetCityHubName]#!"
   burgundism.2.a: "Let's shape our future"
 
+  burgundism.3.t: "Progroms in [SCOPE.sStateRegion('progrom_state_scope').GetCityHubName]"
+  burgundism.3.d: "Loyalists of the Burgundian government have risen up in [SCOPE.sStateRegion('progrom_state_scope').GetCityHubName] to hunt down the so-called unwelcome."
+  burgundism.3.f: "\"We're using force. And force, my friends, is violence, the supreme authority from which all other authority is derived.\n\nNaked force has resolved more issues throughout history than any other factor. The contrary opinion, that violence never solves anything, is wishful thinking at its worst.\"\n\n#italic - Robert Heinlein#!"
+  burgundism.3.a: "How... unfortunate?"
+  burgundism.3.b: "How barbaric!"
+
+
 # Himmler
 	himmler.1.t: "A new character arises"
   himmler.1.d: ""
